@@ -2,6 +2,7 @@ const params = new URLSearchParams(location.search);
 const productId = params.get("id") || "luna-sectional";
 const detailRoot = document.querySelector("#detailRoot");
 const auth = setupAuth({ onChange: renderDetail });
+whenSiteDataReady(() => auth.updateAccountView());
 
 function renderDetail() {
   const product = findProduct(productId);

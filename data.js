@@ -229,6 +229,27 @@ const USER_STORE_KEY = "gcsofa-user";
 const ACCOUNT_STORE_KEY = "gcsofa-accounts";
 const PERMISSION_STORE_KEY = "gcsofa-permissions";
 const FACTORY_STORE_KEY = "gcsofa-factory-profile";
+const CLOUD_DATA_ENDPOINT = "/api/site-data";
+const CLOUD_STORE_KEYS = {
+  products: PRODUCT_STORE_KEY,
+  categories: CATEGORY_STORE_KEY,
+  factoryProfile: FACTORY_STORE_KEY,
+  accounts: ACCOUNT_STORE_KEY,
+  permissions: PERMISSION_STORE_KEY,
+  staff: "gcsofa-staff",
+  productionOrders: "gcsofa-production-board",
+  productionTables: "gcsofa-production-weekly-tables",
+  productionCalendar: "gcsofa-production-calendar",
+};
+const CLOUD_KEY_BY_STORE = Object.entries(CLOUD_STORE_KEYS).reduce((map, [cloudKey, storeKey]) => {
+  map[storeKey] = cloudKey;
+  return map;
+}, {});
+const pendingCloudSaves = {};
+let cloudDataLoaded = false;
+let cloudDataLoadError = null;
+
+window.GCSOFA_DATA_READY = loadCloudSiteData();
 
 function cloneData(data) {
   return JSON.parse(JSON.stringify(data));
@@ -236,6 +257,80 @@ function cloneData(data) {
 
 function cloneProducts(products) {
   return cloneData(products);
+}
+
+async function loadCloudSiteData() {
+  if (location.protocol === "file:") {
+    cloudDataLoaded = true;
+    return {};
+  }
+
+  try {
+    const response = await fetch(`${CLOUD_DATA_ENDPOINT}?v=${Date.now()}`);
+    if (!response.ok) throw new Error(`Cloud data request failed: ${response.status}`);
+    const payload = await response.json();
+    Object.entries(payload.data || {}).forEach(([cloudKey, value]) => {
+      const storeKey = CLOUD_STORE_KEYS[cloudKey];
+      if (storeKey && value !== undefined) {
+        localStorage.setItem(storeKey, JSON.stringify(value));
+      }
+    });
+    seedMissingCloudData(payload.data || {});
+    cloudDataLoaded = true;
+    return payload.data || {};
+  } catch (error) {
+    cloudDataLoadError = error;
+    cloudDataLoaded = true;
+    return {};
+  }
+}
+
+function seedMissingCloudData(cloudData) {
+  Object.entries(CLOUD_STORE_KEYS).forEach(([cloudKey, storeKey]) => {
+    if (Object.prototype.hasOwnProperty.call(cloudData, cloudKey)) return;
+    const saved = localStorage.getItem(storeKey);
+    if (!saved) return;
+    try {
+      saveCloudStore(storeKey, JSON.parse(saved));
+    } catch {
+      // Ignore invalid local cache during cloud migration.
+    }
+  });
+}
+
+function whenSiteDataReady(callback) {
+  return window.GCSOFA_DATA_READY.finally(callback);
+}
+
+function saveCloudStore(storeKey, value) {
+  localStorage.setItem(storeKey, JSON.stringify(value));
+  const cloudKey = CLOUD_KEY_BY_STORE[storeKey];
+  if (!cloudKey || location.protocol === "file:") return Promise.resolve();
+
+  clearTimeout(pendingCloudSaves[cloudKey]);
+  return new Promise((resolve) => {
+    pendingCloudSaves[cloudKey] = setTimeout(async () => {
+      try {
+        await fetch(`${CLOUD_DATA_ENDPOINT}?key=${encodeURIComponent(cloudKey)}`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ value }),
+        });
+      } catch (error) {
+        console.warn("Cloud data save failed", cloudKey, error);
+      } finally {
+        resolve();
+      }
+    }, 150);
+  });
+}
+
+function hasCloudDataLoaded() {
+  return cloudDataLoaded;
+}
+
+function getCloudDataLoadError() {
+  return cloudDataLoadError;
 }
 
 function getProducts() {
@@ -252,7 +347,7 @@ function getProducts() {
 }
 
 function saveProducts(products) {
-  localStorage.setItem(PRODUCT_STORE_KEY, JSON.stringify(products));
+  saveCloudStore(PRODUCT_STORE_KEY, products);
 }
 
 function findProduct(id) {
@@ -298,7 +393,7 @@ function getCategories() {
 }
 
 function saveCategories(categories) {
-  localStorage.setItem(CATEGORY_STORE_KEY, JSON.stringify(categories));
+  saveCloudStore(CATEGORY_STORE_KEY, categories);
 }
 
 function findCategory(id) {
@@ -351,7 +446,7 @@ function getFactoryProfile() {
 }
 
 function saveFactoryProfile(profile) {
-  localStorage.setItem(FACTORY_STORE_KEY, JSON.stringify(profile));
+  saveCloudStore(FACTORY_STORE_KEY, profile);
 }
 
 function getCategoryLink(category) {
@@ -394,7 +489,7 @@ function getSavedAccounts() {
 }
 
 function saveAccounts(accounts) {
-  localStorage.setItem(ACCOUNT_STORE_KEY, JSON.stringify(accounts));
+  saveCloudStore(ACCOUNT_STORE_KEY, accounts);
 }
 
 function upsertAccount(username, account) {
@@ -445,7 +540,7 @@ function getPermissionMap() {
 }
 
 function savePermissionMap(permissions) {
-  localStorage.setItem(PERMISSION_STORE_KEY, JSON.stringify(permissions));
+  saveCloudStore(PERMISSION_STORE_KEY, permissions);
 }
 
 function getPermissionsForUser(user) {

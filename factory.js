@@ -66,4 +66,4 @@ function renderFactoryPage() {
   `;
 }
 
-renderFactoryPage();
+whenSiteDataReady(renderFactoryPage);

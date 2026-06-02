@@ -47,6 +47,7 @@ let currentProductCostSheet = null;
 let activeAdminSection = "products";
 form.noValidate = true;
 let auth = setupAuth({ onChange: renderAdmin });
+whenSiteDataReady(() => auth.updateAccountView());
 
 function renderAdmin() {
   if (!isAdminUser()) {

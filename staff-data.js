@@ -65,7 +65,7 @@ function getStaffList() {
 }
 
 function saveStaffList(staff) {
-  localStorage.setItem(STAFF_STORE_KEY, JSON.stringify(staff));
+  saveCloudStore(STAFF_STORE_KEY, staff);
 }
 
 function findStaff(id) {

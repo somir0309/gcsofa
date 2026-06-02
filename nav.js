@@ -1,1 +1,1 @@
-setupAuth();
+whenSiteDataReady(() => setupAuth());

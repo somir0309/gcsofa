@@ -35,7 +35,7 @@ function getProductionOrders() {
 }
 
 function saveProductionOrders(orders) {
-  localStorage.setItem(PRODUCTION_STORE_KEY, JSON.stringify(orders));
+  saveCloudStore(PRODUCTION_STORE_KEY, orders);
 }
 
 function getProductionTables() {
@@ -59,7 +59,7 @@ function getProductionTables() {
 }
 
 function saveProductionTables(tables) {
-  localStorage.setItem(PRODUCTION_TABLE_STORE_KEY, JSON.stringify(tables));
+  saveCloudStore(PRODUCTION_TABLE_STORE_KEY, tables);
 }
 
 function getProductionCalendar() {
@@ -74,7 +74,7 @@ function getProductionCalendar() {
 }
 
 function saveProductionCalendar(calendar) {
-  localStorage.setItem(PRODUCTION_CALENDAR_STORE_KEY, JSON.stringify(calendar));
+  saveCloudStore(PRODUCTION_CALENDAR_STORE_KEY, calendar);
 }
 
 function ensureProductionTables(tables, orders) {
@@ -861,4 +861,4 @@ function escapeHtml(value) {
 }
 
 const auth = setupAuth({ onChange: renderProgress });
-renderProgress();
+whenSiteDataReady(() => renderProgress());

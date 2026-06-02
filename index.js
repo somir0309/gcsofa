@@ -5,7 +5,7 @@ const pageSize = 2;
 let renderedCount = 0;
 let allProductsLoaded = false;
 const selectedCategoryId = new URLSearchParams(location.search).get("category");
-const selectedCategory = selectedCategoryId ? findCategory(selectedCategoryId) : null;
+let selectedCategory = null;
 
 function createProductCard(product, index) {
   return `
@@ -62,9 +62,22 @@ function maybeLoadMore() {
   }
 }
 
-appendProducts();
-window.addEventListener("scroll", maybeLoadMore, { passive: true });
-renderProductHeading();
+function renderProductGrid() {
+  selectedCategory = selectedCategoryId ? findCategory(selectedCategoryId) : null;
+  renderedCount = 0;
+  allProductsLoaded = false;
+  productGrid.innerHTML = "";
+  document.querySelector("#productEndMarker")?.remove();
+  appendProducts();
+  window.removeEventListener("scroll", maybeLoadMore);
+  window.addEventListener("scroll", maybeLoadMore, { passive: true });
+  renderProductHeading();
+}
+
+whenSiteDataReady(() => {
+  auth.updateAccountView();
+  renderProductGrid();
+});
 
 function renderEndMarker() {
   if (document.querySelector("#productEndMarker")) return;
