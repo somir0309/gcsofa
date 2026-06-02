@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>工厂介绍 - 冠城 GCSOFA</title>
+    <link rel="icon" type="image/png" href="assets/gcsofa-logo-transparent.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="冠城 GCSOFA 首页">
+        <img class="brand-logo" src="assets/gcsofa-logo-transparent.png" alt="欣冠城 GCSOFA 标志" />
+        <span>
+          <strong>冠城</strong>
+          <small>GCSOFA · 工厂介绍</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="工厂介绍导航">
+        <a href="index.html">首页</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="index.html#products">产品</a>
+          <div class="dropdown-menu" aria-label="产品分类">
+            <a href="index.html#products">欧洲款式</a>
+            <a href="index.html#products">日本款式</a>
+            <a href="index.html#products">中东款式</a>
+            <a href="index.html#products">拉美款式</a>
+          </div>
+        </div>
+        <a href="factory.html">工厂介绍</a>
+        <a href="news.html">家具资讯</a>
+        <a id="progressNavLink" class="hidden" href="progress.html">生产进度</a>
+        <a id="adminNavLink" class="hidden" href="admin.html">后台</a>
+        <a href="contact.html">联系</a>
+      </nav>
+    </header>
+
+    <main id="factoryPage" class="factory-page"></main>
+    <script src="data.js"></script>
+    <script src="auth.js"></script>
+    <script src="nav.js"></script>
+    <script src="factory.js"></script>
+  </body>
+</html>

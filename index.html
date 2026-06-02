@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>冠城 GCSOFA 产品展示</title>
+    <link rel="icon" type="image/png" href="assets/gcsofa-logo-transparent.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="冠城 GCSOFA 首页">
+        <img class="brand-logo" src="assets/gcsofa-logo-transparent.png" alt="欣冠城 GCSOFA 标志" />
+        <span>
+          <strong>冠城</strong>
+          <small>GCSOFA · 沙发定制与批发</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="#products">产品</a>
+          <div class="dropdown-menu" aria-label="产品分类">
+            <a href="index.html#products">欧洲款式</a>
+            <a href="index.html#products">日本款式</a>
+            <a href="index.html#products">中东款式</a>
+            <a href="index.html#products">拉美款式</a>
+          </div>
+        </div>
+        <a href="factory.html">工厂介绍</a>
+        <a href="news.html">家具资讯</a>
+        <a id="progressNavLink" class="hidden" href="progress.html">生产进度</a>
+        <a id="adminNavLink" class="hidden" href="admin.html">后台</a>
+        <a href="contact.html">联系</a>
+      </nav>
+
+      <div class="account-bar">
+        <span id="accountStatus" class="account-status">未登录</span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">登录</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">退出</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="冠城沙发展示">
+        <div class="sofa-animation" aria-hidden="true">
+          <div class="letter-field">
+            <span style="--sx: -38vw; --sy: -16vh; --tx: -252px; --ty: -206px;">G</span>
+            <span style="--sx: -22vw; --sy: 18vh; --tx: -142px; --ty: -206px;">C</span>
+            <span style="--sx: -4vw; --sy: -22vh; --tx: -34px; --ty: -206px;">S</span>
+            <span style="--sx: 13vw; --sy: 19vh; --tx: 74px; --ty: -206px;">O</span>
+            <span style="--sx: 27vw; --sy: -13vh; --tx: 182px; --ty: -206px;">F</span>
+            <span style="--sx: 30vw; --sy: 10vh; --tx: 290px; --ty: -206px;">A</span>
+          </div>
+          <div class="assembly-sofa" aria-hidden="true">
+            <span class="sofa-part part-back"></span>
+            <span class="sofa-part part-seat part-seat-one"></span>
+            <span class="sofa-part part-seat part-seat-two"></span>
+            <span class="sofa-part part-seat part-seat-three"></span>
+            <span class="sofa-part part-arm part-arm-left"></span>
+            <span class="sofa-part part-arm part-arm-right"></span>
+            <span class="sofa-part part-pillow part-pillow-one"></span>
+            <span class="sofa-part part-pillow part-pillow-two"></span>
+            <span class="sofa-part part-leg part-leg-one"></span>
+            <span class="sofa-part part-leg part-leg-two"></span>
+            <span class="assembly-shadow"></span>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">GCSOFA Showroom</p>
+          <h1>冠城沙发产品展示中心</h1>
+        </div>
+      </section>
+
+      <section id="products" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Products</p>
+          <h2>沙发系列</h2>
+          <p>点击产品图片打开独立详情页。公开内容无需登录即可查看。</p>
+        </div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+    </main>
+
+    <footer id="support" class="footer">
+      <strong>冠城 GCSOFA</strong>
+      <span>商务咨询：sales@gcsofa.example</span>
+      <span>客户支持：support@gcsofa.example</span>
+    </footer>
+
+    <dialog id="loginDialog" class="dialog">
+      <form id="loginForm" class="dialog-card" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>帐号登录</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="关闭登录窗口" type="button" data-close-login>×</button>
+        </div>
+
+        <label>
+          <span>帐号</span>
+          <input id="usernameInput" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          <span>密码</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
+        </label>
+
+        <p id="loginMessage" class="form-message" role="status"></p>
+
+        <button class="button button-primary button-full" type="submit">登录</button>
+      </form>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="auth.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
