@@ -267,7 +267,7 @@ async function loadCloudSiteData() {
 
   try {
     const localSnapshot = getExistingLocalCloudData();
-    const shouldPreferLocalData = Boolean(localStorage.getItem(USER_STORE_KEY));
+    window.GCSOFA_LOCAL_DATA_SNAPSHOT = localSnapshot;
     const response = await fetch(`${CLOUD_DATA_ENDPOINT}?v=${Date.now()}`);
     if (!response.ok) throw new Error(`Cloud data request failed: ${response.status}`);
     const payload = await response.json();
@@ -277,11 +277,7 @@ async function loadCloudSiteData() {
         localStorage.setItem(storeKey, JSON.stringify(value));
       }
     });
-    if (shouldPreferLocalData) {
-      seedLocalCloudData(localSnapshot, true);
-    } else {
-      seedMissingCloudData(payload.data || {}, localSnapshot);
-    }
+    seedMissingCloudData(payload.data || {}, localSnapshot);
     cloudDataLoaded = true;
     return payload.data || {};
   } catch (error) {
@@ -346,6 +342,20 @@ function saveCloudStore(storeKey, value) {
       }
     }, 150);
   });
+}
+
+function syncLocalDataToCloud(cloudKeys = Object.keys(CLOUD_STORE_KEYS)) {
+  const snapshot = window.GCSOFA_LOCAL_DATA_SNAPSHOT || getExistingLocalCloudData();
+  const tasks = cloudKeys
+    .map((cloudKey) => {
+      const storeKey = CLOUD_STORE_KEYS[cloudKey];
+      const value = snapshot[cloudKey];
+      if (!storeKey || value === undefined) return null;
+      localStorage.setItem(storeKey, JSON.stringify(value));
+      return saveCloudStore(storeKey, value);
+    })
+    .filter(Boolean);
+  return Promise.all(tasks);
 }
 
 function hasCloudDataLoaded() {

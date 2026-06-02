@@ -240,6 +240,14 @@ function renderBoard() {
             ${months.map((month) => `<option value="${month}" ${month === activeMonth ? "selected" : ""}>${month}</option>`).join("")}
           </select>
         </label>
+        ${
+          canEditProduction
+            ? `
+              <button id="syncProductionCloudBtn" class="button button-light" type="button">同步本机生产进度到云端</button>
+              <span id="productionSyncStatus" class="sheet-message" role="status"></span>
+            `
+            : ""
+        }
       </div>
 
       ${createProductionCalendarBoard(calendarMonth)}
@@ -547,6 +555,7 @@ function bindBoardEvents() {
     activeMonth = event.target.value;
     renderBoard();
   });
+  document.querySelector("#syncProductionCloudBtn")?.addEventListener("click", syncProductionDataToCloud);
 
   document.querySelectorAll("[data-calendar-date]").forEach((button) => {
     button.addEventListener("click", () => openProductionCalendarDialog(button.dataset.calendarDate));
@@ -558,6 +567,7 @@ function bindBoardEvents() {
       button.addEventListener("click", () => deleteProductionTableRow(sheet.dataset.month, sheet.dataset.week, button.closest("[data-row-id]").dataset.rowId));
     });
     sheet.querySelectorAll("[data-table-field], [data-table-step]").forEach((input) => {
+      input.addEventListener("input", () => updateProductionTableCell(sheet.dataset.month, sheet.dataset.week, input));
       input.addEventListener("change", () => updateProductionTableCell(sheet.dataset.month, sheet.dataset.week, input));
       input.addEventListener("blur", () => updateProductionTableCell(sheet.dataset.month, sheet.dataset.week, input));
     });
@@ -776,6 +786,18 @@ function updateProductionTableCell(month, week, input) {
     row.dates[input.dataset.tableStep] = value;
   }
   saveProductionTables(tables);
+}
+
+async function syncProductionDataToCloud() {
+  if (!canEditProduction) return;
+  const status = document.querySelector("#productionSyncStatus");
+  if (status) status.textContent = "正在同步...";
+  try {
+    await syncLocalDataToCloud(["productionOrders", "productionTables", "productionCalendar"]);
+    if (status) status.textContent = "已同步到云端，手机刷新后可查看。";
+  } catch {
+    if (status) status.textContent = "同步失败，请稍后再试。";
+  }
 }
 
 function addProductionOrder() {
