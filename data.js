@@ -266,6 +266,8 @@ async function loadCloudSiteData() {
   }
 
   try {
+    const localSnapshot = getExistingLocalCloudData();
+    const shouldPreferLocalData = Boolean(localStorage.getItem(USER_STORE_KEY));
     const response = await fetch(`${CLOUD_DATA_ENDPOINT}?v=${Date.now()}`);
     if (!response.ok) throw new Error(`Cloud data request failed: ${response.status}`);
     const payload = await response.json();
@@ -275,7 +277,11 @@ async function loadCloudSiteData() {
         localStorage.setItem(storeKey, JSON.stringify(value));
       }
     });
-    seedMissingCloudData(payload.data || {});
+    if (shouldPreferLocalData) {
+      seedLocalCloudData(localSnapshot, true);
+    } else {
+      seedMissingCloudData(payload.data || {}, localSnapshot);
+    }
     cloudDataLoaded = true;
     return payload.data || {};
   } catch (error) {
@@ -285,16 +291,33 @@ async function loadCloudSiteData() {
   }
 }
 
-function seedMissingCloudData(cloudData) {
-  Object.entries(CLOUD_STORE_KEYS).forEach(([cloudKey, storeKey]) => {
-    if (Object.prototype.hasOwnProperty.call(cloudData, cloudKey)) return;
+function getExistingLocalCloudData() {
+  return Object.entries(CLOUD_STORE_KEYS).reduce((snapshot, [cloudKey, storeKey]) => {
     const saved = localStorage.getItem(storeKey);
-    if (!saved) return;
+    if (!saved) return snapshot;
     try {
-      saveCloudStore(storeKey, JSON.parse(saved));
+      snapshot[cloudKey] = JSON.parse(saved);
     } catch {
       // Ignore invalid local cache during cloud migration.
     }
+    return snapshot;
+  }, {});
+}
+
+function seedMissingCloudData(cloudData, localSnapshot = getExistingLocalCloudData()) {
+  Object.entries(CLOUD_STORE_KEYS).forEach(([cloudKey, storeKey]) => {
+    if (Object.prototype.hasOwnProperty.call(cloudData, cloudKey)) return;
+    if (localSnapshot[cloudKey] !== undefined) {
+      saveCloudStore(storeKey, localSnapshot[cloudKey]);
+    }
+  });
+}
+
+function seedLocalCloudData(localSnapshot, overwriteCloud = false) {
+  Object.entries(CLOUD_STORE_KEYS).forEach(([cloudKey, storeKey]) => {
+    if (localSnapshot[cloudKey] === undefined) return;
+    localStorage.setItem(storeKey, JSON.stringify(localSnapshot[cloudKey]));
+    if (overwriteCloud) saveCloudStore(storeKey, localSnapshot[cloudKey]);
   });
 }
 
