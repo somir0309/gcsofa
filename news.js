@@ -5,7 +5,7 @@ const newsLoader = document.querySelector("#newsLoader");
 const refreshNewsBtn = document.querySelector("#refreshNewsBtn");
 const newsRefreshStatus = document.querySelector("#newsRefreshStatus");
 const newsPageSize = 6;
-const NEWS_TARGET_COUNT = 200;
+const NEWS_TARGET_COUNT = 240;
 const NEWS_RECORDS_PER_QUERY = 100;
 
 let renderedNewsCount = 0;
@@ -270,13 +270,13 @@ function maybeLoadMoreNews() {
 
 async function refreshNews() {
   refreshNewsBtn.disabled = true;
-  newsRefreshStatus.textContent = `正在抓取国外和国内家具资讯，各 ${NEWS_TARGET_COUNT} 条...`;
+  newsRefreshStatus.textContent = `正在通过多渠道抓取家具实时资讯，各 ${NEWS_TARGET_COUNT} 条...`;
 
   try {
     const localBundle = await fetchLocalNewsBundle();
     if (localBundle) {
       resetNews(localBundle.global, localBundle.china);
-      newsRefreshStatus.textContent = `已抓取国外资讯 ${localBundle.global.length} 条、国内资讯 ${localBundle.china.length} 条，最新内容置顶，下滑继续加载。`;
+      newsRefreshStatus.textContent = `已通过多渠道抓取国外资讯 ${localBundle.global.length} 条、国内资讯 ${localBundle.china.length} 条，最新内容置顶，下滑继续加载。`;
       return;
     }
 
@@ -284,18 +284,24 @@ async function refreshNews() {
       fetchGdeltNewsGroup(
         [
           "sofa OR couch furniture",
+          "upholstered furniture industry sofa",
           "furniture export policy OR tariff OR customs",
           "furniture new materials sustainable fabric foam",
           "sofa design modular sectional upholstery trends",
+          "furniture manufacturing supply chain upholstery",
+          "international furniture fair sofa",
         ],
         "Global"
       ),
       fetchGdeltNewsGroup(
         [
           "沙发 家具",
+          "软体家具 沙发 行业",
           "家具 出口 政策 关税 海关",
           "家具 新材料 环保 面料 海绵",
           "沙发 设计 模块 客厅 趋势",
+          "家具 外贸 订单 出口",
+          "家具展 沙发 软体家具",
         ],
         "China"
       ),
