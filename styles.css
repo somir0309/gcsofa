@@ -1667,7 +1667,7 @@ textarea:focus {
 }
 
 .admin-product-item {
-  grid-template-columns: 76px minmax(0, 1fr) auto auto;
+  grid-template-columns: 76px minmax(0, 1fr) auto auto auto;
 }
 
 .admin-category-item {

@@ -394,22 +394,43 @@ function upsertProduct(product) {
     products[index] = {
       ...product,
       createdAt: products[index].createdAt || product.createdAt || Date.now(),
+      sortOrder: Number.isFinite(Number(products[index].sortOrder)) ? Number(products[index].sortOrder) : index,
     };
   } else {
     products.unshift({
       ...product,
       createdAt: Date.now(),
+      sortOrder: -1,
     });
   }
-  saveProducts(sortProducts(products));
+  saveProducts(normalizeProductOrder(products));
 }
 
 function deleteProduct(id) {
-  saveProducts(getProducts().filter((product) => product.id !== id));
+  saveProducts(normalizeProductOrder(getProducts().filter((product) => product.id !== id)));
 }
 
 function sortProducts(products) {
-  return [...products].sort((a, b) => (Number(b.createdAt) || 0) - (Number(a.createdAt) || 0));
+  const hasManualOrder = products.some((product) => product.sortOrder !== undefined);
+  return [...products].sort((a, b) => {
+    if (hasManualOrder) {
+      const orderA = Number.isFinite(Number(a.sortOrder)) ? Number(a.sortOrder) : Number.MAX_SAFE_INTEGER;
+      const orderB = Number.isFinite(Number(b.sortOrder)) ? Number(b.sortOrder) : Number.MAX_SAFE_INTEGER;
+      if (orderA !== orderB) return orderA - orderB;
+    }
+    return (Number(b.createdAt) || 0) - (Number(a.createdAt) || 0);
+  });
+}
+
+function normalizeProductOrder(products) {
+  return sortProducts(products).map((product, index) => ({
+    ...product,
+    sortOrder: index,
+  }));
+}
+
+function saveOrderedProducts(products) {
+  saveProducts(products.map((product, index) => ({ ...product, sortOrder: index })));
 }
 
 function getCategories() {

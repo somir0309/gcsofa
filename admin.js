@@ -80,14 +80,19 @@ function renderAdmin() {
 }
 
 function renderProductList() {
-  list.innerHTML = getProducts()
+  const products = getProducts();
+  list.innerHTML = products
     .map(
-      (product) => `
+      (product, index) => `
         <article class="admin-product-item" data-id="${product.id}">
           <img src="${product.image}" alt="${product.name}" />
           <div>
             <strong>${product.name}</strong>
             <span>${product.category}</span>
+          </div>
+          <div class="sort-actions" aria-label="产品排序">
+            <button class="icon-button" type="button" data-action="up" ${index === 0 ? "disabled" : ""} aria-label="上移 ${product.name}">↑</button>
+            <button class="icon-button" type="button" data-action="down" ${index === products.length - 1 ? "disabled" : ""} aria-label="下移 ${product.name}">↓</button>
           </div>
           <button class="button button-light" type="button" data-action="edit">编辑</button>
           <button class="button button-ghost" type="button" data-action="delete">删除</button>
@@ -418,12 +423,28 @@ list.addEventListener("click", (event) => {
     loadProduct(product);
   }
 
+  if (action === "up" || action === "down") {
+    moveProduct(product.id, action === "up" ? -1 : 1);
+  }
+
   if (action === "delete" && confirm(`确定删除 ${product.name} 吗？`)) {
     deleteProduct(product.id);
     renderProductList();
     loadProduct(getProducts()[0] || createBlankProduct());
   }
 });
+
+function moveProduct(productId, direction) {
+  const products = getProducts();
+  const index = products.findIndex((item) => item.id === productId);
+  const targetIndex = index + direction;
+  if (index < 0 || targetIndex < 0 || targetIndex >= products.length) return;
+
+  [products[index], products[targetIndex]] = [products[targetIndex], products[index]];
+  saveOrderedProducts(products);
+  renderProductList();
+  loadProduct(products[targetIndex]);
+}
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
