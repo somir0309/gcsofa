@@ -111,6 +111,10 @@ function loadProduct(product) {
     updateImagePreview(input.id);
   });
   document.querySelector("#productSummaryInput").value = target.summary;
+  document.querySelector("#productSpecSizeInput").value = getProductSpecValue(target, "尺寸", "灏哄");
+  document.querySelector("#productSpecFabricInput").value = getProductSpecValue(target, "面料", "闈㈡枡", "材质", "鏉愯川");
+  document.querySelector("#productSpecFillingInput").value = getProductSpecValue(target, "填充", "濉厖", "结构", "缁撴瀯");
+  document.querySelector("#productSpecColorInput").value = getProductSpecValue(target, "颜色", "棰滆壊", "风格", "椋庢牸");
   document.querySelector("#productTagsInput").value = target.tags.join("，");
   document.querySelector("#productPriceInput").value = target.suggestedPrice || "";
   currentProductCostSheet = cloneCostSheet(target.costSheet);
@@ -152,6 +156,12 @@ function createBlankProduct() {
     costRows: [["材料", 0, 1, 0, ""]],
     productionRows: [["生产计划", "待开始", "请补充生产节点"]],
   };
+}
+
+function getProductSpecValue(product, ...keys) {
+  const specs = product?.specs || {};
+  const matchedKey = keys.find((key) => specs[key] !== undefined);
+  return matchedKey ? specs[matchedKey] : "";
 }
 
 function renderCategoryList() {
@@ -486,12 +496,22 @@ function readProductForm() {
     introImageSettings: existing.introImageSettings || getDefaultIntroImageSettings(),
     extraIntroImages: readExtraIntroImages(),
     summary: document.querySelector("#productSummaryInput").value.trim(),
+    specs: readProductSpecs(),
     tags: splitList(document.querySelector("#productTagsInput").value),
     suggestedPrice: document.querySelector("#productPriceInput").value.trim(),
     costSheet: currentProductCostSheet || existing.costSheet,
     homes: splitList(document.querySelector("#productHomesInput").value),
     audience: splitList(document.querySelector("#productAudienceInput").value),
     highlights: document.querySelector("#productHighlightsInput").value.split("\n").map((item) => item.trim()).filter(Boolean),
+  };
+}
+
+function readProductSpecs() {
+  return {
+    尺寸: document.querySelector("#productSpecSizeInput").value.trim(),
+    面料: document.querySelector("#productSpecFabricInput").value.trim(),
+    填充: document.querySelector("#productSpecFillingInput").value.trim(),
+    颜色: document.querySelector("#productSpecColorInput").value.trim(),
   };
 }
 

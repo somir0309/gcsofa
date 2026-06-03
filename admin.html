@@ -1,75 +1,75 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GCSOFA 产品后台</title>
+    <title>GCSOFA 浜у搧鍚庡彴</title>
     <link rel="icon" type="image/png" href="assets/gcsofa-logo-transparent.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="index.html" aria-label="返回冠城 GCSOFA 首页">
-        <img class="brand-logo" src="assets/gcsofa-logo-transparent.png" alt="欣冠城 GCSOFA 标志" />
+      <a class="brand" href="index.html" aria-label="杩斿洖鍐犲煄 GCSOFA 棣栭〉">
+        <img class="brand-logo" src="assets/gcsofa-logo-transparent.png" alt="娆ｅ啝鍩?GCSOFA 鏍囧織" />
         <span>
-          <strong>冠城</strong>
-          <small>GCSOFA · 产品后台</small>
+          <strong>鍐犲煄</strong>
+          <small>GCSOFA 路 浜у搧鍚庡彴</small>
         </span>
       </a>
 
-      <nav class="nav" aria-label="后台导航">
-        <a href="index.html">首页</a>
+      <nav class="nav" aria-label="鍚庡彴瀵艰埅">
+        <a href="index.html">棣栭〉</a>
         <div class="nav-dropdown">
-          <a class="nav-trigger" href="index.html#products">产品</a>
-          <div class="dropdown-menu" aria-label="产品分类">
-            <a href="index.html#products">欧洲款式</a>
-            <a href="index.html#products">日本款式</a>
-            <a href="index.html#products">中东款式</a>
-            <a href="index.html#products">拉美款式</a>
+          <a class="nav-trigger" href="index.html#products">浜у搧</a>
+          <div class="dropdown-menu" aria-label="浜у搧鍒嗙被">
+            <a href="index.html#products">娆ф床娆惧紡</a>
+            <a href="index.html#products">鏃ユ湰娆惧紡</a>
+            <a href="index.html#products">涓笢娆惧紡</a>
+            <a href="index.html#products">鎷夌編娆惧紡</a>
           </div>
         </div>
-        <a href="factory.html">工厂介绍</a>
-        <a href="news.html">家具资讯</a>
-        <a id="progressNavLink" class="hidden" href="progress.html">生产进度</a>
-        <a href="admin.html">后台</a>
-        <a href="contact.html">联系</a>
+        <a href="factory.html">宸ュ巶浠嬬粛</a>
+        <a href="news.html">瀹跺叿璧勮</a>
+        <a id="progressNavLink" class="hidden" href="progress.html">鐢熶骇杩涘害</a>
+        <a href="admin.html">鍚庡彴</a>
+        <a href="contact.html">鑱旂郴</a>
       </nav>
 
       <div class="account-bar">
-        <span id="accountStatus" class="account-status">未登录</span>
-        <button id="loginOpenBtn" class="button button-primary" type="button">登录</button>
-        <button id="logoutBtn" class="button button-ghost hidden" type="button">退出</button>
+        <span id="accountStatus" class="account-status">鏈櫥褰?/span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">鐧诲綍</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">閫€鍑?/button>
       </div>
     </header>
 
     <main class="section admin-page">
       <div class="section-heading">
         <p class="eyebrow">Admin</p>
-        <h1>产品后台</h1>
-        <p>网站管理员可维护产品资料、帐号资料，并为不同用户分配详情页查看权限。</p>
+        <h1>浜у搧鍚庡彴</h1>
+        <p>缃戠珯绠＄悊鍛樺彲缁存姢浜у搧璧勬枡銆佸笎鍙疯祫鏂欙紝骞朵负涓嶅悓鐢ㄦ埛鍒嗛厤璇︽儏椤垫煡鐪嬫潈闄愩€?/p>
       </div>
 
       <div id="adminGate" class="admin-gate"></div>
       <section id="adminWorkspace" class="admin-workspace hidden">
-        <div class="admin-section-tabs" role="tablist" aria-label="后台模块导航">
-          <button class="admin-section-tab active" type="button" data-admin-tab="products">产品管理</button>
-          <button class="admin-section-tab" type="button" data-admin-tab="factory">工厂介绍</button>
-          <button class="admin-section-tab" type="button" data-admin-tab="accounts">帐号权限</button>
-          <button class="admin-section-tab" type="button" data-admin-tab="staff">业务人员</button>
+        <div class="admin-section-tabs" role="tablist" aria-label="鍚庡彴妯″潡瀵艰埅">
+          <button class="admin-section-tab active" type="button" data-admin-tab="products">浜у搧绠＄悊</button>
+          <button class="admin-section-tab" type="button" data-admin-tab="factory">宸ュ巶浠嬬粛</button>
+          <button class="admin-section-tab" type="button" data-admin-tab="accounts">甯愬彿鏉冮檺</button>
+          <button class="admin-section-tab" type="button" data-admin-tab="staff">涓氬姟浜哄憳</button>
         </div>
         <div class="admin-left-column">
           <div class="admin-list-panel admin-section-panel" data-admin-section="products">
             <div class="panel-head">
-              <h2>产品列表</h2>
-              <button id="newProductBtn" class="button button-primary" type="button">新增产品</button>
+              <h2>浜у搧鍒楄〃</h2>
+              <button id="newProductBtn" class="button button-primary" type="button">鏂板浜у搧</button>
             </div>
             <div id="adminProductList" class="admin-product-list"></div>
           </div>
 
           <section class="admin-list-panel category-admin-panel admin-section-panel" data-admin-section="products">
             <div class="panel-head">
-              <h2>产品分类</h2>
-              <button id="newCategoryBtn" class="button button-primary" type="button">新增分类</button>
+              <h2>浜у搧鍒嗙被</h2>
+              <button id="newCategoryBtn" class="button button-primary" type="button">鏂板鍒嗙被</button>
             </div>
             <div id="adminCategoryList" class="admin-category-list"></div>
           </section>
@@ -77,45 +77,45 @@
           <section class="admin-combined-panel account-admin-combined admin-section-panel" data-admin-section="accounts">
             <div class="admin-combined-list">
               <div class="panel-head">
-                <h2>帐号管理</h2>
-                <button id="newAccountBtn" class="button button-primary" type="button">新增帐号</button>
+                <h2>甯愬彿绠＄悊</h2>
+                <button id="newAccountBtn" class="button button-primary" type="button">鏂板甯愬彿</button>
               </div>
               <label>
-                <span>搜索用户</span>
+                <span>鎼滅储鐢ㄦ埛</span>
                 <input id="accountSearchInput" />
               </label>
               <div id="adminAccountList" class="admin-account-list"></div>
               <div class="permission-reference">
-                <h3>权限等级列表</h3>
+                <h3>鏉冮檺绛夌骇鍒楄〃</h3>
                 <div id="rolePermissionList" class="role-permission-list"></div>
               </div>
             </div>
 
             <form id="accountForm" class="admin-form account-admin-form">
               <div class="panel-head">
-                <h2>帐号与权限分配</h2>
-                <button class="button button-primary" type="submit">保存帐号</button>
+                <h2>甯愬彿涓庢潈闄愬垎閰?/h2>
+                <button class="button button-primary" type="submit">淇濆瓨甯愬彿</button>
               </div>
               <label>
-                <span>帐号</span>
+                <span>甯愬彿</span>
                 <input id="accountUsernameInput" required />
               </label>
               <label>
-                <span>姓名</span>
+                <span>濮撳悕</span>
                 <input id="accountNameInput" required />
               </label>
               <label>
-                <span>密码</span>
+                <span>瀵嗙爜</span>
                 <input id="accountPasswordInput" required />
               </label>
               <label>
-                <span>权限等级</span>
+                <span>鏉冮檺绛夌骇</span>
                 <select id="accountRoleInput" required></select>
               </label>
               <div class="permission-panel">
                 <div class="panel-head">
-                  <h3>详情页权限</h3>
-                  <button id="deleteAccountBtn" class="button button-ghost" type="button">删除帐号</button>
+                  <h3>璇︽儏椤垫潈闄?/h3>
+                  <button id="deleteAccountBtn" class="button button-ghost" type="button">鍒犻櫎甯愬彿</button>
                 </div>
                 <div id="permissionChecklist" class="permission-checklist"></div>
               </div>
@@ -125,43 +125,43 @@
           <section class="admin-combined-panel staff-admin-combined admin-section-panel" data-admin-section="staff">
             <div class="admin-combined-list">
               <div class="panel-head">
-                <h2>业务人员</h2>
-                <button id="newStaffBtn" class="button button-primary" type="button">新增业务</button>
+                <h2>涓氬姟浜哄憳</h2>
+                <button id="newStaffBtn" class="button button-primary" type="button">鏂板涓氬姟</button>
               </div>
               <div id="adminStaffList" class="admin-staff-list"></div>
             </div>
 
             <form id="staffForm" class="admin-form staff-admin-form" novalidate>
               <div class="panel-head">
-                <h2>业务人员资料</h2>
-                <button class="button button-primary" type="submit">保存业务</button>
+                <h2>涓氬姟浜哄憳璧勬枡</h2>
+                <button class="button button-primary" type="submit">淇濆瓨涓氬姟</button>
               </div>
               <p id="staffFormMessage" class="form-message success-message" role="status"></p>
               <input id="staffIdInput" type="hidden" />
               <label>
-                <span>姓名</span>
+                <span>濮撳悕</span>
                 <input id="staffNameInput" required />
               </label>
               <label>
-                <span>职位</span>
+                <span>鑱屼綅</span>
                 <input id="staffTitleInput" required />
               </label>
               <label>
-                <span>头像路径</span>
+                <span>澶村儚璺緞</span>
                 <input id="staffAvatarInput" placeholder="assets/staff-chen-yu.png" required />
               </label>
               <div class="image-upload-zone" data-image-target="staffAvatarInput">
                 <input id="staffAvatarFileInput" type="file" accept="image/*" />
-                <strong>上传业务员头像</strong>
-                <span>点击选择图片，或把头像拖拽到这里</span>
-                <img id="staffAvatarPreview" alt="业务员头像预览" />
+                <strong>涓婁紶涓氬姟鍛樺ご鍍?/strong>
+                <span>鐐瑰嚮閫夋嫨鍥剧墖锛屾垨鎶婂ご鍍忔嫋鎷藉埌杩欓噷</span>
+                <img id="staffAvatarPreview" alt="涓氬姟鍛樺ご鍍忛瑙? />
               </div>
               <label>
-                <span>简介</span>
+                <span>绠€浠?/span>
                 <textarea id="staffSummaryInput" required></textarea>
               </label>
               <label>
-                <span>邮箱地址</span>
+                <span>閭鍦板潃</span>
                 <input id="staffEmailInput" type="email" />
               </label>
               <label>
@@ -169,210 +169,229 @@
                 <input id="staffWhatsappInput" />
               </label>
               <label>
-                <span>电话</span>
+                <span>鐢佃瘽</span>
                 <input id="staffPhoneInput" />
               </label>
               <label>
-                <span>微信</span>
+                <span>寰俊</span>
                 <input id="staffWechatInput" />
               </label>
-              <button id="deleteStaffBtn" class="button button-ghost" type="button">删除业务</button>
+              <button id="deleteStaffBtn" class="button button-ghost" type="button">鍒犻櫎涓氬姟</button>
             </form>
           </section>
         </div>
 
         <form id="productForm" class="admin-form product-admin-form admin-section-panel" data-admin-section="products">
           <div class="panel-head">
-            <h2>产品资料</h2>
-            <button class="button button-primary" type="submit">保存</button>
+            <h2>浜у搧璧勬枡</h2>
+            <button class="button button-primary" type="submit">淇濆瓨</button>
           </div>
           <p id="productFormMessage" class="sheet-message" role="status"></p>
           <input id="productIdInput" type="hidden" />
           <label>
-            <span>产品名称</span>
+            <span>浜у搧鍚嶇О</span>
             <input id="productNameInput" required />
           </label>
           <label>
-            <span>系列分类</span>
+            <span>绯诲垪鍒嗙被</span>
             <select id="productCategoryInput" required></select>
           </label>
           <label>
-            <span>产品图片路径</span>
+            <span>浜у搧鍥剧墖璺緞</span>
             <input id="productImageInput" placeholder="assets/gcsofa-sectional.png" required />
           </label>
           <div class="image-upload-zone" data-image-target="productImageInput">
             <input id="productImageFileInput" type="file" accept="image/*" />
-            <strong>上传产品图片</strong>
-            <span>点击选择图片，或把图片拖拽到这里</span>
-            <img id="productImagePreview" alt="产品图片预览" />
+            <strong>涓婁紶浜у搧鍥剧墖</strong>
+            <span>鐐瑰嚮閫夋嫨鍥剧墖锛屾垨鎶婂浘鐗囨嫋鎷藉埌杩欓噷</span>
+            <img id="productImagePreview" alt="浜у搧鍥剧墖棰勮" />
           </div>
           <fieldset class="intro-image-fields">
-            <legend>产品介绍图</legend>
+            <legend>浜у搧浠嬬粛鍥?/legend>
             <label>
-              <span>正视图路径</span>
+              <span>姝ｈ鍥捐矾寰?/span>
               <input id="introFrontInput" placeholder="assets/gallery-front.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introFrontInput">
               <input id="introFrontFileInput" type="file" accept="image/*" />
-              <strong>上传正视图</strong>
-              <span>点击选择或拖拽图片</span>
-              <img id="introFrontPreview" alt="正视图预览" />
+              <strong>涓婁紶姝ｈ鍥?/strong>
+              <span>鐐瑰嚮閫夋嫨鎴栨嫋鎷藉浘鐗?/span>
+              <img id="introFrontPreview" alt="姝ｈ鍥鹃瑙? />
             </div>
             <label>
-              <span>45 度角视图路径</span>
+              <span>45 搴﹁瑙嗗浘璺緞</span>
               <input id="introAngleInput" placeholder="assets/gallery-angle.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introAngleInput">
               <input id="introAngleFileInput" type="file" accept="image/*" />
-              <strong>上传45度角视图</strong>
-              <span>点击选择或拖拽图片</span>
-              <img id="introAnglePreview" alt="45度角视图预览" />
+              <strong>涓婁紶45搴﹁瑙嗗浘</strong>
+              <span>鐐瑰嚮閫夋嫨鎴栨嫋鎷藉浘鐗?/span>
+              <img id="introAnglePreview" alt="45搴﹁瑙嗗浘棰勮" />
             </div>
             <label>
-              <span>侧视图路径</span>
+              <span>渚ц鍥捐矾寰?/span>
               <input id="introSideInput" placeholder="assets/gallery-side.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introSideInput">
               <input id="introSideFileInput" type="file" accept="image/*" />
-              <strong>上传侧视图</strong>
-              <span>点击选择或拖拽图片</span>
-              <img id="introSidePreview" alt="侧视图预览" />
+              <strong>涓婁紶渚ц鍥?/strong>
+              <span>鐐瑰嚮閫夋嫨鎴栨嫋鎷藉浘鐗?/span>
+              <img id="introSidePreview" alt="渚ц鍥鹃瑙? />
             </div>
             <label>
-              <span>背视图路径</span>
+              <span>鑳岃鍥捐矾寰?/span>
               <input id="introBackInput" placeholder="assets/gallery-back.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introBackInput">
               <input id="introBackFileInput" type="file" accept="image/*" />
-              <strong>上传背视图</strong>
-              <span>点击选择或拖拽图片</span>
-              <img id="introBackPreview" alt="背视图预览" />
+              <strong>涓婁紶鑳岃鍥?/strong>
+              <span>鐐瑰嚮閫夋嫨鎴栨嫋鎷藉浘鐗?/span>
+              <img id="introBackPreview" alt="鑳岃鍥鹃瑙? />
             </div>
             <label>
-              <span>产品尺寸图路径</span>
+              <span>浜у搧灏哄鍥捐矾寰?/span>
               <input id="introDimensionsInput" placeholder="assets/gallery-dimensions.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introDimensionsInput">
               <input id="introDimensionsFileInput" type="file" accept="image/*" />
-              <strong>上传产品尺寸图</strong>
-              <span>点击选择或拖拽图片</span>
-              <img id="introDimensionsPreview" alt="产品尺寸图预览" />
+              <strong>涓婁紶浜у搧灏哄鍥?/strong>
+              <span>鐐瑰嚮閫夋嫨鎴栨嫋鎷藉浘鐗?/span>
+              <img id="introDimensionsPreview" alt="浜у搧灏哄鍥鹃瑙? />
             </div>
             <div class="intro-extra-manager">
               <div class="panel-head">
-                <h3>新增产品介绍图</h3>
-                <button id="addIntroImageBtn" class="button button-light" type="button">新增介绍图</button>
+                <h3>鏂板浜у搧浠嬬粛鍥?/h3>
+                <button id="addIntroImageBtn" class="button button-light" type="button">鏂板浠嬬粛鍥?/button>
               </div>
               <div id="extraIntroImageList" class="extra-intro-list"></div>
             </div>
           </fieldset>
           <label>
-            <span>一句话介绍</span>
+            <span>涓€鍙ヨ瘽浠嬬粛</span>
             <textarea id="productSummaryInput" required></textarea>
           </label>
+          <fieldset class="intro-image-fields">
+              <legend>浜у搧瑙勬牸鍙傛暟</legend>
+              <label>
+                <span>灏哄</span>
+                <input id="productSpecSizeInput" placeholder="例如：3200 x 1850 x 880 mm" />
+              </label>
+              <label>
+                <span>闈㈡枡</span>
+                <input id="productSpecFabricInput" placeholder="例如：高密织纹布 / 真皮接触面" />
+              </label>
+              <label>
+                <span>濉厖</span>
+                <input id="productSpecFillingInput" placeholder="例如：高回弹海绵 + 羽绒棉" />
+              </label>
+              <label>
+                <span>棰滆壊</span>
+                <input id="productSpecColorInput" placeholder="例如：暖灰 / 米白 / 深咖" />
+              </label>
+                        </fieldset>
           <label>
             <span>标签，使用逗号分隔</span>
             <input id="productTagsInput" />
           </label>
           <label>
-            <span>建议售价</span>
+            <span>寤鸿鍞环</span>
             <input id="productPriceInput" />
           </label>
           <fieldset class="intro-image-fields admin-cost-sheet-fields">
-            <legend>成本分析表</legend>
+            <legend>鎴愭湰鍒嗘瀽琛?/legend>
             <input id="adminCostSheetInput" class="hidden" type="file" accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv" />
             <div id="adminCostSheetDropZone" class="excel-upload-zone">
-              <strong>上传成本 Excel 表格</strong>
-              <span>点击选择文件，或把 .xlsx / .xls / .csv 拖拽到这里。上传后可下载原文件。</span>
+              <strong>涓婁紶鎴愭湰 Excel 琛ㄦ牸</strong>
+              <span>鐐瑰嚮閫夋嫨鏂囦欢锛屾垨鎶?.xlsx / .xls / .csv 鎷栨嫿鍒拌繖閲屻€備笂浼犲悗鍙笅杞藉師鏂囦欢銆?/span>
             </div>
             <p id="adminCostSheetMessage" class="sheet-message" role="status"></p>
             <div id="adminCostSheetPreview" class="cost-file-box"></div>
           </fieldset>
           <label>
-            <span>适合户型</span>
+            <span>閫傚悎鎴峰瀷</span>
             <input id="productHomesInput" />
           </label>
           <label>
-            <span>适合人群</span>
+            <span>閫傚悎浜虹兢</span>
             <input id="productAudienceInput" />
           </label>
           <label>
-            <span>卖点，使用换行分隔</span>
+            <span>鍗栫偣锛屼娇鐢ㄦ崲琛屽垎闅?/span>
             <textarea id="productHighlightsInput"></textarea>
           </label>
         </form>
 
         <form id="factoryForm" class="admin-form factory-admin-form admin-section-panel" data-admin-section="factory">
           <div class="panel-head">
-            <h2>工厂介绍页面</h2>
-            <button class="button button-primary" type="submit">保存工厂介绍</button>
+            <h2>宸ュ巶浠嬬粛椤甸潰</h2>
+            <button class="button button-primary" type="submit">淇濆瓨宸ュ巶浠嬬粛</button>
           </div>
           <p id="factoryFormMessage" class="form-message success-message" role="status"></p>
 
           <fieldset class="factory-admin-fieldset">
-            <legend>顶部介绍</legend>
+            <legend>椤堕儴浠嬬粛</legend>
             <label>
-              <span>小标题</span>
+              <span>灏忔爣棰?/span>
               <input id="factoryHeroEyebrowInput" />
             </label>
             <label>
-              <span>大标题</span>
+              <span>澶ф爣棰?/span>
               <input id="factoryHeroTitleInput" required />
             </label>
             <label>
-              <span>介绍文字</span>
+              <span>浠嬬粛鏂囧瓧</span>
               <textarea id="factoryHeroDescriptionInput" required></textarea>
             </label>
             <label>
-              <span>主图路径</span>
+              <span>涓诲浘璺緞</span>
               <input id="factoryHeroImageInput" placeholder="assets/factory-campus.png" />
             </label>
             <div class="image-upload-zone" data-image-target="factoryHeroImageInput">
               <input id="factoryHeroImageFileInput" type="file" accept="image/*" />
-              <strong>上传工厂主图</strong>
-              <span>点击选择图片，或把图片拖拽到这里</span>
-              <img id="factoryHeroImagePreview" alt="工厂主图预览" />
+              <strong>涓婁紶宸ュ巶涓诲浘</strong>
+              <span>鐐瑰嚮閫夋嫨鍥剧墖锛屾垨鎶婂浘鐗囨嫋鎷藉埌杩欓噷</span>
+              <img id="factoryHeroImagePreview" alt="宸ュ巶涓诲浘棰勮" />
             </div>
           </fieldset>
 
           <fieldset class="factory-admin-fieldset">
-            <legend>工厂历史</legend>
+            <legend>宸ュ巶鍘嗗彶</legend>
             <label>
-              <span>小标题</span>
+              <span>灏忔爣棰?/span>
               <input id="factoryHistoryEyebrowInput" />
             </label>
             <label>
-              <span>标题</span>
+              <span>鏍囬</span>
               <input id="factoryHistoryTitleInput" required />
             </label>
             <label>
-              <span>描述</span>
+              <span>鎻忚堪</span>
               <textarea id="factoryHistoryDescriptionInput"></textarea>
             </label>
             <div class="panel-head panel-head-compact">
-              <h3>历史节点</h3>
-              <button id="addFactoryHistoryBtn" class="button button-light" type="button">新增历史节点</button>
+              <h3>鍘嗗彶鑺傜偣</h3>
+              <button id="addFactoryHistoryBtn" class="button button-light" type="button">鏂板鍘嗗彶鑺傜偣</button>
             </div>
             <div id="factoryHistoryList" class="factory-admin-list"></div>
           </fieldset>
 
           <fieldset class="factory-admin-fieldset">
-            <legend>场地与车间</legend>
+            <legend>鍦哄湴涓庤溅闂?/legend>
             <label>
-              <span>小标题</span>
+              <span>灏忔爣棰?/span>
               <input id="factoryGalleryEyebrowInput" />
             </label>
             <label>
-              <span>标题</span>
+              <span>鏍囬</span>
               <input id="factoryGalleryTitleInput" required />
             </label>
             <label>
-              <span>描述</span>
+              <span>鎻忚堪</span>
               <textarea id="factoryGalleryDescriptionInput"></textarea>
             </label>
             <div class="panel-head panel-head-compact">
-              <h3>车间图片</h3>
-              <button id="addFactoryGalleryBtn" class="button button-light" type="button">新增车间图片</button>
+              <h3>杞﹂棿鍥剧墖</h3>
+              <button id="addFactoryGalleryBtn" class="button button-light" type="button">鏂板杞﹂棿鍥剧墖</button>
             </div>
             <div id="factoryGalleryList" class="factory-admin-list"></div>
           </fieldset>
@@ -385,20 +404,20 @@
         <div class="dialog-head">
           <div>
             <p class="eyebrow">Account</p>
-            <h2>帐号登录</h2>
+            <h2>甯愬彿鐧诲綍</h2>
           </div>
-          <button class="icon-button" value="cancel" aria-label="关闭登录窗口" type="button" data-close-login>×</button>
+          <button class="icon-button" value="cancel" aria-label="鍏抽棴鐧诲綍绐楀彛" type="button" data-close-login>脳</button>
         </div>
         <label>
-          <span>帐号</span>
+          <span>甯愬彿</span>
           <input id="usernameInput" name="username" autocomplete="username" required />
         </label>
         <label>
-          <span>密码</span>
+          <span>瀵嗙爜</span>
           <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
         </label>
         <p id="loginMessage" class="form-message" role="status"></p>
-        <button class="button button-primary button-full" type="submit">登录</button>
+        <button class="button button-primary button-full" type="submit">鐧诲綍</button>
       </form>
     </dialog>
 
@@ -408,3 +427,5 @@
     <script src="admin.js?v=20260602-cloud-sync"></script>
   </body>
 </html>
+
+
