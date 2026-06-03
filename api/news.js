@@ -237,7 +237,7 @@ function enrichNewsItems(items) {
 function buildNewsDetails(item) {
   const profile = getNewsTopicProfile(item);
   const title = cleanNewsSummary(item.title);
-  const summary = cleanNewsSummary(item.summary);
+  const summary = stripNewsSummaryPrefix(cleanNewsSummary(item.summary));
   const source = cleanNewsSummary(item.source) || "新闻来源";
   const date = item.date || "最新";
   const sourceLine = `${date} 来自 ${source} 的资讯，主题集中在“${profile.label}”。${summary && summary !== title ? `原始摘要提到：${summary}` : `标题显示：${title}`}`;
@@ -262,14 +262,21 @@ function getNewsTopicProfile(item) {
       action: "记录可用于新品开发的面料、海绵、填充和环保关键词；向供应商确认样品、检测报告、MOQ、交期和可替代材料。",
     };
   }
-  if (/设计|趋势|模块|客厅|室内|沙发床|功能沙发|design|trend|modular|sectional|recliner|interior|living room/.test(text)) {
+  if (/零售|电商|市场|销售|门店|京东|天猫|618|retail|market|sales|store|consumer|brand/.test(text)) {
+    return {
+      label: "市场、零售与消费变化",
+      impact: "市场资讯能反映终端需求、库存变化、促销节奏和消费者偏好，对业务报价、备货建议和主推款选择有帮助。",
+      action: "留意畅销价格带、渠道反馈和库存压力；把适合目标市场的款式放到首页、产品分类和业务推荐资料中。",
+    };
+  }
+  if (/设计|趋势|模块|客厅|室内|功能沙发|design|trend|modular|sectional|recliner|interior|living room/.test(text)) {
     return {
       label: "沙发设计与消费趋势",
       impact: "设计类资讯能帮助判断海外买家偏好的轮廓、颜色、组合方式和场景搭配，对选款、拍摄、详情图文案和展厅陈列都有参考意义。",
       action: "把出现频率高的设计元素整理成开发清单，例如模块组合、低矮坐感、圆润扶手、功能位、收纳或小户型尺寸。",
     };
   }
-  if (/展会|家具展|设计周|fair|expo|exhibition|market|show|salone|interzum/.test(text)) {
+  if (/展会|家具展|设计周|fair|expo|exhibition|show|salone|interzum/.test(text)) {
     return {
       label: "展会与渠道动态",
       impact: "展会信息能反映买家关注点、竞品展示方向和市场热词，也适合安排业务拜访、样册准备和新品展示节奏。",
@@ -281,13 +288,6 @@ function getNewsTopicProfile(item) {
       label: "生产制造与供应链",
       impact: "这类内容对排产、物料准备、包装、物流和交付稳定性有参考价值，能帮助工厂提前识别效率和成本风险。",
       action: "结合本厂生产进度表检查关键工序瓶颈；重点跟进木架、裁剪、车工、包装、物流周期和异常订单处理机制。",
-    };
-  }
-  if (/零售|电商|市场|销售|门店|retail|market|sales|store|consumer|brand/.test(text)) {
-    return {
-      label: "市场、零售与消费变化",
-      impact: "市场资讯能反映终端需求、库存变化、促销节奏和消费者偏好，对业务报价、备货建议和主推款选择有帮助。",
-      action: "留意畅销价格带、渠道反馈和库存压力；把适合目标市场的款式放到首页、产品分类和业务推荐资料中。",
     };
   }
   return {
@@ -356,9 +356,14 @@ async function translateTextToChinese(text) {
 
 function cleanNewsSummary(value) {
   return decodeXml(String(value || ""))
+    .replace(/&nbsp;/g, " ")
     .replace(/\u00a0/g, " ")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function stripNewsSummaryPrefix(value) {
+  return String(value || "").replace(/^摘要[：:]\s*/, "").trim();
 }
 
 function fallbackGlobalNews() {
@@ -427,6 +432,7 @@ function decodeXml(value) {
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
+    .replace(/&nbsp;/g, " ")
     .replace(/&#39;/g, "'")
     .replace(/&#x27;/g, "'")
     .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
