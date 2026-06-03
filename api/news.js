@@ -79,8 +79,8 @@ module.exports = async function handler(request, response) {
     }),
   ]);
 
-  const globalNews = globalSupplement.length ? await translateGlobalNews(globalSupplement) : fallbackGlobalNews();
-  const chinaNews = chinaSupplement.length ? chinaSupplement : fallbackChinaNews();
+  const globalNews = enrichNewsItems(globalSupplement.length ? await translateGlobalNews(globalSupplement) : fallbackGlobalNews());
+  const chinaNews = enrichNewsItems(chinaSupplement.length ? chinaSupplement : fallbackChinaNews());
 
   sendJson(response, 200, {
     ok: true,
@@ -216,6 +216,87 @@ function isFurnitureNews(item) {
   return /家具|沙发|软体|家居|家装|海绵|面料|关税|海关|外贸|出口|展会|furniture|sofa|couch|upholster|interior|home furnishing|woodworking|foam|fabric|tariff|customs|export|retail|design|material/.test(text);
 }
 
+function enrichNewsItems(items) {
+  return items.map((item) => {
+    const cleanTitle = cleanNewsSummary(item.title);
+    const cleanSummary = cleanNewsSummary(item.summary);
+    const details = buildNewsDetails({
+      ...item,
+      title: cleanTitle,
+      summary: cleanSummary,
+    });
+    return {
+      ...item,
+      title: cleanTitle,
+      summary: cleanSummary,
+      details,
+    };
+  });
+}
+
+function buildNewsDetails(item) {
+  const profile = getNewsTopicProfile(item);
+  const title = cleanNewsSummary(item.title);
+  const summary = cleanNewsSummary(item.summary);
+  const source = cleanNewsSummary(item.source) || "新闻来源";
+  const date = item.date || "最新";
+  const sourceLine = `${date} 来自 ${source} 的资讯，主题集中在“${profile.label}”。${summary && summary !== title ? `原始摘要提到：${summary}` : `标题显示：${title}`}`;
+  const impactLine = `对家具和沙发企业的参考价值：${profile.impact}`;
+  const actionLine = `建议跟进：${profile.action}`;
+  return [sourceLine, impactLine, actionLine];
+}
+
+function getNewsTopicProfile(item) {
+  const text = `${item.title} ${item.summary} ${item.source}`.toLowerCase();
+  if (/关税|海关|政策|外贸|出口|进口|301|tariff|customs|export|import|trade/.test(text)) {
+    return {
+      label: "出口政策与贸易环境",
+      impact: "这类信息会影响报价有效期、目的港成本、清关资料、原产地说明和客户下单节奏，尤其适合外贸业务和报价人员重点关注。",
+      action: "复核目标市场的关税、认证、标签和申报要求；报价时预留政策变化说明，并把可能影响交期或成本的条款提前告知客户。",
+    };
+  }
+  if (/新材料|环保|面料|海绵|织物|皮革|foam|fabric|material|sustainable|upholstery|leather/.test(text)) {
+    return {
+      label: "材料、面料与可持续趋势",
+      impact: "材料新闻通常关系到沙发卖点、成本结构、舒适度、耐磨性、环保认证和产品详情页表达，适合产品开发与采购同步查看。",
+      action: "记录可用于新品开发的面料、海绵、填充和环保关键词；向供应商确认样品、检测报告、MOQ、交期和可替代材料。",
+    };
+  }
+  if (/设计|趋势|模块|客厅|室内|沙发床|功能沙发|design|trend|modular|sectional|recliner|interior|living room/.test(text)) {
+    return {
+      label: "沙发设计与消费趋势",
+      impact: "设计类资讯能帮助判断海外买家偏好的轮廓、颜色、组合方式和场景搭配，对选款、拍摄、详情图文案和展厅陈列都有参考意义。",
+      action: "把出现频率高的设计元素整理成开发清单，例如模块组合、低矮坐感、圆润扶手、功能位、收纳或小户型尺寸。",
+    };
+  }
+  if (/展会|家具展|设计周|fair|expo|exhibition|market|show|salone|interzum/.test(text)) {
+    return {
+      label: "展会与渠道动态",
+      impact: "展会信息能反映买家关注点、竞品展示方向和市场热词，也适合安排业务拜访、样册准备和新品展示节奏。",
+      action: "关注展会中反复出现的款式、材料和价格带；把适合工厂的展示主题沉淀到产品资料、报价表和业务话术里。",
+    };
+  }
+  if (/制造|工厂|供应链|物流|生产|woodworking|manufacturing|supply chain|logistics|factory/.test(text)) {
+    return {
+      label: "生产制造与供应链",
+      impact: "这类内容对排产、物料准备、包装、物流和交付稳定性有参考价值，能帮助工厂提前识别效率和成本风险。",
+      action: "结合本厂生产进度表检查关键工序瓶颈；重点跟进木架、裁剪、车工、包装、物流周期和异常订单处理机制。",
+    };
+  }
+  if (/零售|电商|市场|销售|门店|retail|market|sales|store|consumer|brand/.test(text)) {
+    return {
+      label: "市场、零售与消费变化",
+      impact: "市场资讯能反映终端需求、库存变化、促销节奏和消费者偏好，对业务报价、备货建议和主推款选择有帮助。",
+      action: "留意畅销价格带、渠道反馈和库存压力；把适合目标市场的款式放到首页、产品分类和业务推荐资料中。",
+    };
+  }
+  return {
+    label: "家具行业综合动态",
+    impact: "这条资讯可作为行业观察入口，用于了解家具、沙发、家居渠道或相关企业的最新变化。",
+    action: "点击原文核对细节后，再判断是否需要更新产品资料、报价说明、开发方向或客户沟通重点。",
+  };
+}
+
 async function translateGlobalNews(items) {
   const normalizedItems = items.map((item) => ({
     ...item,
@@ -289,6 +370,11 @@ function fallbackGlobalNews() {
       source: "实时接口备用",
       title: "全球家具资讯接口暂时拥堵，建议稍后重新刷新",
       summary: "页面已接入全球新闻索引、搜索新闻源和家具行业 RSS。外部接口限流时会先显示备用提示，稍后刷新会重新抓取实时内容。",
+      details: [
+        "当前外部新闻源临时限流，页面先显示备用说明，避免全球资讯栏目空白。",
+        "接口恢复后会继续按家具、沙发、出口政策、新材料、设计趋势等关键词抓取实时内容。",
+        "建议稍后点击刷新资讯，或直接打开搜索链接查看最新全球家具新闻。",
+      ],
       url: "https://www.google.com/search?q=sofa+furniture+industry+news",
     },
   ];
@@ -303,6 +389,11 @@ function fallbackChinaNews() {
       source: "实时接口备用",
       title: "国内家具资讯接口暂时拥堵，建议稍后重新刷新",
       summary: "页面已接入家具、沙发、出口政策、新材料、设计趋势等关键词的实时新闻抓取。外部接口限流时会先显示备用提示。",
+      details: [
+        "当前外部新闻源临时限流，页面先显示备用说明，避免国内资讯栏目空白。",
+        "接口恢复后会继续抓取家具、沙发、外贸出口、材料、展会和市场相关内容。",
+        "建议稍后点击刷新资讯，或直接打开搜索链接查看最新国内家具新闻。",
+      ],
       url: "https://www.baidu.com/s?wd=%E6%B2%99%E5%8F%91%20%E5%AE%B6%E5%85%B7%20%E8%B5%84%E8%AE%AF",
     },
   ];

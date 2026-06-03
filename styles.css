@@ -860,6 +860,34 @@ a {
   overflow-wrap: anywhere;
 }
 
+.news-detail-block {
+  display: grid;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid #e4ebe8;
+  border-radius: 8px;
+  background: #f8fbf9;
+}
+
+.news-detail-block strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.news-detail-block ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+}
+
+.news-detail-block li {
+  color: #475467;
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
 .news-card .button {
   justify-self: start;
 }

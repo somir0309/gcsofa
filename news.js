@@ -211,6 +211,7 @@ const fallbackChinaNews = [
 ];
 
 function createNewsCard(item) {
+  const details = getNewsDetails(item);
   return `
     <article class="news-card">
       <div class="news-card-copy">
@@ -221,9 +222,25 @@ function createNewsCard(item) {
         </div>
         <h2>${escapeNewsText(item.title)}</h2>
         <p>${escapeNewsText(item.summary)}</p>
+        ${details.length ? `
+          <div class="news-detail-block">
+            <strong>详细解读</strong>
+            <ul>
+              ${details.map((detail) => `<li>${escapeNewsText(detail)}</li>`).join("")}
+            </ul>
+          </div>
+        ` : ""}
       </div>
     </article>
   `;
+}
+
+function getNewsDetails(item) {
+  if (Array.isArray(item.details)) {
+    return item.details.map((detail) => String(detail || "").trim()).filter(Boolean);
+  }
+  if (item.detail) return [item.detail];
+  return [];
 }
 
 function resetNews(globalItems, chinaItems) {
