@@ -2,6 +2,8 @@ const NEWS_TARGET_COUNT = 240;
 const MAX_RECORDS_PER_SOURCE = 60;
 const RSS_FETCH_TIMEOUT_MS = 2500;
 const GDELT_FETCH_TIMEOUT_MS = 8000;
+const TRANSLATE_FETCH_TIMEOUT_MS = 3500;
+const MAX_TRANSLATED_GLOBAL_ITEMS = 80;
 
 const GLOBAL_QUERIES = [
   "sofa OR couch furniture news",
@@ -77,7 +79,7 @@ module.exports = async function handler(request, response) {
     }),
   ]);
 
-  const globalNews = globalSupplement.length ? globalSupplement : fallbackGlobalNews();
+  const globalNews = globalSupplement.length ? await translateGlobalNews(globalSupplement) : fallbackGlobalNews();
   const chinaNews = chinaSupplement.length ? chinaSupplement : fallbackChinaNews();
 
   sendJson(response, 200, {
@@ -202,7 +204,7 @@ function parseRssItems(xml, region) {
         region,
         source,
         title,
-        summary: rawSummary,
+        summary: cleanNewsSummary(rawSummary),
         url: normalizeNewsUrl(url),
       };
     })
@@ -212,6 +214,70 @@ function parseRssItems(xml, region) {
 function isFurnitureNews(item) {
   const text = `${item.title} ${item.summary} ${item.source}`.toLowerCase();
   return /家具|沙发|软体|家居|家装|海绵|面料|关税|海关|外贸|出口|展会|furniture|sofa|couch|upholster|interior|home furnishing|woodworking|foam|fabric|tariff|customs|export|retail|design|material/.test(text);
+}
+
+async function translateGlobalNews(items) {
+  const normalizedItems = items.map((item) => ({
+    ...item,
+    title: cleanNewsSummary(item.title),
+    summary: cleanNewsSummary(item.summary),
+    originalTitle: item.title,
+    originalSummary: item.summary,
+  }));
+  const translateTargets = [];
+
+  normalizedItems.slice(0, MAX_TRANSLATED_GLOBAL_ITEMS).forEach((item, index) => {
+    if (!hasChineseText(item.title)) {
+      translateTargets.push({ index, field: "title", text: item.title });
+    }
+  });
+
+  const translated = await Promise.all(translateTargets.map((target) => translateTextToChinese(target.text).catch(() => "")));
+  translated.forEach((value, offset) => {
+    if (!value) return;
+    const target = translateTargets[offset];
+    normalizedItems[target.index][target.field] = value;
+    if (!hasChineseText(normalizedItems[target.index].summary)) {
+      normalizedItems[target.index].summary = `摘要：${value}`;
+    }
+  });
+
+  return normalizedItems.map((item) => ({
+    ...item,
+    translated: true,
+  }));
+}
+
+async function translateTextToChinese(text) {
+  const cleanText = cleanNewsSummary(text);
+  if (!cleanText || hasChineseText(cleanText)) return cleanText;
+  const params = new URLSearchParams({
+    client: "gtx",
+    sl: "auto",
+    tl: "zh-CN",
+    dt: "t",
+    q: cleanText,
+  });
+  const response = await fetch(`https://translate.googleapis.com/translate_a/single?${params.toString()}`, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 GCSOFA furniture news translator",
+      Accept: "application/json, text/plain, */*",
+    },
+    signal: AbortSignal.timeout(TRANSLATE_FETCH_TIMEOUT_MS),
+  });
+  if (!response.ok) return "";
+  const data = await response.json();
+  const translated = Array.isArray(data?.[0])
+    ? data[0].map((part) => part?.[0] || "").join("")
+    : "";
+  return cleanNewsSummary(translated);
+}
+
+function cleanNewsSummary(value) {
+  return decodeXml(String(value || ""))
+    .replace(/\u00a0/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function fallbackGlobalNews() {
