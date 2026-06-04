@@ -106,9 +106,25 @@ function initAdCarousel() {
   const carousel = document.querySelector("[data-carousel]");
   if (!slides.length || !dots.length || !carousel) return;
 
+  const syncSlideVideo = (slide, isActive) => {
+    const video = slide.querySelector("[data-video-src]");
+    if (!video) return;
+    if (isActive) {
+      if (video.getAttribute("src") !== video.dataset.videoSrc) {
+        video.setAttribute("src", video.dataset.videoSrc);
+      }
+      return;
+    }
+    video.removeAttribute("src");
+  };
+
   const showSlide = (nextIndex) => {
     carouselIndex = (nextIndex + slides.length) % slides.length;
-    slides.forEach((slide, index) => slide.classList.toggle("is-active", index === carouselIndex));
+    slides.forEach((slide, index) => {
+      const isActive = index === carouselIndex;
+      slide.classList.toggle("is-active", isActive);
+      syncSlideVideo(slide, isActive);
+    });
     dots.forEach((dot, index) => dot.classList.toggle("is-active", index === carouselIndex));
   };
 
