@@ -621,6 +621,29 @@ a {
   color: var(--muted);
 }
 
+.product-section-heading {
+  align-items: end;
+}
+
+.product-search {
+  display: grid;
+  gap: 7px;
+  width: min(100%, 360px);
+  margin: 0;
+}
+
+.product-search span {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.product-search input {
+  min-height: 46px;
+  border-color: #cfd8e3;
+  background: #fff;
+}
+
 .eyebrow {
   margin: 0 0 8px;
   text-transform: uppercase;
@@ -3134,6 +3157,16 @@ textarea:focus {
     min-height: auto;
   }
 
+  .hero-copy {
+    max-width: 58vw;
+  }
+
+  .hero h1 {
+    max-width: 8.5em;
+    font-size: clamp(24px, 7vw, 32px);
+    line-height: 1.12;
+  }
+
   .letter-field {
     left: 64%;
     transform: scale(0.72);
@@ -3204,6 +3237,11 @@ textarea:focus {
 
   .section-heading {
     display: block;
+  }
+
+  .product-search {
+    width: 100%;
+    margin-top: 18px;
   }
 
   .product-grid,

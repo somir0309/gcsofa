@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>冠城 GCSOFA 产品展示</title>
+    <title>欣冠城 GCSOFA 产品展示</title>
     <link rel="icon" type="image/png" href="assets/gcsofa-logo-transparent.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="index.html" aria-label="冠城 GCSOFA 首页">
+      <a class="brand" href="index.html" aria-label="欣冠城 GCSOFA 首页">
         <img class="brand-logo" src="assets/gcsofa-logo-transparent.png" alt="欣冠城 GCSOFA 标志" />
         <span>
-          <strong>冠城</strong>
+          <strong>欣冠城</strong>
           <small>GCSOFA · 沙发定制与批发</small>
         </span>
       </a>
@@ -43,7 +43,7 @@
     </header>
 
     <main>
-      <section class="hero" aria-label="冠城沙发展示">
+      <section class="hero" aria-label="欣冠城沙发展示">
         <div class="sofa-animation" aria-hidden="true">
           <div class="letter-field">
             <span style="--sx: -38vw; --sy: -16vh; --tx: -252px; --ty: -206px;">G</span>
@@ -69,15 +69,21 @@
         </div>
         <div class="hero-copy">
           <p class="eyebrow">GCSOFA Showroom</p>
-          <h1>冠城沙发产品展示中心</h1>
+          <h1>欣冠城沙发产品展示中心</h1>
         </div>
       </section>
 
       <section id="products" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Products</p>
-          <h2>沙发系列</h2>
-          <p>点击产品图片打开独立详情页。公开内容无需登录即可查看。</p>
+        <div class="section-heading product-section-heading">
+          <div>
+            <p class="eyebrow">Products</p>
+            <h2>沙发系列</h2>
+            <p>点击产品图片打开独立详情页。公开内容无需登录即可查看。</p>
+          </div>
+          <label class="product-search">
+            <span>搜索产品</span>
+            <input id="productSearchInput" type="search" placeholder="输入编号，例如 2672 / GC-S2672" autocomplete="off" />
+          </label>
         </div>
         <div id="productGrid" class="product-grid" aria-live="polite"></div>
       </section>
@@ -85,7 +91,7 @@
     </main>
 
     <footer id="support" class="footer">
-      <strong>冠城 GCSOFA</strong>
+      <strong>欣冠城 GCSOFA</strong>
       <span>商务咨询：sales@gcsofa.example</span>
       <span>客户支持：support@gcsofa.example</span>
     </footer>
@@ -117,6 +123,6 @@
 
     <script src="data.js?v=20260602-cloud-sync"></script>
     <script src="auth.js"></script>
-    <script src="index.js?v=20260602-cloud-sync"></script>
+    <script src="index.js?v=20260604-product-search"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@ let renderedCount = 0;
 let allProductsLoaded = false;
 const selectedCategoryId = new URLSearchParams(location.search).get("category");
 let selectedCategory = null;
+let productSearchTerm = "";
 
 function createProductCard(product, index) {
   return `
@@ -50,9 +51,12 @@ function appendProducts() {
 }
 
 function getVisibleProducts() {
-  const products = getProducts();
-  if (!selectedCategory) return products;
-  return products.filter((product) => product.category === selectedCategory.name);
+  let products = getProducts();
+  if (selectedCategory) {
+    products = products.filter((product) => product.category === selectedCategory.name);
+  }
+  if (!productSearchTerm) return products;
+  return products.filter((product) => productMatchesSearch(product, productSearchTerm));
 }
 
 function maybeLoadMore() {
@@ -64,14 +68,27 @@ function maybeLoadMore() {
 
 function renderProductGrid() {
   selectedCategory = selectedCategoryId ? findCategory(selectedCategoryId) : null;
+  renderProductHeading();
+  renderProductResults();
+}
+
+function renderProductResults() {
   renderedCount = 0;
   allProductsLoaded = false;
   productGrid.innerHTML = "";
   document.querySelector("#productEndMarker")?.remove();
+
+  const products = getVisibleProducts();
+  if (!products.length) {
+    productGrid.innerHTML = `<p class="product-end-marker">${getEmptyProductMessage()}</p>`;
+    allProductsLoaded = true;
+    window.removeEventListener("scroll", maybeLoadMore);
+    return;
+  }
+
   appendProducts();
   window.removeEventListener("scroll", maybeLoadMore);
   window.addEventListener("scroll", maybeLoadMore, { passive: true });
-  renderProductHeading();
 }
 
 whenSiteDataReady(() => {
@@ -83,21 +100,78 @@ function renderEndMarker() {
   if (document.querySelector("#productEndMarker")) return;
   productGrid.insertAdjacentHTML(
     "afterend",
-    '<p id="productEndMarker" class="product-end-marker">已显示全部产品</p>'
+    `<p id="productEndMarker" class="product-end-marker">${productSearchTerm ? "已显示全部匹配产品" : "已显示全部产品"}</p>`
   );
 }
 
 function renderProductHeading() {
-  if (!selectedCategory || !sectionHeading) return;
+  if (!sectionHeading) return;
+  const title = selectedCategory ? selectedCategory.name : "沙发系列";
+  const description = selectedCategory
+    ? `当前展示 ${selectedCategory.name} 产品。可输入产品编号或关键词进一步搜索。`
+    : "点击产品图片打开独立详情页。公开内容无需登录即可查看。";
   sectionHeading.innerHTML = `
-    <p class="eyebrow">Products</p>
-    <h2>${selectedCategory.name}</h2>
-    <p>当前展示 ${selectedCategory.name} 产品。点击导航里的其他分类可切换产品列表。</p>
+    <div>
+      <p class="eyebrow">Products</p>
+      <h2>${title}</h2>
+      <p>${description}</p>
+    </div>
+    <label class="product-search">
+      <span>搜索产品</span>
+      <input id="productSearchInput" type="search" placeholder="输入编号，例如 2672 / GC-S2672" autocomplete="off" value="${escapeAttribute(productSearchTerm)}" />
+    </label>
   `;
 
-  if (!getVisibleProducts().length) {
-    productGrid.innerHTML = '<p class="product-end-marker">该分类下暂无产品</p>';
-    allProductsLoaded = true;
-    window.removeEventListener("scroll", maybeLoadMore);
+  bindProductSearch();
+}
+
+function bindProductSearch() {
+  const input = document.querySelector("#productSearchInput");
+  if (!input) return;
+  input.addEventListener("input", () => {
+    productSearchTerm = input.value.trim();
+    renderProductResults();
+  });
+}
+
+function productMatchesSearch(product, searchTerm) {
+  const terms = normalizeSearchText(searchTerm).split(/\s+/).filter(Boolean);
+  if (!terms.length) return true;
+  const searchText = normalizeSearchText([
+    product.id,
+    product.name,
+    product.category,
+    product.summary,
+    ...(product.tags || []),
+    ...Object.values(product.specs || {}),
+    ...(product.views || []),
+  ].join(" "));
+  return terms.every((term) => searchText.includes(term));
+}
+
+function normalizeSearchText(value) {
+  return String(value || "").toLowerCase().replace(/[\s_-]+/g, "");
+}
+
+function getEmptyProductMessage() {
+  if (productSearchTerm && selectedCategory) {
+    return `没有找到“${escapeHtml(productSearchTerm)}”相关的 ${selectedCategory.name} 产品`;
   }
+  if (productSearchTerm) {
+    return `没有找到“${escapeHtml(productSearchTerm)}”相关的产品`;
+  }
+  return selectedCategory ? "该分类下暂无产品" : "暂无产品";
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function escapeAttribute(value) {
+  return escapeHtml(value);
 }
