@@ -43,31 +43,75 @@
     </header>
 
     <main>
-      <section class="hero" aria-label="欣冠城沙发展示">
-        <div class="sofa-animation" aria-hidden="true">
-          <div class="letter-field">
-            <span style="--sx: -38vw; --sy: -16vh; --tx: -252px; --ty: -206px;">G</span>
-            <span style="--sx: -22vw; --sy: 18vh; --tx: -142px; --ty: -206px;">C</span>
-            <span style="--sx: -4vw; --sy: -22vh; --tx: -34px; --ty: -206px;">S</span>
-            <span style="--sx: 13vw; --sy: 19vh; --tx: 74px; --ty: -206px;">O</span>
-            <span style="--sx: 27vw; --sy: -13vh; --tx: 182px; --ty: -206px;">F</span>
-            <span style="--sx: 30vw; --sy: 10vh; --tx: 290px; --ty: -206px;">A</span>
+      <section class="hero" aria-label="欣冠城沙发广告轮播">
+        <div class="ad-carousel" data-carousel>
+          <div class="ad-slide ad-slide-animation is-active" data-slide>
+            <div class="sofa-animation" aria-hidden="true">
+              <div class="letter-field">
+                <span style="--sx: -38vw; --sy: -16vh; --tx: -252px; --ty: -206px;">G</span>
+                <span style="--sx: -22vw; --sy: 18vh; --tx: -142px; --ty: -206px;">C</span>
+                <span style="--sx: -4vw; --sy: -22vh; --tx: -34px; --ty: -206px;">S</span>
+                <span style="--sx: 13vw; --sy: 19vh; --tx: 74px; --ty: -206px;">O</span>
+                <span style="--sx: 27vw; --sy: -13vh; --tx: 182px; --ty: -206px;">F</span>
+                <span style="--sx: 30vw; --sy: 10vh; --tx: 290px; --ty: -206px;">A</span>
+              </div>
+              <div class="assembly-sofa" aria-hidden="true">
+                <span class="sofa-part part-back"></span>
+                <span class="sofa-part part-seat part-seat-one"></span>
+                <span class="sofa-part part-seat part-seat-two"></span>
+                <span class="sofa-part part-seat part-seat-three"></span>
+                <span class="sofa-part part-arm part-arm-left"></span>
+                <span class="sofa-part part-arm part-arm-right"></span>
+                <span class="sofa-part part-pillow part-pillow-one"></span>
+                <span class="sofa-part part-pillow part-pillow-two"></span>
+                <span class="sofa-part part-leg part-leg-one"></span>
+                <span class="sofa-part part-leg part-leg-two"></span>
+                <span class="assembly-shadow"></span>
+              </div>
+            </div>
           </div>
-          <div class="assembly-sofa" aria-hidden="true">
-            <span class="sofa-part part-back"></span>
-            <span class="sofa-part part-seat part-seat-one"></span>
-            <span class="sofa-part part-seat part-seat-two"></span>
-            <span class="sofa-part part-seat part-seat-three"></span>
-            <span class="sofa-part part-arm part-arm-left"></span>
-            <span class="sofa-part part-arm part-arm-right"></span>
-            <span class="sofa-part part-pillow part-pillow-one"></span>
-            <span class="sofa-part part-pillow part-pillow-two"></span>
-            <span class="sofa-part part-leg part-leg-one"></span>
-            <span class="sofa-part part-leg part-leg-two"></span>
-            <span class="assembly-shadow"></span>
+
+          <div class="ad-slide ad-slide-photo" data-slide>
+            <img src="assets/gcsofa-recliner.png" alt="实物功能沙发功能展示" />
+            <div class="ad-slide-caption">
+              <p class="eyebrow">Functional Sofa</p>
+              <h2>实物功能沙发展示</h2>
+              <p>电动伸展、分区靠背、舒适脚托，适合客厅、影音空间和项目配套。</p>
+            </div>
+            <div class="ad-feature-pins" aria-hidden="true">
+              <span>电动伸展</span>
+              <span>高靠背支撑</span>
+              <span>脚托联动</span>
+            </div>
+          </div>
+
+          <div class="ad-slide ad-slide-photo ad-slide-bed" data-slide>
+            <img src="assets/gcsofa-sectional.png" alt="推拉沙发床功能展示" />
+            <div class="pull-bed-demo" aria-hidden="true">
+              <span>拉出床位</span>
+            </div>
+            <div class="ad-slide-caption">
+              <p class="eyebrow">Pull-Out Sofa Bed</p>
+              <h2>推拉沙发床展示</h2>
+              <p>沙发与临时床位灵活切换，适合公寓、小户型和客房场景。</p>
+            </div>
+            <div class="ad-feature-pins" aria-hidden="true">
+              <span>推拉结构</span>
+              <span>坐卧两用</span>
+              <span>节省空间</span>
+            </div>
+          </div>
+
+          <div class="ad-carousel-dots" aria-label="广告轮播控制">
+            <button class="is-active" type="button" aria-label="显示第 1 页广告" data-carousel-dot></button>
+            <button type="button" aria-label="显示第 2 页广告" data-carousel-dot></button>
+            <button type="button" aria-label="显示第 3 页广告" data-carousel-dot></button>
           </div>
         </div>
-        <div class="hero-copy">
+      </section>
+
+      <section class="showroom-heading" aria-label="欣冠城沙发产品展示中心">
+        <div>
           <p class="eyebrow">GCSOFA Showroom</p>
           <h1>欣冠城沙发产品展示中心</h1>
         </div>
@@ -123,6 +167,6 @@
 
     <script src="data.js?v=20260602-cloud-sync"></script>
     <script src="auth.js"></script>
-    <script src="index.js?v=20260604-product-search"></script>
+    <script src="index.js?v=20260604-home-carousel"></script>
   </body>
 </html>

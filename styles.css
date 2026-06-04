@@ -239,12 +239,9 @@ a {
 
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: clamp(24px, 5vw, 70px);
-  align-items: center;
+  display: block;
   min-height: 570px;
-  padding: clamp(42px, 8vw, 96px) clamp(18px, 5vw, 64px);
+  padding: 0;
   background:
     radial-gradient(circle at 78% 38%, rgba(154, 91, 37, 0.34), transparent 28%),
     linear-gradient(115deg, #111713 0%, #24362f 46%, #eadfcd 100%);
@@ -252,11 +249,31 @@ a {
   overflow: hidden;
 }
 
-.hero-copy {
+.ad-carousel {
   position: relative;
-  z-index: 2;
-  max-width: 500px;
-  align-self: center;
+  min-height: 570px;
+  overflow: hidden;
+}
+
+.ad-slide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.ad-slide.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ad-slide-animation {
+  background:
+    radial-gradient(circle at 50% 52%, rgba(154, 91, 37, 0.34), transparent 32%),
+    linear-gradient(115deg, #111713 0%, #24362f 48%, #eadfcd 100%);
 }
 
 .sofa-animation {
@@ -277,8 +294,8 @@ a {
 
 .letter-field {
   position: absolute;
-  top: 54%;
-  left: 68%;
+  top: 50%;
+  left: 50%;
   width: 0;
   height: 0;
 }
@@ -354,11 +371,13 @@ a {
 
 .assembly-sofa {
   position: absolute;
-  right: clamp(24px, 6vw, 110px);
+  left: 50%;
+  right: auto;
   bottom: clamp(4px, 2vw, 22px);
-  width: min(58vw, 760px);
+  width: min(72vw, 820px);
   aspect-ratio: 2.35 / 1;
   opacity: 0;
+  transform: translateX(-50%);
   animation: assembly-stage 9.5s ease-in-out infinite;
   filter: drop-shadow(0 34px 48px rgba(0, 0, 0, 0.28));
 }
@@ -574,6 +593,145 @@ a {
 
 .hero .eyebrow {
   color: #c8f5ed;
+}
+
+.ad-slide-photo {
+  justify-items: stretch;
+  background: #111713;
+}
+
+.ad-slide-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 570px;
+  object-fit: cover;
+  filter: saturate(1.02) contrast(1.02);
+}
+
+.ad-slide-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(13, 18, 17, 0.78), rgba(13, 18, 17, 0.2) 50%, rgba(13, 18, 17, 0.12)),
+    linear-gradient(0deg, rgba(10, 14, 13, 0.34), transparent 44%);
+}
+
+.ad-slide-caption {
+  position: absolute;
+  left: clamp(22px, 6vw, 92px);
+  bottom: clamp(58px, 9vw, 108px);
+  z-index: 2;
+  max-width: 520px;
+}
+
+.ad-slide-caption .eyebrow {
+  color: #c8f5ed;
+}
+
+.ad-slide-caption h2 {
+  margin: 8px 0 12px;
+  color: #fff;
+  font-size: clamp(30px, 4.6vw, 56px);
+  line-height: 1.05;
+}
+
+.ad-slide-caption p:last-child {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(15px, 2vw, 18px);
+}
+
+.ad-feature-pins {
+  position: absolute;
+  right: clamp(20px, 5vw, 76px);
+  bottom: clamp(42px, 7vw, 84px);
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  max-width: 360px;
+}
+
+.ad-feature-pins span,
+.pull-bed-demo span {
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 8px 12px;
+  backdrop-filter: blur(12px);
+}
+
+.pull-bed-demo {
+  position: absolute;
+  left: 46%;
+  bottom: 14%;
+  z-index: 2;
+  width: min(30vw, 420px);
+  height: min(13vw, 150px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(232, 227, 219, 0.7), rgba(170, 160, 148, 0.52)),
+    rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 42px rgba(0, 0, 0, 0.22);
+  transform: skewX(-8deg);
+}
+
+.pull-bed-demo span {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  transform: skewX(8deg);
+}
+
+.ad-carousel-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  z-index: 4;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+
+.ad-carousel-dots button {
+  width: 34px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
+  cursor: pointer;
+}
+
+.ad-carousel-dots button.is-active {
+  background: #fff;
+}
+
+.showroom-heading {
+  display: grid;
+  justify-items: center;
+  padding: clamp(34px, 5vw, 58px) clamp(18px, 5vw, 64px) 0;
+  text-align: center;
+}
+
+.showroom-heading h1 {
+  max-width: 960px;
+  margin: 8px 0 0;
+  color: var(--ink);
+  font-size: clamp(32px, 5vw, 60px);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.showroom-heading .eyebrow {
+  color: var(--primary);
 }
 
 .hero h1 {
@@ -3157,25 +3315,51 @@ textarea:focus {
     min-height: auto;
   }
 
-  .hero-copy {
-    max-width: 58vw;
-  }
-
-  .hero h1 {
-    max-width: 8.5em;
-    font-size: clamp(24px, 7vw, 32px);
-    line-height: 1.12;
+  .ad-carousel {
+    min-height: 500px;
   }
 
   .letter-field {
-    left: 64%;
+    left: 50%;
+    top: 49%;
     transform: scale(0.72);
   }
 
   .assembly-sofa {
-    right: 12px;
+    left: 50%;
+    right: auto;
     bottom: 6px;
-    width: 76vw;
+    width: 82vw;
+  }
+
+  .ad-slide-photo img {
+    min-height: 500px;
+  }
+
+  .ad-slide-caption {
+    left: 22px;
+    right: 22px;
+    bottom: 76px;
+    max-width: 420px;
+  }
+
+  .ad-feature-pins {
+    left: 22px;
+    right: 22px;
+    bottom: 28px;
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  .pull-bed-demo {
+    left: 34%;
+    bottom: 18%;
+    width: 48vw;
+    height: 18vw;
+  }
+
+  .showroom-heading h1 {
+    font-size: clamp(28px, 8vw, 42px);
   }
 
   .solution-list,
@@ -3267,15 +3451,43 @@ textarea:focus {
   }
 
   .letter-field {
-    left: 60%;
-    top: 62%;
-    transform: scale(0.48);
+    left: 50%;
+    top: 52%;
+    transform: scale(0.45);
   }
 
   .assembly-sofa {
-    width: 92vw;
-    right: 4vw;
+    left: 50%;
+    right: auto;
+    width: 94vw;
     bottom: 4px;
+  }
+
+  .ad-carousel,
+  .ad-slide-photo img {
+    min-height: 430px;
+  }
+
+  .ad-slide-caption {
+    bottom: 96px;
+  }
+
+  .ad-slide-caption h2 {
+    font-size: clamp(28px, 9vw, 38px);
+  }
+
+  .ad-feature-pins {
+    gap: 7px;
+  }
+
+  .ad-feature-pins span,
+  .pull-bed-demo span {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
+  .showroom-heading {
+    padding-top: 30px;
   }
 
   .detail-content {

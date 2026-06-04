@@ -7,6 +7,8 @@ let allProductsLoaded = false;
 const selectedCategoryId = new URLSearchParams(location.search).get("category");
 let selectedCategory = null;
 let productSearchTerm = "";
+let carouselIndex = 0;
+let carouselTimer = null;
 
 function createProductCard(product, index) {
   return `
@@ -91,10 +93,42 @@ function renderProductResults() {
   window.addEventListener("scroll", maybeLoadMore, { passive: true });
 }
 
+initAdCarousel();
+
 whenSiteDataReady(() => {
   auth.updateAccountView();
   renderProductGrid();
 });
+
+function initAdCarousel() {
+  const slides = [...document.querySelectorAll("[data-slide]")];
+  const dots = [...document.querySelectorAll("[data-carousel-dot]")];
+  const carousel = document.querySelector("[data-carousel]");
+  if (!slides.length || !dots.length || !carousel) return;
+
+  const showSlide = (nextIndex) => {
+    carouselIndex = (nextIndex + slides.length) % slides.length;
+    slides.forEach((slide, index) => slide.classList.toggle("is-active", index === carouselIndex));
+    dots.forEach((dot, index) => dot.classList.toggle("is-active", index === carouselIndex));
+  };
+
+  const startCarousel = () => {
+    window.clearInterval(carouselTimer);
+    carouselTimer = window.setInterval(() => showSlide(carouselIndex + 1), 6500);
+  };
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      showSlide(index);
+      startCarousel();
+    });
+  });
+
+  carousel.addEventListener("mouseenter", () => window.clearInterval(carouselTimer));
+  carousel.addEventListener("mouseleave", startCarousel);
+  showSlide(0);
+  startCarousel();
+}
 
 function renderEndMarker() {
   if (document.querySelector("#productEndMarker")) return;
