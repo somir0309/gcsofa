@@ -4,6 +4,7 @@ const sectionHeading = document.querySelector("#products .section-heading");
 const pageSize = 2;
 let renderedCount = 0;
 let allProductsLoaded = false;
+let lastProductRenderSignature = "";
 const selectedCategoryId = new URLSearchParams(location.search).get("category");
 let selectedCategory = null;
 let productSearchTerm = "";
@@ -11,10 +12,13 @@ let carouselIndex = 0;
 let carouselTimer = null;
 
 function createProductCard(product, index) {
+  const prioritizeImage = index === 0 || location.hash === "#products" || Boolean(selectedCategory || productSearchTerm);
+  const imageLoading = prioritizeImage ? "eager" : "lazy";
+  const fetchPriority = prioritizeImage && index === 0 ? "high" : "auto";
   return `
     <article class="product-card">
       <a class="product-image-button" href="detail.html?id=${encodeURIComponent(product.id)}" aria-label="查看 ${product.name} 详情">
-        <img src="${product.image}" alt="${product.name}" loading="lazy" />
+        <img src="${product.image}" alt="${product.name}" loading="${imageLoading}" decoding="async" fetchpriority="${fetchPriority}" width="720" height="540" />
       </a>
       <div class="product-body">
         <p class="eyebrow">${product.category}</p>
@@ -71,16 +75,20 @@ function maybeLoadMore() {
 function renderProductGrid() {
   selectedCategory = selectedCategoryId ? findCategory(selectedCategoryId) : null;
   renderProductHeading();
-  renderProductResults();
+  renderProductResults({ force: true });
 }
 
-function renderProductResults() {
+function renderProductResults({ force = false } = {}) {
+  const products = getVisibleProducts();
+  const signature = getProductRenderSignature(products);
+  if (!force && signature === lastProductRenderSignature) return;
+  lastProductRenderSignature = signature;
+
   renderedCount = 0;
   allProductsLoaded = false;
   productGrid.innerHTML = "";
   document.querySelector("#productEndMarker")?.remove();
 
-  const products = getVisibleProducts();
   if (!products.length) {
     productGrid.innerHTML = `<p class="product-end-marker">${getEmptyProductMessage()}</p>`;
     allProductsLoaded = true;
@@ -94,10 +102,14 @@ function renderProductResults() {
 }
 
 initAdCarousel();
+auth.updateAccountView();
+renderProductGrid();
 
 whenSiteDataReady(() => {
   auth.updateAccountView();
-  renderProductGrid();
+  selectedCategory = selectedCategoryId ? findCategory(selectedCategoryId) : null;
+  renderProductHeading();
+  renderProductResults();
 });
 
 function initAdCarousel() {
@@ -139,6 +151,14 @@ function renderEndMarker() {
     "afterend",
     `<p id="productEndMarker" class="product-end-marker">${productSearchTerm ? "已显示全部匹配产品" : "已显示全部产品"}</p>`
   );
+}
+
+function getProductRenderSignature(products) {
+  return [
+    selectedCategoryId || "",
+    productSearchTerm,
+    products.map((product) => `${product.id}:${product.name}:${product.image}:${product.sortOrder ?? ""}`).join("|"),
+  ].join("::");
 }
 
 function renderProductHeading() {

@@ -1567,15 +1567,23 @@ a {
   border-radius: 8px;
   background: var(--surface);
   box-shadow: 0 10px 26px rgba(23, 32, 51, 0.07);
+  content-visibility: auto;
+  contain-intrinsic-size: 360px;
+}
+
+.product-card:first-child {
+  content-visibility: visible;
 }
 
 .product-image-button {
   display: block;
   width: 100%;
+  min-height: 360px;
   padding: 0;
   border: 0;
   background: #dce2eb;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .product-card img {
