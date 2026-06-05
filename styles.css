@@ -618,6 +618,345 @@ a {
     linear-gradient(0deg, rgba(10, 14, 13, 0.34), transparent 44%);
 }
 
+.ad-slide-3d {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 34%, rgba(200, 245, 237, 0.22), transparent 34%),
+    linear-gradient(135deg, #10201d 0%, #07100e 54%, #17201a 100%);
+}
+
+.ad-slide-3d::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5, 8, 6, 0.72), rgba(5, 8, 6, 0.2) 52%, rgba(5, 8, 6, 0.06)),
+    radial-gradient(circle at 75% 56%, transparent 0 24%, rgba(5, 8, 6, 0.18) 45%, rgba(5, 8, 6, 0.56) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ad-3d-stage {
+  position: absolute;
+  right: clamp(24px, 7vw, 120px);
+  top: 56%;
+  z-index: 2;
+  width: min(52vw, 720px);
+  height: min(38vw, 430px);
+  min-height: 300px;
+  perspective: 1050px;
+  transform: translateY(-50%);
+}
+
+.ad-3d-floor {
+  position: absolute;
+  left: 5%;
+  right: 1%;
+  bottom: 3%;
+  height: 36%;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at center, rgba(200, 245, 237, 0.18), rgba(200, 245, 237, 0.06) 38%, transparent 68%),
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.12) 58%, transparent 74%);
+  filter: blur(5px);
+  transform: rotateX(64deg);
+}
+
+.recliner-model,
+.sofabed-model {
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  width: min(42vw, 560px);
+  height: min(25vw, 292px);
+  transform-style: preserve-3d;
+}
+
+.recliner-model {
+  transform: translateX(-48%) rotateX(58deg) rotateZ(-18deg);
+}
+
+.sofabed-model {
+  transform: translateX(-47%) rotateX(58deg) rotateZ(-15deg);
+}
+
+.recliner-model span,
+.sofabed-model span {
+  position: absolute;
+  display: block;
+  box-shadow: 0 18px 28px rgba(0, 0, 0, 0.28);
+  transform-style: preserve-3d;
+}
+
+.recliner-base,
+.recliner-seat,
+.recliner-footrest,
+.recliner-footrest-extension,
+.recliner-back,
+.recliner-arm,
+.recliner-pillow,
+.sofabed-back,
+.sofabed-arm,
+.sofabed-seat,
+.sofabed-slide-panel,
+.sofabed-mattress {
+  background:
+    linear-gradient(145deg, rgba(91, 154, 141, 0.98), rgba(32, 87, 78, 0.96)),
+    var(--primary);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.recliner-shadow,
+.sofabed-shadow {
+  left: 8%;
+  right: 5%;
+  bottom: -8%;
+  height: 28%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.16) 58%, transparent 74%);
+  filter: blur(12px);
+  box-shadow: none;
+}
+
+.recliner-base {
+  left: 19%;
+  bottom: 12%;
+  width: 56%;
+  height: 19%;
+  border-radius: 20px;
+  transform: translateZ(12px);
+}
+
+.recliner-seat {
+  left: 15%;
+  bottom: 27%;
+  width: 62%;
+  height: 34%;
+  border-radius: 22px;
+  transform: translateZ(38px);
+}
+
+.recliner-back {
+  left: 17%;
+  bottom: 53%;
+  width: 59%;
+  height: 42%;
+  border-radius: 22px 22px 14px 14px;
+  transform-origin: 50% 100%;
+  transform: translateZ(50px) rotateX(0deg);
+}
+
+.ad-slide-recliner.is-active .recliner-back {
+  animation: recliner-back-tilt 6.5s ease-in-out infinite;
+}
+
+.recliner-arm {
+  bottom: 26%;
+  width: 13%;
+  height: 45%;
+  border-radius: 18px;
+  transform: translateZ(64px);
+}
+
+.recliner-arm-left {
+  left: 8%;
+}
+
+.recliner-arm-right {
+  left: 74%;
+}
+
+.recliner-footrest {
+  left: 19%;
+  bottom: 10%;
+  width: 54%;
+  height: 24%;
+  border-radius: 16px;
+  transform-origin: 50% 0;
+  transform: translateZ(48px) rotateX(74deg);
+}
+
+.ad-slide-recliner.is-active .recliner-footrest {
+  animation: recliner-footrest-lift 6.5s ease-in-out infinite;
+}
+
+.recliner-footrest-extension {
+  left: 23%;
+  bottom: 3%;
+  width: 46%;
+  height: 17%;
+  border-radius: 14px;
+  background:
+    linear-gradient(145deg, rgba(108, 176, 160, 0.98), rgba(41, 102, 91, 0.96)),
+    var(--primary);
+  transform-origin: 50% 0;
+  transform: translateZ(42px) translateY(0) rotateX(76deg) scaleY(0.45);
+}
+
+.ad-slide-recliner.is-active .recliner-footrest-extension {
+  animation: recliner-extension-open 6.5s ease-in-out infinite;
+}
+
+.recliner-pillow {
+  left: 30%;
+  bottom: 72%;
+  width: 33%;
+  height: 17%;
+  border-radius: 16px;
+  background: linear-gradient(145deg, rgba(211, 239, 233, 0.96), rgba(111, 178, 164, 0.92));
+  transform: translateZ(76px);
+}
+
+.sofabed-back {
+  left: 7%;
+  bottom: 55%;
+  width: 74%;
+  height: 32%;
+  border-radius: 22px 22px 14px 14px;
+  transform: translateZ(34px);
+}
+
+.sofabed-arm {
+  bottom: 28%;
+  width: 10%;
+  height: 46%;
+  border-radius: 18px;
+  transform: translateZ(60px);
+}
+
+.sofabed-arm-left {
+  left: 0;
+}
+
+.sofabed-arm-right {
+  left: 78%;
+}
+
+.sofabed-seat {
+  left: 7%;
+  bottom: 26%;
+  width: 74%;
+  height: 32%;
+  border-radius: 20px;
+  transform: translateZ(50px);
+}
+
+.sofabed-slide-panel,
+.sofabed-mattress {
+  left: 13%;
+  bottom: 14%;
+  width: 62%;
+  height: 27%;
+  border-radius: 18px;
+  transform: translateZ(30px) translateY(0);
+}
+
+.panel-one {
+  background: linear-gradient(145deg, rgba(80, 141, 128, 0.98), rgba(26, 80, 72, 0.96));
+}
+
+.panel-two {
+  background: linear-gradient(145deg, rgba(113, 181, 165, 0.98), rgba(43, 105, 93, 0.96));
+}
+
+.sofabed-mattress {
+  background: linear-gradient(145deg, rgba(235, 243, 240, 0.98), rgba(170, 205, 196, 0.96));
+  opacity: 0.98;
+}
+
+.ad-slide-sofabed.is-active .panel-one {
+  animation: sofabed-panel-one 6.5s ease-in-out infinite;
+}
+
+.ad-slide-sofabed.is-active .panel-two {
+  animation: sofabed-panel-two 6.5s ease-in-out infinite;
+}
+
+.ad-slide-sofabed.is-active .sofabed-mattress {
+  animation: sofabed-mattress-open 6.5s ease-in-out infinite;
+}
+
+.sofabed-handle {
+  left: 42%;
+  bottom: 23%;
+  width: 17%;
+  height: 5%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  transform: translateZ(86px);
+}
+
+.ad-slide-sofabed.is-active .sofabed-handle {
+  animation: sofabed-handle-pull 6.5s ease-in-out infinite;
+}
+
+.motion-track {
+  position: absolute;
+  left: 44%;
+  right: 11%;
+  bottom: 18%;
+  height: 3px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.motion-track::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #c8f5ed;
+  transform: translateX(-100%);
+}
+
+.ad-slide-sofabed.is-active .motion-track::before {
+  animation: motion-track-fill 6.5s ease-in-out infinite;
+}
+
+.motion-label {
+  position: absolute;
+  z-index: 2;
+  width: max-content;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  padding: 8px 12px;
+  opacity: 0;
+  backdrop-filter: blur(12px);
+}
+
+.recliner-label-one {
+  right: 20%;
+  top: 18%;
+}
+
+.recliner-label-two {
+  right: 11%;
+  bottom: 22%;
+}
+
+.sofabed-label-one {
+  right: 12%;
+  bottom: 32%;
+}
+
+.sofabed-label-two {
+  right: 22%;
+  top: 20%;
+}
+
+.ad-slide-3d.is-active .motion-label {
+  animation: motion-label-pop 6.5s ease-in-out infinite;
+}
+
+.ad-slide-3d.is-active .motion-label:nth-of-type(3) {
+  animation-delay: 0.55s;
+}
+
 .ad-slide-video-embed {
   overflow: hidden;
   background: #050806;
@@ -646,7 +985,7 @@ a {
   position: absolute;
   left: clamp(22px, 6vw, 92px);
   bottom: clamp(58px, 9vw, 108px);
-  z-index: 2;
+  z-index: 3;
   max-width: 520px;
 }
 
@@ -684,7 +1023,7 @@ a {
   position: absolute;
   right: clamp(20px, 5vw, 76px);
   bottom: clamp(42px, 7vw, 84px);
-  z-index: 2;
+  z-index: 3;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -965,6 +1304,156 @@ a {
 @keyframes video-progress {
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes recliner-back-tilt {
+  0%,
+  22% {
+    transform: translateZ(50px) rotateX(0deg);
+  }
+
+  48%,
+  78% {
+    transform: translateZ(50px) rotateX(-20deg) translateY(4px);
+  }
+
+  100% {
+    transform: translateZ(50px) rotateX(0deg);
+  }
+}
+
+@keyframes recliner-footrest-lift {
+  0%,
+  20% {
+    transform: translateZ(48px) rotateX(74deg);
+  }
+
+  50%,
+  78% {
+    transform: translateZ(70px) translateY(-34px) rotateX(12deg);
+  }
+
+  100% {
+    transform: translateZ(48px) rotateX(74deg);
+  }
+}
+
+@keyframes recliner-extension-open {
+  0%,
+  20% {
+    transform: translateZ(42px) translateY(0) rotateX(76deg) scaleY(0.45);
+    opacity: 0.4;
+  }
+
+  50%,
+  78% {
+    transform: translateZ(76px) translateY(-82px) rotateX(8deg) scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateZ(42px) translateY(0) rotateX(76deg) scaleY(0.45);
+    opacity: 0.4;
+  }
+}
+
+@keyframes sofabed-panel-one {
+  0%,
+  18% {
+    transform: translateZ(30px) translateY(0);
+  }
+
+  54%,
+  82% {
+    transform: translateZ(34px) translateY(-72px);
+  }
+
+  100% {
+    transform: translateZ(30px) translateY(0);
+  }
+}
+
+@keyframes sofabed-panel-two {
+  0%,
+  22% {
+    transform: translateZ(30px) translateY(0);
+  }
+
+  56%,
+  82% {
+    transform: translateZ(38px) translateY(-132px);
+  }
+
+  100% {
+    transform: translateZ(30px) translateY(0);
+  }
+}
+
+@keyframes sofabed-mattress-open {
+  0%,
+  24% {
+    transform: translateZ(46px) translateY(0) scaleY(0.52);
+    opacity: 0;
+  }
+
+  58%,
+  82% {
+    transform: translateZ(58px) translateY(-176px) scaleY(1.02);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateZ(46px) translateY(0) scaleY(0.52);
+    opacity: 0;
+  }
+}
+
+@keyframes sofabed-handle-pull {
+  0%,
+  22% {
+    transform: translateZ(86px) translateY(0);
+  }
+
+  56%,
+  82% {
+    transform: translateZ(96px) translateY(-140px);
+  }
+
+  100% {
+    transform: translateZ(86px) translateY(0);
+  }
+}
+
+@keyframes motion-track-fill {
+  0%,
+  20% {
+    transform: translateX(-100%);
+  }
+
+  58%,
+  82% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes motion-label-pop {
+  0%,
+  18%,
+  92%,
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  34%,
+  78% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -3590,6 +4079,27 @@ textarea:focus {
     min-height: 500px;
   }
 
+  .ad-3d-stage {
+    right: -12px;
+    top: 38%;
+    width: 92vw;
+    height: 300px;
+    min-height: 260px;
+    transform: translateY(-50%) scale(0.86);
+    transform-origin: center;
+  }
+
+  .recliner-model,
+  .sofabed-model {
+    width: 500px;
+    height: 270px;
+  }
+
+  .motion-label {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+
   .ad-video-embed {
     transform: scale(1.18);
   }
@@ -3676,6 +4186,7 @@ textarea:focus {
 @media (max-width: 640px) {
   .topbar {
     align-items: start;
+    position: relative;
   }
 
   .brand {
