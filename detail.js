@@ -529,8 +529,8 @@ function readCostSheetFile(file, product, message) {
       upsertProduct(product);
       renderDetail();
     })
-    .catch(() => {
-      setCostSheetMessage(message, "成本分析表保存失败：请确认上传服务可用，并重新上传。", true);
+    .catch((error) => {
+      setCostSheetMessage(message, `成本分析表保存失败：${getUploadErrorMessage(error)}`, true);
     });
 }
 
@@ -552,17 +552,31 @@ function downloadCostSheet(sheet) {
 }
 
 async function uploadCostSheetToServer(file, productId = "product") {
+  const uploadPath = `server-data/cost-sheets/${sanitizeUploadPathSegment(productId)}/${createCostSheetUploadName(file.name)}`;
+  const contentType = file.type || getExcelMimeType(file.name);
+  const directUpload = await uploadCostSheetDirectly(file, uploadPath, contentType);
+  if (directUpload) {
+    return {
+      name: file.name,
+      uploadedAt: formatDateTime(new Date()),
+      dataUrl: normalizeUploadedPath(directUpload.url),
+      path: normalizeUploadedPath(directUpload.url),
+      size: file.size,
+      type: contentType,
+    };
+  }
+
   const response = await fetch(`${getLocalServerOrigin()}/api/cost-sheets?productId=${encodeURIComponent(productId)}&fileName=${encodeURIComponent(file.name)}`, {
     method: "POST",
     headers: {
-      "Content-Type": file.type || getExcelMimeType(file.name),
+      "Content-Type": contentType,
       "X-Product-Id": productId,
     },
     body: file,
   });
-  if (!response.ok) throw new Error("upload failed");
-  const data = await response.json();
-  if (!data.ok || !data.path) throw new Error("upload failed");
+  const data = await readJsonResponse(response);
+  if (!response.ok) throw new Error(data.message || `上传服务返回 ${response.status}`);
+  if (!data.ok || !data.path) throw new Error(data.message || "上传服务没有返回文件地址");
   return {
     name: data.name || file.name,
     uploadedAt: formatDateTime(new Date()),
@@ -571,6 +585,95 @@ async function uploadCostSheetToServer(file, productId = "product") {
     size: data.size || file.size,
     type: file.type || getExcelMimeType(file.name),
   };
+}
+
+async function uploadCostSheetDirectly(file, uploadPath, contentType) {
+  if (!window.uploadBlobFile) {
+    await waitForBlobUploader();
+  }
+  if (!window.uploadBlobFile) return null;
+
+  const message = document.querySelector("#costSheetMessage");
+  setCostSheetMessage(message, `正在上传到云端：${file.name} ...`);
+  try {
+    return await window.uploadBlobFile({
+      pathname: uploadPath,
+      file,
+      contentType,
+      onProgress: ({ percentage }) => {
+        if (Number.isFinite(percentage)) {
+          setCostSheetMessage(message, `正在上传到云端：${file.name}（${Math.round(percentage)}%）...`);
+        }
+      },
+    });
+  } catch (error) {
+    if (file.size <= 4 * 1024 * 1024) {
+      console.warn("Direct cost sheet upload failed, falling back to server upload", error);
+      return null;
+    }
+    throw error;
+  }
+}
+
+function waitForBlobUploader() {
+  return new Promise((resolve) => {
+    if (window.uploadBlobFile) {
+      resolve();
+      return;
+    }
+    const timer = window.setTimeout(resolve, 1800);
+    window.addEventListener(
+      "gcsofa-blob-uploader-ready",
+      () => {
+        window.clearTimeout(timer);
+        resolve();
+      },
+      { once: true }
+    );
+  });
+}
+
+async function readJsonResponse(response) {
+  try {
+    return await response.json();
+  } catch {
+    return {};
+  }
+}
+
+function getUploadErrorMessage(error) {
+  const message = error?.message || "";
+  if (/body|payload|too large|413|4\.5/i.test(message)) {
+    return "文件较大，服务端中转失败。请刷新页面后重试，系统会优先使用云端直传。";
+  }
+  if (/token|授权|Blob|configured/i.test(message)) {
+    return "云端 Blob 上传授权异常，请刷新页面后重新上传。";
+  }
+  if (/network|fetch|Failed to fetch/i.test(message)) {
+    return "网络连接上传服务失败，请检查网络后重新上传。";
+  }
+  return message || "请确认上传服务可用，并重新上传。";
+}
+
+function createCostSheetUploadName(fileName) {
+  const extension = getUploadExtension(fileName) || ".xlsx";
+  const baseName = sanitizeUploadPathSegment(String(fileName || "cost-sheet").slice(0, -extension.length), "cost-sheet");
+  const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
+  return `${timestamp}-${baseName}${extension}`;
+}
+
+function getUploadExtension(fileName) {
+  const match = String(fileName).toLowerCase().match(/\.[^.]+$/);
+  return match ? match[0] : "";
+}
+
+function sanitizeUploadPathSegment(value, fallback = "file") {
+  return String(value || fallback)
+    .replace(/[<>:"/\\|?*\x00-\x1f]/g, "-")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 100) || fallback;
 }
 
 function getLocalServerOrigin() {
