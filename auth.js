@@ -28,6 +28,7 @@ function setupAuth({ onChange } = {}) {
     passwordInput: document.querySelector("#passwordInput"),
     adminNavLink: document.querySelector("#adminNavLink"),
     progressNavLink: document.querySelector("#progressNavLink"),
+    topSofasNavLink: document.querySelector("#topSofasNavLink"),
   };
 
   function updateAccountView() {
@@ -49,6 +50,10 @@ function setupAuth({ onChange } = {}) {
 
     if (els.progressNavLink) {
       els.progressNavLink.classList.toggle("hidden", !userCan("production", user));
+    }
+
+    if (els.topSofasNavLink) {
+      els.topSofasNavLink.classList.toggle("hidden", !userCan("topSofas", user));
     }
 
     if (typeof onChange === "function") {

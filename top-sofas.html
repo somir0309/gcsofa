@@ -1,0 +1,875 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>欣冠城 GCSOFA 热销选品榜</title>
+    <link rel="icon" type="image/png" href="assets/gcsofa-favicon.png" />
+    <link rel="stylesheet" href="styles.css?v=20260618-mobile-sync" />
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #ffffff;
+        --wash: #f4f7fb;
+        --brand: var(--primary);
+        --brand-dark: var(--primary-dark);
+        --accent: #b45309;
+        --good: #15803d;
+        --shadow: 0 18px 45px rgba(31, 41, 51, 0.12);
+      }
+
+      body.top-sofas-page {
+        background: var(--wash);
+      }
+
+      body.top-sofas-page .nav a.is-active {
+        color: var(--primary);
+      }
+
+      .top-sofas-main {
+        padding: 0 clamp(16px, 4vw, 56px) 54px;
+      }
+
+      .page-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.8fr);
+        gap: 24px;
+        align-items: end;
+        max-width: 1360px;
+        margin: 32px auto 22px;
+      }
+
+      .eyebrow {
+        margin: 0 0 9px;
+        color: var(--brand-dark);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(30px, 4vw, 52px);
+        line-height: 1.08;
+      }
+
+      .head-copy {
+        max-width: 760px;
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .refresh-card {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .refresh-card dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 10px 14px;
+        margin: 0;
+      }
+
+      .refresh-card dt {
+        color: var(--muted);
+      }
+
+      .refresh-card dd {
+        margin: 0;
+        font-weight: 700;
+        text-align: right;
+      }
+
+      .summary-grid,
+      .workspace {
+        max-width: 1360px;
+        margin-inline: auto;
+      }
+
+      .summary-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+
+      .metric {
+        min-height: 112px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 18px;
+        background: white;
+      }
+
+      .metric span {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .metric strong {
+        display: block;
+        margin-top: 10px;
+        font-size: 30px;
+        line-height: 1;
+      }
+
+      .metric small {
+        display: block;
+        margin-top: 10px;
+        color: var(--brand-dark);
+      }
+
+      .workspace {
+        display: grid;
+        grid-template-columns: 285px minmax(0, 1fr);
+        gap: 18px;
+        align-items: start;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+      }
+
+      .filters {
+        position: sticky;
+        top: 92px;
+        padding: 18px;
+      }
+
+      .panel-title {
+        margin: 0 0 14px;
+        font-size: 18px;
+      }
+
+      .field {
+        display: grid;
+        gap: 7px;
+        margin-top: 14px;
+      }
+
+      .field span {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .field input,
+      .field select {
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        min-height: 40px;
+        padding: 0 12px;
+        background: #fbfdff;
+        color: var(--ink);
+      }
+
+      .platform-tabs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .platform-tabs button,
+      .clear-btn {
+        min-height: 40px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 0 12px;
+        color: #364152;
+        background: white;
+        cursor: pointer;
+        text-align: left;
+      }
+
+      .platform-tabs button.is-active {
+        border-color: var(--brand);
+        color: white;
+        background: var(--brand);
+      }
+
+      .clear-btn {
+        width: 100%;
+        margin-top: 16px;
+        text-align: center;
+      }
+
+      .content-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px solid var(--line);
+        padding: 16px 18px;
+      }
+
+      .content-head h2 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      .content-head p {
+        margin: 5px 0 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .view-toggle {
+        display: flex;
+        gap: 8px;
+      }
+
+      .view-toggle button {
+        min-width: 42px;
+        min-height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: white;
+        cursor: pointer;
+      }
+
+      .view-toggle button.is-active {
+        border-color: var(--brand);
+        color: white;
+        background: var(--brand);
+      }
+
+      .product-list {
+        display: grid;
+        gap: 12px;
+        padding: 16px;
+      }
+
+      .product-list.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      body.top-sofas-page .product-card {
+        display: grid;
+        grid-template-columns: minmax(260px, 32%) minmax(0, 1fr);
+        min-height: 0;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      body.top-sofas-page .product-list.grid .product-card {
+        grid-template-columns: 1fr;
+      }
+
+      body.top-sofas-page .product-media {
+        position: relative;
+        align-self: start;
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        background: #e8edf3;
+      }
+
+      body.top-sofas-page .product-list.grid .product-media {
+        aspect-ratio: 1 / 1;
+      }
+
+      body.top-sofas-page .product-media img {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        max-height: none;
+        object-fit: cover;
+        display: block;
+      }
+
+      body.top-sofas-page .product-media.is-placeholder img {
+        object-fit: contain;
+        padding: 18px;
+      }
+
+      .rank {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        border-radius: 8px;
+        padding: 6px 9px;
+        color: white;
+        background: rgba(17, 94, 89, 0.92);
+        font-weight: 800;
+      }
+
+      .product-body {
+        display: grid;
+        gap: 10px;
+        padding: 15px;
+      }
+
+      .product-topline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .platform-badge,
+      .signal-badge,
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 26px;
+        border-radius: 8px;
+        padding: 0 8px;
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .platform-badge {
+        color: var(--brand-dark);
+        background: #ccfbf1;
+      }
+
+      .signal-badge {
+        color: #92400e;
+        background: #fef3c7;
+      }
+
+      body.top-sofas-page .product-body h3.product-title {
+        margin: 0;
+        font-size: clamp(20px, 1.7vw, 28px);
+        line-height: 1.35;
+        font-weight: 800;
+      }
+
+      .product-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .product-meta strong {
+        color: var(--ink);
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      }
+
+      .tag {
+        color: #475467;
+        background: #eef2f6;
+        font-weight: 600;
+      }
+
+      .note {
+        margin: 0;
+        color: #4b5565;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .card-actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .card-actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 36px;
+        border-radius: 8px;
+        padding: 0 12px;
+        color: white;
+        background: var(--brand);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .price {
+        color: var(--accent);
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .empty {
+        border: 1px dashed var(--line);
+        border-radius: 8px;
+        padding: 38px 18px;
+        color: var(--muted);
+        text-align: center;
+        background: white;
+      }
+
+      .keyword-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 14px;
+      }
+
+      .keyword-strip button {
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        min-height: 32px;
+        padding: 0 10px;
+        background: white;
+        cursor: pointer;
+      }
+
+      .top-sofas-gate {
+        max-width: 1360px;
+        margin: 18px auto 0;
+      }
+
+      @media (max-width: 980px) {
+        .page-head,
+        .workspace {
+          grid-template-columns: 1fr;
+        }
+
+        .summary-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .filters {
+          position: static;
+        }
+
+        .product-list.grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .top-sofas-main {
+          padding-inline: 12px;
+        }
+
+        .summary-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .content-head,
+        body.top-sofas-page .product-card,
+        .card-actions {
+          grid-template-columns: 1fr;
+        }
+
+        .content-head,
+        .card-actions {
+          display: grid;
+        }
+      }
+    </style>
+  </head>
+  <body class="top-sofas-page">
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="欣冠城 GCSOFA 首页">
+        <img class="brand-logo" src="assets/gcsofa-logo-small.png" alt="欣冠城 GCSOFA 标志" />
+        <span>
+          <strong>欣冠城</strong>
+          <small>GCSOFA · 沙发定制与批发</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <div class="nav-dropdown">
+          <a class="nav-trigger" href="products.html">产品</a>
+          <div class="dropdown-menu" aria-label="产品分类">
+            <a href="products.html?category=europe#products">欧洲款式</a>
+            <a href="products.html?category=japan#products">日本款式</a>
+            <a href="products.html?category=middle-east#products">中东款式</a>
+            <a href="products.html?category=latin-america#products">拉美款式</a>
+          </div>
+        </div>
+        <a href="factory.html">工厂介绍</a>
+        <a href="news.html">家具资讯</a>
+        <a id="topSofasNavLink" class="is-active hidden" href="top-sofas.html">热销选品</a>
+        <a id="progressNavLink" class="hidden" href="progress.html">生产进度</a>
+        <a id="adminNavLink" class="hidden" href="admin.html">后台</a>
+        <a href="contact.html">联系</a>
+      </nav>
+      <div class="account-bar">
+        <span id="accountStatus" class="account-status">未登录</span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">登录</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">退出</button>
+      </div>
+    </header>
+
+    <main class="top-sofas-main">
+      <section class="page-head">
+        <div>
+          <p class="eyebrow">市场观察</p>
+          <h1>平台热销沙发前十</h1>
+          <p class="head-copy">
+            聚合亚马逊、威费尔、抖音海外小店的热卖、畅销榜和平台推荐榜单，用于内部选品、价格带判断和卖点追踪。
+          </p>
+        </div>
+        <aside class="refresh-card" aria-label="数据更新信息">
+          <dl>
+            <dt>最近抓取</dt>
+            <dd id="capturedAt">--</dd>
+            <dt>更新频率</dt>
+            <dd id="updateFrequency">--</dd>
+            <dt>数据状态</dt>
+            <dd id="sourceMode">--</dd>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="topSofasGate" class="top-sofas-gate hidden" aria-live="polite"></section>
+
+      <section class="summary-grid" data-top-sofas-content aria-label="榜单摘要">
+        <div class="metric">
+          <span>今日产品数</span>
+          <strong id="totalProducts">0</strong>
+          <small>跨 3 个平台</small>
+        </div>
+        <div class="metric">
+          <span>平均价格</span>
+          <strong id="averagePrice">$0</strong>
+          <small>用于判断主流价格带</small>
+        </div>
+        <div class="metric">
+          <span>高频品类</span>
+          <strong id="topCategory">--</strong>
+          <small>按上榜次数统计</small>
+        </div>
+        <div class="metric">
+          <span>最高评论量</span>
+          <strong id="maxReviews">0</strong>
+          <small>辅助判断成熟爆款</small>
+        </div>
+      </section>
+
+      <section class="workspace" data-top-sofas-content>
+        <aside class="panel filters" aria-label="筛选条件">
+          <h2 class="panel-title">筛选</h2>
+          <span class="field">
+            <span>平台</span>
+            <span class="platform-tabs" id="platformTabs"></span>
+          </span>
+          <label class="field">
+            <span>关键词</span>
+            <input id="searchInput" type="search" placeholder="搜索标题、标签或备注" autocomplete="off" />
+          </label>
+          <label class="field">
+            <span>品类</span>
+            <select id="categorySelect">
+              <option value="all">全部品类</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>排序</span>
+            <select id="sortSelect">
+              <option value="platformRank">平台排名</option>
+              <option value="priceHigh">价格从高到低</option>
+              <option value="priceLow">价格从低到高</option>
+              <option value="reviews">评论数最多</option>
+              <option value="rating">评分最高</option>
+            </select>
+          </label>
+          <div class="keyword-strip" id="keywordStrip" aria-label="快捷标签"></div>
+          <button class="clear-btn" id="clearBtn" type="button">重置筛选</button>
+        </aside>
+
+        <section class="panel" aria-label="热销产品列表">
+          <div class="content-head">
+            <div>
+              <h2 id="resultTitle">全部平台</h2>
+              <p id="resultCount">正在读取数据</p>
+            </div>
+            <div class="view-toggle" aria-label="视图切换">
+              <button id="listViewBtn" class="is-active" type="button" title="列表视图">☰</button>
+              <button id="gridViewBtn" type="button" title="卡片视图">▦</button>
+            </div>
+          </div>
+          <div id="productList" class="product-list" aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="loginDialog" class="dialog">
+      <form id="loginForm" class="dialog-card" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>帐号登录</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="关闭登录窗口" type="button" data-close-login>×</button>
+        </div>
+        <label>
+          <span>帐号</span>
+          <input id="usernameInput" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          <span>密码</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <p id="loginMessage" class="form-message" role="status"></p>
+        <button class="button button-primary button-full" type="submit">登录</button>
+      </form>
+    </dialog>
+
+    <script src="top-sofas-data.js"></script>
+    <script src="data.js?v=20260618-mobile-sync"></script>
+    <script src="auth.js"></script>
+    <script>
+      const state = {
+        platform: "all",
+        query: "",
+        category: "all",
+        sort: "platformRank",
+        view: "list"
+      };
+
+      const data = window.GCSOFA_TOP_SOFAS || { products: [] };
+      const products = data.products || [];
+      const platformNames = ["全部平台", "亚马逊", "威费尔", "抖音海外小店"];
+      const quickTags = ["组合沙发", "沙发床", "功能沙发", "小户型", "云朵款", "可拆洗", "高客单"];
+
+      const els = {
+        capturedAt: document.getElementById("capturedAt"),
+        updateFrequency: document.getElementById("updateFrequency"),
+        sourceMode: document.getElementById("sourceMode"),
+        totalProducts: document.getElementById("totalProducts"),
+        averagePrice: document.getElementById("averagePrice"),
+        topCategory: document.getElementById("topCategory"),
+        maxReviews: document.getElementById("maxReviews"),
+        platformTabs: document.getElementById("platformTabs"),
+        searchInput: document.getElementById("searchInput"),
+        categorySelect: document.getElementById("categorySelect"),
+        sortSelect: document.getElementById("sortSelect"),
+        keywordStrip: document.getElementById("keywordStrip"),
+        clearBtn: document.getElementById("clearBtn"),
+        resultTitle: document.getElementById("resultTitle"),
+        resultCount: document.getElementById("resultCount"),
+        productList: document.getElementById("productList"),
+        listViewBtn: document.getElementById("listViewBtn"),
+        gridViewBtn: document.getElementById("gridViewBtn"),
+        gate: document.getElementById("topSofasGate"),
+        protectedContent: document.querySelectorAll("[data-top-sofas-content]")
+      };
+
+      function formatPrice(product) {
+        return `${product.currency || "$"}${Number(product.price || 0).toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        })}`;
+      }
+
+      function countBy(items, key) {
+        return items.reduce((acc, item) => {
+          const value = item[key] || "未分类";
+          acc[value] = (acc[value] || 0) + 1;
+          return acc;
+        }, {});
+      }
+
+      function getTopValue(items, key) {
+        const counts = countBy(items, key);
+        return Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0] || "--";
+      }
+
+      function setupSummary() {
+        const average = products.reduce((sum, product) => sum + Number(product.price || 0), 0) / Math.max(products.length, 1);
+        const maxReviews = Math.max(...products.map((product) => Number(product.reviewCount || 0)), 0);
+
+        els.capturedAt.textContent = data.capturedAt || "--";
+        els.updateFrequency.textContent = data.updateFrequency || "--";
+        els.sourceMode.textContent = data.sourceMode || "--";
+        els.totalProducts.textContent = products.length;
+        els.averagePrice.textContent = `$${Math.round(average).toLocaleString("en-US")}`;
+        els.topCategory.textContent = getTopValue(products, "category");
+        els.maxReviews.textContent = maxReviews.toLocaleString("en-US");
+      }
+
+      function setupControls() {
+        els.platformTabs.innerHTML = platformNames
+          .map((name) => {
+            const value = name === "全部平台" ? "all" : name;
+            return `<button type="button" data-platform="${value}">${name}</button>`;
+          })
+          .join("");
+
+        const categories = [...new Set(products.map((product) => product.category))].sort((a, b) => a.localeCompare(b, "zh-CN"));
+        els.categorySelect.innerHTML += categories.map((category) => `<option value="${category}">${category}</option>`).join("");
+
+        els.keywordStrip.innerHTML = quickTags.map((tag) => `<button type="button" data-tag="${tag}">${tag}</button>`).join("");
+
+        els.platformTabs.addEventListener("click", (event) => {
+          const button = event.target.closest("button[data-platform]");
+          if (!button) return;
+          state.platform = button.dataset.platform;
+          render();
+        });
+
+        els.keywordStrip.addEventListener("click", (event) => {
+          const button = event.target.closest("button[data-tag]");
+          if (!button) return;
+          state.query = button.dataset.tag;
+          els.searchInput.value = state.query;
+          render();
+        });
+
+        els.searchInput.addEventListener("input", () => {
+          state.query = els.searchInput.value.trim();
+          render();
+        });
+
+        els.categorySelect.addEventListener("change", () => {
+          state.category = els.categorySelect.value;
+          render();
+        });
+
+        els.sortSelect.addEventListener("change", () => {
+          state.sort = els.sortSelect.value;
+          render();
+        });
+
+        els.clearBtn.addEventListener("click", () => {
+          state.platform = "all";
+          state.query = "";
+          state.category = "all";
+          state.sort = "platformRank";
+          els.searchInput.value = "";
+          els.categorySelect.value = "all";
+          els.sortSelect.value = "platformRank";
+          render();
+        });
+
+        els.listViewBtn.addEventListener("click", () => {
+          state.view = "list";
+          render();
+        });
+
+        els.gridViewBtn.addEventListener("click", () => {
+          state.view = "grid";
+          render();
+        });
+      }
+
+      function getFilteredProducts() {
+        const query = state.query.toLowerCase();
+        const filtered = products.filter((product) => {
+          const matchesPlatform = state.platform === "all" || product.platform === state.platform;
+          const matchesCategory = state.category === "all" || product.category === state.category;
+          const searchTarget = [product.title, product.platform, product.category, product.salesSignal, product.note, ...(product.tags || [])]
+            .join(" ")
+            .toLowerCase();
+          return matchesPlatform && matchesCategory && (!query || searchTarget.includes(query.toLowerCase()));
+        });
+
+        return filtered.sort((a, b) => {
+          if (state.sort === "priceHigh") return b.price - a.price;
+          if (state.sort === "priceLow") return a.price - b.price;
+          if (state.sort === "reviews") return b.reviewCount - a.reviewCount;
+          if (state.sort === "rating") return b.rating - a.rating;
+          return a.platform.localeCompare(b.platform) || a.rank - b.rank;
+        });
+      }
+
+      function renderPlatforms() {
+        els.platformTabs.querySelectorAll("button").forEach((button) => {
+          button.classList.toggle("is-active", button.dataset.platform === state.platform);
+        });
+      }
+
+      function renderProducts(items) {
+        els.productList.classList.toggle("grid", state.view === "grid");
+        els.listViewBtn.classList.toggle("is-active", state.view === "list");
+        els.gridViewBtn.classList.toggle("is-active", state.view === "grid");
+
+        if (!items.length) {
+          els.productList.innerHTML = `<div class="empty">没有符合条件的产品，换个平台或关键词试试。</div>`;
+          return;
+        }
+
+        els.productList.innerHTML = items
+          .map((product) => {
+            const tags = (product.tags || []).map((tag) => `<span class="tag">${tag}</span>`).join("");
+            const imageSource = product.thumbnail || product.localImage || product.image;
+            const fallbackImage = data.imageCache?.fallback || "assets/top-sofas/image-unavailable.webp";
+            const placeholderClass = product.imageStatus === "placeholder" ? " is-placeholder" : "";
+            return `
+              <article class="product-card">
+                <div class="product-media${placeholderClass}">
+                  <img src="${imageSource}" alt="${product.title}" loading="lazy" data-fallback="${fallbackImage}" onerror="this.onerror=null; this.closest('.product-media')?.classList.add('is-placeholder'); this.src=this.dataset.fallback;" />
+                  <span class="rank">#${product.rank}</span>
+                </div>
+                <div class="product-body">
+                  <div class="product-topline">
+                    <span class="platform-badge">${product.platform}</span>
+                    <span class="signal-badge">${product.salesSignal}</span>
+                  </div>
+                  <h3 class="product-title">${product.title}</h3>
+                  <div class="product-meta">
+                    <span>品类 <strong>${product.category}</strong></span>
+                    <span>评分 <strong>${product.rating}</strong></span>
+                    <span>评论 <strong>${Number(product.reviewCount).toLocaleString("en-US")}</strong></span>
+                  </div>
+                  <div class="tags">${tags}</div>
+                  <p class="note">${product.note}</p>
+                  <div class="card-actions">
+                    <span class="price">${formatPrice(product)}</span>
+                    <a href="${product.productUrl}" target="_blank" rel="noreferrer">打开来源</a>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+      }
+
+      function render() {
+        const items = getFilteredProducts();
+        renderPlatforms();
+        els.resultTitle.textContent = state.platform === "all" ? "全部平台" : state.platform;
+        els.resultCount.textContent = `当前显示 ${items.length} 个产品`;
+        renderProducts(items);
+      }
+
+      function renderAccess(user = getCurrentUser()) {
+        const canView = userCan("topSofas", user);
+        els.protectedContent.forEach((section) => section.classList.toggle("hidden", !canView));
+
+        if (canView) {
+          els.gate.classList.add("hidden");
+          els.gate.innerHTML = "";
+          render();
+          return;
+        }
+
+        els.gate.classList.remove("hidden");
+        els.gate.innerHTML = `
+          <div class="info-panel">
+            <h2>需要热销选品访问权限</h2>
+            <p>请使用已授权帐号登录，或联系网站管理员在后台“帐号权限”中勾选“热销选品”。</p>
+            <button class="button button-primary" type="button" id="topSofasLoginBtn">登录帐号</button>
+          </div>
+        `;
+        document.querySelector("#topSofasLoginBtn")?.addEventListener("click", () => topSofasAuth.openLogin());
+      }
+
+      setupSummary();
+      setupControls();
+      const topSofasAuth = setupAuth({ onChange: renderAccess });
+      whenSiteDataReady(() => topSofasAuth.updateAccountView());
+    </script>
+  </body>
+</html>

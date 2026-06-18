@@ -18,6 +18,7 @@ const PERMISSION_MODULES = [
   { id: "priceEdit", label: "售价增删改" },
   { id: "costUpload", label: "成本分析表上传" },
   { id: "costDownload", label: "成本分析表下载" },
+  { id: "topSofas", label: "热销选品" },
   { id: "production", label: "生产进度" },
   { id: "productionEdit", label: "生产进度增删改" },
   { id: "productionDeptCutting", label: "生产进度-裁剪" },
@@ -36,8 +37,8 @@ const DEFAULT_ROLE_PERMISSIONS = {
   customer: ["images", "specs", "sellingPoints", "dimensions", "internal", "price"],
   employee: ["images", "specs", "sellingPoints", "dimensions", "production"],
   sales: ["images", "specs", "sellingPoints", "dimensions", "internal", "price", "production"],
-  boss: ["images", "specs", "sellingPoints", "dimensions", "internal", "price", "priceEdit", "costUpload", "costDownload", "production", "productionEdit", "productionDeptCutting", "productionDeptFoam", "productionDeptSewing", "productionDeptWood", "productionDeptBase", "productionDeptPadding", "productionDeptUpholstery", "productionDeptPacking"],
-  admin: ["images", "specs", "sellingPoints", "dimensions", "internal", "price", "priceEdit", "costUpload", "costDownload", "production", "productionEdit", "productionDeptCutting", "productionDeptFoam", "productionDeptSewing", "productionDeptWood", "productionDeptBase", "productionDeptPadding", "productionDeptUpholstery", "productionDeptPacking"],
+  boss: ["images", "specs", "sellingPoints", "dimensions", "internal", "price", "priceEdit", "costUpload", "costDownload", "topSofas", "production", "productionEdit", "productionDeptCutting", "productionDeptFoam", "productionDeptSewing", "productionDeptWood", "productionDeptBase", "productionDeptPadding", "productionDeptUpholstery", "productionDeptPacking"],
+  admin: ["images", "specs", "sellingPoints", "dimensions", "internal", "price", "priceEdit", "costUpload", "costDownload", "topSofas", "production", "productionEdit", "productionDeptCutting", "productionDeptFoam", "productionDeptSewing", "productionDeptWood", "productionDeptBase", "productionDeptPadding", "productionDeptUpholstery", "productionDeptPacking"],
 };
 
 const GCSOFA_DEFAULT_ACCOUNTS = {
@@ -3340,6 +3341,1236 @@ const GCSOFA_PRODUCT_COPY_MAP = {
       "source": "D:\\GCSOFA\\UP\\UP\\2470\\S2470 3+2+1P 不KD沙发 2024-7-22.xlsx"
     }
   },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "2471": {
+    "name": "GC-S2471",
+    "code": "GC-S2471",
+    "sku": "GC-S2471",
+    "category": "产品目录",
+    "summary": "GC-S2471 现代休闲沙发，3P+2P+1P 全KD沙发，适合大客厅、别墅或复式会客区及经销展示使用。",
+    "tags": [
+        "3+2+1组合",
+        "客厅套装",
+        "大户型适配",
+        "全KD结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2471",
+        "结构": "3P+2P+1P 全KD沙发",
+        "包装/工艺": "全KD拆装",
+        "图片": "已整理8张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P+2P+1P 全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理8张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "别墅或复式会客区",
+        "样板间",
+        "经销门店展示区"
+    ],
+    "audience": [
+        "整套客厅采购客户",
+        "工程及样板房客户",
+        "经销商与批发客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2471 3P+2P+1P 全KD沙发 2024-7-21.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2471/GC-S2471-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2471/GC-S2471-cost-sheet.xlsx",
+        "size": 537396,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2471\\S2471 3P+2P+1P 全KD沙发 2024-7-21.xlsx"
+    }
+},
+  "2472": {
+    "name": "GC-S2472",
+    "code": "GC-S2472",
+    "sku": "GC-S2472",
+    "category": "产品目录",
+    "summary": "GC-S2472 现代休闲沙发，3P+2P+1P 并包不压缩全KD沙发，适合大客厅、别墅或复式会客区及经销展示使用。",
+    "tags": [
+        "3+2+1组合",
+        "客厅套装",
+        "大户型适配",
+        "全KD结构",
+        "压缩包装",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2472",
+        "结构": "3P+2P+1P 并包不压缩全KD沙发",
+        "包装/工艺": "全KD拆装 / 压缩包装",
+        "图片": "已整理8张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P+2P+1P 并包不压缩全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理8张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "别墅或复式会客区",
+        "样板间",
+        "经销门店展示区"
+    ],
+    "audience": [
+        "整套客厅采购客户",
+        "工程及样板房客户",
+        "经销商与批发客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2472 3P+2P+1P 并包不压缩 全KD沙发 2024-7-26.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2472/GC-S2472-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2472/GC-S2472-cost-sheet.xlsx",
+        "size": 645949,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2472\\S2472 3P+2P+1P 并包不压缩 全KD沙发 2024-7-26.xlsx"
+    }
+},
+  "2473": {
+    "name": "GC-S2473",
+    "code": "GC-S2473",
+    "sku": "GC-S2473",
+    "category": "产品目录",
+    "summary": "GC-S2473 现代休闲沙发，2P+贵妃，座包和并包35D海绵压缩，带底框沙发，适合中等户型客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "双人位+贵妃",
+        "转角贵妃",
+        "躺坐休闲",
+        "压缩包装",
+        "35D海绵",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2473",
+        "结构": "2P+贵妃，座包和并包35D海绵压缩，带底框沙发",
+        "包装/工艺": "压缩包装 / 35D海绵",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2P+贵妃，座包和并包35D海绵压缩，带底框沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "压缩包装方案有助于控制运输体积，同时保留饱满坐感和陈列效果。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "中等户型客厅",
+        "开放式客餐厅",
+        "家庭影音区",
+        "样板间"
+    ],
+    "audience": [
+        "重视躺坐舒适感的家庭用户",
+        "中小户型客户",
+        "软装设计师和门店客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2473 2P+贵妃 座、并35D海绵压缩 带底框沙发 高军客人 2024-12-27.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2473/GC-S2473-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2473/GC-S2473-cost-sheet.xlsx",
+        "size": 762417,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2473\\S2473 2P+贵妃 座、并35D海绵压缩 带底框沙发 高军客人 2024-12-27.xlsx"
+    }
+},
+  "2474": {
+    "name": "GC-S2474",
+    "code": "GC-S2474",
+    "sku": "GC-S2474",
+    "category": "产品目录",
+    "summary": "GC-S2474 现代休闲沙发，3P无抱枕，35D全海绵压缩沙发，适合家庭客厅、公寓空间及经销展示使用。",
+    "tags": [
+        "三人位",
+        "家庭客厅",
+        "压缩包装",
+        "35D海绵",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2474",
+        "结构": "3P无抱枕，35D全海绵压缩沙发",
+        "包装/工艺": "压缩包装 / 35D海绵",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P无抱枕，35D全海绵压缩沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "压缩包装方案有助于控制运输体积，同时保留饱满坐感和陈列效果。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "家庭客厅",
+        "公寓空间",
+        "样板间",
+        "休闲会客区"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2474 3P  无抱枕 35D 全海绵压缩沙发 2024-8-28.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2474/GC-S2474-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2474/GC-S2474-cost-sheet.xlsx",
+        "size": 514667,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2474\\S2474 3P  无抱枕 35D 全海绵压缩沙发 2024-8-28.xlsx"
+    }
+},
+  "2475": {
+    "name": "GC-S2475",
+    "code": "GC-S2475",
+    "sku": "GC-S2475",
+    "category": "产品目录",
+    "summary": "GC-S2475 现代休闲沙发，3P座包、并包压缩，带排骨条沙发，适合家庭客厅、公寓空间及经销展示使用。",
+    "tags": [
+        "三人位",
+        "家庭客厅",
+        "压缩包装",
+        "排骨条承托",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2475",
+        "结构": "3P座包、并包压缩，带排骨条沙发",
+        "包装/工艺": "压缩包装 / 排骨条承托",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P座包、并包压缩，带排骨条沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "压缩包装方案有助于控制运输体积，同时保留饱满坐感和陈列效果。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "家庭客厅",
+        "公寓空间",
+        "样板间",
+        "休闲会客区"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2475 3P 座包、并包压缩 带排骨条沙发 2024-8-25.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2475/GC-S2475-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2475/GC-S2475-cost-sheet.xlsx",
+        "size": 769502,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2475\\S2475 3P 座包、并包压缩 带排骨条沙发 2024-8-25.xlsx"
+    }
+},
+  "2478": {
+    "name": "GC-S2478",
+    "code": "GC-S2478",
+    "sku": "GC-S2478",
+    "category": "产品目录",
+    "summary": "GC-S2478 现代休闲沙发，2378改款并KD组合沙发，适合大客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "模块组合",
+        "KD拆装结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2478",
+        "结构": "2378改款并KD组合沙发",
+        "包装/工艺": "局部KD拆装",
+        "图片": "已整理5张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2378改款并KD组合沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理5张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "开放式客餐厅",
+        "休闲会客区",
+        "高端样板间"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2478（2378改款）并KD组合沙发 2024-9-10.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2478/GC-S2478-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2478/GC-S2478-cost-sheet.xlsx",
+        "size": 1852380,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2478\\S2478（2378改款）并KD组合沙发 2024-9-10.xlsx"
+    }
+},
+  "2480": {
+    "name": "GC-S2480",
+    "code": "GC-S2480",
+    "sku": "GC-S2480",
+    "category": "产品目录",
+    "summary": "GC-S2480 现代休闲沙发，3P沙发床，适合小户型客厅、公寓客卧及经销展示使用。",
+    "tags": [
+        "三人位",
+        "家庭客厅",
+        "沙发床",
+        "坐卧两用",
+        "功能款",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2480",
+        "结构": "3P沙发床",
+        "包装/工艺": "常规沙发结构",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P沙发床，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "坐卧两用设计兼顾日常会客和临时休息，适合空间利用率要求高的客户。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "小户型客厅",
+        "公寓客卧",
+        "书房或多功能房",
+        "民宿及出租房"
+    ],
+    "audience": [
+        "需要客卧两用的家庭用户",
+        "公寓及民宿采购客户",
+        "偏好功能沙发的年轻用户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2480 3P 沙发床 NT客人 2024-10-3.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2480/GC-S2480-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2480/GC-S2480-cost-sheet.xlsx",
+        "size": 326419,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2480\\S2480 3P 沙发床 NT客人 2024-10-3.xlsx"
+    }
+},
+  "2481": {
+    "name": "GC-S2481",
+    "code": "GC-S2481",
+    "sku": "GC-S2481",
+    "category": "产品目录",
+    "summary": "GC-S2481 现代休闲沙发，1P全海绵压缩沙发，适合卧室休闲角、公寓客厅及经销展示使用。",
+    "tags": [
+        "单人位",
+        "小户型适配",
+        "压缩包装",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2481",
+        "结构": "1P全海绵压缩沙发",
+        "包装/工艺": "压缩包装",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "1P全海绵压缩沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "压缩包装方案有助于控制运输体积，同时保留饱满坐感和陈列效果。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "卧室休闲角",
+        "公寓客厅",
+        "书房",
+        "门店搭配区"
+    ],
+    "audience": [
+        "单人休闲用户",
+        "小户型客户",
+        "门店补充陈列客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2481 1P 全海绵压缩沙发 新款 2024-10-20.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2481/GC-S2481-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2481/GC-S2481-cost-sheet.xlsx",
+        "size": 451850,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2481\\S2481 1P 全海绵压缩沙发 新款 2024-10-20.xlsx"
+    }
+},
+  "2482": {
+    "name": "GC-S2482",
+    "code": "GC-S2482",
+    "sku": "GC-S2482",
+    "category": "产品目录",
+    "summary": "GC-S2482 现代休闲沙发，2P+大1P+小1P+转角+大脚踏+小脚踏，带铁架组合沙发，适合大客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "大型组合",
+        "转角组合",
+        "脚踏组合",
+        "铁架支撑",
+        "大户型适配",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2482",
+        "结构": "2P+大1P+小1P+转角+大脚踏+小脚踏，带铁架组合沙发",
+        "包装/工艺": "铁架支撑",
+        "图片": "已整理9张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2P+大1P+小1P+转角+大脚踏+小脚踏的模块组合，适合大客厅和样板间做完整陈列。",
+        "整体造型简洁耐看，适合现代家居和门店样板间长期展示。",
+        "已整理9张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "开放式客餐厅",
+        "别墅或复式会客区",
+        "高端样板间"
+    ],
+    "audience": [
+        "大户型家庭用户",
+        "工程及样板房客户",
+        "经销商与批发客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2482 2P+大1P+小1P+转角+大脚踏+小脚踏 带铁架沙发 范科客人 2024-10-30.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2482/GC-S2482-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2482/GC-S2482-cost-sheet.xlsx",
+        "size": 15648536,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2482\\S2482 2P+大1P+小1P+转角+大脚踏+小脚踏 带铁架沙发 范科客人 2024-10-30.xlsx"
+    }
+},
+  "2483": {
+    "name": "GC-S2483",
+    "code": "GC-S2483",
+    "sku": "GC-S2483",
+    "category": "产品目录",
+    "summary": "GC-S2483 现代休闲沙发，3P拖拉床并架KD沙发，适合小户型客厅、公寓客卧及经销展示使用。",
+    "tags": [
+        "三人位",
+        "家庭客厅",
+        "沙发床",
+        "坐卧两用",
+        "功能款",
+        "KD拆装结构"
+    ],
+    "specs": {
+        "型号": "GC-S2483",
+        "结构": "3P拖拉床并架KD沙发",
+        "包装/工艺": "局部KD拆装",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P拖拉床并架KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "坐卧两用设计兼顾日常会客和临时休息，适合空间利用率要求高的客户。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "小户型客厅",
+        "公寓客卧",
+        "书房或多功能房",
+        "民宿及出租房"
+    ],
+    "audience": [
+        "需要客卧两用的家庭用户",
+        "公寓及民宿采购客户",
+        "偏好功能沙发的年轻用户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2483 3P拖拉床 并架KD沙发 李继军客人 2024-11-2.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2483/GC-S2483-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2483/GC-S2483-cost-sheet.xlsx",
+        "size": 1000544,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2483\\S2483 3P拖拉床 并架KD沙发 李继军客人 2024-11-2.xlsx"
+    }
+},
+  "2484": {
+    "name": "GC-S2484",
+    "code": "GC-S2484",
+    "sku": "GC-S2484",
+    "category": "产品目录",
+    "summary": "GC-S2484 现代休闲沙发，2P铁架拖拉床，螺杆KD沙发，适合小户型客厅、公寓客卧及经销展示使用。",
+    "tags": [
+        "双人位",
+        "中小户型",
+        "沙发床",
+        "坐卧两用",
+        "功能款",
+        "KD拆装结构"
+    ],
+    "specs": {
+        "型号": "GC-S2484",
+        "结构": "2P铁架拖拉床，螺杆KD沙发",
+        "包装/工艺": "局部KD拆装 / 铁架支撑",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2P铁架拖拉床，螺杆KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "坐卧两用设计兼顾日常会客和临时休息，适合空间利用率要求高的客户。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "小户型客厅",
+        "公寓客卧",
+        "书房或多功能房",
+        "民宿及出租房"
+    ],
+    "audience": [
+        "需要客卧两用的家庭用户",
+        "公寓及民宿采购客户",
+        "偏好功能沙发的年轻用户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2484 2P铁架 拖拉床 螺杆KD沙发 2024-11-7.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2484/GC-S2484-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2484/GC-S2484-cost-sheet.xlsx",
+        "size": 438623,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2484\\S2484 2P铁架 拖拉床 螺杆KD沙发 2024-11-7.xlsx"
+    }
+},
+  "2486": {
+    "name": "GC-S2486",
+    "code": "GC-S2486",
+    "sku": "GC-S2486",
+    "category": "产品目录",
+    "summary": "GC-S2486 现代休闲沙发，侧位+侧位+中位+脚踏+脚踏，35D全海绵压缩组合沙发，适合大客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "模块组合",
+        "压缩包装",
+        "35D海绵",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2486",
+        "结构": "侧位+侧位+中位+脚踏+脚踏，35D全海绵压缩组合沙发",
+        "包装/工艺": "压缩包装 / 35D海绵",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "侧位+侧位+中位+脚踏+脚踏，35D全海绵压缩组合沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "压缩包装方案有助于控制运输体积，同时保留饱满坐感和陈列效果。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "开放式客餐厅",
+        "休闲会客区",
+        "高端样板间"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2486 侧位+侧位+中位+脚踏+脚踏 35D 全海绵压缩沙发  范科客人 2024-12-10.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2486/GC-S2486-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2486/GC-S2486-cost-sheet.xlsx",
+        "size": 297192,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2486\\S2486 侧位+侧位+中位+脚踏+脚踏 35D 全海绵压缩沙发  范科客人 2024-12-10.xlsx"
+    }
+},
+  "2488": {
+    "name": "GC-S2488",
+    "code": "GC-S2488",
+    "sku": "GC-S2488",
+    "category": "产品目录",
+    "summary": "GC-S2488 现代休闲沙发，2P+贵妃，带实木底框，座可KD沙发，适合中等户型客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "双人位+贵妃",
+        "转角贵妃",
+        "躺坐休闲",
+        "KD拆装结构",
+        "实木底框",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2488",
+        "结构": "2P+贵妃，带实木底框，座可KD沙发",
+        "包装/工艺": "局部KD拆装 / 实木底框",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2P+贵妃，带实木底框，座可KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "中等户型客厅",
+        "开放式客餐厅",
+        "家庭影音区",
+        "样板间"
+    ],
+    "audience": [
+        "重视躺坐舒适感的家庭用户",
+        "中小户型客户",
+        "软装设计师和门店客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2488 2P+贵妃 带实木底框 座可KD沙发 高军客人 2024-12-18.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2488/GC-S2488-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2488/GC-S2488-cost-sheet.xlsx",
+        "size": 5014704,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2488\\S2488 2P+贵妃 带实木底框 座可KD沙发 高军客人 2024-12-18.xlsx"
+    }
+},
+  "2489": {
+    "name": "GC-S2489",
+    "code": "GC-S2489",
+    "sku": "GC-S2489",
+    "category": "产品目录",
+    "summary": "GC-S2489 现代休闲沙发，2485改款2P全KD沙发，适合家庭客厅、公寓空间及经销展示使用。",
+    "tags": [
+        "双人位",
+        "中小户型",
+        "全KD结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2489",
+        "结构": "2485改款2P全KD沙发",
+        "包装/工艺": "全KD拆装",
+        "图片": "已整理7张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2485改款2P全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理7张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "家庭客厅",
+        "公寓空间",
+        "样板间",
+        "休闲会客区"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2489 （2485改款）2P 全KD沙发 SallY客人 2024-12-11.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2489/GC-S2489-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2489/GC-S2489-cost-sheet.xlsx",
+        "size": 131244,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2489\\S2489 （2485改款）2P 全KD沙发 SallY客人 2024-12-11.xlsx"
+    }
+},
+  "2490": {
+    "name": "GC-S2490",
+    "code": "GC-S2490",
+    "sku": "GC-S2490",
+    "category": "产品目录",
+    "summary": "GC-S2490 现代休闲沙发，3P+脚踏，座包、并包压缩，并包和扶手KD沙发，适合大客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "三人位+脚踏",
+        "脚踏组合",
+        "客厅休闲",
+        "KD拆装结构",
+        "压缩包装",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2490",
+        "结构": "3P+脚踏，座包、并包压缩，并包和扶手KD沙发",
+        "包装/工艺": "局部KD拆装 / 压缩包装",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P+脚踏，座包、并包压缩，并包和扶手KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "开放式客餐厅",
+        "休闲会客区",
+        "高端样板间"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2490 3P+脚踏 座包、并包压缩 并、扶手KD沙发 2025-1-12.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2490/GC-S2490-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2490/GC-S2490-cost-sheet.xlsx",
+        "size": 1130156,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2490\\S2490 3P+脚踏 座包、并包压缩 并、扶手KD沙发 2025-1-12.xlsx"
+    }
+},
+  "2491": {
+    "name": "GC-S2491",
+    "code": "GC-S2491",
+    "sku": "GC-S2491",
+    "category": "产品目录",
+    "summary": "GC-S2491 现代休闲沙发，不可KD整装沙发，适合家庭客厅、公寓空间及经销展示使用。",
+    "tags": [
+        "KD拆装结构",
+        "整装结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2491",
+        "结构": "不可KD整装沙发",
+        "包装/工艺": "局部KD拆装 / 整装结构",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "不可KD整装沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "家庭客厅",
+        "公寓空间",
+        "样板间",
+        "休闲会客区"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2491 不可KD沙发  2025-1-13.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2491/GC-S2491-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2491/GC-S2491-cost-sheet.xlsx",
+        "size": 381081,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2491\\S2491 不可KD沙发  2025-1-13.xlsx"
+    }
+},
+  "2492": {
+    "name": "GC-S2492",
+    "code": "GC-S2492",
+    "sku": "GC-S2492",
+    "category": "产品目录",
+    "summary": "GC-S2492 现代休闲沙发，3+2+1P可拆洗全KD沙发，适合大客厅、别墅或复式会客区及经销展示使用。",
+    "tags": [
+        "3+2+1组合",
+        "客厅套装",
+        "大户型适配",
+        "全KD结构",
+        "可拆洗",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2492",
+        "结构": "3+2+1P可拆洗全KD沙发",
+        "包装/工艺": "全KD拆装 / 可拆洗设计",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3+2+1P可拆洗全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "别墅或复式会客区",
+        "样板间",
+        "经销门店展示区"
+    ],
+    "audience": [
+        "整套客厅采购客户",
+        "工程及样板房客户",
+        "经销商与批发客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2492 3+2+1P 可拆洗沙发 全KD沙发 2025-3-10.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2492/GC-S2492-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2492/GC-S2492-cost-sheet.xlsx",
+        "size": 426312,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2492\\S2492 3+2+1P 可拆洗沙发 全KD沙发 2025-3-10.xlsx"
+    }
+},
+  "2493": {
+    "name": "GC-S2493",
+    "code": "GC-S2493",
+    "sku": "GC-S2493",
+    "category": "产品目录",
+    "summary": "GC-S2493 现代休闲沙发，3P+2P+1P不KD沙发，适合大客厅、别墅或复式会客区及经销展示使用。",
+    "tags": [
+        "3+2+1组合",
+        "客厅套装",
+        "大户型适配",
+        "KD拆装结构",
+        "整装结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2493",
+        "结构": "3P+2P+1P不KD沙发",
+        "包装/工艺": "局部KD拆装 / 整装结构",
+        "图片": "已整理8张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3P+2P+1P不KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理8张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "别墅或复式会客区",
+        "样板间",
+        "经销门店展示区"
+    ],
+    "audience": [
+        "整套客厅采购客户",
+        "工程及样板房客户",
+        "经销商与批发客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2493 3P+2P+1P 不KD沙发 2025-3-1.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2493/GC-S2493-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2493/GC-S2493-cost-sheet.xlsx",
+        "size": 1270193,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2493\\S2493 3P+2P+1P 不KD沙发 2025-3-1.xlsx"
+    }
+},
+  "2495": {
+    "name": "GC-S2495",
+    "code": "GC-S2495",
+    "sku": "GC-S2495",
+    "category": "产品目录",
+    "summary": "GC-S2495 现代休闲沙发，全KD沙发，适合家庭客厅、公寓空间及经销展示使用。",
+    "tags": [
+        "全KD结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2495",
+        "结构": "全KD沙发",
+        "包装/工艺": "全KD拆装",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "家庭客厅",
+        "公寓空间",
+        "样板间",
+        "休闲会客区"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2495 全KD沙发 2025-3-6.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2495/GC-S2495-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2495/GC-S2495-cost-sheet.xlsx",
+        "size": 350261,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2495\\S2495 全KD沙发 2025-3-6.xlsx"
+    }
+},
+  "2496": {
+    "name": "GC-S2496",
+    "code": "GC-S2496",
+    "sku": "GC-S2496",
+    "category": "产品目录",
+    "summary": "GC-S2496 现代休闲沙发，2485改款3P全KD沙发，适合家庭客厅、公寓空间及经销展示使用。",
+    "tags": [
+        "三人位",
+        "家庭客厅",
+        "全KD结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2496",
+        "结构": "2485改款3P全KD沙发",
+        "包装/工艺": "全KD拆装",
+        "图片": "已整理5张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2485改款3P全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理5张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "家庭客厅",
+        "公寓空间",
+        "样板间",
+        "休闲会客区"
+    ],
+    "audience": [
+        "家庭用户",
+        "软装设计师",
+        "经销门店与样板间客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2496（2485改款）3P 全KD沙发 2025-3-9.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2496/GC-S2496-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2496/GC-S2496-cost-sheet.xlsx",
+        "size": 487007,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2496\\S2496（2485改款）3P 全KD沙发 2025-3-9.xlsx"
+    }
+},
+  "2498": {
+    "name": "GC-S2498",
+    "code": "GC-S2498",
+    "sku": "GC-S2498",
+    "category": "产品目录",
+    "summary": "GC-S2498 现代休闲沙发，2P+贵妃普通不防火沙发，适合中等户型客厅、开放式客餐厅及经销展示使用。",
+    "tags": [
+        "双人位+贵妃",
+        "转角贵妃",
+        "躺坐休闲",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2498",
+        "结构": "2P+贵妃普通不防火沙发",
+        "包装/工艺": "常规沙发结构",
+        "图片": "已整理6张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "2P+贵妃普通不防火沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "整体造型简洁耐看，适合现代家居和门店样板间长期展示。",
+        "已整理6张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "中等户型客厅",
+        "开放式客餐厅",
+        "家庭影音区",
+        "样板间"
+    ],
+    "audience": [
+        "重视躺坐舒适感的家庭用户",
+        "中小户型客户",
+        "软装设计师和门店客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2398 2P+贵妃 普通不防火 2024-10-10.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2498/GC-S2498-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2498/GC-S2498-cost-sheet.xlsx",
+        "size": 1035165,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2498\\S2398 2P+贵妃 普通不防火 2024-10-10.xlsx"
+    }
+},
+  "2500": {
+    "name": "GC-S2500",
+    "code": "GC-S2500",
+    "sku": "GC-S2500",
+    "category": "产品目录",
+    "summary": "GC-S2500 现代休闲沙发，3+2+1P全KD沙发，适合大客厅、别墅或复式会客区及经销展示使用。",
+    "tags": [
+        "3+2+1组合",
+        "客厅套装",
+        "大户型适配",
+        "全KD结构",
+        "现代休闲"
+    ],
+    "specs": {
+        "型号": "GC-S2500",
+        "结构": "3+2+1P全KD沙发",
+        "包装/工艺": "全KD拆装",
+        "图片": "已整理12张多角度产品图",
+        "风格": "现代休闲"
+    },
+    "views": [
+        "视角1",
+        "视角2",
+        "视角3",
+        "视角4",
+        "场景图"
+    ],
+    "highlights": [
+        "3+2+1P全KD沙发，规格信息清晰，方便按客厅尺寸和销售场景进行推荐。",
+        "KD拆装结构便于运输、入户和海外出货，适合批量订单及经销渠道。",
+        "已整理12张图片，包含视角1、视角2、视角3、视角4及场景/其他角度展示，方便详情页展示。"
+    ],
+    "homes": [
+        "大客厅",
+        "别墅或复式会客区",
+        "样板间",
+        "经销门店展示区"
+    ],
+    "audience": [
+        "整套客厅采购客户",
+        "工程及样板房客户",
+        "经销商与批发客户"
+    ],
+    "suggestedPrice": "",
+    "internalNotes": [],
+    "costSheet": {
+        "name": "S2500 3+2+1P 全KD沙发  2025-4-5.xlsx",
+        "uploadedAt": "2026-06-18 17:44",
+        "dataUrl": "/server-data/cost-sheets/gc-s2500/GC-S2500-cost-sheet.xlsx",
+        "path": "/server-data/cost-sheets/gc-s2500/GC-S2500-cost-sheet.xlsx",
+        "size": 125430,
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "source": "D:\\GCSOFA\\UP\\UP\\2500\\S2500 3+2+1P 全KD沙发  2025-4-5.xlsx"
+    }
+},
   "2602": {
     "name": "GC-S2602",
     "code": "GC-S2602",
