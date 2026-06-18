@@ -1,54 +1,91 @@
 const GCSOFA_DEFAULT_STAFF = [
   {
-    id: "chen-yu",
-    name: "陈雨",
-    title: "华东区业务顾问",
-    avatar: "assets/staff-chen-yu.png",
-    summary: "负责华东区域经销商对接、门店样板配套和工程项目报价。",
-    email: "chenyu@gcsofa.example",
-    whatsapp: "+86 138 0000 2601",
-    phone: "+86 138 0000 2601",
-    wechat: "GCSOFA-ChenYu",
+    id: "song-haoyu",
+    name: "宋好语",
+    title: "业务联系方式",
+    avatar: "assets/gcsofa-logo-small.png",
+    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    email: "",
+    whatsapp: "",
+    phone: "",
+    wechat: "",
   },
   {
-    id: "zhang-wei",
-    name: "张伟",
-    title: "大客户销售经理",
-    avatar: "assets/staff-zhang-wei.png",
-    summary: "负责房地产样板间、酒店民宿、批量采购和定制项目。",
-    email: "zhangwei@gcsofa.example",
-    whatsapp: "+86 139 0000 2605",
-    phone: "+86 139 0000 2605",
-    wechat: "GCSOFA-ZhangWei",
+    id: "song-jun",
+    name: "宋君",
+    title: "业务联系方式",
+    avatar: "assets/gcsofa-logo-small.png",
+    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    email: "",
+    whatsapp: "",
+    phone: "",
+    wechat: "",
   },
   {
-    id: "li-min",
-    name: "李敏",
-    title: "软装渠道业务",
-    avatar: "assets/staff-li-min.png",
-    summary: "负责设计师渠道、软装公司合作、面料小样和展厅选品。",
-    email: "limin@gcsofa.example",
-    whatsapp: "+86 137 0000 2608",
-    phone: "+86 137 0000 2608",
-    wechat: "GCSOFA-LiMin",
+    id: "he-yishan",
+    name: "何奕山",
+    title: "业务联系方式",
+    avatar: "assets/gcsofa-logo-small.png",
+    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    email: "",
+    whatsapp: "",
+    phone: "",
+    wechat: "",
   },
   {
-    id: "wang-hao",
-    name: "王浩",
-    title: "外贸业务顾问",
-    avatar: "assets/staff-wang-hao.png",
-    summary: "负责海外客户询盘、出口订单、包装标准和跨境物流协调。",
-    email: "wanghao@gcsofa.example",
-    whatsapp: "+86 136 0000 2612",
-    phone: "+86 136 0000 2612",
-    wechat: "GCSOFA-WangHao",
+    id: "gao-jun",
+    name: "高军",
+    title: "业务联系方式",
+    avatar: "assets/gcsofa-logo-small.png",
+    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    email: "",
+    whatsapp: "",
+    phone: "",
+    wechat: "",
+  },
+  {
+    id: "yu-lu",
+    name: "余露",
+    title: "业务联系方式",
+    avatar: "assets/gcsofa-logo-small.png",
+    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    email: "",
+    whatsapp: "",
+    phone: "",
+    wechat: "",
+  },
+  {
+    id: "zhang-xiang",
+    name: "张翔",
+    title: "业务联系方式",
+    avatar: "assets/gcsofa-logo-small.png",
+    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    email: "",
+    whatsapp: "",
+    phone: "",
+    wechat: "",
   },
 ];
 
 const STAFF_STORE_KEY = "gcsofa-staff";
+const GCSOFA_REQUIRED_STAFF_IDS = GCSOFA_DEFAULT_STAFF.map((person) => person.id);
+const GCSOFA_TEST_STAFF_IDS = ["chen-yu", "zhang-wei", "li-min", "wang-hao"];
 
 function cloneStaff(staff) {
   return JSON.parse(JSON.stringify(staff));
+}
+
+function normalizeStaffList(staff) {
+  const savedList = Array.isArray(staff) ? staff : [];
+  const savedById = new Map(savedList.map((person) => [person.id, person]));
+  const mergedDefaults = GCSOFA_DEFAULT_STAFF.map((person) => ({
+    ...person,
+    ...(savedById.get(person.id) || {}),
+  }));
+  const extraStaff = savedList.filter(
+    (person) => !GCSOFA_REQUIRED_STAFF_IDS.includes(person.id) && !GCSOFA_TEST_STAFF_IDS.includes(person.id),
+  );
+  return [...mergedDefaults, ...extraStaff];
 }
 
 function getStaffList() {
@@ -58,7 +95,7 @@ function getStaffList() {
   }
 
   try {
-    return JSON.parse(saved);
+    return normalizeStaffList(JSON.parse(saved));
   } catch {
     return cloneStaff(GCSOFA_DEFAULT_STAFF);
   }

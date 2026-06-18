@@ -20,15 +20,16 @@ module.exports = async function handler(request, response) {
     return;
   }
 
-  const productId = sanitizeSegment(request.query.productId || "product", "product");
-  const originalName = sanitizeSegment(request.query.fileName || "cost-sheet.xlsx", "cost-sheet.xlsx");
-  const extension = getExtension(originalName) || ".xlsx";
-  if (!SHEET_EXTENSIONS.has(extension)) {
-    sendJson(response, 400, { ok: false, message: "只支持 .xlsx、.xls、.csv 文件" });
-    return;
-  }
-
   try {
+    const query = getRequestQuery(request);
+    const productId = sanitizeSegment(query.get("productId") || "product", "product");
+    const originalName = sanitizeSegment(query.get("fileName") || "cost-sheet.xlsx", "cost-sheet.xlsx");
+    const extension = getExtension(originalName) || ".xlsx";
+    if (!SHEET_EXTENSIONS.has(extension)) {
+      sendJson(response, 400, { ok: false, message: "只支持 .xlsx、.xls、.csv 文件" });
+      return;
+    }
+
     const body = await collectRequestBody(request);
     const fileName = createUploadName(originalName, extension);
     const blob = await put(`server-data/cost-sheets/${productId}/${fileName}`, body, {
@@ -47,9 +48,15 @@ module.exports = async function handler(request, response) {
       size: body.length,
     });
   } catch (error) {
-    sendJson(response, 500, { ok: false, message: "Cost sheet save failed" });
+    console.error("Cost sheet save failed", error);
+    sendJson(response, 500, { ok: false, message: error?.message || "Cost sheet save failed" });
   }
 };
+
+function getRequestQuery(request) {
+  const host = request.headers.host || "gcsofa.com";
+  return new URL(request.url || "/", `https://${host}`).searchParams;
+}
 
 function collectRequestBody(request) {
   return new Promise((resolve, reject) => {

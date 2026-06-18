@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GCSOFA 产品后台</title>
     <link rel="icon" type="image/png" href="assets/gcsofa-favicon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260605-product-speed" />
+    <link rel="stylesheet" href="styles.css?v=20260617-grid-card-plus5" />
   </head>
   <body>
     <header class="topbar">
@@ -209,44 +209,44 @@
           <fieldset class="intro-image-fields">
             <legend>产品介绍图</legend>
             <label>
-              <span>正视图路径</span>
+              <span>视角1路径</span>
               <input id="introFrontInput" placeholder="assets/gallery-front.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introFrontInput">
               <input id="introFrontFileInput" type="file" accept="image/*" />
-              <strong>上传正视图</strong>
+              <strong>上传视角1</strong>
               <span>点击选择或拖拽图片</span>
-              <img id="introFrontPreview" alt="正视图预览" />
+              <img id="introFrontPreview" alt="视角1预览" />
             </div>
             <label>
-              <span>45 度角视图路径</span>
+              <span>视角2路径</span>
               <input id="introAngleInput" placeholder="assets/gallery-angle.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introAngleInput">
               <input id="introAngleFileInput" type="file" accept="image/*" />
-              <strong>上传45度角视图</strong>
+              <strong>上传视角2</strong>
               <span>点击选择或拖拽图片</span>
-              <img id="introAnglePreview" alt="45度角视图预览" />
+              <img id="introAnglePreview" alt="视角2预览" />
             </div>
             <label>
-              <span>侧视图路径</span>
+              <span>视角3路径</span>
               <input id="introSideInput" placeholder="assets/gallery-side.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introSideInput">
               <input id="introSideFileInput" type="file" accept="image/*" />
-              <strong>上传侧视图</strong>
+              <strong>上传视角3</strong>
               <span>点击选择或拖拽图片</span>
-              <img id="introSidePreview" alt="侧视图预览" />
+              <img id="introSidePreview" alt="视角3预览" />
             </div>
             <label>
-              <span>背视图路径</span>
+              <span>视角4路径</span>
               <input id="introBackInput" placeholder="assets/gallery-back.png" />
             </label>
             <div class="image-upload-zone image-upload-zone-small" data-image-target="introBackInput">
               <input id="introBackFileInput" type="file" accept="image/*" />
-              <strong>上传背视图</strong>
+              <strong>上传视角4</strong>
               <span>点击选择或拖拽图片</span>
-              <img id="introBackPreview" alt="背视图预览" />
+              <img id="introBackPreview" alt="视角4预览" />
             </div>
             <label>
               <span>产品尺寸图路径</span>
@@ -421,10 +421,11 @@
       </form>
     </dialog>
 
-    <script src="data.js?v=20260602-cloud-sync"></script>
+    <script src="product-image-map.js?v=20260617-main-image-fix"></script>
+    <script src="data.js?v=20260617-view-labels"></script>
     <script src="auth.js"></script>
     <script src="staff-data.js?v=20260602-cloud-sync"></script>
     <script src="admin-blob-upload.js?v=20260605-cost-upload-local"></script>
-    <script src="admin.js?v=20260605-cost-upload"></script>
+    <script src="admin.js?v=20260617-view-labels"></script>
   </body>
 </html>

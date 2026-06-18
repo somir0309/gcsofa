@@ -1,11 +1,57 @@
 const params = new URLSearchParams(location.search);
 const productId = params.get("id") || "luna-sectional";
 const detailRoot = document.querySelector("#detailRoot");
+
+const OTHER_ANGLE_DISPLAY_IMAGES = new Set([
+  "assets/products/2373/GC-S2373-05.jpg",
+  "assets/products/2373/GC-S2373-06.jpg",
+  "assets/products/2381/GC-S2381-05.jpg",
+  "assets/products/2381/GC-S2381-06.jpg",
+  "assets/products/2381/GC-S2381-07.jpg",
+  "assets/products/2393/GC-S2393-05.jpg",
+  "assets/products/2395/GC-S2395-05.jpg",
+  "assets/products/2395/GC-S2395-06.jpg",
+  "assets/products/2398/GC-S2398-05.jpg",
+  "assets/products/2398/GC-S2398-06.jpg",
+  "assets/products/2398/GC-S2398-07.jpg",
+  "assets/products/2398/GC-S2398-08.jpg",
+  "assets/products/2408/GC-S2408-05.jpg",
+  "assets/products/2413/GC-S2413-05.jpg",
+  "assets/products/2413/GC-S2413-06.jpg",
+  "assets/products/2413/GC-S2413-07.jpg",
+  "assets/products/2433/GC-S2433-05.jpg",
+  "assets/products/2433/GC-S2433-06.jpg",
+  "assets/products/2438/GC-S2438-05.jpg",
+  "assets/products/2438/GC-S2438-06.jpg",
+  "assets/products/2602/GC-S2602-05.jpg",
+  "assets/products/2602/GC-S2602-06.jpg",
+  "assets/products/2621/GC-S2621-05.jpg",
+  "assets/products/2632/GC-S2632-05.jpg",
+  "assets/products/2633/GC-S2633-05.jpg",
+  "assets/products/2634/GC-S2634-05.jpg",
+  "assets/products/2635/GC-S2635-05.jpg",
+  "assets/products/2635/GC-S2635-06.jpg",
+  "assets/products/2637/GC-S2637-05.jpg",
+  "assets/products/2637/GC-S2637-06.jpg",
+  "assets/products/2721/GC-S2721-05.jpg",
+  "assets/products/2721/GC-S2721-06.jpg",
+  "assets/products/2721/GC-S2721-07.jpg",
+]);
+
 const auth = setupAuth({ onChange: renderDetail });
 whenSiteDataReady(() => auth.updateAccountView());
 
+function findDetailProduct(id) {
+  const exactProduct = findProduct(id);
+  if (exactProduct) return exactProduct;
+
+  const key = String(id || "").match(/(?:GC[-_\s]*S)?(2\d{3})/i)?.[1];
+  if (!key) return null;
+  return getProducts().find((product) => getProductImageKey(product) === key) || null;
+}
+
 function renderDetail() {
-  const product = findProduct(productId);
+  const product = findDetailProduct(productId);
   const user = getCurrentUser();
   const permissions = getPermissionsForUser(user);
 
@@ -24,6 +70,7 @@ function renderDetail() {
   const canEdit = canEditInternalData(user);
   const canEditPrice = userCan("priceEdit", user);
   const introContent = renderIntroImages(product, permissions);
+  const heroImage = renderProductImageTag(product, "", "scene", product.name);
 
   detailRoot.innerHTML = `
     <section class="detail-hero">
@@ -33,7 +80,7 @@ function renderDetail() {
         <p>${product.summary}</p>
         <div class="tag-row">${product.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}</div>
       </div>
-      <img src="${product.image}" alt="${product.name}" />
+      ${heroImage}
     </section>
 
     ${renderInternal(product, permissions, canEdit, canEditPrice, user)}
@@ -90,10 +137,10 @@ function renderDetail() {
 function renderIntroImages(product, permissions) {
   const introImages = getIntroImages(product);
   const viewImages = [
-    ["正视图", "front", introImages.front],
-    ["45 度角视图", "angle", introImages.angle],
-    ["侧视图", "side", introImages.side],
-    ["背视图", "back", introImages.back],
+    ["视角1", "front", introImages.front],
+    ["视角2", "angle", introImages.angle],
+    ["视角3", "side", introImages.side],
+    ["视角4", "back", introImages.back],
   ].filter(([, , image]) => Boolean(image));
   const extraImages = getExtraIntroImages(product);
   const hasAnyIntroImage = viewImages.length || extraImages.length || introImages.dimensions;
@@ -105,7 +152,7 @@ function renderIntroImages(product, permissions) {
           ([label, modifier, image]) => `
             <article class="intro-card intro-photo intro-${modifier}">
               <div class="intro-image-frame" style="${getIntroImageFrameStyle(product, modifier)}">
-                <img src="${image}" alt="${product.name} ${label}" />
+                ${renderProductImageTag(product, image, modifier, `${product.name} ${label}`)}
               </div>
               <div class="intro-card-copy">
                 <p class="eyebrow">${label}</p>
@@ -121,7 +168,7 @@ function renderIntroImages(product, permissions) {
             return `
             <article class="intro-card intro-photo">
               <div class="intro-image-frame" style="${getIntroImageFrameStyle(item, "extra")}">
-                <img src="${escapeCell(item.image)}" alt="${escapeCell(product.name)} ${escapeCell(description)}" />
+                ${renderProductImageTag(product, item.image, "fallback", `${product.name} ${description}`)}
               </div>
               <div class="intro-card-copy">
                 <p class="eyebrow">${escapeCell(description)}</p>
@@ -138,7 +185,7 @@ function renderIntroImages(product, permissions) {
     ? `
       <article class="intro-card dimension-card">
       <div class="intro-image-frame dimension-layout" style="${getIntroImageFrameStyle(product, "dimensions")}">
-        <img src="${introImages.dimensions}" alt="${product.name} 产品尺寸图" />
+        ${renderProductImageTag(product, introImages.dimensions, "fallback", `${product.name} 产品尺寸图`)}
       </div>
       <div class="intro-card-copy">
         <p class="eyebrow">尺寸图</p>
@@ -153,16 +200,35 @@ function renderIntroImages(product, permissions) {
 
 function getIntroImages(product) {
   return {
-    front: product.introImages?.front || "",
-    angle: product.introImages?.angle || "",
-    side: product.introImages?.side || "",
-    back: product.introImages?.back || "",
+    front: resolveProductImage(product, product.introImages?.front || "", "front"),
+    angle: resolveProductImage(product, product.introImages?.angle || "", "angle"),
+    side: resolveProductImage(product, product.introImages?.side || "", "side"),
+    back: resolveProductImage(product, product.introImages?.back || "", "back"),
     dimensions: product.introImages?.dimensions || "",
   };
 }
 
 function getExtraIntroImages(product) {
-  return (product.extraIntroImages || []).filter((item) => item.image);
+  const savedImages = (product.extraIntroImages || []).filter((item) => item.image);
+  if (hasManualExtraIntroImages(savedImages)) return savedImages;
+  const savedImageSet = new Set(savedImages.map((item) => item.image));
+  const mappedImages = getProductGalleryImages(product).map((image, index) => ({
+    image,
+    title: product.name,
+    description: getGalleryImageDescription(image, index),
+  })).filter((item) => !savedImageSet.has(item.image));
+  return [...savedImages, ...mappedImages];
+}
+
+function getGalleryImageDescription(image, index) {
+  return `${OTHER_ANGLE_DISPLAY_IMAGES.has(image) ? "其他角度展示图" : "场景图"} ${index + 5}`;
+}
+
+function renderProductImageTag(product, source, role, alt) {
+  const image = resolveProductImage(product, source, role);
+  const fallback = getProductImageErrorFallback(product, role);
+  const errorAttribute = fallback ? ` onerror="this.onerror=null;this.src='${escapeCell(fallback)}'"` : "";
+  return `<img src="${escapeCell(image)}" alt="${escapeCell(alt)}"${errorAttribute} />`;
 }
 
 function getIntroImageFrameStyle(product, key) {
@@ -566,25 +632,53 @@ async function uploadCostSheetToServer(file, productId = "product") {
     };
   }
 
-  const response = await fetch(`${getLocalServerOrigin()}/api/cost-sheets?productId=${encodeURIComponent(productId)}&fileName=${encodeURIComponent(file.name)}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": contentType,
-      "X-Product-Id": productId,
-    },
-    body: file,
-  });
-  const data = await readJsonResponse(response);
-  if (!response.ok) throw new Error(data.message || `上传服务返回 ${response.status}`);
-  if (!data.ok || !data.path) throw new Error(data.message || "上传服务没有返回文件地址");
+  try {
+    const response = await fetch(`${getLocalServerOrigin()}/api/cost-sheets?productId=${encodeURIComponent(productId)}&fileName=${encodeURIComponent(file.name)}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": contentType,
+        "X-Product-Id": productId,
+      },
+      body: file,
+    });
+    const data = await readJsonResponse(response);
+    if (!response.ok) throw new Error(data.message || `上传服务返回 ${response.status}`);
+    if (!data.ok || !data.path) throw new Error(data.message || "上传服务没有返回文件地址");
+    return {
+      name: data.name || file.name,
+      uploadedAt: formatDateTime(new Date()),
+      dataUrl: normalizeUploadedPath(data.path),
+      path: normalizeUploadedPath(data.path),
+      size: data.size || file.size,
+      type: file.type || getExcelMimeType(file.name),
+    };
+  } catch (error) {
+    return createInlineCostSheet(file, contentType, error);
+  }
+}
+
+async function createInlineCostSheet(file, contentType, cause) {
+  const inlineLimit = 2 * 1024 * 1024;
+  if (file.size > inlineLimit) throw cause;
+  const dataUrl = await readFileAsDataUrl(file);
   return {
-    name: data.name || file.name,
+    name: file.name,
     uploadedAt: formatDateTime(new Date()),
-    dataUrl: normalizeUploadedPath(data.path),
-    path: normalizeUploadedPath(data.path),
-    size: data.size || file.size,
-    type: file.type || getExcelMimeType(file.name),
+    dataUrl,
+    path: dataUrl,
+    size: file.size,
+    type: contentType,
+    storage: "inline",
   };
+}
+
+function readFileAsDataUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(reader.error || new Error("文件读取失败"));
+    reader.readAsDataURL(file);
+  });
 }
 
 async function uploadCostSheetDirectly(file, uploadPath, contentType) {
@@ -646,8 +740,11 @@ function getUploadErrorMessage(error) {
   if (/body|payload|too large|413|4\.5/i.test(message)) {
     return "文件较大，服务端中转失败。请刷新页面后重试，系统会优先使用云端直传。";
   }
+  if (/suspended/i.test(message)) {
+    return "云端文件存储已暂停。2MB 内的成本表会自动临时保存；较大文件需恢复 Blob 存储后再上传。";
+  }
   if (/token|授权|Blob|configured/i.test(message)) {
-    return "云端 Blob 上传授权异常，请刷新页面后重新上传。";
+    return "云端 Blob 上传异常，请刷新页面后重新上传。";
   }
   if (/network|fetch|Failed to fetch/i.test(message)) {
     return "网络连接上传服务失败，请检查网络后重新上传。";

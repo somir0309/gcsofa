@@ -1,200 +1,220 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>欣冠城 GCSOFA 产品展示</title>
-    <link rel="icon" type="image/png" href="assets/gcsofa-favicon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260605-product-speed" />
+    <title>GCSOFA</title>
+    <link rel="preload" as="image" href="assets/boucle-wave-home-mobile.webp" media="(max-width: 700px)" />
+    <link rel="preload" as="image" href="assets/boucle-wave-home.webp" media="(min-width: 701px)" />
+    <style>
+      :root {
+        --paper: #faf9f5;
+        --ink: #111111;
+        font-family: Georgia, "Times New Roman", "Songti SC", serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        overflow: hidden;
+        background:
+          linear-gradient(rgba(250, 249, 245, 0.08), rgba(250, 249, 245, 0.08)),
+          url("assets/boucle-wave-home.webp") center / cover no-repeat;
+        color: var(--ink);
+      }
+
+      main {
+        position: relative;
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        place-items: center;
+        isolation: isolate;
+        cursor: pointer;
+      }
+
+      main::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -2;
+        background:
+          radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.56), transparent 32%),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.2), transparent 18%, transparent 82%, rgba(17, 17, 17, 0.08));
+        pointer-events: none;
+      }
+
+      main::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background:
+          radial-gradient(circle at 50% 46%, rgba(255, 255, 255, 0.16), transparent 34%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 46%, rgba(17, 17, 17, 0.05));
+        opacity: 0.48;
+        mix-blend-mode: screen;
+        pointer-events: none;
+      }
+
+      .wordmark-link {
+        color: inherit;
+        text-decoration: none;
+        outline-offset: 18px;
+      }
+
+      .wordmark {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        min-width: min(92vw, 1280px);
+        font-size: clamp(72px, 15vw, 220px);
+        font-weight: 400;
+        letter-spacing: -0.04em;
+        line-height: 0.82;
+        user-select: none;
+      }
+
+      .wordmark span {
+        display: inline-block;
+        opacity: 0;
+        transform: translate3d(calc(1.18em + var(--x)), var(--y), 0) rotate(var(--r));
+        transform-origin: 50% 74%;
+        filter: blur(5px);
+        animation: letter-arrive 1250ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        animation-delay: calc(120ms + var(--i) * 115ms);
+        will-change: transform, opacity, filter;
+      }
+
+      .wordmark.is-settled span {
+        animation: none;
+        opacity: 1;
+        filter: none;
+        transform: translate3d(0, 0, 0) rotate(0deg);
+        transition:
+          transform 520ms cubic-bezier(0.16, 1, 0.3, 1),
+          letter-spacing 520ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .wordmark-link:hover .wordmark.is-settled span,
+      .wordmark-link:focus-visible .wordmark.is-settled span {
+        transform: translate3d(0, -0.045em, 0);
+      }
+
+      .wordmark-link:hover .wordmark.is-settled span:nth-child(2),
+      .wordmark-link:focus-visible .wordmark.is-settled span:nth-child(2),
+      .wordmark-link:hover .wordmark.is-settled span:nth-child(5),
+      .wordmark-link:focus-visible .wordmark.is-settled span:nth-child(5) {
+        transform: translate3d(0, 0.035em, 0);
+      }
+
+      .wordmark::after {
+        content: "";
+        position: fixed;
+        left: 50%;
+        bottom: clamp(22px, 4vw, 54px);
+        width: 28px;
+        height: 1px;
+        background: currentColor;
+        opacity: 0;
+        transform: translateX(-50%) scaleX(0.2);
+        animation: cue-in 800ms ease forwards;
+        animation-delay: 1650ms;
+      }
+
+      @keyframes letter-arrive {
+        0% {
+          opacity: 0;
+          transform: translate3d(calc(1.18em + var(--x)), var(--y), 0) rotate(var(--r));
+          filter: blur(5px);
+        }
+        46% {
+          opacity: 1;
+          filter: blur(0.6px);
+        }
+        72% {
+          transform: translate3d(-0.055em, calc(var(--y) * -0.18), 0) rotate(calc(var(--r) * -0.16));
+        }
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0) rotate(0deg);
+          filter: blur(0);
+        }
+      }
+
+      @keyframes cue-in {
+        to {
+          opacity: 0.38;
+          transform: translateX(-50%) scaleX(1);
+        }
+      }
+
+      @media (max-width: 700px) {
+        body {
+          background:
+            linear-gradient(rgba(250, 249, 245, 0.08), rgba(250, 249, 245, 0.08)),
+            url("assets/boucle-wave-home-mobile.webp") center / cover no-repeat;
+        }
+
+        .wordmark {
+          min-width: 100vw;
+          font-size: clamp(56px, 19vw, 104px);
+          letter-spacing: -0.045em;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .wordmark span,
+        .wordmark::after {
+          animation: none;
+          opacity: 1;
+          filter: none;
+          transform: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="index.html" aria-label="欣冠城 GCSOFA 首页">
-        <img class="brand-logo" src="assets/gcsofa-logo-small.png" alt="欣冠城 GCSOFA 标志" />
-        <span>
-          <strong>欣冠城</strong>
-          <small>GCSOFA · 沙发定制与批发</small>
-        </span>
+    <main id="homeEnter" role="link" tabindex="0" aria-label="进入 GCSOFA 产品目录">
+      <a class="wordmark-link" href="products.html" aria-label="Enter GCSOFA product catalog">
+        <div class="wordmark" aria-hidden="true">
+          <span style="--i: 0; --x: 0.42em; --y: -0.02em; --r: 0.8deg">G</span>
+          <span style="--i: 1; --x: 0.34em; --y: 0.015em; --r: -0.6deg">C</span>
+          <span style="--i: 2; --x: 0.26em; --y: -0.01em; --r: 0.5deg">S</span>
+          <span style="--i: 3; --x: 0.18em; --y: 0.015em; --r: -0.5deg">O</span>
+          <span style="--i: 4; --x: 0.1em; --y: -0.012em; --r: 0.4deg">F</span>
+          <span style="--i: 5; --x: 0.02em; --y: 0.01em; --r: -0.4deg">A</span>
+        </div>
       </a>
-
-      <nav class="nav" aria-label="主导航">
-        <a href="index.html">首页</a>
-        <div class="nav-dropdown">
-          <a class="nav-trigger" href="#products">产品</a>
-          <div class="dropdown-menu" aria-label="产品分类">
-            <a href="index.html#products">欧洲款式</a>
-            <a href="index.html#products">日本款式</a>
-            <a href="index.html#products">中东款式</a>
-            <a href="index.html#products">拉美款式</a>
-          </div>
-        </div>
-        <a href="factory.html">工厂介绍</a>
-        <a href="news.html">家具资讯</a>
-        <a id="progressNavLink" class="hidden" href="progress.html">生产进度</a>
-        <a id="adminNavLink" class="hidden" href="admin.html">后台</a>
-        <a href="contact.html">联系</a>
-      </nav>
-
-      <div class="account-bar">
-        <span id="accountStatus" class="account-status">未登录</span>
-        <button id="loginOpenBtn" class="button button-primary" type="button">登录</button>
-        <button id="logoutBtn" class="button button-ghost hidden" type="button">退出</button>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" aria-label="欣冠城沙发广告轮播">
-        <div class="ad-carousel" data-carousel>
-          <div class="ad-slide ad-slide-animation is-active" data-slide>
-            <div class="sofa-animation" aria-hidden="true">
-              <div class="letter-field">
-                <span style="--sx: -38vw; --sy: -16vh; --tx: -252px; --ty: -206px;">G</span>
-                <span style="--sx: -22vw; --sy: 18vh; --tx: -142px; --ty: -206px;">C</span>
-                <span style="--sx: -4vw; --sy: -22vh; --tx: -34px; --ty: -206px;">S</span>
-                <span style="--sx: 13vw; --sy: 19vh; --tx: 74px; --ty: -206px;">O</span>
-                <span style="--sx: 27vw; --sy: -13vh; --tx: 182px; --ty: -206px;">F</span>
-                <span style="--sx: 30vw; --sy: 10vh; --tx: 290px; --ty: -206px;">A</span>
-              </div>
-              <div class="assembly-sofa" aria-hidden="true">
-                <span class="sofa-part part-back"></span>
-                <span class="sofa-part part-seat part-seat-one"></span>
-                <span class="sofa-part part-seat part-seat-two"></span>
-                <span class="sofa-part part-seat part-seat-three"></span>
-                <span class="sofa-part part-arm part-arm-left"></span>
-                <span class="sofa-part part-arm part-arm-right"></span>
-                <span class="sofa-part part-pillow part-pillow-one"></span>
-                <span class="sofa-part part-pillow part-pillow-two"></span>
-                <span class="sofa-part part-leg part-leg-one"></span>
-                <span class="sofa-part part-leg part-leg-two"></span>
-                <span class="assembly-shadow"></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="ad-slide ad-slide-3d ad-slide-recliner" data-slide>
-            <div class="ad-3d-stage recliner-3d" aria-hidden="true">
-              <div class="ad-3d-floor"></div>
-              <div class="recliner-model">
-                <span class="recliner-shadow"></span>
-                <span class="recliner-base"></span>
-                <span class="recliner-back"></span>
-                <span class="recliner-seat"></span>
-                <span class="recliner-arm recliner-arm-left"></span>
-                <span class="recliner-arm recliner-arm-right"></span>
-                <span class="recliner-footrest"></span>
-                <span class="recliner-footrest-extension"></span>
-                <span class="recliner-pillow"></span>
-              </div>
-              <div class="motion-label recliner-label-one">靠背后仰</div>
-              <div class="motion-label recliner-label-two">脚托抬起</div>
-            </div>
-            <div class="ad-slide-caption">
-              <p class="eyebrow">Functional Sofa</p>
-              <h2>功能沙发抬腿展示</h2>
-              <p>3D 动效演示靠背后仰、脚托抬起，让客户直接看到功能沙发的打开过程。</p>
-            </div>
-            <div class="ad-feature-pins" aria-hidden="true">
-              <span>电动伸展</span>
-              <span>抬腿功能</span>
-              <span>脚托联动</span>
-            </div>
-          </div>
-
-          <div class="ad-slide ad-slide-3d ad-slide-sofabed" data-slide>
-            <div class="ad-3d-stage sofabed-3d" aria-hidden="true">
-              <div class="ad-3d-floor"></div>
-              <div class="sofabed-model">
-                <span class="sofabed-shadow"></span>
-                <span class="sofabed-back"></span>
-                <span class="sofabed-arm sofabed-arm-left"></span>
-                <span class="sofabed-arm sofabed-arm-right"></span>
-                <span class="sofabed-seat"></span>
-                <span class="sofabed-slide-panel panel-one"></span>
-                <span class="sofabed-slide-panel panel-two"></span>
-                <span class="sofabed-mattress"></span>
-                <span class="sofabed-handle"></span>
-              </div>
-              <div class="motion-track" aria-hidden="true"></div>
-              <div class="motion-label sofabed-label-one">向前抽拉</div>
-              <div class="motion-label sofabed-label-two">展开床位</div>
-            </div>
-            <div class="ad-slide-caption">
-              <p class="eyebrow">Pull-Out Sofa Bed</p>
-              <h2>抽拉沙发床变床展示</h2>
-              <p>3D 动效展示从沙发抽拉成床的过程，更直观地呈现结构与使用场景。</p>
-            </div>
-            <div class="ad-feature-pins" aria-hidden="true">
-              <span>推拉结构</span>
-              <span>沙发变床</span>
-              <span>空间灵活</span>
-            </div>
-          </div>
-
-          <div class="ad-carousel-dots" aria-label="广告轮播控制">
-            <button class="is-active" type="button" aria-label="显示第 1 页广告" data-carousel-dot></button>
-            <button type="button" aria-label="显示第 2 页广告" data-carousel-dot></button>
-            <button type="button" aria-label="显示第 3 页广告" data-carousel-dot></button>
-          </div>
-        </div>
-      </section>
-
-      <section class="showroom-heading" aria-label="欣冠城沙发产品展示中心">
-        <div>
-          <p class="eyebrow">GCSOFA Showroom</p>
-          <h1>欣冠城沙发产品展示中心</h1>
-        </div>
-      </section>
-
-      <section id="products" class="section">
-        <div class="section-heading product-section-heading">
-          <div>
-            <p class="eyebrow">Products</p>
-            <h2>沙发系列</h2>
-            <p>点击产品图片打开独立详情页。公开内容无需登录即可查看。</p>
-          </div>
-          <label class="product-search">
-            <span>搜索产品</span>
-            <input id="productSearchInput" type="search" placeholder="输入编号，例如 2672 / GC-S2672" autocomplete="off" />
-          </label>
-        </div>
-        <div id="productGrid" class="product-grid" aria-live="polite"></div>
-      </section>
-
     </main>
+    <script>
+      if (location.hash === "#products") {
+        location.replace("products.html");
+      }
 
-    <footer id="support" class="footer">
-      <strong>欣冠城 GCSOFA</strong>
-      <span>商务咨询：sales@gcsofa.example</span>
-      <span>客户支持：support@gcsofa.example</span>
-    </footer>
+      const wordmark = document.querySelector(".wordmark");
+      window.setTimeout(() => wordmark.classList.add("is-settled"), 1900);
 
-    <dialog id="loginDialog" class="dialog">
-      <form id="loginForm" class="dialog-card" method="dialog">
-        <div class="dialog-head">
-          <div>
-            <p class="eyebrow">Account</p>
-            <h2>帐号登录</h2>
-          </div>
-          <button class="icon-button" value="cancel" aria-label="关闭登录窗口" type="button" data-close-login>×</button>
-        </div>
-
-        <label>
-          <span>帐号</span>
-          <input id="usernameInput" name="username" autocomplete="username" required />
-        </label>
-        <label>
-          <span>密码</span>
-          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
-        </label>
-
-        <p id="loginMessage" class="form-message" role="status"></p>
-
-        <button class="button button-primary button-full" type="submit">登录</button>
-      </form>
-    </dialog>
-
-    <script src="data.js?v=20260602-cloud-sync"></script>
-    <script src="auth.js"></script>
-    <script src="index.js?v=20260605-product-speed"></script>
+      const homeEnter = document.querySelector("#homeEnter");
+      const enterProducts = () => {
+        location.href = "products.html";
+      };
+      homeEnter.addEventListener("click", enterProducts);
+      homeEnter.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          enterProducts();
+        }
+      });
+    </script>
   </body>
 </html>

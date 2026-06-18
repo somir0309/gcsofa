@@ -30,10 +30,10 @@ const introImageInputs = {
 const extraIntroImageList = document.querySelector("#extraIntroImageList");
 const addIntroImageBtn = document.querySelector("#addIntroImageBtn");
 const INTRO_IMAGE_LABELS = {
-  front: "正视图",
-  angle: "45度角视图",
-  side: "侧视图",
-  back: "背视图",
+  front: "视角1",
+  angle: "视角2",
+  side: "视角3",
+  back: "视角4",
   dimensions: "尺寸图",
 };
 const DEFAULT_INTRO_IMAGE_SETTINGS = {
@@ -144,7 +144,7 @@ function createBlankProduct() {
       填充: "可选",
       颜色: "可选",
     },
-    views: ["正面视图", "侧面视图", "场景搭配"],
+    views: ["视角1", "视角2", "视角3", "视角4"],
     highlights: [],
     homes: [],
     audience: [],
@@ -1241,7 +1241,11 @@ function readAdminCostSheetFile(file) {
       currentProductCostSheet = uploadedSheet;
       if (!saveCurrentProductDraft()) return;
       renderAdminCostSheetPreview();
-      setAdminCostSheetMessage(`已保存到服务器：${file.name}。详情页可下载原文件。`);
+      setAdminCostSheetMessage(
+        uploadedSheet.storage === "inline"
+          ? `已临时保存：${file.name}。详情页可下载原文件；恢复云端存储后可再重新上传。`
+          : `已保存到服务器：${file.name}。详情页可下载原文件。`
+      );
     })
     .catch((error) => {
       setAdminCostSheetMessage(`成本分析表保存失败：${getUploadErrorMessage(error)}`, true);
@@ -1389,27 +1393,55 @@ async function uploadCostSheetToServer(file, productId = "") {
     };
   }
 
-  const response = await fetch(`${getLocalServerOrigin()}/api/cost-sheets?productId=${encodeURIComponent(productId)}&fileName=${encodeURIComponent(file.name)}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": contentType,
-      "X-Product-Id": productId,
-    },
-    body: file,
-  });
-  const data = await readJsonResponse(response);
-  if (!response.ok) {
-    throw new Error(data.message || `上传服务返回 ${response.status}`);
+  try {
+    const response = await fetch(`${getLocalServerOrigin()}/api/cost-sheets?productId=${encodeURIComponent(productId)}&fileName=${encodeURIComponent(file.name)}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": contentType,
+        "X-Product-Id": productId,
+      },
+      body: file,
+    });
+    const data = await readJsonResponse(response);
+    if (!response.ok) {
+      throw new Error(data.message || `上传服务返回 ${response.status}`);
+    }
+    if (!data.ok || !data.path) throw new Error(data.message || "上传服务没有返回文件地址");
+    return {
+      name: data.name || file.name,
+      uploadedAt: formatAdminDateTime(new Date()),
+      dataUrl: normalizeUploadedPath(data.path),
+      path: normalizeUploadedPath(data.path),
+      size: data.size || file.size,
+      type: file.type || getExcelMimeType(file.name),
+    };
+  } catch (error) {
+    return createInlineCostSheet(file, contentType, error);
   }
-  if (!data.ok || !data.path) throw new Error(data.message || "上传服务没有返回文件地址");
+}
+
+async function createInlineCostSheet(file, contentType, cause) {
+  const inlineLimit = 2 * 1024 * 1024;
+  if (file.size > inlineLimit) throw cause;
+  const dataUrl = await readFileAsDataUrl(file);
   return {
-    name: data.name || file.name,
+    name: file.name,
     uploadedAt: formatAdminDateTime(new Date()),
-    dataUrl: normalizeUploadedPath(data.path),
-    path: normalizeUploadedPath(data.path),
-    size: data.size || file.size,
-    type: file.type || getExcelMimeType(file.name),
+    dataUrl,
+    path: dataUrl,
+    size: file.size,
+    type: contentType,
+    storage: "inline",
   };
+}
+
+function readFileAsDataUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = () => reject(reader.error || new Error("文件读取失败"));
+    reader.readAsDataURL(file);
+  });
 }
 
 async function uploadCostSheetDirectly(file, uploadPath, contentType) {
@@ -1470,8 +1502,11 @@ function getUploadErrorMessage(error) {
   if (/body|payload|too large|413|4\.5/i.test(message)) {
     return "文件较大，服务端中转失败。请刷新后台后重试，系统会优先使用云端直传。";
   }
+  if (/suspended/i.test(message)) {
+    return "云端文件存储已暂停。2MB 内的成本表会自动临时保存；较大文件需恢复 Blob 存储后再上传。";
+  }
   if (/token|configured|Blob/i.test(message)) {
-    return "云端 Blob 上传令牌异常，请检查 Vercel Blob 配置后重试。";
+    return "云端 Blob 上传异常，请检查 Vercel Blob 配置后重试。";
   }
   if (/network|fetch|Failed to fetch/i.test(message)) {
     return "网络连接上传服务失败，请检查网络后重新上传。";

@@ -2,6 +2,13 @@ node_modules/
 .vercel/
 server-data/
 npm-debug.log*
+image-optimization-report-*.json
+.deploy-logs/
+*.bak-*
+*.pre-repair-*
+*.converted-test.js
+*-online-check.json
+lovefrom-gcsofa-preview.html
 
 .vercel
 .env*
