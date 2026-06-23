@@ -863,7 +863,7 @@ function createExtraIntroImageRow(item = {}, productName = "") {
         </label>
         <label>
           <span>图片路径</span>
-          <input data-extra-field="image" value="${escapeAdminCell(image)}" placeholder="assets/gallery-extra.png" />
+          <input data-extra-field="image" value="${escapeAdminCell(image)}" placeholder="assets/gcsofa-sectional.webp" />
         </label>
         <label>
           <span>主体位置</span>
