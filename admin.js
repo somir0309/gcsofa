@@ -135,7 +135,7 @@ function createBlankProduct() {
     id: "",
     name: "",
     category: firstCategory,
-    image: "assets/gcsofa-sectional.png",
+    image: "assets/gcsofa-sectional.webp",
     summary: "",
     tags: [],
     specs: {
@@ -243,7 +243,7 @@ function createBlankStaff() {
     id: "",
     name: "",
     title: "",
-    avatar: "assets/staff-chen-yu.png",
+    avatar: "assets/gcsofa-logo-small.png",
     summary: "",
     email: "",
     whatsapp: "",
@@ -259,7 +259,7 @@ function createNewStaff() {
     id,
     name: `新业务人员${index}`,
     title: "业务顾问",
-    avatar: "assets/staff-chen-yu.png",
+    avatar: "assets/gcsofa-logo-small.png",
     summary: "请在后台补充业务人员简介。",
     email: "",
     whatsapp: "",
@@ -962,7 +962,7 @@ function createFactoryGalleryRow(item = {}) {
       </label>
       <label>
         <span>图片路径</span>
-        <input data-factory-gallery-field="image" value="${escapeAdminCell(image)}" placeholder="assets/factory-workshop.png" />
+        <input data-factory-gallery-field="image" value="${escapeAdminCell(image)}" placeholder="assets/factory-fabric-workshop.webp" />
       </label>
       <label class="factory-admin-row-wide">
         <span>描述</span>

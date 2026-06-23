@@ -64,7 +64,7 @@ const GCSOFA_DEFAULT_PRODUCTS = [
     id: "luna-sectional",
     name: "Luna 云舒转角沙发",
     category: "欧洲款式",
-    image: "assets/gcsofa-sectional.png",
+    image: "assets/gcsofa-sectional.webp",
     summary: "适合客厅与样板间的 L 型组合沙发，坐感宽厚，整体气质温和高级。",
     tags: ["L 型组合", "可拆洗布套", "大户型"],
     specs: {
@@ -100,7 +100,7 @@ const GCSOFA_DEFAULT_PRODUCTS = [
     id: "nova-recliner",
     name: "Nova 头等舱功能沙发",
     category: "日本款式",
-    image: "assets/gcsofa-recliner.png",
+    image: "assets/gcsofa-recliner.webp",
     summary: "三人位真皮功能沙发，适合家庭影院、休闲客厅和高端公寓场景。",
     tags: ["真皮触感", "可调头枕", "功能位"],
     specs: {
@@ -136,7 +136,7 @@ const GCSOFA_DEFAULT_PRODUCTS = [
     id: "mira-curve",
     name: "Mira 弧境设计沙发",
     category: "中东款式",
-    image: "assets/gcsofa-curve.png",
+    image: "assets/gcsofa-curve.webp",
     summary: "弧形造型与柔软绒感面料结合，适合设计型客厅、会所和展厅空间。",
     tags: ["弧形设计", "绒感面料", "展厅推荐"],
     specs: {
@@ -255,7 +255,7 @@ const GCSOFA_DEFAULT_FACTORY_PROFILE = {
   clientsEyebrow: "Partners",
   clientsTitle: "长期合作客户",
   clientsDescription: "全球客户资源，10余年持续合作经验，服务多地区家具品牌、零售渠道与电商平台。",
-  clientsImage: "assets/customer-logos-2026.png",
+  clientsImage: "assets/customer-logos-2026.webp",
   contactEyebrow: "Contact",
   contactTitle: "联系我们",
   contactItems: [

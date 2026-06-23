@@ -154,7 +154,7 @@ function createDefaultProductionOrders() {
       currentStep: "扪工",
       note: "面料已到厂，重点确认转角位扪工平整度。",
       detailRemark: "面料已到厂，重点确认转角位扪工平整度。",
-      image: "assets/gcsofa-sectional.png",
+      image: "assets/gcsofa-sectional.webp",
       updatedAt: "2026-05-28 09:30",
     },
     {
@@ -169,7 +169,7 @@ function createDefaultProductionOrders() {
       currentStep: "开料",
       note: "功能架等待入库，先安排皮料裁剪和木架开料。",
       detailRemark: "功能架等待入库，先安排皮料裁剪和木架开料。",
-      image: "assets/gcsofa-recliner.png",
+      image: "assets/gcsofa-recliner.webp",
       updatedAt: "2026-05-27 16:20",
     },
     {
@@ -184,7 +184,7 @@ function createDefaultProductionOrders() {
       currentStep: "质检",
       note: "已完成质检包装，可安排出货资料和装柜计划。",
       detailRemark: "已完成质检包装，可安排出货资料和装柜计划。",
-      image: "assets/gcsofa-curve.png",
+      image: "assets/gcsofa-curve.webp",
       updatedAt: "2026-05-12 14:10",
     },
   ];
@@ -820,7 +820,7 @@ function addProductionOrder() {
     status: "scheduled",
     currentStep: "开料",
     note: "新建生产单，可上传生产单图片并更新流程。",
-    image: "assets/gcsofa-sectional.png",
+    image: "assets/gcsofa-sectional.webp",
     updatedAt: getNowText(),
   });
   saveProductionOrders(orders);
