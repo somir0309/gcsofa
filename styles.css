@@ -457,7 +457,7 @@
   justify-self: end;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   align-self: center;
   border-radius: 8px;
   overflow: hidden;
@@ -465,8 +465,8 @@
 }
 
 #products .product-directory-grid.is-list .product-image-button img {
-  object-fit: contain;
-  object-position: center right;
+  object-fit: cover;
+  object-position: center center;
 }
 
 #products .product-directory-grid.is-list .product-body {

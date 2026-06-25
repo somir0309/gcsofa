@@ -221,8 +221,10 @@ function createProductCard(product, index) {
   const prioritizeImage = index < 4 || location.hash === "#products" || Boolean(activeCategory !== "\u5168\u90e8" || activeKeywords.length || productSearchTerm);
   const imageLoading = prioritizeImage ? "eager" : "lazy";
   const fetchPriority = prioritizeImage && index === 0 ? "high" : "auto";
-  const image = resolveProductImage(product, product.image, "thumb");
-  const imageFallback = getProductImageErrorFallback(product, "thumb");
+  const imageRole = activeView === "list" ? "scene" : "thumb";
+  const imageSource = imageRole === "scene" ? "" : product.image;
+  const image = resolveProductImage(product, imageSource, imageRole);
+  const imageFallback = getProductImageErrorFallback(product, imageRole);
   const imageError = imageFallback ? ` onerror="this.onerror=null;this.src='${escapeAttribute(imageFallback)}'"` : "";
   const productName = product.name || product.id;
   const productHref = `detail.html?id=${encodeURIComponent(product.id)}`;
