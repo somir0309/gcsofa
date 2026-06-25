@@ -100,6 +100,45 @@
         margin-bottom: 18px;
       }
 
+      .ops-policy {
+        max-width: 1360px;
+        margin: 0 auto 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 16px 18px;
+        background: #fff;
+      }
+
+      .ops-policy h2 {
+        margin: 0 0 10px;
+        font-size: 18px;
+      }
+
+      .ops-policy-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .ops-policy-grid div {
+        border: 1px solid #d8e5e1;
+        border-radius: 8px;
+        padding: 12px;
+        background: #f8fbf9;
+      }
+
+      .ops-policy-grid strong {
+        display: block;
+        margin-bottom: 6px;
+        color: var(--brand-dark);
+      }
+
+      .ops-policy-grid span {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
       .metric {
         min-height: 112px;
         border: 1px solid var(--line);
@@ -256,7 +295,7 @@
 
       body.top-sofas-page .product-card {
         display: grid;
-        grid-template-columns: minmax(260px, 32%) minmax(0, 1fr);
+        grid-template-columns: 1fr;
         min-height: 0;
         overflow: hidden;
         border: 1px solid var(--line);
@@ -264,7 +303,16 @@
         background: #fff;
       }
 
+      body.top-sofas-page .product-card.no-media {
+        grid-template-columns: 1fr;
+      }
+
       body.top-sofas-page .product-list.grid .product-card {
+        grid-template-columns: 1fr;
+      }
+
+      body.top-sofas-page .product-list.grid .insight-grid,
+      body.top-sofas-page .product-list.grid .review-grid {
         grid-template-columns: 1fr;
       }
 
@@ -320,9 +368,26 @@
         gap: 10px;
       }
 
+      .title-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .rank-pill {
+        flex: 0 0 auto;
+        border-radius: 8px;
+        padding: 7px 10px;
+        color: #fff;
+        background: var(--brand-dark);
+        font-weight: 800;
+      }
+
       .platform-badge,
       .signal-badge,
-      .tag {
+      .tag,
+      .score-pill {
         display: inline-flex;
         align-items: center;
         min-height: 26px;
@@ -361,7 +426,9 @@
         color: var(--ink);
       }
 
-      .tags {
+      .tags,
+      .chip-row,
+      .score-row {
         display: flex;
         flex-wrap: wrap;
         gap: 7px;
@@ -371,6 +438,122 @@
         color: #475467;
         background: #eef2f6;
         font-weight: 600;
+      }
+
+      .descriptor-tag {
+        color: #31536f;
+        background: #e8f1f8;
+      }
+
+      .fabric-tag {
+        color: #285545;
+        background: #e7f5ef;
+      }
+
+      .buyer-tag {
+        color: #6f4b16;
+        background: #fff4d8;
+      }
+
+      .score-row {
+        gap: 8px;
+      }
+
+      .score-pill {
+        color: #334155;
+        background: #f1f5f9;
+      }
+
+      .score-pill.opportunity {
+        color: #065f46;
+        background: #dff7ec;
+      }
+
+      .score-pill.risk {
+        color: #9a3412;
+        background: #ffedd5;
+      }
+
+      .score-pill.priority {
+        color: #12315a;
+        background: #dbeafe;
+      }
+
+      .trend-summary {
+        display: grid;
+        gap: 7px;
+        border-left: 4px solid var(--brand);
+        padding: 10px 0 10px 12px;
+        background: linear-gradient(90deg, rgba(20, 184, 166, 0.09), rgba(20, 184, 166, 0));
+      }
+
+      .trend-summary strong,
+      .insight-block h4,
+      .recommendation strong {
+        color: var(--brand-dark);
+      }
+
+      .trend-summary span,
+      .recommendation p {
+        color: #364152;
+        line-height: 1.6;
+      }
+
+      .trend-summary small {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .insight-grid,
+      .review-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 18px;
+      }
+
+      .insight-block,
+      .review-column,
+      .recommendation {
+        border-top: 1px solid #e5e7eb;
+        padding-top: 12px;
+      }
+
+      .insight-block h4,
+      .review-column h4 {
+        margin: 0 0 8px;
+        font-size: 14px;
+      }
+
+      .bullet-list {
+        display: grid;
+        gap: 6px;
+        margin: 0;
+        padding-left: 18px;
+        color: #4b5565;
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .review-column.positive h4 {
+        color: #047857;
+      }
+
+      .review-column.negative h4 {
+        color: #b45309;
+      }
+
+      .recommendation {
+        display: grid;
+        gap: 8px;
+      }
+
+      .recommendation p {
+        margin: 0;
+        font-size: 13px;
+      }
+
+      .recommendation strong {
+        margin-right: 8px;
       }
 
       .note {
@@ -446,11 +629,20 @@
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
 
+        .ops-policy-grid {
+          grid-template-columns: 1fr;
+        }
+
         .filters {
           position: static;
         }
 
         .product-list.grid {
+          grid-template-columns: 1fr;
+        }
+
+        .insight-grid,
+        .review-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -515,12 +707,12 @@
       <section class="page-head">
         <div>
           <p class="eyebrow">市场观察</p>
-          <h1>平台热销沙发前十</h1>
+          <h1>全球热销沙发选品情报</h1>
           <p class="head-copy">
-            聚合亚马逊、威费尔、抖音海外小店的热卖、畅销榜和平台推荐榜单，用于内部选品、价格带判断和卖点追踪。
+            不展示图片，聚合平台热销关键词、评论反馈方向、客户痛点、面料建议和选品动作，用于判断哪些款式值得跟进。
           </p>
         </div>
-        <aside class="refresh-card" aria-label="数据更新信息">
+        <aside id="mingRefreshCard" class="refresh-card hidden" aria-label="数据更新信息">
           <dl>
             <dt>最近抓取</dt>
             <dd id="capturedAt">--</dd>
@@ -557,6 +749,24 @@
         </div>
       </section>
 
+      <section class="ops-policy" data-top-sofas-content aria-label="热销选品数据规则">
+        <h2>抓取与选品规则</h2>
+        <div class="ops-policy-grid">
+          <div>
+            <strong>更新频率</strong>
+            <span id="policyFrequency">每天 09:00 重新抓取；失败时保留上一版。</span>
+          </div>
+          <div>
+            <strong>评论抓取</strong>
+            <span id="policyImageRule">抓取并整理客户好评、差评和重复出现的痛点。</span>
+          </div>
+          <div>
+            <strong>选品输出</strong>
+            <span id="policyFallback">输出关键词、趋势判断、面料建议、机会分和风险分。</span>
+          </div>
+        </div>
+      </section>
+
       <section class="workspace" data-top-sofas-content>
         <aside class="panel filters" aria-label="筛选条件">
           <h2 class="panel-title">筛选</h2>
@@ -566,7 +776,7 @@
           </span>
           <label class="field">
             <span>关键词</span>
-            <input id="searchInput" type="search" placeholder="搜索标题、标签或备注" autocomplete="off" />
+            <input id="searchInput" type="search" placeholder="搜索关键词、痛点、面料或评论" autocomplete="off" />
           </label>
           <label class="field">
             <span>品类</span>
@@ -582,17 +792,19 @@
               <option value="priceLow">价格从低到高</option>
               <option value="reviews">评论数最多</option>
               <option value="rating">评分最高</option>
+              <option value="opportunity">机会分最高</option>
+              <option value="risk">风险分最低</option>
             </select>
           </label>
           <div class="keyword-strip" id="keywordStrip" aria-label="快捷标签"></div>
           <button class="clear-btn" id="clearBtn" type="button">重置筛选</button>
         </aside>
 
-        <section class="panel" aria-label="热销产品列表">
+        <section class="panel" aria-label="热销选品情报列表">
           <div class="content-head">
             <div>
               <h2 id="resultTitle">全部平台</h2>
-              <p id="resultCount">正在读取数据</p>
+              <p id="resultCount">正在读取选品情报</p>
             </div>
             <div class="view-toggle" aria-label="视图切换">
               <button id="listViewBtn" class="is-active" type="button" title="列表视图">☰</button>
@@ -641,16 +853,20 @@
       const data = window.GCSOFA_TOP_SOFAS || { products: [] };
       const products = data.products || [];
       const platformNames = ["全部平台", "亚马逊", "威费尔", "抖音海外小店"];
-      const quickTags = ["组合沙发", "沙发床", "功能沙发", "小户型", "云朵款", "可拆洗", "高客单"];
+      const quickTags = ["组合沙发", "沙发床", "功能沙发", "小户型", "云朵款", "可拆洗", "耐污面料", "高客单", "低售后风险"];
 
       const els = {
         capturedAt: document.getElementById("capturedAt"),
         updateFrequency: document.getElementById("updateFrequency"),
         sourceMode: document.getElementById("sourceMode"),
+        mingRefreshCard: document.getElementById("mingRefreshCard"),
         totalProducts: document.getElementById("totalProducts"),
         averagePrice: document.getElementById("averagePrice"),
         topCategory: document.getElementById("topCategory"),
         maxReviews: document.getElementById("maxReviews"),
+        policyFrequency: document.getElementById("policyFrequency"),
+        policyImageRule: document.getElementById("policyImageRule"),
+        policyFallback: document.getElementById("policyFallback"),
         platformTabs: document.getElementById("platformTabs"),
         searchInput: document.getElementById("searchInput"),
         categorySelect: document.getElementById("categorySelect"),
@@ -671,6 +887,47 @@
           minimumFractionDigits: 2,
           maximumFractionDigits: 2
         })}`;
+      }
+
+      function escapeHTML(value = "") {
+        return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          "\"": "&quot;",
+          "'": "&#39;"
+        }[char]));
+      }
+
+      function toArray(value) {
+        if (Array.isArray(value)) return value.filter(Boolean);
+        return value ? [value] : [];
+      }
+
+      function flattenText(value) {
+        if (Array.isArray(value)) return value.map(flattenText).join(" ");
+        if (value && typeof value === "object") return Object.values(value).map(flattenText).join(" ");
+        return value ? String(value) : "";
+      }
+
+      function renderChips(items, className = "tag") {
+        return toArray(items).map((item) => `<span class="${className}">${escapeHTML(item)}</span>`).join("");
+      }
+
+      function renderBullets(items) {
+        const listItems = toArray(items).map((item) => `<li>${escapeHTML(item)}</li>`).join("");
+        return listItems ? `<ul class="bullet-list">${listItems}</ul>` : "";
+      }
+
+      function renderInsightBlock(title, content, type = "list") {
+        const body = type === "chips" ? `<div class="chip-row">${renderChips(content)}</div>` : renderBullets(content);
+        if (!body) return "";
+        return `
+          <section class="insight-block">
+            <h4>${escapeHTML(title)}</h4>
+            ${body}
+          </section>
+        `;
       }
 
       function countBy(items, key) {
@@ -697,6 +954,17 @@
         els.averagePrice.textContent = `$${Math.round(average).toLocaleString("en-US")}`;
         els.topCategory.textContent = getTopValue(products, "category");
         els.maxReviews.textContent = maxReviews.toLocaleString("en-US");
+        els.policyFrequency.textContent = data.updateFrequency || "每天 09:00 重新抓取；失败时保留上一版。";
+        els.policyImageRule.textContent = data.insightPolicy?.reviewRule || "围绕热销关键词抓取并整理好评重点、差评风险和重复出现的客户痛点。";
+        els.policyFallback.textContent = data.insightPolicy?.outputRule || "每款输出关键词、趋势判断、痛点、描述词、面料推荐、规格建议、机会分和风险分。";
+      }
+
+      function isMingAdmin(user = getCurrentUser()) {
+        return Boolean(user && user.username === "ming" && user.role === "admin");
+      }
+
+      function renderMingOnlyModules(user = getCurrentUser()) {
+        els.mingRefreshCard?.classList.toggle("hidden", !isMingAdmin(user));
       }
 
       function setupControls() {
@@ -769,10 +1037,30 @@
         const filtered = products.filter((product) => {
           const matchesPlatform = state.platform === "all" || product.platform === state.platform;
           const matchesCategory = state.category === "all" || product.category === state.category;
-          const searchTarget = [product.title, product.platform, product.category, product.salesSignal, product.note, ...(product.tags || [])]
+          const isLowRiskQuery = query === "低售后风险";
+          const searchTarget = [
+            product.title,
+            product.platform,
+            product.category,
+            product.salesSignal,
+            product.note,
+            product.trendKeyword,
+            product.trendJudgement,
+            product.selectionAdvice,
+            product.specSuggestion,
+            product.priority,
+            flattenText(product.tags),
+            flattenText(product.customerPainPoints),
+            flattenText(product.descriptorWords),
+            flattenText(product.fabricRecommendations),
+            flattenText(product.positiveReviewThemes),
+            flattenText(product.negativeReviewThemes),
+            flattenText(product.buyerProfile)
+          ]
             .join(" ")
             .toLowerCase();
-          return matchesPlatform && matchesCategory && (!query || searchTarget.includes(query.toLowerCase()));
+          const matchesQuery = !query || (isLowRiskQuery ? Number(product.riskScore || 999) <= 55 : searchTarget.includes(query));
+          return matchesPlatform && matchesCategory && matchesQuery;
         });
 
         return filtered.sort((a, b) => {
@@ -780,6 +1068,8 @@
           if (state.sort === "priceLow") return a.price - b.price;
           if (state.sort === "reviews") return b.reviewCount - a.reviewCount;
           if (state.sort === "rating") return b.rating - a.rating;
+          if (state.sort === "opportunity") return (b.opportunityScore || 0) - (a.opportunityScore || 0);
+          if (state.sort === "risk") return (a.riskScore || 999) - (b.riskScore || 999);
           return a.platform.localeCompare(b.platform) || a.rank - b.rank;
         });
       }
@@ -802,32 +1092,62 @@
 
         els.productList.innerHTML = items
           .map((product) => {
-            const tags = (product.tags || []).map((tag) => `<span class="tag">${tag}</span>`).join("");
-            const imageSource = product.thumbnail || product.localImage || product.image;
-            const fallbackImage = data.imageCache?.fallback || "assets/top-sofas/image-unavailable.webp";
-            const placeholderClass = product.imageStatus === "placeholder" ? " is-placeholder" : "";
+            const tags = renderChips(product.tags);
+            const descriptorWords = renderChips(product.descriptorWords, "tag descriptor-tag");
+            const fabricRecommendations = renderChips(product.fabricRecommendations, "tag fabric-tag");
+            const buyerProfile = renderChips(product.buyerProfile, "tag buyer-tag");
+            const trendKeyword = product.trendKeyword || product.visualKeyword || [product.title, product.category, ...(product.tags || [])].filter(Boolean).join(" / ");
             return `
-              <article class="product-card">
-                <div class="product-media${placeholderClass}">
-                  <img src="${imageSource}" alt="${product.title}" loading="lazy" data-fallback="${fallbackImage}" onerror="this.onerror=null; this.closest('.product-media')?.classList.add('is-placeholder'); this.src=this.dataset.fallback;" />
-                  <span class="rank">#${product.rank}</span>
-                </div>
+              <article class="product-card no-media">
                 <div class="product-body">
                   <div class="product-topline">
-                    <span class="platform-badge">${product.platform}</span>
-                    <span class="signal-badge">${product.salesSignal}</span>
+                    <span class="platform-badge">${escapeHTML(product.platform)}</span>
+                    <span class="signal-badge">${escapeHTML(product.salesSignal)}</span>
                   </div>
-                  <h3 class="product-title">${product.title}</h3>
+                  <div class="title-row">
+                    <h3 class="product-title">${escapeHTML(product.title)}</h3>
+                    <span class="rank-pill">#${escapeHTML(product.rank)}</span>
+                  </div>
                   <div class="product-meta">
-                    <span>品类 <strong>${product.category}</strong></span>
-                    <span>评分 <strong>${product.rating}</strong></span>
+                    <span>品类 <strong>${escapeHTML(product.category)}</strong></span>
+                    <span>价格带 <strong>${formatPrice(product)}</strong></span>
+                    <span>评分 <strong>${escapeHTML(product.rating)}</strong></span>
                     <span>评论 <strong>${Number(product.reviewCount).toLocaleString("en-US")}</strong></span>
                   </div>
+                  <div class="score-row">
+                    <span class="score-pill opportunity">机会分 ${escapeHTML(product.opportunityScore || "--")}</span>
+                    <span class="score-pill risk">风险分 ${escapeHTML(product.riskScore || "--")}</span>
+                    <span class="score-pill priority">${escapeHTML(product.priority || "常规监控")}</span>
+                  </div>
                   <div class="tags">${tags}</div>
-                  <p class="note">${product.note}</p>
+                  <div class="trend-summary">
+                    <strong>关键词判断趋势</strong>
+                    <span>${escapeHTML(product.trendJudgement || product.note || "")}</span>
+                    <small>${escapeHTML(trendKeyword)}</small>
+                  </div>
+                  <div class="insight-grid">
+                    ${renderInsightBlock("客户痛点", product.customerPainPoints)}
+                    ${renderInsightBlock("描述词", product.descriptorWords, "chips")}
+                    ${renderInsightBlock("面料品种推荐", product.fabricRecommendations, "chips")}
+                    ${renderInsightBlock("适合客群", product.buyerProfile, "chips")}
+                  </div>
+                  <div class="review-grid">
+                    <section class="review-column positive">
+                      <h4>好评重点</h4>
+                      ${renderBullets(product.positiveReviewThemes)}
+                    </section>
+                    <section class="review-column negative">
+                      <h4>差评风险</h4>
+                      ${renderBullets(product.negativeReviewThemes)}
+                    </section>
+                  </div>
+                  <div class="recommendation">
+                    <p><strong>规格建议</strong>${escapeHTML(product.specSuggestion || "")}</p>
+                    <p><strong>选品动作</strong>${escapeHTML(product.selectionAdvice || "")}</p>
+                  </div>
                   <div class="card-actions">
-                    <span class="price">${formatPrice(product)}</span>
-                    <a href="${product.productUrl}" target="_blank" rel="noreferrer">打开来源</a>
+                    <span class="price">${escapeHTML(product.priority || "常规监控")}</span>
+                    <a href="${escapeHTML(product.productUrl)}" target="_blank" rel="noreferrer">打开来源</a>
                   </div>
                 </div>
               </article>
@@ -840,11 +1160,12 @@
         const items = getFilteredProducts();
         renderPlatforms();
         els.resultTitle.textContent = state.platform === "all" ? "全部平台" : state.platform;
-        els.resultCount.textContent = `当前显示 ${items.length} 个产品`;
+        els.resultCount.textContent = `当前显示 ${items.length} 条选品情报`;
         renderProducts(items);
       }
 
       function renderAccess(user = getCurrentUser()) {
+        renderMingOnlyModules(user);
         const canView = userCan("topSofas", user);
         els.protectedContent.forEach((section) => section.classList.toggle("hidden", !canView));
 
@@ -868,6 +1189,7 @@
 
       setupSummary();
       setupControls();
+      renderMingOnlyModules();
       const topSofasAuth = setupAuth({ onChange: renderAccess });
       whenSiteDataReady(() => topSofasAuth.updateAccountView());
     </script>
