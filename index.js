@@ -89,7 +89,7 @@ function renderProductControls() {
 }
 
 function getProductCategories() {
-  const names = [...new Set(getProducts().map((product) => product.category).filter(Boolean))];
+  const names = [...new Set(getCatalogProducts().map((product) => product.category).filter(Boolean))];
   return ["全部", ...names];
 }
 
@@ -104,7 +104,7 @@ function renderCategoryTabs() {
 }
 
 function countByCategory(category) {
-  const products = getProducts();
+  const products = getCatalogProducts();
   if (category === "全部") return products.length;
   return products.filter((product) => product.category === category).length;
 }
@@ -143,7 +143,7 @@ function bindProductSearch() {
 }
 
 function getVisibleProducts() {
-  const products = [...getProducts()].filter((product) => {
+  const products = [...getCatalogProducts()].filter((product) => {
     const categoryMatch = activeCategory === "全部" || product.category === activeCategory;
     const productKeywords = getProductKeywords(product);
     const keywordMatch = activeKeywords.every((keyword) => productKeywords.includes(keyword));
@@ -153,6 +153,22 @@ function getVisibleProducts() {
 
   products.sort((a, b) => getProductModelNumber(b) - getProductModelNumber(a));
   return products;
+}
+
+function getCatalogProducts() {
+  return getProducts().filter(hasDisplayableProductImage);
+}
+
+function hasDisplayableProductImage(product = {}) {
+  const key = getProductImageKey(product);
+  const entry = window.GCSOFA_PRODUCT_IMAGE_MAP?.[key];
+  if (entry?.thumbFallback || entry?.thumbScene || entry?.thumb || entry?.scene || entry?.fallback || entry?.front) {
+    return true;
+  }
+
+  const image = String(product.image || "").trim();
+  if (!image || isLocalOnlyImageSource(image) || isMappedProductImageSource(image)) return false;
+  return true;
 }
 
 function getProductModelNumber(product) {
