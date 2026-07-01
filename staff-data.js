@@ -58,12 +58,12 @@ const GCSOFA_DEFAULT_STAFF = [
     id: "zhang-xiang",
     name: "张翔",
     title: "业务联系方式",
-    avatar: "assets/gcsofa-logo-small.png",
-    summary: "负责客户咨询、产品资料、报价沟通与订单跟进。",
+    avatar: "assets/staff-zhang-xiang.webp",
+    summary: "负责与客户进行沟通、推广产品。微信：Waxsn1998",
     email: "",
     whatsapp: "",
     phone: "",
-    wechat: "",
+    wechat: "Waxsn1998",
   },
 ];
 
