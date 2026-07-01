@@ -616,7 +616,7 @@ staffForm.addEventListener("submit", (event) => {
   saveStaffFromForm();
 });
 
-function saveStaffFromForm() {
+async function saveStaffFromForm() {
   staffFormMessage.textContent = "";
   if (!staffForm.reportValidity()) {
     staffFormMessage.textContent = "请先补全姓名、职位、头像和简介；联系方式可留空。";
@@ -624,11 +624,16 @@ function saveStaffFromForm() {
   }
 
   const person = readStaffForm();
-  upsertStaff(person);
-  selectedStaff = person.id;
-  loadStaff(person);
-  renderStaffList();
-  staffFormMessage.textContent = "业务人员信息已保存。";
+  staffFormMessage.textContent = "正在保存业务人员信息...";
+  try {
+    await upsertStaff(person);
+    selectedStaff = person.id;
+    loadStaff(person);
+    renderStaffList();
+    staffFormMessage.textContent = "业务人员信息已保存。";
+  } catch (error) {
+    staffFormMessage.textContent = `保存失败：${error?.message || "云端保存失败"}`;
+  }
 }
 
 function insertStaffAtTop(person) {
@@ -1332,18 +1337,28 @@ async function readImageFile(file, targetInput) {
     return;
   }
 
-  setProductFormMessage("正在压缩并上传图片...");
+  const isStaffAvatar = targetInput?.id === "staffAvatarInput";
+  const setImageUploadMessage = (message, isError = false) => {
+    if (isStaffAvatar) {
+      staffFormMessage.textContent = message;
+      staffFormMessage.classList.toggle("error-message", Boolean(isError));
+      return;
+    }
+    setProductFormMessage(message, isError);
+  };
+
+  setImageUploadMessage("正在压缩并上传图片...");
   const uploadResult = await uploadImageToAssets(file);
   if (uploadResult.path) {
     targetInput.value = uploadResult.path;
     if (targetInput.id) updateImagePreview(targetInput.id);
-    setProductFormMessage("图片已压缩并保存到服务器。");
+    setImageUploadMessage("图片已压缩并保存到服务器。");
     return;
   }
 
   const message = uploadResult.error || "图片上传失败：请确认上传服务可用。";
-  setProductFormMessage(message, true);
-  showProductSaveDialog("图片上传失败", message);
+  setImageUploadMessage(message, true);
+  if (!isStaffAvatar) showProductSaveDialog("图片上传失败", message);
 }
 
 async function uploadImageToAssets(file) {

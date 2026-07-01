@@ -476,18 +476,27 @@ function saveCloudStore(storeKey, value) {
   if (!cloudKey || location.protocol === "file:") return Promise.resolve();
 
   clearTimeout(pendingCloudSaves[cloudKey]);
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     pendingCloudSaves[cloudKey] = setTimeout(async () => {
       try {
-        await fetch(`${CLOUD_DATA_ENDPOINT}?key=${encodeURIComponent(cloudKey)}`, {
+        const response = await fetch(`${CLOUD_DATA_ENDPOINT}?key=${encodeURIComponent(cloudKey)}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ value }),
         });
+        let payload = null;
+        try {
+          payload = await response.json();
+        } catch (parseError) {
+          payload = null;
+        }
+        if (!response.ok || payload?.ok === false) {
+          throw new Error(payload?.message || `Cloud data save failed: ${response.status}`);
+        }
+        resolve(payload);
       } catch (error) {
         console.warn("Cloud data save failed", cloudKey, error);
-      } finally {
-        resolve();
+        reject(error);
       }
     }, 150);
   });

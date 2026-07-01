@@ -102,7 +102,7 @@ function getStaffList() {
 }
 
 function saveStaffList(staff) {
-  saveCloudStore(STAFF_STORE_KEY, staff);
+  return saveCloudStore(STAFF_STORE_KEY, staff);
 }
 
 function findStaff(id) {
@@ -117,9 +117,9 @@ function upsertStaff(person) {
   } else {
     staff.unshift(person);
   }
-  saveStaffList(staff);
+  return saveStaffList(staff);
 }
 
 function deleteStaff(id) {
-  saveStaffList(getStaffList().filter((person) => person.id !== id));
+  return saveStaffList(getStaffList().filter((person) => person.id !== id));
 }

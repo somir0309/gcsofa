@@ -38,7 +38,8 @@ module.exports = async function handler(request, response) {
 
     sendJson(response, 405, { ok: false, message: "Method not allowed" });
   } catch (error) {
-    sendJson(response, 500, { ok: false, message: "Site data sync failed" });
+    console.error("Site data sync failed", error);
+    sendJson(response, 500, { ok: false, message: error?.message || "Site data sync failed" });
   }
 };
 

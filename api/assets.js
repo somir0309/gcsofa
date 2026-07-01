@@ -45,7 +45,8 @@ module.exports = async function handler(request, response) {
       size: body.length,
     });
   } catch (error) {
-    sendJson(response, 500, { ok: false, message: "Image save failed" });
+    console.error("Image save failed", error);
+    sendJson(response, 500, { ok: false, message: error?.message || "Image save failed" });
   }
 };
 
