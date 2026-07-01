@@ -75,15 +75,19 @@ function cloneStaff(staff) {
   return JSON.parse(JSON.stringify(staff));
 }
 
+function getStaffNameKey(person) {
+  return String(person?.name || "").trim().toLowerCase();
+}
+
 function normalizeStaffList(staff) {
   const savedList = Array.isArray(staff) ? staff : [];
-  const savedById = new Map(savedList.map((person) => [person.id, person]));
-  const mergedDefaults = GCSOFA_DEFAULT_STAFF.map((person) => ({
-    ...person,
-    ...(savedById.get(person.id) || {}),
-  }));
+  const requiredNames = new Set(GCSOFA_DEFAULT_STAFF.map(getStaffNameKey));
+  const mergedDefaults = cloneStaff(GCSOFA_DEFAULT_STAFF);
   const extraStaff = savedList.filter(
-    (person) => !GCSOFA_REQUIRED_STAFF_IDS.includes(person.id) && !GCSOFA_TEST_STAFF_IDS.includes(person.id),
+    (person) =>
+      !GCSOFA_REQUIRED_STAFF_IDS.includes(person.id) &&
+      !GCSOFA_TEST_STAFF_IDS.includes(person.id) &&
+      !requiredNames.has(getStaffNameKey(person)),
   );
   return [...mergedDefaults, ...extraStaff];
 }
