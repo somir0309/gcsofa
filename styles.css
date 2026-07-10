@@ -461,7 +461,7 @@
   align-self: center;
   border-radius: 8px;
   overflow: hidden;
-  background: #f3f1ec;
+  background: #fff;
 }
 
 #products .product-directory-grid.is-list .product-image-button img {
@@ -694,11 +694,14 @@
   #products .product-directory-grid.is-list .product-image-button {
     order: 1;
     height: auto;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: auto;
+    background: #fff;
   }
 
   #products .product-directory-grid.is-list .product-image-button img {
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     object-position: center;
   }
 
