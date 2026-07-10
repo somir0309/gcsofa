@@ -698,7 +698,7 @@
   }
 
   #products .product-directory-grid.is-list .product-image-button img {
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   }
 
