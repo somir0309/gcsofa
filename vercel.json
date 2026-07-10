@@ -12,6 +12,55 @@
   ],
   "routes": [
     {
+      "src": "^/$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/products.html"
+      }
+    },
+    {
+      "src": "^/index.html$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/products.html"
+      }
+    },
+    {
+      "src": "^/products.html$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/products.html"
+      }
+    },
+    {
+      "src": "^/detail.html$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/detail.html"
+      }
+    },
+    {
+      "src": "^/factory.html$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/factory.html"
+      }
+    },
+    {
+      "src": "^/news.html$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/news.html"
+      }
+    },
+    {
+      "src": "^/contact.html$",
+      "status": 302,
+      "headers": {
+        "Location": "/en/contact.html"
+      }
+    },
+    {
       "src": "/api/(.*)",
       "dest": "/api/$1.js"
     },
