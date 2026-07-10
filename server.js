@@ -176,6 +176,14 @@ async function saveCostSheet(request, response) {
 
 async function saveAssetUpload(request, response) {
   const url = new URL(request.url, `http://${request.headers.host}`);
+  const purpose = String(url.searchParams.get("purpose") || "general").toLowerCase();
+  if (purpose === "product") {
+    sendJson(response, 400, {
+      ok: false,
+      message: "产品图片请放入本地产品文件夹并通过 GitHub 静态资源同步，避免重复占用 Vercel Blob 空间。",
+    });
+    return;
+  }
   const originalName = sanitizeSegment(request.headers["x-file-name"] || url.searchParams.get("fileName"), "upload.png");
   const extension = path.extname(originalName).toLowerCase() || ".png";
 

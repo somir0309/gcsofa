@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Insights - GCSOFA</title>
+    <link rel="icon" type="image/png" href="../assets/gcsofa-favicon.png" />
+    <link rel="stylesheet" href="../styles.css?v=20260618-mobile-sync" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="GCSOFA home">
+        <img class="brand-logo" src="../assets/gcsofa-logo-small.png" alt="GCSOFA logo" />
+        <span>
+          <strong>GCSOFA</strong>
+          <small>Furniture insights</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Insights navigation">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="factory.html">Factory</a>
+        <a href="news.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <a href="../news.html">Chinese</a>
+      </nav>
+      <div class="account-bar">
+        <span id="accountStatus" class="account-status">Not signed in</span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">Login</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="section news-page">
+      <div class="section-heading">
+        <p class="eyebrow">Insights</p>
+        <h1>Furniture Market Notes</h1>
+        <p>This English section is prepared for international B2B visitors. In the next phase, product-focused sourcing notes, material trends, and market observations can be published here.</p>
+      </div>
+      <div class="news-columns">
+        <section class="news-column" aria-label="Sourcing notes">
+          <div class="panel-head"><h2>Sourcing Notes</h2></div>
+          <div class="news-feed">
+            <article class="news-card">
+              <span>GCSOFA</span>
+              <h3>English content framework is ready</h3>
+              <p>The English site now has a dedicated structure for product browsing, factory introduction, business contact, and future market updates.</p>
+            </article>
+          </div>
+        </section>
+        <section class="news-column" aria-label="Buyer focus">
+          <div class="panel-head"><h2>Buyer Focus</h2></div>
+          <div class="news-feed">
+            <article class="news-card">
+              <span>B2B</span>
+              <h3>Next step: product copy localization</h3>
+              <p>The next stage should translate and rewrite product selling points for wholesale buyers, retailers, and project customers.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <dialog id="loginDialog" class="dialog">
+      <form id="loginForm" class="dialog-card" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>Sign in</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close login dialog" type="button" data-close-login>×</button>
+        </div>
+        <label>
+          <span>Username</span>
+          <input id="usernameInput" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <p id="loginMessage" class="form-message" role="status"></p>
+        <button class="button button-primary button-full" type="submit">Login</button>
+      </form>
+    </dialog>
+
+    <script src="../data.js?v=20260710-upload-1701-1799"></script>
+    <script src="auth-en.js"></script>
+  </body>
+</html>

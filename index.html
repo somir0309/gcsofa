@@ -39,7 +39,6 @@
         height: 100dvh;
         place-items: center;
         isolation: isolate;
-        cursor: pointer;
       }
 
       main::before {
@@ -66,10 +65,12 @@
         pointer-events: none;
       }
 
-      .wordmark-link {
-        color: inherit;
-        text-decoration: none;
-        outline-offset: 18px;
+      .home-lockup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(22px, 4vw, 42px);
       }
 
       .wordmark {
@@ -105,15 +106,12 @@
           letter-spacing 520ms cubic-bezier(0.16, 1, 0.3, 1);
       }
 
-      .wordmark-link:hover .wordmark.is-settled span,
-      .wordmark-link:focus-visible .wordmark.is-settled span {
+      .wordmark:hover.is-settled span {
         transform: translate3d(0, -0.045em, 0);
       }
 
-      .wordmark-link:hover .wordmark.is-settled span:nth-child(2),
-      .wordmark-link:focus-visible .wordmark.is-settled span:nth-child(2),
-      .wordmark-link:hover .wordmark.is-settled span:nth-child(5),
-      .wordmark-link:focus-visible .wordmark.is-settled span:nth-child(5) {
+      .wordmark:hover.is-settled span:nth-child(2),
+      .wordmark:hover.is-settled span:nth-child(5) {
         transform: translate3d(0, 0.035em, 0);
       }
 
@@ -129,6 +127,56 @@
         transform: translateX(-50%) scaleX(0.2);
         animation: cue-in 800ms ease forwards;
         animation-delay: 1650ms;
+      }
+
+      .language-choice {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(22px, 4vw, 44px);
+        opacity: 0;
+        animation: cue-in 800ms ease forwards;
+        animation-delay: 1780ms;
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+        font-size: clamp(22px, 3vw, 38px);
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .language-choice a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        padding: 10px 4px;
+        outline-offset: 8px;
+        text-shadow: 0 2px 14px rgba(255, 255, 255, 0.72);
+      }
+
+      .language-choice a:hover,
+      .language-choice a:focus-visible {
+        border-bottom-color: currentColor;
+      }
+
+      .home-icp-footer {
+        position: fixed;
+        left: 50%;
+        bottom: 8px;
+        z-index: 2;
+        transform: translateX(-50%);
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+        font-size: 12px;
+        line-height: 1;
+        opacity: 0.62;
+      }
+
+      .home-icp-footer a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .home-icp-footer a:hover,
+      .home-icp-footer a:focus-visible {
+        text-decoration: underline;
       }
 
       @keyframes letter-arrive {
@@ -154,7 +202,7 @@
       @keyframes cue-in {
         to {
           opacity: 0.38;
-          transform: translateX(-50%) scaleX(1);
+          transform: scaleX(1);
         }
       }
 
@@ -184,8 +232,8 @@
     </style>
   </head>
   <body>
-    <main id="homeEnter" role="link" tabindex="0" aria-label="进入 GCSOFA 产品目录">
-      <a class="wordmark-link" href="products.html" aria-label="Enter GCSOFA product catalog">
+    <main aria-label="GCSOFA language selection">
+      <div class="home-lockup">
         <div class="wordmark" aria-hidden="true">
           <span style="--i: 0; --x: 0.42em; --y: -0.02em; --r: 0.8deg">G</span>
           <span style="--i: 1; --x: 0.34em; --y: 0.015em; --r: -0.6deg">C</span>
@@ -194,27 +242,22 @@
           <span style="--i: 4; --x: 0.1em; --y: -0.012em; --r: 0.4deg">F</span>
           <span style="--i: 5; --x: 0.02em; --y: 0.01em; --r: -0.4deg">A</span>
         </div>
-      </a>
+        <nav class="language-choice" aria-label="Language selection">
+          <a href="https://cn.gcsofa.com/products.html">中文</a>
+          <a href="en/products.html">ENGLISH</a>
+        </nav>
+      </div>
     </main>
+    <footer class="home-icp-footer">
+      <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">粤ICP备2026092798号</a>
+    </footer>
     <script>
       if (location.hash === "#products") {
-        location.replace("products.html");
+        location.replace("https://cn.gcsofa.com/products.html");
       }
 
       const wordmark = document.querySelector(".wordmark");
       window.setTimeout(() => wordmark.classList.add("is-settled"), 1900);
-
-      const homeEnter = document.querySelector("#homeEnter");
-      const enterProducts = () => {
-        location.href = "products.html";
-      };
-      homeEnter.addEventListener("click", enterProducts);
-      homeEnter.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          enterProducts();
-        }
-      });
     </script>
   </body>
 </html>

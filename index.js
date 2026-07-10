@@ -20,11 +20,52 @@ let carouselIndex = 0;
 const LIST_BATCH_SIZE = 4;
 
 const KEYWORD_GROUPS = [
-  { name: "组合", items: ["单人位", "双人位", "三人位", "贵妃组合", "L型组合", "模块组合", "脚踏组合"] },
-  { name: "颜色", items: ["米白", "米灰", "奶油色", "深蓝", "深灰", "墨绿", "橙棕", "多色可选"] },
-  { name: "款式", items: ["欧洲款", "日本款", "现代简约", "休闲款", "复古款", "奶油风", "轻奢款"] },
-  { name: "类型", items: ["直排沙发", "贵妃沙发", "模块沙发", "脚踏沙发", "低矮沙发", "高脚沙发"] },
-  { name: "特点", items: ["宽坐深躺", "坐感柔软", "高脚设计", "木脚", "金属脚", "小户型", "客厅主款", "可选色"] },
+  { name: "组合", items: ["单人位", "双人位", "三人位", "1/2/3人位可选", "2P+1P组合", "3+2+1组合", "2P+贵妃", "模块+贵妃", "脚踏组合"] },
+  { name: "款式", items: ["现代简约", "现代休闲", "奶油风", "轻奢款", "绒感款", "亲肤布艺", "高密织纹", "柔和触感"] },
+  { name: "类型", items: ["直排沙发", "转角沙发", "贵妃沙发", "模块沙发", "沙发床", "功能沙发", "休闲单椅"] },
+  { name: "结构", items: ["全KD结构", "可KD结构", "不KD结构", "压缩包装", "高脚款", "低背款", "宽坐深坐"] },
+  { name: "场景", items: ["小户型", "中大户型", "公寓空间", "家庭客厅", "门店主推", "客厅套系"] },
+];
+
+const PRODUCT_DIRECTORY_KEYWORDS = new Set(KEYWORD_GROUPS.flatMap((group) => group.items));
+const PRODUCT_CARD_TAG_PRIORITY = [
+  "直排沙发",
+  "转角沙发",
+  "贵妃沙发",
+  "模块沙发",
+  "沙发床",
+  "功能沙发",
+  "休闲单椅",
+  "单人位",
+  "双人位",
+  "三人位",
+  "1/2/3人位可选",
+  "2P+1P组合",
+  "3+2+1组合",
+  "2P+贵妃",
+  "模块+贵妃",
+  "脚踏组合",
+  "全KD结构",
+  "可KD结构",
+  "不KD结构",
+  "压缩包装",
+  "高脚款",
+  "低背款",
+  "宽坐深坐",
+  "小户型",
+  "中大户型",
+  "家庭客厅",
+  "公寓空间",
+  "门店主推",
+  "客厅套系",
+  "现代简约",
+  "现代休闲",
+  "奶油风",
+  "轻奢款",
+  "绒感款",
+  "亲肤布艺",
+  "高密织纹",
+  "柔和触感",
 ];
 
 initAdCarousel();
@@ -76,7 +117,7 @@ function renderProductHeading() {
     <div>
       <p class="eyebrow">Products</p>
       <h2>产品目录</h2>
-      <p>按组合、颜色、款式、类型、特点建立关键词，支持快速搜索和组合筛选。</p>
+      <p>按组合、款式、类型、结构和场景建立关键词，点击即可精准筛选。</p>
     </div>
   `;
 }
@@ -320,62 +361,73 @@ function setText(selector, value) {
 }
 
 function getVisibleProductTags(product) {
-  const hiddenWords = ["面料", "尺寸", "规格", "价格", "售价", "询价", "US$", "$"];
-  return getProductKeywords(product).filter((tag) => !hiddenWords.some((word) => String(tag).includes(word)));
+  const keywords = new Set(getProductKeywords(product));
+  return PRODUCT_CARD_TAG_PRIORITY.filter((tag) => keywords.has(tag));
 }
 
 function getProductKeywords(product) {
   const explicit = [...(product.keywords || []), ...(product.tags || [])];
-  const text = normalizeSearchText([
-    product.name,
+  const tagText = normalizeSearchText([
     product.category,
-    product.summary,
+    ...(product.tags || []),
+  ].join(" "));
+  const text = normalizeSearchText([
+    product.id,
+    product.name,
+    product.code,
+    product.sku,
+    product.category,
+    ...(product.tags || []),
+    ...Object.keys(product.specs || {}),
     ...Object.values(product.specs || {}),
-    ...(product.highlights || []),
-    ...(product.homes || []),
+    ...(product.views || []),
   ].join(" "));
   const inferred = [];
 
   addIf(inferred, /单人|1p|1人/.test(text), "单人位");
   addIf(inferred, /双人|2p|2人/.test(text), "双人位");
   addIf(inferred, /三人|3p|3人/.test(text), "三人位");
-  addIf(inferred, /贵妃|chaise/.test(text), "贵妃组合");
-  addIf(inferred, /l型|l形|转角/.test(text), "L型组合");
-  addIf(inferred, /模块|组合/.test(text), "模块组合");
+  addIf(inferred, /1\/2\/3|1p.*2p.*3p|1人.*2人.*3人/.test(text), "1/2/3人位可选");
+  addIf(inferred, /2p\+1p|2p.*1p|2人.*1人/.test(text), "2P+1P组合");
+  addIf(inferred, /3\+2\+1|3p.*2p.*1p|3人.*2人.*1人/.test(text), "3+2+1组合");
+  addIf(inferred, /2p\+贵妃|双人.*贵妃|2人.*贵妃/.test(text), "2P+贵妃");
+  addIf(inferred, /模块.*贵妃|贵妃.*模块|侧位.*中位.*贵妃|贵妃.*侧位/.test(text), "模块+贵妃");
   addIf(inferred, /脚踏|ottoman/.test(text), "脚踏组合");
 
-  addIf(inferred, /米白|奶油白|白色/.test(text), "米白");
-  addIf(inferred, /米灰|浅灰|灰色/.test(text), "米灰");
-  addIf(inferred, /奶油|奶油色|奶油风/.test(text), "奶油色");
-  addIf(inferred, /深蓝|蓝色/.test(text), "深蓝");
-  addIf(inferred, /深灰|灰黑/.test(text), "深灰");
-  addIf(inferred, /墨绿|绿色/.test(text), "墨绿");
-  addIf(inferred, /橙棕|棕色|焦糖/.test(text), "橙棕");
-  addIf(inferred, /可选|多色/.test(text), "多色可选");
-
-  addIf(inferred, /欧洲/.test(text), "欧洲款");
-  addIf(inferred, /日本/.test(text), "日本款");
-  addIf(inferred, /现代|简约/.test(text), "现代简约");
-  addIf(inferred, /休闲/.test(text), "休闲款");
-  addIf(inferred, /复古|中古/.test(text), "复古款");
-  addIf(inferred, /奶油/.test(text), "奶油风");
-  addIf(inferred, /轻奢|金属|高级/.test(text), "轻奢款");
-
+  addIf(inferred, /转角|l型|l形|贵妃|chaise/.test(text), "转角沙发");
   addIf(inferred, /贵妃|chaise/.test(text), "贵妃沙发");
-  addIf(inferred, /模块/.test(text), "模块沙发");
-  addIf(inferred, /脚踏|ottoman/.test(text), "脚踏沙发");
-  addIf(inferred, /低矮|低靠/.test(text), "低矮沙发");
-  addIf(inferred, /高脚|金属脚|木脚/.test(text), "高脚沙发");
-  if (!inferred.some((item) => /沙发$/.test(item))) inferred.push("直排沙发");
+  addIf(inferred, /模块|module|侧位|中位|组合沙发/.test(text), "模块沙发");
+  addIf(inferred, /沙发床|sofabed|sofabed|sofa bed/.test(text), "沙发床");
+  addIf(inferred, /功能|电动|手动|头等舱|recliner|躺椅|可调头枕/.test(text), "功能沙发");
+  addIf(inferred, /单椅|休闲椅|loungechair|chair/.test(text), "休闲单椅");
+  if (!inferred.some((item) => ["转角沙发", "贵妃沙发", "模块沙发", "沙发床", "功能沙发", "休闲单椅"].includes(item))) {
+    inferred.push("直排沙发");
+  }
 
-  addIf(inferred, /宽坐|深躺|宽适/.test(text), "宽坐深躺");
-  addIf(inferred, /柔软|云朵|蓬松|舒适/.test(text), "坐感柔软");
-  addIf(inferred, /高脚/.test(text), "高脚设计");
-  addIf(inferred, /木脚|木质/.test(text), "木脚");
-  addIf(inferred, /金属脚|金属/.test(text), "金属脚");
-  addIf(inferred, /小户型|公寓/.test(text), "小户型");
-  addIf(inferred, /客厅|主款/.test(text), "客厅主款");
-  addIf(inferred, /可选/.test(text), "可选色");
+  addIf(inferred, /全kd|fullykd|全拆/.test(text), "全KD结构");
+  addIf(inferred, /可kd|kd拆装|kd结构|并位可kd|座可kd|扶手可kd|拆装|可拆/.test(text) && !/全kd/.test(text), "可KD结构");
+  addIf(inferred, /不kd|非kd|整装|整体包装/.test(text), "不KD结构");
+  addIf(inferred, /压缩|卷包|真空|compressed/.test(text), "压缩包装");
+  addIf(inferred, /高脚|金属脚|木脚|脚高/.test(text), "高脚款");
+  addIf(inferred, /低背|低矮|低靠|lowback/.test(text), "低背款");
+  addIf(inferred, /宽坐|深坐|深躺|躺坐|大坐深|宽大坐深/.test(text), "宽坐深坐");
+
+  addIf(inferred, /小户型|中小户型|小户型适配|线上爆款/.test(tagText), "小户型");
+  addIf(inferred, /中大户型|大户型|大平层|横厅|开放式|中高客单/.test(tagText), "中大户型");
+  addIf(inferred, /公寓空间|公寓|租房/.test(tagText), "公寓空间");
+  addIf(inferred, /家庭客厅|客厅沙发|客厅主款|客厅主沙发/.test(tagText), "家庭客厅");
+  addIf(inferred, /门店主推|门店上样|目录款|样板间|展厅推荐/.test(tagText), "门店主推");
+  addIf(inferred, /客厅套系|客厅套装|套系|3\+2\+1/.test(tagText), "客厅套系");
+
+  addIf(inferred, /现代简约|极简/.test(tagText), "现代简约");
+  addIf(inferred, /现代休闲|休闲款|现代休闲沙发/.test(tagText), "现代休闲");
+  addIf(inferred, /奶油风|奶油|云朵/.test(tagText), "奶油风");
+  addIf(inferred, /轻奢|轻奢款|金属|高级/.test(tagText), "轻奢款");
+  addIf(inferred, /绒感面料|绒感沙发|羊羔绒|boucle/.test(tagText), "绒感款");
+  addIf(inferred, /亲肤布艺|亲肤|柔和触感面料|耐看面料/.test(tagText), "亲肤布艺");
+  addIf(inferred, /高密织纹/.test(tagText), "高密织纹");
+  addIf(inferred, /柔和触感|柔和触感面料/.test(tagText), "柔和触感");
+
   return [...new Set([...explicit, ...inferred].filter(Boolean))];
 }
 

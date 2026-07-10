@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - GCSOFA</title>
+    <link rel="icon" type="image/png" href="../assets/gcsofa-favicon.png" />
+    <link rel="stylesheet" href="../styles.css?v=20260618-mobile-sync" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="GCSOFA home">
+        <img class="brand-logo" src="../assets/gcsofa-logo-small.png" alt="GCSOFA logo" />
+        <span>
+          <strong>GCSOFA</strong>
+          <small>Business contacts</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Contact navigation">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="factory.html">Factory</a>
+        <a href="news.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <a href="../contact.html">Chinese</a>
+      </nav>
+      <div class="account-bar">
+        <span id="accountStatus" class="account-status">Not signed in</span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">Login</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="section contact-page">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h1>Contact Our Business Team</h1>
+        <p>For product selection, order follow-up, sample discussion, and wholesale cooperation, please contact the relevant team member.</p>
+      </div>
+      <div id="englishStaffGrid" class="staff-grid"></div>
+    </main>
+
+    <dialog id="loginDialog" class="dialog">
+      <form id="loginForm" class="dialog-card" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>Sign in</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close login dialog" type="button" data-close-login>×</button>
+        </div>
+        <label>
+          <span>Username</span>
+          <input id="usernameInput" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <p id="loginMessage" class="form-message" role="status"></p>
+        <button class="button button-primary button-full" type="submit">Login</button>
+      </form>
+    </dialog>
+
+    <script src="../data.js?v=20260710-upload-1701-1799"></script>
+    <script src="../staff-data.js?v=20260707-upload-1901-1997"></script>
+    <script src="auth-en.js"></script>
+    <script src="contact-en.js?v=20260706-bilingual-phase1"></script>
+  </body>
+</html>

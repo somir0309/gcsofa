@@ -15,12 +15,20 @@ module.exports = async function handler(request, response) {
     return;
   }
 
+  const originalName = sanitizeSegment(request.query.fileName || "upload.png", "upload.png");
+  const purpose = String(request.query.purpose || "general").toLowerCase();
+  if (purpose === "product") {
+    sendJson(response, 400, {
+      ok: false,
+      message: "产品图片请放入本地产品文件夹并通过 GitHub 静态资源同步，避免重复占用 Vercel Blob 空间。",
+    });
+    return;
+  }
+
   if (!process.env.BLOB_READ_WRITE_TOKEN) {
     sendJson(response, 500, { ok: false, message: "Vercel Blob token is not configured" });
     return;
   }
-
-  const originalName = sanitizeSegment(request.query.fileName || "upload.png", "upload.png");
   const extension = getExtension(originalName) || ".png";
   if (!IMAGE_EXTENSIONS.has(extension)) {
     sendJson(response, 400, { ok: false, message: "只支持 jpg、jpeg、png、webp、gif 图片" });

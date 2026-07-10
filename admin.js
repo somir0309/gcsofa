@@ -1348,7 +1348,7 @@ async function readImageFile(file, targetInput) {
   };
 
   setImageUploadMessage("正在压缩并上传图片...");
-  const uploadResult = await uploadImageToAssets(file);
+  const uploadResult = await uploadImageToAssets(file, isStaffAvatar ? "staff" : "product");
   if (uploadResult.path) {
     targetInput.value = uploadResult.path;
     if (targetInput.id) updateImagePreview(targetInput.id);
@@ -1361,7 +1361,7 @@ async function readImageFile(file, targetInput) {
   if (!isStaffAvatar) showProductSaveDialog("图片上传失败", message);
 }
 
-async function uploadImageToAssets(file) {
+async function uploadImageToAssets(file, purpose = "general") {
   let prepared;
   try {
     prepared = await prepareImageForUpload(file);
@@ -1373,7 +1373,7 @@ async function uploadImageToAssets(file) {
   }
 
   try {
-    const response = await fetch(`${getLocalServerOrigin()}/api/assets?fileName=${encodeURIComponent(prepared.name)}`, {
+    const response = await fetch(`${getLocalServerOrigin()}/api/assets?fileName=${encodeURIComponent(prepared.name)}&purpose=${encodeURIComponent(purpose)}`, {
       method: "POST",
       headers: {
         "Content-Type": prepared.blob.type || "application/octet-stream",
@@ -1677,7 +1677,7 @@ async function migrateProductInlineFiles(product) {
 async function uploadInlineImageDataUrl(dataUrl, fileName) {
   try {
     const file = dataUrlToFile(dataUrl, `${fileName}.png`);
-    const result = await uploadImageToAssets(file);
+    const result = await uploadImageToAssets(file, "product");
     return result.path || "";
   } catch {
     return "";

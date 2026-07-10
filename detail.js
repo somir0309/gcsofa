@@ -39,13 +39,16 @@ const OTHER_ANGLE_DISPLAY_IMAGES = new Set([
 ]);
 
 const auth = setupAuth({ onChange: renderDetail });
-whenSiteDataReady(() => auth.updateAccountView());
+whenSiteDataReady(() => {
+  auth.updateAccountView();
+  renderDetail();
+});
 
 function findDetailProduct(id) {
   const exactProduct = findProduct(id);
   if (exactProduct) return exactProduct;
 
-  const key = String(id || "").match(/(?:GC[-_\s]*S)?(2\d{3})/i)?.[1];
+  const key = String(id || "").match(/(?:GC[-_\s]*S)?(\d{4})/i)?.[1];
   if (!key) return null;
   return getProducts().find((product) => getProductImageKey(product) === key) || null;
 }
@@ -802,5 +805,3 @@ function formatDateTime(date) {
   const pad = (value) => String(value).padStart(2, "0");
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())} ${pad(date.getHours())}:${pad(date.getMinutes())}`;
 }
-
-renderDetail();

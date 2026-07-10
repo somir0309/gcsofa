@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factory Profile - GCSOFA</title>
+    <link rel="icon" type="image/png" href="../assets/gcsofa-favicon.png" />
+    <link rel="stylesheet" href="../styles.css?v=20260618-mobile-sync" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="GCSOFA home">
+        <img class="brand-logo" src="../assets/gcsofa-logo-small.png" alt="GCSOFA logo" />
+        <span>
+          <strong>GCSOFA</strong>
+          <small>Factory profile</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Factory navigation">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="factory.html">Factory</a>
+        <a href="news.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <a href="../factory.html">Chinese</a>
+      </nav>
+      <div class="account-bar">
+        <span id="accountStatus" class="account-status">Not signed in</span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">Login</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main class="factory-page">
+      <section class="factory-hero">
+        <div class="factory-hero-copy">
+          <p class="eyebrow">Factory Profile</p>
+          <h1>GCSOFA Sofa Manufacturing Partner</h1>
+          <p>GCSOFA focuses on sofa development, manufacturing, and wholesale supply for furniture brands, retailers, distributors, and project buyers. We support display-ready models, OEM/ODM cooperation, and flexible product development for different market needs.</p>
+          <div class="factory-stats">
+            <div><strong>2008</strong><span>Years of sofa manufacturing experience</span></div>
+            <div><strong>OEM/ODM</strong><span>Product development and customization</span></div>
+            <div><strong>40,000 m2</strong><span>Factory and production space</span></div>
+            <div><strong>B2B</strong><span>Wholesale and project supply</span></div>
+          </div>
+        </div>
+        <img src="../assets/factory-hero-2026.webp" alt="GCSOFA factory exterior" />
+      </section>
+
+      <section class="section factory-profile-block">
+        <div class="section-heading">
+          <p class="eyebrow">About GCSOFA</p>
+          <h2>Reliable sofa production for wholesale buyers</h2>
+          <p>Our work covers product sampling, frame preparation, upholstery, assembly, quality checking, packing, and shipment support. The English site is prepared for international buyers who need clear product selection, stable supply, and efficient communication.</p>
+        </div>
+      </section>
+
+      <section class="section factory-advantages">
+        <div class="section-heading">
+          <p class="eyebrow">Advantages</p>
+          <h2>What we support</h2>
+        </div>
+        <div class="factory-advantage-grid">
+          <article><span>01</span><h3>OEM and ODM cooperation</h3><p>Support for product development, material options, structure adjustment, and batch order preparation.</p></article>
+          <article><span>02</span><h3>Showroom-ready catalog</h3><p>Products are organized with visual assets for catalog review, retail display, and customer presentation.</p></article>
+          <article><span>03</span><h3>Flexible style coverage</h3><p>Models include straight sofas, modular sofas, chaise combinations, sofa beds, lounge chairs, and functional seating.</p></article>
+          <article><span>04</span><h3>Long-term B2B service</h3><p>Built for buyers who need continuous sourcing, product updates, and stable supply communication.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="loginDialog" class="dialog">
+      <form id="loginForm" class="dialog-card" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>Sign in</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close login dialog" type="button" data-close-login>×</button>
+        </div>
+        <label>
+          <span>Username</span>
+          <input id="usernameInput" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <p id="loginMessage" class="form-message" role="status"></p>
+        <button class="button button-primary button-full" type="submit">Login</button>
+      </form>
+    </dialog>
+
+    <script src="../data.js?v=20260710-upload-1701-1799"></script>
+    <script src="auth-en.js"></script>
+  </body>
+</html>

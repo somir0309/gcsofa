@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCSOFA Product Catalog</title>
+    <link rel="icon" type="image/png" href="../assets/gcsofa-favicon.png" />
+    <link rel="stylesheet" href="../styles.css?v=20260625-list-image-fix" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../index.html" aria-label="GCSOFA home">
+        <img class="brand-logo" src="../assets/gcsofa-logo-small.png" alt="GCSOFA logo" />
+        <span>
+          <strong>GCSOFA</strong>
+          <small>Sofa manufacturing and wholesale</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="factory.html">Factory</a>
+        <a href="news.html">Insights</a>
+        <a href="contact.html">Contact</a>
+        <a href="../products.html">Chinese</a>
+      </nav>
+      <div class="account-bar">
+        <span id="accountStatus" class="account-status">Not signed in</span>
+        <button id="loginOpenBtn" class="button button-primary" type="button">Login</button>
+        <button id="logoutBtn" class="button button-ghost hidden" type="button">Logout</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="products" class="section">
+        <div class="section-heading product-directory-heading">
+          <div>
+            <p class="eyebrow">Products</p>
+            <h1>GCSOFA Product Catalog</h1>
+            <p>Browse display-ready sofa models for wholesale, showroom presentation, and project-based sourcing.</p>
+          </div>
+        </div>
+
+        <div class="product-directory-filters">
+          <div class="directory-filter-card directory-keyword-card">
+            <div class="directory-filter-head">
+              <strong>Quick Filters</strong>
+              <span>Style / Layout / Color / Use case</span>
+            </div>
+            <div id="englishKeywordGroups" class="directory-keyword-groups"></div>
+          </div>
+          <div class="directory-tip-card directory-search-card">
+            <div class="directory-filter-head">
+              <strong>Search</strong>
+              <span>Model number / sofa type / color</span>
+            </div>
+            <label class="product-search directory-search">
+              <span>Search products</span>
+              <input id="englishProductSearch" type="search" placeholder="Try: modular, cream, chaise, apartment" autocomplete="off" />
+            </label>
+            <p>Product images are shared with the Chinese catalog to avoid duplicate storage.</p>
+          </div>
+        </div>
+
+        <div class="product-directory-toolbar">
+          <label class="directory-sort">
+            <span>Sort</span>
+            <select id="englishProductSort">
+              <option value="code-desc">Newest model first</option>
+              <option value="code-asc">Oldest model first</option>
+            </select>
+          </label>
+          <div class="directory-view-control">
+            <span>View</span>
+            <div class="directory-view-toggle">
+              <button class="active" type="button" data-view="list">List</button>
+              <button type="button" data-view="grid">Grid</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="englishActiveKeywords" class="active-product-keywords"></div>
+        <div id="englishProductGrid" class="product-grid product-directory-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer id="support" class="footer">
+      <strong>GCSOFA</strong>
+      <span>Business inquiry: gcsofa@gcsofa.com</span>
+      <span>Customer support: gcsofa@gcsofa.com</span>
+    </footer>
+
+    <dialog id="loginDialog" class="dialog">
+      <form id="loginForm" class="dialog-card" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h2>Sign in</h2>
+          </div>
+          <button class="icon-button" value="cancel" aria-label="Close login dialog" type="button" data-close-login>×</button>
+        </div>
+        <label>
+          <span>Username</span>
+          <input id="usernameInput" name="username" autocomplete="username" required />
+        </label>
+        <label>
+          <span>Password</span>
+          <input id="passwordInput" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <p id="loginMessage" class="form-message" role="status"></p>
+        <button class="button button-primary button-full" type="submit">Login</button>
+      </form>
+    </dialog>
+
+<script src="../product-image-map.js?v=20260710-upload-1701-1799"></script>
+    <script src="../data.js?v=20260710-upload-1701-1799"></script>
+    <script src="data-en.js?v=20260710-upload-1701-1799"></script>
+    <script src="auth-en.js"></script>
+    <script src="products-en.js?v=20260706-english-audit-fix2"></script>
+  </body>
+</html>
