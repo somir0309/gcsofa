@@ -1,5 +1,5 @@
 :root {
-  --bg: #f5f7fb;
+  --bg: #ffffff;
   --surface: #ffffff;
   --ink: #172033;
   --muted: #667085;
@@ -17,7 +17,7 @@
   --pro-ink: #172033;
   --pro-muted: #667085;
   --pro-line: #d9ded8;
-  --pro-paper: #f6f5f2;
+  --pro-paper: #ffffff;
   --pro-surface: #ffffff;
   --pro-green: #2f6f68;
   --pro-green-dark: #234f4b;
@@ -1081,7 +1081,7 @@
 
 html {
   scroll-behavior: smooth;
-  background: #e8edf3;
+  background: #ffffff;
 }
 
 body {
@@ -1101,7 +1101,7 @@ body {
 }
 
 body:has(#products) {
-  background: #f6f5f2;
+  background: #ffffff;
 }
 
 button,
