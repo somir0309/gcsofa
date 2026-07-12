@@ -1,6 +1,182 @@
 ﻿// English product copy generated for the GCSOFA English site.
 // Source images are shared with the Chinese catalog; only text fields are localized here.
 window.GCSOFA_PRODUCT_COPY_MAP_EN = {
+  "1600": {
+    "name": "GC-S1600",
+    "code": "GC-S1600",
+    "sku": "GC-S1600",
+    "category": "Armless Accent Chair",
+    "summary": "GC-S1600 is a 轻柔现代 armless accent chair presented in 奶白色 with 绒感布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Armless Accent Chair",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1600",
+      "Type": "Armless Accent Chair",
+      "Style": "轻柔现代",
+      "Color": "奶白色",
+      "Upholstery": "绒感布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined armless accent chair profile with strong visual identity.",
+      "The 奶白色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1602": {
+    "name": "GC-S1602",
+    "code": "GC-S1602",
+    "sku": "GC-S1602",
+    "category": "Loveseat with Ottoman",
+    "summary": "GC-S1602 is a 北欧休闲 loveseat with ottoman presented in 棕色/灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Loveseat with Ottoman",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1602",
+      "Type": "Loveseat with Ottoman",
+      "Style": "北欧休闲",
+      "Color": "棕色/灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined loveseat with ottoman profile with strong visual identity.",
+      "The 棕色/灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1603": {
+    "name": "GC-S1603",
+    "code": "GC-S1603",
+    "sku": "GC-S1603",
+    "category": "Straight Sofa",
+    "summary": "GC-S1603 is a 现代简约 straight sofa presented in 橄榄绿色 with 耐磨布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "2 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1603",
+      "Type": "Straight Sofa",
+      "Style": "现代简约",
+      "Color": "橄榄绿色",
+      "Upholstery": "耐磨布艺",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined straight sofa profile with strong visual identity.",
+      "The 橄榄绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1605": {
+    "name": "GC-S1605",
+    "code": "GC-S1605",
+    "sku": "GC-S1605",
+    "category": "Low Modular Sofa",
+    "summary": "GC-S1605 is a 慵懒现代 low modular sofa presented in 浅灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Low Modular Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1605",
+      "Type": "Low Modular Sofa",
+      "Style": "慵懒现代",
+      "Color": "浅灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined low modular sofa profile with strong visual identity.",
+      "The 浅灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
   "1606": {
     "name": "GC-S1606",
     "code": "GC-S1606",
@@ -44,6 +220,2426 @@ window.GCSOFA_PRODUCT_COPY_MAP_EN = {
       "online retailers",
       "apartment furniture channels",
       "regional distributors"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1608": {
+    "name": "GC-S1608",
+    "code": "GC-S1608",
+    "sku": "GC-S1608",
+    "category": "Living Room Sofa Set",
+    "summary": "GC-S1608 is a 北欧复古 living room sofa set presented in 蓝色/绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Living Room Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "7 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1608",
+      "Type": "Living Room Sofa Set",
+      "Style": "北欧复古",
+      "Color": "蓝色/绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined living room sofa set profile with strong visual identity.",
+      "The 蓝色/绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1612": {
+    "name": "GC-S1612",
+    "code": "GC-S1612",
+    "sku": "GC-S1612",
+    "category": "Leather Accent Chair",
+    "summary": "GC-S1612 is a 复古轻奢 leather accent chair presented in 棕色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Leather Accent Chair",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1612",
+      "Type": "Leather Accent Chair",
+      "Style": "复古轻奢",
+      "Color": "棕色",
+      "Upholstery": "皮艺面料",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined leather accent chair profile with strong visual identity.",
+      "The 棕色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1613": {
+    "name": "GC-S1613",
+    "code": "GC-S1613",
+    "sku": "GC-S1613",
+    "category": "Sectional Sofa",
+    "summary": "GC-S1613 is a 现代都市 sectional sofa presented in 深灰色 with 耐磨布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1613",
+      "Type": "Sectional Sofa",
+      "Style": "现代都市",
+      "Color": "深灰色",
+      "Upholstery": "耐磨布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sectional sofa profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1615": {
+    "name": "GC-S1615",
+    "code": "GC-S1615",
+    "sku": "GC-S1615",
+    "category": "Large Sectional Sofa",
+    "summary": "GC-S1615 is a 现代简约 large sectional sofa presented in 灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Large Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1615",
+      "Type": "Large Sectional Sofa",
+      "Style": "现代简约",
+      "Color": "灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined large sectional sofa profile with strong visual identity.",
+      "The 灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1618": {
+    "name": "GC-S1618",
+    "code": "GC-S1618",
+    "sku": "GC-S1618",
+    "category": "Living Room Sofa Set",
+    "summary": "GC-S1618 is a 经典现代 living room sofa set presented in 深灰/浅灰 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Living Room Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "7 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1618",
+      "Type": "Living Room Sofa Set",
+      "Style": "经典现代",
+      "Color": "深灰/浅灰",
+      "Upholstery": "柔软布艺",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined living room sofa set profile with strong visual identity.",
+      "The 深灰/浅灰 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1619": {
+    "name": "GC-S1619",
+    "code": "GC-S1619",
+    "sku": "GC-S1619",
+    "category": "Straight Sofa",
+    "summary": "GC-S1619 is a 现代简约 straight sofa presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1619",
+      "Type": "Straight Sofa",
+      "Style": "现代简约",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined straight sofa profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1621": {
+    "name": "GC-S1621",
+    "code": "GC-S1621",
+    "sku": "GC-S1621",
+    "category": "Chair and Ottoman Set",
+    "summary": "GC-S1621 is a 舒适现代 chair and ottoman set presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Chair and Ottoman Set",
+      "residential collection",
+      "showroom ready",
+      "7 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1621",
+      "Type": "Chair and Ottoman Set",
+      "Style": "舒适现代",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined chair and ottoman set profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1622": {
+    "name": "GC-S1622",
+    "code": "GC-S1622",
+    "sku": "GC-S1622",
+    "category": "Straight Sofa",
+    "summary": "GC-S1622 is a 经典简约 straight sofa presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1622",
+      "Type": "Straight Sofa",
+      "Style": "经典简约",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined straight sofa profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1623": {
+    "name": "GC-S1623",
+    "code": "GC-S1623",
+    "sku": "GC-S1623",
+    "category": "Rolled-Arm Sofa Collection",
+    "summary": "GC-S1623 is a 美式经典 rolled-arm sofa collection presented in 蓝色/橙色/棕色/米色 with 布艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Rolled-Arm Sofa Collection",
+      "residential collection",
+      "showroom ready",
+      "12 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1623",
+      "Type": "Rolled-Arm Sofa Collection",
+      "Style": "美式经典",
+      "Color": "蓝色/橙色/棕色/米色",
+      "Upholstery": "布艺面料",
+      "Images": "12 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined rolled-arm sofa collection profile with strong visual identity.",
+      "The 蓝色/橙色/棕色/米色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1627": {
+    "name": "GC-S1627",
+    "code": "GC-S1627",
+    "sku": "GC-S1627",
+    "category": "Wood-Frame Convertible Sofa",
+    "summary": "GC-S1627 is a 自然休闲 wood-frame convertible sofa presented in 湖蓝色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Wood-Frame Convertible Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1627",
+      "Type": "Wood-Frame Convertible Sofa",
+      "Style": "自然休闲",
+      "Color": "湖蓝色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined wood-frame convertible sofa profile with strong visual identity.",
+      "The 湖蓝色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1628": {
+    "name": "GC-S1628",
+    "code": "GC-S1628",
+    "sku": "GC-S1628",
+    "category": "Straight Sofa",
+    "summary": "GC-S1628 is a 现代简约 straight sofa presented in 米白色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "2 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1628",
+      "Type": "Straight Sofa",
+      "Style": "现代简约",
+      "Color": "米白色",
+      "Upholstery": "柔软布艺",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined straight sofa profile with strong visual identity.",
+      "The 米白色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1629": {
+    "name": "GC-S1629",
+    "code": "GC-S1629",
+    "sku": "GC-S1629",
+    "category": "Dining Set",
+    "summary": "GC-S1629 is a 现代工业 dining set presented in 原木色/黑色 with 木质/金属/皮艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Dining Set",
+      "residential collection",
+      "showroom ready",
+      "1 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1629",
+      "Type": "Dining Set",
+      "Style": "现代工业",
+      "Color": "原木色/黑色",
+      "Upholstery": "木质/金属/皮艺",
+      "Images": "1 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined dining set profile with strong visual identity.",
+      "The 原木色/黑色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1630": {
+    "name": "GC-S1630",
+    "code": "GC-S1630",
+    "sku": "GC-S1630",
+    "category": "Sectional Sofa",
+    "summary": "GC-S1630 is a 现代休闲 sectional sofa presented in 浅灰/深灰/蓝灰 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1630",
+      "Type": "Sectional Sofa",
+      "Style": "现代休闲",
+      "Color": "浅灰/深灰/蓝灰",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sectional sofa profile with strong visual identity.",
+      "The 浅灰/深灰/蓝灰 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1632": {
+    "name": "GC-S1632",
+    "code": "GC-S1632",
+    "sku": "GC-S1632",
+    "category": "Storage Sectional Sofa",
+    "summary": "GC-S1632 is a 清新现代 storage sectional sofa presented in 浅绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Storage Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1632",
+      "Type": "Storage Sectional Sofa",
+      "Style": "清新现代",
+      "Color": "浅绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined storage sectional sofa profile with strong visual identity.",
+      "The 浅绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1633": {
+    "name": "GC-S1633",
+    "code": "GC-S1633",
+    "sku": "GC-S1633",
+    "category": "Tufted Rolled-Arm Sofa",
+    "summary": "GC-S1633 is a 复古轻奢 tufted rolled-arm sofa presented in 红色 with 绒感布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Tufted Rolled-Arm Sofa",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1633",
+      "Type": "Tufted Rolled-Arm Sofa",
+      "Style": "复古轻奢",
+      "Color": "红色",
+      "Upholstery": "绒感布艺",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined tufted rolled-arm sofa profile with strong visual identity.",
+      "The 红色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1635": {
+    "name": "GC-S1635",
+    "code": "GC-S1635",
+    "sku": "GC-S1635",
+    "category": "Convertible Sofa Bed",
+    "summary": "GC-S1635 is a 慵懒现代 convertible sofa bed presented in 白色/棕色/绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Convertible Sofa Bed",
+      "residential collection",
+      "showroom ready",
+      "11 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1635",
+      "Type": "Convertible Sofa Bed",
+      "Style": "慵懒现代",
+      "Color": "白色/棕色/绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "11 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined convertible sofa bed profile with strong visual identity.",
+      "The 白色/棕色/绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1638": {
+    "name": "GC-S1638",
+    "code": "GC-S1638",
+    "sku": "GC-S1638",
+    "category": "Sofa Chair and Ottoman Set",
+    "summary": "GC-S1638 is a 现代美式 sofa chair and ottoman set presented in 米色/深灰 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sofa Chair and Ottoman Set",
+      "residential collection",
+      "showroom ready",
+      "9 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1638",
+      "Type": "Sofa Chair and Ottoman Set",
+      "Style": "现代美式",
+      "Color": "米色/深灰",
+      "Upholstery": "柔软布艺",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sofa chair and ottoman set profile with strong visual identity.",
+      "The 米色/深灰 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1639": {
+    "name": "GC-S1639",
+    "code": "GC-S1639",
+    "sku": "GC-S1639",
+    "category": "Folding Sofa Bed",
+    "summary": "GC-S1639 is a 现代简约 folding sofa bed presented in 浅灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Folding Sofa Bed",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1639",
+      "Type": "Folding Sofa Bed",
+      "Style": "现代简约",
+      "Color": "浅灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined folding sofa bed profile with strong visual identity.",
+      "The 浅灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1640": {
+    "name": "GC-S1640",
+    "code": "GC-S1640",
+    "sku": "GC-S1640",
+    "category": "Velvet Straight Sofa",
+    "summary": "GC-S1640 is a 轻奢现代 velvet straight sofa presented in 绿色/蓝色/玫红色 with 绒感面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Velvet Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "10 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1640",
+      "Type": "Velvet Straight Sofa",
+      "Style": "轻奢现代",
+      "Color": "绿色/蓝色/玫红色",
+      "Upholstery": "绒感面料",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined velvet straight sofa profile with strong visual identity.",
+      "The 绿色/蓝色/玫红色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1641": {
+    "name": "GC-S1641",
+    "code": "GC-S1641",
+    "sku": "GC-S1641",
+    "category": "Metal-Frame Loveseat",
+    "summary": "GC-S1641 is a 现代工业 metal-frame loveseat presented in 军绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Metal-Frame Loveseat",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1641",
+      "Type": "Metal-Frame Loveseat",
+      "Style": "现代工业",
+      "Color": "军绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined metal-frame loveseat profile with strong visual identity.",
+      "The 军绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1642": {
+    "name": "GC-S1642",
+    "code": "GC-S1642",
+    "sku": "GC-S1642",
+    "category": "Sofa and Chair Set",
+    "summary": "GC-S1642 is a 经典现代 sofa and chair set presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sofa and Chair Set",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1642",
+      "Type": "Sofa and Chair Set",
+      "Style": "经典现代",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sofa and chair set profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1645": {
+    "name": "GC-S1645",
+    "code": "GC-S1645",
+    "sku": "GC-S1645",
+    "category": "Modular Sofa with Ottomans",
+    "summary": "GC-S1645 is a 现代轻奢 modular sofa with ottomans presented in 墨绿色/深棕色 with 绒感/皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Modular Sofa with Ottomans",
+      "residential collection",
+      "showroom ready",
+      "7 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1645",
+      "Type": "Modular Sofa with Ottomans",
+      "Style": "现代轻奢",
+      "Color": "墨绿色/深棕色",
+      "Upholstery": "绒感/皮艺面料",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined modular sofa with ottomans profile with strong visual identity.",
+      "The 墨绿色/深棕色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1646": {
+    "name": "GC-S1646",
+    "code": "GC-S1646",
+    "sku": "GC-S1646",
+    "category": "Leather Sofa with Ottoman",
+    "summary": "GC-S1646 is a 复古工业 leather sofa with ottoman presented in 深棕色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Leather Sofa with Ottoman",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1646",
+      "Type": "Leather Sofa with Ottoman",
+      "Style": "复古工业",
+      "Color": "深棕色",
+      "Upholstery": "皮艺面料",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined leather sofa with ottoman profile with strong visual identity.",
+      "The 深棕色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1647": {
+    "name": "GC-S1647",
+    "code": "GC-S1647",
+    "sku": "GC-S1647",
+    "category": "Large Modular Sectional",
+    "summary": "GC-S1647 is a 现代休闲 large modular sectional presented in 蓝色/灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Large Modular Sectional",
+      "residential collection",
+      "showroom ready",
+      "4 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1647",
+      "Type": "Large Modular Sectional",
+      "Style": "现代休闲",
+      "Color": "蓝色/灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined large modular sectional profile with strong visual identity.",
+      "The 蓝色/灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1648": {
+    "name": "GC-S1648",
+    "code": "GC-S1648",
+    "sku": "GC-S1648",
+    "category": "Tufted Leather Sofa",
+    "summary": "GC-S1648 is a 经典轻奢 tufted leather sofa presented in 深棕色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Tufted Leather Sofa",
+      "residential collection",
+      "showroom ready",
+      "4 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1648",
+      "Type": "Tufted Leather Sofa",
+      "Style": "经典轻奢",
+      "Color": "深棕色",
+      "Upholstery": "皮艺面料",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined tufted leather sofa profile with strong visual identity.",
+      "The 深棕色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1650": {
+    "name": "GC-S1650",
+    "code": "GC-S1650",
+    "sku": "GC-S1650",
+    "category": "Low-Profile Chaise Sofa",
+    "summary": "GC-S1650 is a 慵懒现代 low-profile chaise sofa presented in 灰色/蓝色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Low-Profile Chaise Sofa",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1650",
+      "Type": "Low-Profile Chaise Sofa",
+      "Style": "慵懒现代",
+      "Color": "灰色/蓝色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined low-profile chaise sofa profile with strong visual identity.",
+      "The 灰色/蓝色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1651": {
+    "name": "GC-S1651",
+    "code": "GC-S1651",
+    "sku": "GC-S1651",
+    "category": "Sectional Sofa",
+    "summary": "GC-S1651 is a 现代休闲 sectional sofa presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1651",
+      "Type": "Sectional Sofa",
+      "Style": "现代休闲",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sectional sofa profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1658": {
+    "name": "GC-S1658",
+    "code": "GC-S1658",
+    "sku": "GC-S1658",
+    "category": "Leather Sofa Set",
+    "summary": "GC-S1658 is a 经典现代 leather sofa set presented in 黑色/棕色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Leather Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1658",
+      "Type": "Leather Sofa Set",
+      "Style": "经典现代",
+      "Color": "黑色/棕色",
+      "Upholstery": "皮艺面料",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined leather sofa set profile with strong visual identity.",
+      "The 黑色/棕色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1659": {
+    "name": "GC-S1659",
+    "code": "GC-S1659",
+    "sku": "GC-S1659",
+    "category": "Sofa and Chair Set",
+    "summary": "GC-S1659 is a 清爽现代 sofa and chair set presented in 米白色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sofa and Chair Set",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1659",
+      "Type": "Sofa and Chair Set",
+      "Style": "清爽现代",
+      "Color": "米白色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sofa and chair set profile with strong visual identity.",
+      "The 米白色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1660": {
+    "name": "GC-S1660",
+    "code": "GC-S1660",
+    "sku": "GC-S1660",
+    "category": "Storage Sofa Set",
+    "summary": "GC-S1660 is a 实用现代 storage sofa set presented in 深蓝色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Storage Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1660",
+      "Type": "Storage Sofa Set",
+      "Style": "实用现代",
+      "Color": "深蓝色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined storage sofa set profile with strong visual identity.",
+      "The 深蓝色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1663": {
+    "name": "GC-S1663",
+    "code": "GC-S1663",
+    "sku": "GC-S1663",
+    "category": "Armless Accent Chair",
+    "summary": "GC-S1663 is a 北欧简约 armless accent chair presented in 浅蓝色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Armless Accent Chair",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1663",
+      "Type": "Armless Accent Chair",
+      "Style": "北欧简约",
+      "Color": "浅蓝色",
+      "Upholstery": "柔软布艺",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined armless accent chair profile with strong visual identity.",
+      "The 浅蓝色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1665": {
+    "name": "GC-S1665",
+    "code": "GC-S1665",
+    "sku": "GC-S1665",
+    "category": "Adjustable Loveseat",
+    "summary": "GC-S1665 is a 现代休闲 adjustable loveseat presented in 浅蓝色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Adjustable Loveseat",
+      "residential collection",
+      "showroom ready",
+      "7 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1665",
+      "Type": "Adjustable Loveseat",
+      "Style": "现代休闲",
+      "Color": "浅蓝色",
+      "Upholstery": "柔软布艺",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined adjustable loveseat profile with strong visual identity.",
+      "The 浅蓝色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1667": {
+    "name": "GC-S1667",
+    "code": "GC-S1667",
+    "sku": "GC-S1667",
+    "category": "High-Back Accent Chair",
+    "summary": "GC-S1667 is a 复古现代 high-back accent chair presented in 黄绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "High-Back Accent Chair",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1667",
+      "Type": "High-Back Accent Chair",
+      "Style": "复古现代",
+      "Color": "黄绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined high-back accent chair profile with strong visual identity.",
+      "The 黄绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1668": {
+    "name": "GC-S1668",
+    "code": "GC-S1668",
+    "sku": "GC-S1668",
+    "category": "Sectional Sofa",
+    "summary": "GC-S1668 is a 现代简约 sectional sofa presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1668",
+      "Type": "Sectional Sofa",
+      "Style": "现代简约",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sectional sofa profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1669": {
+    "name": "GC-S1669",
+    "code": "GC-S1669",
+    "sku": "GC-S1669",
+    "category": "Multi-Seat Sofa Set",
+    "summary": "GC-S1669 is a 现代实用 multi-seat sofa set presented in 深蓝色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Multi-Seat Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1669",
+      "Type": "Multi-Seat Sofa Set",
+      "Style": "现代实用",
+      "Color": "深蓝色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined multi-seat sofa set profile with strong visual identity.",
+      "The 深蓝色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1670": {
+    "name": "GC-S1670",
+    "code": "GC-S1670",
+    "sku": "GC-S1670",
+    "category": "High-Back Accent Chair",
+    "summary": "GC-S1670 is a 复古轻奢 high-back accent chair presented in 蓝色/绿色/灰色 with 绒感布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "High-Back Accent Chair",
+      "residential collection",
+      "showroom ready",
+      "10 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1670",
+      "Type": "High-Back Accent Chair",
+      "Style": "复古轻奢",
+      "Color": "蓝色/绿色/灰色",
+      "Upholstery": "绒感布艺",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined high-back accent chair profile with strong visual identity.",
+      "The 蓝色/绿色/灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1671": {
+    "name": "GC-S1671",
+    "code": "GC-S1671",
+    "sku": "GC-S1671",
+    "category": "Straight Sofa",
+    "summary": "GC-S1671 is a 现代简约 straight sofa presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "2 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1671",
+      "Type": "Straight Sofa",
+      "Style": "现代简约",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined straight sofa profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1672": {
+    "name": "GC-S1672",
+    "code": "GC-S1672",
+    "sku": "GC-S1672",
+    "category": "Rolled-Arm Leather Sofa",
+    "summary": "GC-S1672 is a 新古典 rolled-arm leather sofa presented in 深棕色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Rolled-Arm Leather Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1672",
+      "Type": "Rolled-Arm Leather Sofa",
+      "Style": "新古典",
+      "Color": "深棕色",
+      "Upholstery": "皮艺面料",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined rolled-arm leather sofa profile with strong visual identity.",
+      "The 深棕色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1676": {
+    "name": "GC-S1676",
+    "code": "GC-S1676",
+    "sku": "GC-S1676",
+    "category": "Sofa and Chair Set",
+    "summary": "GC-S1676 is a 经典现代 sofa and chair set presented in 棕色/绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Sofa and Chair Set",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1676",
+      "Type": "Sofa and Chair Set",
+      "Style": "经典现代",
+      "Color": "棕色/绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined sofa and chair set profile with strong visual identity.",
+      "The 棕色/绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1677": {
+    "name": "GC-S1677",
+    "code": "GC-S1677",
+    "sku": "GC-S1677",
+    "category": "Dining Set",
+    "summary": "GC-S1677 is a 现代工业 dining set presented in 原木色/黑色 with 木质/金属/皮艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Dining Set",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1677",
+      "Type": "Dining Set",
+      "Style": "现代工业",
+      "Color": "原木色/黑色",
+      "Upholstery": "木质/金属/皮艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined dining set profile with strong visual identity.",
+      "The 原木色/黑色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1680": {
+    "name": "GC-S1680",
+    "code": "GC-S1680",
+    "sku": "GC-S1680",
+    "category": "High-Leg Straight Sofa",
+    "summary": "GC-S1680 is a 北欧简约 high-leg straight sofa presented in 米白/浅灰 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "High-Leg Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1680",
+      "Type": "High-Leg Straight Sofa",
+      "Style": "北欧简约",
+      "Color": "米白/浅灰",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined high-leg straight sofa profile with strong visual identity.",
+      "The 米白/浅灰 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1681": {
+    "name": "GC-S1681",
+    "code": "GC-S1681",
+    "sku": "GC-S1681",
+    "category": "Leather Loveseat",
+    "summary": "GC-S1681 is a 现代简约 leather loveseat presented in 黑色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Leather Loveseat",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1681",
+      "Type": "Leather Loveseat",
+      "Style": "现代简约",
+      "Color": "黑色",
+      "Upholstery": "皮艺面料",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined leather loveseat profile with strong visual identity.",
+      "The 黑色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1682": {
+    "name": "GC-S1682",
+    "code": "GC-S1682",
+    "sku": "GC-S1682",
+    "category": "Square-Arm Straight Sofa",
+    "summary": "GC-S1682 is a 现代商务 square-arm straight sofa presented in 黑色 with 皮艺面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Square-Arm Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1682",
+      "Type": "Square-Arm Straight Sofa",
+      "Style": "现代商务",
+      "Color": "黑色",
+      "Upholstery": "皮艺面料",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined square-arm straight sofa profile with strong visual identity.",
+      "The 黑色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1683": {
+    "name": "GC-S1683",
+    "code": "GC-S1683",
+    "sku": "GC-S1683",
+    "category": "Asymmetric Lounge Bench",
+    "summary": "GC-S1683 is a 现代设计 asymmetric lounge bench presented in 深灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Asymmetric Lounge Bench",
+      "residential collection",
+      "showroom ready",
+      "2 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1683",
+      "Type": "Asymmetric Lounge Bench",
+      "Style": "现代设计",
+      "Color": "深灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined asymmetric lounge bench profile with strong visual identity.",
+      "The 深灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1686": {
+    "name": "GC-S1686",
+    "code": "GC-S1686",
+    "sku": "GC-S1686",
+    "category": "Storage Sofa Set",
+    "summary": "GC-S1686 is a 温馨现代 storage sofa set presented in 灰色/薄荷绿 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Storage Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1686",
+      "Type": "Storage Sofa Set",
+      "Style": "温馨现代",
+      "Color": "灰色/薄荷绿",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined storage sofa set profile with strong visual identity.",
+      "The 灰色/薄荷绿 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1687": {
+    "name": "GC-S1687",
+    "code": "GC-S1687",
+    "sku": "GC-S1687",
+    "category": "Living Room Sofa",
+    "summary": "GC-S1687 is a 北欧简约 living room sofa presented in 浅灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Living Room Sofa",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1687",
+      "Type": "Living Room Sofa",
+      "Style": "北欧简约",
+      "Color": "浅灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined living room sofa profile with strong visual identity.",
+      "The 浅灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1688": {
+    "name": "GC-S1688",
+    "code": "GC-S1688",
+    "sku": "GC-S1688",
+    "category": "Living Room Sofa",
+    "summary": "GC-S1688 is a 现代简约 living room sofa presented in 浅灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Living Room Sofa",
+      "residential collection",
+      "showroom ready",
+      "9 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1688",
+      "Type": "Living Room Sofa",
+      "Style": "现代简约",
+      "Color": "浅灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined living room sofa profile with strong visual identity.",
+      "The 浅灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1689": {
+    "name": "GC-S1689",
+    "code": "GC-S1689",
+    "sku": "GC-S1689",
+    "category": "Storage Straight Sofa",
+    "summary": "GC-S1689 is a 实用现代 storage straight sofa presented in 浅蓝/灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Storage Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "9 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1689",
+      "Type": "Storage Straight Sofa",
+      "Style": "实用现代",
+      "Color": "浅蓝/灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined storage straight sofa profile with strong visual identity.",
+      "The 浅蓝/灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1691": {
+    "name": "GC-S1691",
+    "code": "GC-S1691",
+    "sku": "GC-S1691",
+    "category": "Metal-Frame Sofa Collection",
+    "summary": "GC-S1691 is a 复古工业 metal-frame sofa collection presented in 棕色/灰色 with 皮艺/仿皮面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Metal-Frame Sofa Collection",
+      "residential collection",
+      "showroom ready",
+      "11 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1691",
+      "Type": "Metal-Frame Sofa Collection",
+      "Style": "复古工业",
+      "Color": "棕色/灰色",
+      "Upholstery": "皮艺/仿皮面料",
+      "Images": "11 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined metal-frame sofa collection profile with strong visual identity.",
+      "The 棕色/灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1692": {
+    "name": "GC-S1692",
+    "code": "GC-S1692",
+    "sku": "GC-S1692",
+    "category": "Curved-Arm Straight Sofa",
+    "summary": "GC-S1692 is a 北欧休闲 curved-arm straight sofa presented in 浅灰/绿色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Curved-Arm Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "6 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1692",
+      "Type": "Curved-Arm Straight Sofa",
+      "Style": "北欧休闲",
+      "Color": "浅灰/绿色",
+      "Upholstery": "柔软布艺",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined curved-arm straight sofa profile with strong visual identity.",
+      "The 浅灰/绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1693": {
+    "name": "GC-S1693",
+    "code": "GC-S1693",
+    "sku": "GC-S1693",
+    "category": "Dining Sofa Set",
+    "summary": "GC-S1693 is a 现代休闲 dining sofa set presented in 原木色/灰绿色 with 木质/金属/布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Dining Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "4 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1693",
+      "Type": "Dining Sofa Set",
+      "Style": "现代休闲",
+      "Color": "原木色/灰绿色",
+      "Upholstery": "木质/金属/布艺",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined dining sofa set profile with strong visual identity.",
+      "The 原木色/灰绿色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1695": {
+    "name": "GC-S1695",
+    "code": "GC-S1695",
+    "sku": "GC-S1695",
+    "category": "Metal-Frame Loveseat",
+    "summary": "GC-S1695 is a 复古现代 metal-frame loveseat presented in 芥末黄色 with 皮艺/仿皮面料. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Metal-Frame Loveseat",
+      "residential collection",
+      "showroom ready",
+      "5 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1695",
+      "Type": "Metal-Frame Loveseat",
+      "Style": "复古现代",
+      "Color": "芥末黄色",
+      "Upholstery": "皮艺/仿皮面料",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined metal-frame loveseat profile with strong visual identity.",
+      "The 芥末黄色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1696": {
+    "name": "GC-S1696",
+    "code": "GC-S1696",
+    "sku": "GC-S1696",
+    "category": "Chaise Sectional Sofa",
+    "summary": "GC-S1696 is a 现代休闲 chaise sectional sofa presented in 浅灰/深灰 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Chaise Sectional Sofa",
+      "residential collection",
+      "showroom ready",
+      "9 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1696",
+      "Type": "Chaise Sectional Sofa",
+      "Style": "现代休闲",
+      "Color": "浅灰/深灰",
+      "Upholstery": "柔软布艺",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined chaise sectional sofa profile with strong visual identity.",
+      "The 浅灰/深灰 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1698": {
+    "name": "GC-S1698",
+    "code": "GC-S1698",
+    "sku": "GC-S1698",
+    "category": "Rolled-Arm Straight Sofa",
+    "summary": "GC-S1698 is a 经典现代 rolled-arm straight sofa presented in 灰色 with 柔软布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Rolled-Arm Straight Sofa",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1698",
+      "Type": "Rolled-Arm Straight Sofa",
+      "Style": "经典现代",
+      "Color": "灰色",
+      "Upholstery": "柔软布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined rolled-arm straight sofa profile with strong visual identity.",
+      "The 灰色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1699": {
+    "name": "GC-S1699",
+    "code": "GC-S1699",
+    "sku": "GC-S1699",
+    "category": "Red Sofa Set",
+    "summary": "GC-S1699 is a 现代轻奢 red sofa set presented in 红色 with 绒感布艺. Its balanced profile combines visual character, everyday comfort, and an easy-to-coordinate appearance for residential living spaces and retail collections.",
+    "tags": [
+      "Red Sofa Set",
+      "residential collection",
+      "showroom ready",
+      "8 prepared images"
+    ],
+    "specs": {
+      "Model": "GC-S1699",
+      "Type": "Red Sofa Set",
+      "Style": "现代轻奢",
+      "Color": "红色",
+      "Upholstery": "绒感布艺",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A clearly defined red sofa set profile with strong visual identity.",
+      "The 红色 presentation supports coordinated living-room and lifestyle collections.",
+      "Balanced seating, back support, and overall proportions create an inviting everyday product.",
+      "Prepared multi-angle and lifestyle images provide a complete product presentation."
+    ],
+    "homes": [
+      "residential living room",
+      "apartment interior",
+      "showroom setting"
+    ],
+    "audience": [
+      "furniture retailers",
+      "wholesale customers",
+      "interior project customers"
     ],
     "suggestedPrice": "Quotation by configuration"
   },

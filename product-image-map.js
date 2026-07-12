@@ -1,4 +1,112 @@
 ﻿window.GCSOFA_PRODUCT_IMAGE_MAP = {
+  "1600": {
+    "images": [
+      "assets/products/1600/GC-S1600-01.jpg",
+      "assets/products/1600/GC-S1600-02.jpg",
+      "assets/products/1600/GC-S1600-03.jpg",
+      "assets/products/1600/GC-S1600-04.jpg",
+      "assets/products/1600/GC-S1600-05.jpg",
+      "assets/products/1600/GC-S1600-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1600/GC-S1600-01.jpg",
+      "assets/product-thumbs/1600/GC-S1600-02.jpg",
+      "assets/product-thumbs/1600/GC-S1600-03.jpg",
+      "assets/product-thumbs/1600/GC-S1600-04.jpg",
+      "assets/product-thumbs/1600/GC-S1600-05.jpg",
+      "assets/product-thumbs/1600/GC-S1600-06.jpg"
+    ],
+    "front": "assets/products/1600/GC-S1600-01.jpg",
+    "angle": "assets/products/1600/GC-S1600-02.jpg",
+    "side": "assets/products/1600/GC-S1600-03.jpg",
+    "back": "assets/products/1600/GC-S1600-04.jpg",
+    "scene": "assets/products/1600/GC-S1600-05.jpg",
+    "thumbFront": "assets/product-thumbs/1600/GC-S1600-01.jpg",
+    "thumb": "assets/product-thumbs/1600/GC-S1600-05.jpg",
+    "thumbScene": "assets/product-thumbs/1600/GC-S1600-05.jpg",
+    "fallback": "assets/products/1600/GC-S1600-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1600/GC-S1600-05.jpg",
+    "generated": "assets/products/1600/GC-S1600-01.jpg"
+  },
+  "1602": {
+    "images": [
+      "assets/products/1602/GC-S1602-01.jpg",
+      "assets/products/1602/GC-S1602-02.jpg",
+      "assets/products/1602/GC-S1602-03.jpg",
+      "assets/products/1602/GC-S1602-04.jpg",
+      "assets/products/1602/GC-S1602-05.jpg",
+      "assets/products/1602/GC-S1602-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1602/GC-S1602-01.jpg",
+      "assets/product-thumbs/1602/GC-S1602-02.jpg",
+      "assets/product-thumbs/1602/GC-S1602-03.jpg",
+      "assets/product-thumbs/1602/GC-S1602-04.jpg",
+      "assets/product-thumbs/1602/GC-S1602-05.jpg",
+      "assets/product-thumbs/1602/GC-S1602-06.jpg"
+    ],
+    "front": "assets/products/1602/GC-S1602-01.jpg",
+    "angle": "assets/products/1602/GC-S1602-02.jpg",
+    "side": "assets/products/1602/GC-S1602-03.jpg",
+    "back": "assets/products/1602/GC-S1602-04.jpg",
+    "scene": "assets/products/1602/GC-S1602-05.jpg",
+    "thumbFront": "assets/product-thumbs/1602/GC-S1602-01.jpg",
+    "thumb": "assets/product-thumbs/1602/GC-S1602-05.jpg",
+    "thumbScene": "assets/product-thumbs/1602/GC-S1602-05.jpg",
+    "fallback": "assets/products/1602/GC-S1602-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1602/GC-S1602-05.jpg",
+    "generated": "assets/products/1602/GC-S1602-01.jpg"
+  },
+  "1603": {
+    "images": [
+      "assets/products/1603/GC-S1603-01.jpg",
+      "assets/products/1603/GC-S1603-02.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1603/GC-S1603-01.jpg",
+      "assets/product-thumbs/1603/GC-S1603-02.jpg"
+    ],
+    "front": "assets/products/1603/GC-S1603-01.jpg",
+    "angle": "assets/products/1603/GC-S1603-02.jpg",
+    "side": "assets/products/1603/GC-S1603-02.jpg",
+    "back": "assets/products/1603/GC-S1603-02.jpg",
+    "scene": "assets/products/1603/GC-S1603-02.jpg",
+    "thumbFront": "assets/product-thumbs/1603/GC-S1603-01.jpg",
+    "thumb": "assets/product-thumbs/1603/GC-S1603-02.jpg",
+    "thumbScene": "assets/product-thumbs/1603/GC-S1603-02.jpg",
+    "fallback": "assets/products/1603/GC-S1603-02.jpg",
+    "thumbFallback": "assets/product-thumbs/1603/GC-S1603-02.jpg",
+    "generated": "assets/products/1603/GC-S1603-01.jpg"
+  },
+  "1605": {
+    "images": [
+      "assets/products/1605/GC-S1605-01.jpg",
+      "assets/products/1605/GC-S1605-02.jpg",
+      "assets/products/1605/GC-S1605-03.jpg",
+      "assets/products/1605/GC-S1605-04.jpg",
+      "assets/products/1605/GC-S1605-05.jpg",
+      "assets/products/1605/GC-S1605-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1605/GC-S1605-01.jpg",
+      "assets/product-thumbs/1605/GC-S1605-02.jpg",
+      "assets/product-thumbs/1605/GC-S1605-03.jpg",
+      "assets/product-thumbs/1605/GC-S1605-04.jpg",
+      "assets/product-thumbs/1605/GC-S1605-05.jpg",
+      "assets/product-thumbs/1605/GC-S1605-06.jpg"
+    ],
+    "front": "assets/products/1605/GC-S1605-01.jpg",
+    "angle": "assets/products/1605/GC-S1605-02.jpg",
+    "side": "assets/products/1605/GC-S1605-03.jpg",
+    "back": "assets/products/1605/GC-S1605-04.jpg",
+    "scene": "assets/products/1605/GC-S1605-03.jpg",
+    "thumbFront": "assets/product-thumbs/1605/GC-S1605-01.jpg",
+    "thumb": "assets/product-thumbs/1605/GC-S1605-03.jpg",
+    "thumbScene": "assets/product-thumbs/1605/GC-S1605-03.jpg",
+    "fallback": "assets/products/1605/GC-S1605-03.jpg",
+    "thumbFallback": "assets/product-thumbs/1605/GC-S1605-03.jpg",
+    "generated": "assets/products/1605/GC-S1605-01.jpg"
+  },
   "1606": {
     "images": [
       "assets/products/1606/GC-S1606-01.jpg",
@@ -27,6 +135,1663 @@
     "fallback": "assets/products/1606/GC-S1606-06.jpg",
     "thumbFallback": "assets/product-thumbs/1606/GC-S1606-06.jpg",
     "generated": "assets/products/1606/GC-S1606-01.jpg"
+  },
+  "1608": {
+    "images": [
+      "assets/products/1608/GC-S1608-01.jpg",
+      "assets/products/1608/GC-S1608-02.jpg",
+      "assets/products/1608/GC-S1608-03.jpg",
+      "assets/products/1608/GC-S1608-04.jpg",
+      "assets/products/1608/GC-S1608-05.jpg",
+      "assets/products/1608/GC-S1608-06.jpg",
+      "assets/products/1608/GC-S1608-07.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1608/GC-S1608-01.jpg",
+      "assets/product-thumbs/1608/GC-S1608-02.jpg",
+      "assets/product-thumbs/1608/GC-S1608-03.jpg",
+      "assets/product-thumbs/1608/GC-S1608-04.jpg",
+      "assets/product-thumbs/1608/GC-S1608-05.jpg",
+      "assets/product-thumbs/1608/GC-S1608-06.jpg",
+      "assets/product-thumbs/1608/GC-S1608-07.jpg"
+    ],
+    "front": "assets/products/1608/GC-S1608-01.jpg",
+    "angle": "assets/products/1608/GC-S1608-02.jpg",
+    "side": "assets/products/1608/GC-S1608-03.jpg",
+    "back": "assets/products/1608/GC-S1608-04.jpg",
+    "scene": "assets/products/1608/GC-S1608-06.jpg",
+    "thumbFront": "assets/product-thumbs/1608/GC-S1608-01.jpg",
+    "thumb": "assets/product-thumbs/1608/GC-S1608-06.jpg",
+    "thumbScene": "assets/product-thumbs/1608/GC-S1608-06.jpg",
+    "fallback": "assets/products/1608/GC-S1608-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1608/GC-S1608-06.jpg",
+    "generated": "assets/products/1608/GC-S1608-01.jpg"
+  },
+  "1612": {
+    "images": [
+      "assets/products/1612/GC-S1612-01.jpg",
+      "assets/products/1612/GC-S1612-02.jpg",
+      "assets/products/1612/GC-S1612-03.jpg",
+      "assets/products/1612/GC-S1612-04.jpg",
+      "assets/products/1612/GC-S1612-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1612/GC-S1612-01.jpg",
+      "assets/product-thumbs/1612/GC-S1612-02.jpg",
+      "assets/product-thumbs/1612/GC-S1612-03.jpg",
+      "assets/product-thumbs/1612/GC-S1612-04.jpg",
+      "assets/product-thumbs/1612/GC-S1612-05.jpg"
+    ],
+    "front": "assets/products/1612/GC-S1612-01.jpg",
+    "angle": "assets/products/1612/GC-S1612-02.jpg",
+    "side": "assets/products/1612/GC-S1612-03.jpg",
+    "back": "assets/products/1612/GC-S1612-04.jpg",
+    "scene": "assets/products/1612/GC-S1612-05.jpg",
+    "thumbFront": "assets/product-thumbs/1612/GC-S1612-01.jpg",
+    "thumb": "assets/product-thumbs/1612/GC-S1612-05.jpg",
+    "thumbScene": "assets/product-thumbs/1612/GC-S1612-05.jpg",
+    "fallback": "assets/products/1612/GC-S1612-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1612/GC-S1612-05.jpg",
+    "generated": "assets/products/1612/GC-S1612-01.jpg"
+  },
+  "1613": {
+    "images": [
+      "assets/products/1613/GC-S1613-01.jpg",
+      "assets/products/1613/GC-S1613-02.jpg",
+      "assets/products/1613/GC-S1613-03.jpg",
+      "assets/products/1613/GC-S1613-04.jpg",
+      "assets/products/1613/GC-S1613-05.jpg",
+      "assets/products/1613/GC-S1613-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1613/GC-S1613-01.jpg",
+      "assets/product-thumbs/1613/GC-S1613-02.jpg",
+      "assets/product-thumbs/1613/GC-S1613-03.jpg",
+      "assets/product-thumbs/1613/GC-S1613-04.jpg",
+      "assets/product-thumbs/1613/GC-S1613-05.jpg",
+      "assets/product-thumbs/1613/GC-S1613-06.jpg"
+    ],
+    "front": "assets/products/1613/GC-S1613-01.jpg",
+    "angle": "assets/products/1613/GC-S1613-02.jpg",
+    "side": "assets/products/1613/GC-S1613-03.jpg",
+    "back": "assets/products/1613/GC-S1613-04.jpg",
+    "scene": "assets/products/1613/GC-S1613-05.jpg",
+    "thumbFront": "assets/product-thumbs/1613/GC-S1613-01.jpg",
+    "thumb": "assets/product-thumbs/1613/GC-S1613-05.jpg",
+    "thumbScene": "assets/product-thumbs/1613/GC-S1613-05.jpg",
+    "fallback": "assets/products/1613/GC-S1613-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1613/GC-S1613-05.jpg",
+    "generated": "assets/products/1613/GC-S1613-01.jpg"
+  },
+  "1615": {
+    "images": [
+      "assets/products/1615/GC-S1615-01.jpg",
+      "assets/products/1615/GC-S1615-02.jpg",
+      "assets/products/1615/GC-S1615-03.jpg",
+      "assets/products/1615/GC-S1615-04.jpg",
+      "assets/products/1615/GC-S1615-05.jpg",
+      "assets/products/1615/GC-S1615-06.jpg",
+      "assets/products/1615/GC-S1615-07.jpg",
+      "assets/products/1615/GC-S1615-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1615/GC-S1615-01.jpg",
+      "assets/product-thumbs/1615/GC-S1615-02.jpg",
+      "assets/product-thumbs/1615/GC-S1615-03.jpg",
+      "assets/product-thumbs/1615/GC-S1615-04.jpg",
+      "assets/product-thumbs/1615/GC-S1615-05.jpg",
+      "assets/product-thumbs/1615/GC-S1615-06.jpg",
+      "assets/product-thumbs/1615/GC-S1615-07.jpg",
+      "assets/product-thumbs/1615/GC-S1615-08.jpg"
+    ],
+    "front": "assets/products/1615/GC-S1615-01.jpg",
+    "angle": "assets/products/1615/GC-S1615-02.jpg",
+    "side": "assets/products/1615/GC-S1615-03.jpg",
+    "back": "assets/products/1615/GC-S1615-04.jpg",
+    "scene": "assets/products/1615/GC-S1615-04.jpg",
+    "thumbFront": "assets/product-thumbs/1615/GC-S1615-01.jpg",
+    "thumb": "assets/product-thumbs/1615/GC-S1615-04.jpg",
+    "thumbScene": "assets/product-thumbs/1615/GC-S1615-04.jpg",
+    "fallback": "assets/products/1615/GC-S1615-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1615/GC-S1615-04.jpg",
+    "generated": "assets/products/1615/GC-S1615-01.jpg"
+  },
+  "1618": {
+    "images": [
+      "assets/products/1618/GC-S1618-01.jpg",
+      "assets/products/1618/GC-S1618-02.jpg",
+      "assets/products/1618/GC-S1618-03.jpg",
+      "assets/products/1618/GC-S1618-04.jpg",
+      "assets/products/1618/GC-S1618-05.jpg",
+      "assets/products/1618/GC-S1618-06.jpg",
+      "assets/products/1618/GC-S1618-07.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1618/GC-S1618-01.jpg",
+      "assets/product-thumbs/1618/GC-S1618-02.jpg",
+      "assets/product-thumbs/1618/GC-S1618-03.jpg",
+      "assets/product-thumbs/1618/GC-S1618-04.jpg",
+      "assets/product-thumbs/1618/GC-S1618-05.jpg",
+      "assets/product-thumbs/1618/GC-S1618-06.jpg",
+      "assets/product-thumbs/1618/GC-S1618-07.jpg"
+    ],
+    "front": "assets/products/1618/GC-S1618-01.jpg",
+    "angle": "assets/products/1618/GC-S1618-02.jpg",
+    "side": "assets/products/1618/GC-S1618-03.jpg",
+    "back": "assets/products/1618/GC-S1618-04.jpg",
+    "scene": "assets/products/1618/GC-S1618-05.jpg",
+    "thumbFront": "assets/product-thumbs/1618/GC-S1618-01.jpg",
+    "thumb": "assets/product-thumbs/1618/GC-S1618-05.jpg",
+    "thumbScene": "assets/product-thumbs/1618/GC-S1618-05.jpg",
+    "fallback": "assets/products/1618/GC-S1618-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1618/GC-S1618-05.jpg",
+    "generated": "assets/products/1618/GC-S1618-01.jpg"
+  },
+  "1619": {
+    "images": [
+      "assets/products/1619/GC-S1619-01.jpg",
+      "assets/products/1619/GC-S1619-02.jpg",
+      "assets/products/1619/GC-S1619-03.jpg",
+      "assets/products/1619/GC-S1619-04.jpg",
+      "assets/products/1619/GC-S1619-05.jpg",
+      "assets/products/1619/GC-S1619-06.jpg",
+      "assets/products/1619/GC-S1619-07.jpg",
+      "assets/products/1619/GC-S1619-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1619/GC-S1619-01.jpg",
+      "assets/product-thumbs/1619/GC-S1619-02.jpg",
+      "assets/product-thumbs/1619/GC-S1619-03.jpg",
+      "assets/product-thumbs/1619/GC-S1619-04.jpg",
+      "assets/product-thumbs/1619/GC-S1619-05.jpg",
+      "assets/product-thumbs/1619/GC-S1619-06.jpg",
+      "assets/product-thumbs/1619/GC-S1619-07.jpg",
+      "assets/product-thumbs/1619/GC-S1619-08.jpg"
+    ],
+    "front": "assets/products/1619/GC-S1619-01.jpg",
+    "angle": "assets/products/1619/GC-S1619-02.jpg",
+    "side": "assets/products/1619/GC-S1619-03.jpg",
+    "back": "assets/products/1619/GC-S1619-04.jpg",
+    "scene": "assets/products/1619/GC-S1619-07.jpg",
+    "thumbFront": "assets/product-thumbs/1619/GC-S1619-01.jpg",
+    "thumb": "assets/product-thumbs/1619/GC-S1619-07.jpg",
+    "thumbScene": "assets/product-thumbs/1619/GC-S1619-07.jpg",
+    "fallback": "assets/products/1619/GC-S1619-07.jpg",
+    "thumbFallback": "assets/product-thumbs/1619/GC-S1619-07.jpg",
+    "generated": "assets/products/1619/GC-S1619-01.jpg"
+  },
+  "1621": {
+    "images": [
+      "assets/products/1621/GC-S1621-01.jpg",
+      "assets/products/1621/GC-S1621-02.jpg",
+      "assets/products/1621/GC-S1621-03.jpg",
+      "assets/products/1621/GC-S1621-04.jpg",
+      "assets/products/1621/GC-S1621-05.jpg",
+      "assets/products/1621/GC-S1621-06.jpg",
+      "assets/products/1621/GC-S1621-07.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1621/GC-S1621-01.jpg",
+      "assets/product-thumbs/1621/GC-S1621-02.jpg",
+      "assets/product-thumbs/1621/GC-S1621-03.jpg",
+      "assets/product-thumbs/1621/GC-S1621-04.jpg",
+      "assets/product-thumbs/1621/GC-S1621-05.jpg",
+      "assets/product-thumbs/1621/GC-S1621-06.jpg",
+      "assets/product-thumbs/1621/GC-S1621-07.jpg"
+    ],
+    "front": "assets/products/1621/GC-S1621-01.jpg",
+    "angle": "assets/products/1621/GC-S1621-02.jpg",
+    "side": "assets/products/1621/GC-S1621-03.jpg",
+    "back": "assets/products/1621/GC-S1621-04.jpg",
+    "scene": "assets/products/1621/GC-S1621-05.jpg",
+    "thumbFront": "assets/product-thumbs/1621/GC-S1621-01.jpg",
+    "thumb": "assets/product-thumbs/1621/GC-S1621-05.jpg",
+    "thumbScene": "assets/product-thumbs/1621/GC-S1621-05.jpg",
+    "fallback": "assets/products/1621/GC-S1621-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1621/GC-S1621-05.jpg",
+    "generated": "assets/products/1621/GC-S1621-01.jpg"
+  },
+  "1622": {
+    "images": [
+      "assets/products/1622/GC-S1622-01.jpg",
+      "assets/products/1622/GC-S1622-02.jpg",
+      "assets/products/1622/GC-S1622-03.jpg",
+      "assets/products/1622/GC-S1622-04.jpg",
+      "assets/products/1622/GC-S1622-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1622/GC-S1622-01.jpg",
+      "assets/product-thumbs/1622/GC-S1622-02.jpg",
+      "assets/product-thumbs/1622/GC-S1622-03.jpg",
+      "assets/product-thumbs/1622/GC-S1622-04.jpg",
+      "assets/product-thumbs/1622/GC-S1622-05.jpg"
+    ],
+    "front": "assets/products/1622/GC-S1622-01.jpg",
+    "angle": "assets/products/1622/GC-S1622-02.jpg",
+    "side": "assets/products/1622/GC-S1622-03.jpg",
+    "back": "assets/products/1622/GC-S1622-04.jpg",
+    "scene": "assets/products/1622/GC-S1622-05.jpg",
+    "thumbFront": "assets/product-thumbs/1622/GC-S1622-01.jpg",
+    "thumb": "assets/product-thumbs/1622/GC-S1622-05.jpg",
+    "thumbScene": "assets/product-thumbs/1622/GC-S1622-05.jpg",
+    "fallback": "assets/products/1622/GC-S1622-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1622/GC-S1622-05.jpg",
+    "generated": "assets/products/1622/GC-S1622-01.jpg"
+  },
+  "1623": {
+    "images": [
+      "assets/products/1623/GC-S1623-01.jpg",
+      "assets/products/1623/GC-S1623-02.jpg",
+      "assets/products/1623/GC-S1623-03.jpg",
+      "assets/products/1623/GC-S1623-04.jpg",
+      "assets/products/1623/GC-S1623-05.jpg",
+      "assets/products/1623/GC-S1623-06.jpg",
+      "assets/products/1623/GC-S1623-07.jpg",
+      "assets/products/1623/GC-S1623-08.jpg",
+      "assets/products/1623/GC-S1623-09.jpg",
+      "assets/products/1623/GC-S1623-10.jpg",
+      "assets/products/1623/GC-S1623-11.jpg",
+      "assets/products/1623/GC-S1623-12.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1623/GC-S1623-01.jpg",
+      "assets/product-thumbs/1623/GC-S1623-02.jpg",
+      "assets/product-thumbs/1623/GC-S1623-03.jpg",
+      "assets/product-thumbs/1623/GC-S1623-04.jpg",
+      "assets/product-thumbs/1623/GC-S1623-05.jpg",
+      "assets/product-thumbs/1623/GC-S1623-06.jpg",
+      "assets/product-thumbs/1623/GC-S1623-07.jpg",
+      "assets/product-thumbs/1623/GC-S1623-08.jpg",
+      "assets/product-thumbs/1623/GC-S1623-09.jpg",
+      "assets/product-thumbs/1623/GC-S1623-10.jpg",
+      "assets/product-thumbs/1623/GC-S1623-11.jpg",
+      "assets/product-thumbs/1623/GC-S1623-12.jpg"
+    ],
+    "front": "assets/products/1623/GC-S1623-01.jpg",
+    "angle": "assets/products/1623/GC-S1623-02.jpg",
+    "side": "assets/products/1623/GC-S1623-03.jpg",
+    "back": "assets/products/1623/GC-S1623-04.jpg",
+    "scene": "assets/products/1623/GC-S1623-04.jpg",
+    "thumbFront": "assets/product-thumbs/1623/GC-S1623-01.jpg",
+    "thumb": "assets/product-thumbs/1623/GC-S1623-04.jpg",
+    "thumbScene": "assets/product-thumbs/1623/GC-S1623-04.jpg",
+    "fallback": "assets/products/1623/GC-S1623-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1623/GC-S1623-04.jpg",
+    "generated": "assets/products/1623/GC-S1623-01.jpg"
+  },
+  "1627": {
+    "images": [
+      "assets/products/1627/GC-S1627-01.jpg",
+      "assets/products/1627/GC-S1627-02.jpg",
+      "assets/products/1627/GC-S1627-03.jpg",
+      "assets/products/1627/GC-S1627-04.jpg",
+      "assets/products/1627/GC-S1627-05.jpg",
+      "assets/products/1627/GC-S1627-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1627/GC-S1627-01.jpg",
+      "assets/product-thumbs/1627/GC-S1627-02.jpg",
+      "assets/product-thumbs/1627/GC-S1627-03.jpg",
+      "assets/product-thumbs/1627/GC-S1627-04.jpg",
+      "assets/product-thumbs/1627/GC-S1627-05.jpg",
+      "assets/product-thumbs/1627/GC-S1627-06.jpg"
+    ],
+    "front": "assets/products/1627/GC-S1627-01.jpg",
+    "angle": "assets/products/1627/GC-S1627-02.jpg",
+    "side": "assets/products/1627/GC-S1627-03.jpg",
+    "back": "assets/products/1627/GC-S1627-04.jpg",
+    "scene": "assets/products/1627/GC-S1627-03.jpg",
+    "thumbFront": "assets/product-thumbs/1627/GC-S1627-01.jpg",
+    "thumb": "assets/product-thumbs/1627/GC-S1627-03.jpg",
+    "thumbScene": "assets/product-thumbs/1627/GC-S1627-03.jpg",
+    "fallback": "assets/products/1627/GC-S1627-03.jpg",
+    "thumbFallback": "assets/product-thumbs/1627/GC-S1627-03.jpg",
+    "generated": "assets/products/1627/GC-S1627-01.jpg"
+  },
+  "1628": {
+    "images": [
+      "assets/products/1628/GC-S1628-01.jpg",
+      "assets/products/1628/GC-S1628-02.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1628/GC-S1628-01.jpg",
+      "assets/product-thumbs/1628/GC-S1628-02.jpg"
+    ],
+    "front": "assets/products/1628/GC-S1628-01.jpg",
+    "angle": "assets/products/1628/GC-S1628-02.jpg",
+    "side": "assets/products/1628/GC-S1628-02.jpg",
+    "back": "assets/products/1628/GC-S1628-02.jpg",
+    "scene": "assets/products/1628/GC-S1628-02.jpg",
+    "thumbFront": "assets/product-thumbs/1628/GC-S1628-01.jpg",
+    "thumb": "assets/product-thumbs/1628/GC-S1628-02.jpg",
+    "thumbScene": "assets/product-thumbs/1628/GC-S1628-02.jpg",
+    "fallback": "assets/products/1628/GC-S1628-02.jpg",
+    "thumbFallback": "assets/product-thumbs/1628/GC-S1628-02.jpg",
+    "generated": "assets/products/1628/GC-S1628-01.jpg"
+  },
+  "1629": {
+    "images": [
+      "assets/products/1629/GC-S1629-01.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1629/GC-S1629-01.jpg"
+    ],
+    "front": "assets/products/1629/GC-S1629-01.jpg",
+    "angle": "assets/products/1629/GC-S1629-01.jpg",
+    "side": "assets/products/1629/GC-S1629-01.jpg",
+    "back": "assets/products/1629/GC-S1629-01.jpg",
+    "scene": "assets/products/1629/GC-S1629-01.jpg",
+    "thumbFront": "assets/product-thumbs/1629/GC-S1629-01.jpg",
+    "thumb": "assets/product-thumbs/1629/GC-S1629-01.jpg",
+    "thumbScene": "assets/product-thumbs/1629/GC-S1629-01.jpg",
+    "fallback": "assets/products/1629/GC-S1629-01.jpg",
+    "thumbFallback": "assets/product-thumbs/1629/GC-S1629-01.jpg",
+    "generated": "assets/products/1629/GC-S1629-01.jpg"
+  },
+  "1630": {
+    "images": [
+      "assets/products/1630/GC-S1630-01.jpg",
+      "assets/products/1630/GC-S1630-02.jpg",
+      "assets/products/1630/GC-S1630-03.jpg",
+      "assets/products/1630/GC-S1630-04.jpg",
+      "assets/products/1630/GC-S1630-05.jpg",
+      "assets/products/1630/GC-S1630-06.jpg",
+      "assets/products/1630/GC-S1630-07.jpg",
+      "assets/products/1630/GC-S1630-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1630/GC-S1630-01.jpg",
+      "assets/product-thumbs/1630/GC-S1630-02.jpg",
+      "assets/product-thumbs/1630/GC-S1630-03.jpg",
+      "assets/product-thumbs/1630/GC-S1630-04.jpg",
+      "assets/product-thumbs/1630/GC-S1630-05.jpg",
+      "assets/product-thumbs/1630/GC-S1630-06.jpg",
+      "assets/product-thumbs/1630/GC-S1630-07.jpg",
+      "assets/product-thumbs/1630/GC-S1630-08.jpg"
+    ],
+    "front": "assets/products/1630/GC-S1630-01.jpg",
+    "angle": "assets/products/1630/GC-S1630-02.jpg",
+    "side": "assets/products/1630/GC-S1630-03.jpg",
+    "back": "assets/products/1630/GC-S1630-04.jpg",
+    "scene": "assets/products/1630/GC-S1630-05.jpg",
+    "thumbFront": "assets/product-thumbs/1630/GC-S1630-01.jpg",
+    "thumb": "assets/product-thumbs/1630/GC-S1630-05.jpg",
+    "thumbScene": "assets/product-thumbs/1630/GC-S1630-05.jpg",
+    "fallback": "assets/products/1630/GC-S1630-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1630/GC-S1630-05.jpg",
+    "generated": "assets/products/1630/GC-S1630-01.jpg"
+  },
+  "1632": {
+    "images": [
+      "assets/products/1632/GC-S1632-01.jpg",
+      "assets/products/1632/GC-S1632-02.jpg",
+      "assets/products/1632/GC-S1632-03.jpg",
+      "assets/products/1632/GC-S1632-04.jpg",
+      "assets/products/1632/GC-S1632-05.jpg",
+      "assets/products/1632/GC-S1632-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1632/GC-S1632-01.jpg",
+      "assets/product-thumbs/1632/GC-S1632-02.jpg",
+      "assets/product-thumbs/1632/GC-S1632-03.jpg",
+      "assets/product-thumbs/1632/GC-S1632-04.jpg",
+      "assets/product-thumbs/1632/GC-S1632-05.jpg",
+      "assets/product-thumbs/1632/GC-S1632-06.jpg"
+    ],
+    "front": "assets/products/1632/GC-S1632-01.jpg",
+    "angle": "assets/products/1632/GC-S1632-02.jpg",
+    "side": "assets/products/1632/GC-S1632-03.jpg",
+    "back": "assets/products/1632/GC-S1632-04.jpg",
+    "scene": "assets/products/1632/GC-S1632-03.jpg",
+    "thumbFront": "assets/product-thumbs/1632/GC-S1632-01.jpg",
+    "thumb": "assets/product-thumbs/1632/GC-S1632-03.jpg",
+    "thumbScene": "assets/product-thumbs/1632/GC-S1632-03.jpg",
+    "fallback": "assets/products/1632/GC-S1632-03.jpg",
+    "thumbFallback": "assets/product-thumbs/1632/GC-S1632-03.jpg",
+    "generated": "assets/products/1632/GC-S1632-01.jpg"
+  },
+  "1633": {
+    "images": [
+      "assets/products/1633/GC-S1633-01.jpg",
+      "assets/products/1633/GC-S1633-02.jpg",
+      "assets/products/1633/GC-S1633-03.jpg",
+      "assets/products/1633/GC-S1633-04.jpg",
+      "assets/products/1633/GC-S1633-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1633/GC-S1633-01.jpg",
+      "assets/product-thumbs/1633/GC-S1633-02.jpg",
+      "assets/product-thumbs/1633/GC-S1633-03.jpg",
+      "assets/product-thumbs/1633/GC-S1633-04.jpg",
+      "assets/product-thumbs/1633/GC-S1633-05.jpg"
+    ],
+    "front": "assets/products/1633/GC-S1633-01.jpg",
+    "angle": "assets/products/1633/GC-S1633-02.jpg",
+    "side": "assets/products/1633/GC-S1633-03.jpg",
+    "back": "assets/products/1633/GC-S1633-04.jpg",
+    "scene": "assets/products/1633/GC-S1633-05.jpg",
+    "thumbFront": "assets/product-thumbs/1633/GC-S1633-01.jpg",
+    "thumb": "assets/product-thumbs/1633/GC-S1633-05.jpg",
+    "thumbScene": "assets/product-thumbs/1633/GC-S1633-05.jpg",
+    "fallback": "assets/products/1633/GC-S1633-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1633/GC-S1633-05.jpg",
+    "generated": "assets/products/1633/GC-S1633-01.jpg"
+  },
+  "1635": {
+    "images": [
+      "assets/products/1635/GC-S1635-01.jpg",
+      "assets/products/1635/GC-S1635-02.jpg",
+      "assets/products/1635/GC-S1635-03.jpg",
+      "assets/products/1635/GC-S1635-04.jpg",
+      "assets/products/1635/GC-S1635-05.jpg",
+      "assets/products/1635/GC-S1635-06.jpg",
+      "assets/products/1635/GC-S1635-07.jpg",
+      "assets/products/1635/GC-S1635-08.jpg",
+      "assets/products/1635/GC-S1635-09.jpg",
+      "assets/products/1635/GC-S1635-10.jpg",
+      "assets/products/1635/GC-S1635-11.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1635/GC-S1635-01.jpg",
+      "assets/product-thumbs/1635/GC-S1635-02.jpg",
+      "assets/product-thumbs/1635/GC-S1635-03.jpg",
+      "assets/product-thumbs/1635/GC-S1635-04.jpg",
+      "assets/product-thumbs/1635/GC-S1635-05.jpg",
+      "assets/product-thumbs/1635/GC-S1635-06.jpg",
+      "assets/product-thumbs/1635/GC-S1635-07.jpg",
+      "assets/product-thumbs/1635/GC-S1635-08.jpg",
+      "assets/product-thumbs/1635/GC-S1635-09.jpg",
+      "assets/product-thumbs/1635/GC-S1635-10.jpg",
+      "assets/product-thumbs/1635/GC-S1635-11.jpg"
+    ],
+    "front": "assets/products/1635/GC-S1635-01.jpg",
+    "angle": "assets/products/1635/GC-S1635-02.jpg",
+    "side": "assets/products/1635/GC-S1635-03.jpg",
+    "back": "assets/products/1635/GC-S1635-04.jpg",
+    "scene": "assets/products/1635/GC-S1635-08.jpg",
+    "thumbFront": "assets/product-thumbs/1635/GC-S1635-01.jpg",
+    "thumb": "assets/product-thumbs/1635/GC-S1635-08.jpg",
+    "thumbScene": "assets/product-thumbs/1635/GC-S1635-08.jpg",
+    "fallback": "assets/products/1635/GC-S1635-08.jpg",
+    "thumbFallback": "assets/product-thumbs/1635/GC-S1635-08.jpg",
+    "generated": "assets/products/1635/GC-S1635-01.jpg"
+  },
+  "1638": {
+    "images": [
+      "assets/products/1638/GC-S1638-01.jpg",
+      "assets/products/1638/GC-S1638-02.jpg",
+      "assets/products/1638/GC-S1638-03.jpg",
+      "assets/products/1638/GC-S1638-04.jpg",
+      "assets/products/1638/GC-S1638-05.jpg",
+      "assets/products/1638/GC-S1638-06.jpg",
+      "assets/products/1638/GC-S1638-07.jpg",
+      "assets/products/1638/GC-S1638-08.jpg",
+      "assets/products/1638/GC-S1638-09.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1638/GC-S1638-01.jpg",
+      "assets/product-thumbs/1638/GC-S1638-02.jpg",
+      "assets/product-thumbs/1638/GC-S1638-03.jpg",
+      "assets/product-thumbs/1638/GC-S1638-04.jpg",
+      "assets/product-thumbs/1638/GC-S1638-05.jpg",
+      "assets/product-thumbs/1638/GC-S1638-06.jpg",
+      "assets/product-thumbs/1638/GC-S1638-07.jpg",
+      "assets/product-thumbs/1638/GC-S1638-08.jpg",
+      "assets/product-thumbs/1638/GC-S1638-09.jpg"
+    ],
+    "front": "assets/products/1638/GC-S1638-01.jpg",
+    "angle": "assets/products/1638/GC-S1638-02.jpg",
+    "side": "assets/products/1638/GC-S1638-03.jpg",
+    "back": "assets/products/1638/GC-S1638-04.jpg",
+    "scene": "assets/products/1638/GC-S1638-07.jpg",
+    "thumbFront": "assets/product-thumbs/1638/GC-S1638-01.jpg",
+    "thumb": "assets/product-thumbs/1638/GC-S1638-07.jpg",
+    "thumbScene": "assets/product-thumbs/1638/GC-S1638-07.jpg",
+    "fallback": "assets/products/1638/GC-S1638-07.jpg",
+    "thumbFallback": "assets/product-thumbs/1638/GC-S1638-07.jpg",
+    "generated": "assets/products/1638/GC-S1638-01.jpg"
+  },
+  "1639": {
+    "images": [
+      "assets/products/1639/GC-S1639-01.jpg",
+      "assets/products/1639/GC-S1639-02.jpg",
+      "assets/products/1639/GC-S1639-03.jpg",
+      "assets/products/1639/GC-S1639-04.jpg",
+      "assets/products/1639/GC-S1639-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1639/GC-S1639-01.jpg",
+      "assets/product-thumbs/1639/GC-S1639-02.jpg",
+      "assets/product-thumbs/1639/GC-S1639-03.jpg",
+      "assets/product-thumbs/1639/GC-S1639-04.jpg",
+      "assets/product-thumbs/1639/GC-S1639-05.jpg"
+    ],
+    "front": "assets/products/1639/GC-S1639-01.jpg",
+    "angle": "assets/products/1639/GC-S1639-02.jpg",
+    "side": "assets/products/1639/GC-S1639-03.jpg",
+    "back": "assets/products/1639/GC-S1639-04.jpg",
+    "scene": "assets/products/1639/GC-S1639-05.jpg",
+    "thumbFront": "assets/product-thumbs/1639/GC-S1639-01.jpg",
+    "thumb": "assets/product-thumbs/1639/GC-S1639-05.jpg",
+    "thumbScene": "assets/product-thumbs/1639/GC-S1639-05.jpg",
+    "fallback": "assets/products/1639/GC-S1639-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1639/GC-S1639-05.jpg",
+    "generated": "assets/products/1639/GC-S1639-01.jpg"
+  },
+  "1640": {
+    "images": [
+      "assets/products/1640/GC-S1640-01.jpg",
+      "assets/products/1640/GC-S1640-02.jpg",
+      "assets/products/1640/GC-S1640-03.jpg",
+      "assets/products/1640/GC-S1640-04.jpg",
+      "assets/products/1640/GC-S1640-05.jpg",
+      "assets/products/1640/GC-S1640-06.jpg",
+      "assets/products/1640/GC-S1640-07.jpg",
+      "assets/products/1640/GC-S1640-08.jpg",
+      "assets/products/1640/GC-S1640-09.jpg",
+      "assets/products/1640/GC-S1640-10.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1640/GC-S1640-01.jpg",
+      "assets/product-thumbs/1640/GC-S1640-02.jpg",
+      "assets/product-thumbs/1640/GC-S1640-03.jpg",
+      "assets/product-thumbs/1640/GC-S1640-04.jpg",
+      "assets/product-thumbs/1640/GC-S1640-05.jpg",
+      "assets/product-thumbs/1640/GC-S1640-06.jpg",
+      "assets/product-thumbs/1640/GC-S1640-07.jpg",
+      "assets/product-thumbs/1640/GC-S1640-08.jpg",
+      "assets/product-thumbs/1640/GC-S1640-09.jpg",
+      "assets/product-thumbs/1640/GC-S1640-10.jpg"
+    ],
+    "front": "assets/products/1640/GC-S1640-01.jpg",
+    "angle": "assets/products/1640/GC-S1640-02.jpg",
+    "side": "assets/products/1640/GC-S1640-03.jpg",
+    "back": "assets/products/1640/GC-S1640-04.jpg",
+    "scene": "assets/products/1640/GC-S1640-04.jpg",
+    "thumbFront": "assets/product-thumbs/1640/GC-S1640-01.jpg",
+    "thumb": "assets/product-thumbs/1640/GC-S1640-04.jpg",
+    "thumbScene": "assets/product-thumbs/1640/GC-S1640-04.jpg",
+    "fallback": "assets/products/1640/GC-S1640-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1640/GC-S1640-04.jpg",
+    "generated": "assets/products/1640/GC-S1640-01.jpg"
+  },
+  "1641": {
+    "images": [
+      "assets/products/1641/GC-S1641-01.jpg",
+      "assets/products/1641/GC-S1641-02.jpg",
+      "assets/products/1641/GC-S1641-03.jpg",
+      "assets/products/1641/GC-S1641-04.jpg",
+      "assets/products/1641/GC-S1641-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1641/GC-S1641-01.jpg",
+      "assets/product-thumbs/1641/GC-S1641-02.jpg",
+      "assets/product-thumbs/1641/GC-S1641-03.jpg",
+      "assets/product-thumbs/1641/GC-S1641-04.jpg",
+      "assets/product-thumbs/1641/GC-S1641-05.jpg"
+    ],
+    "front": "assets/products/1641/GC-S1641-01.jpg",
+    "angle": "assets/products/1641/GC-S1641-02.jpg",
+    "side": "assets/products/1641/GC-S1641-03.jpg",
+    "back": "assets/products/1641/GC-S1641-04.jpg",
+    "scene": "assets/products/1641/GC-S1641-05.jpg",
+    "thumbFront": "assets/product-thumbs/1641/GC-S1641-01.jpg",
+    "thumb": "assets/product-thumbs/1641/GC-S1641-05.jpg",
+    "thumbScene": "assets/product-thumbs/1641/GC-S1641-05.jpg",
+    "fallback": "assets/products/1641/GC-S1641-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1641/GC-S1641-05.jpg",
+    "generated": "assets/products/1641/GC-S1641-01.jpg"
+  },
+  "1642": {
+    "images": [
+      "assets/products/1642/GC-S1642-01.jpg",
+      "assets/products/1642/GC-S1642-02.jpg",
+      "assets/products/1642/GC-S1642-03.jpg",
+      "assets/products/1642/GC-S1642-04.jpg",
+      "assets/products/1642/GC-S1642-05.jpg",
+      "assets/products/1642/GC-S1642-06.jpg",
+      "assets/products/1642/GC-S1642-07.jpg",
+      "assets/products/1642/GC-S1642-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1642/GC-S1642-01.jpg",
+      "assets/product-thumbs/1642/GC-S1642-02.jpg",
+      "assets/product-thumbs/1642/GC-S1642-03.jpg",
+      "assets/product-thumbs/1642/GC-S1642-04.jpg",
+      "assets/product-thumbs/1642/GC-S1642-05.jpg",
+      "assets/product-thumbs/1642/GC-S1642-06.jpg",
+      "assets/product-thumbs/1642/GC-S1642-07.jpg",
+      "assets/product-thumbs/1642/GC-S1642-08.jpg"
+    ],
+    "front": "assets/products/1642/GC-S1642-01.jpg",
+    "angle": "assets/products/1642/GC-S1642-02.jpg",
+    "side": "assets/products/1642/GC-S1642-03.jpg",
+    "back": "assets/products/1642/GC-S1642-04.jpg",
+    "scene": "assets/products/1642/GC-S1642-07.jpg",
+    "thumbFront": "assets/product-thumbs/1642/GC-S1642-01.jpg",
+    "thumb": "assets/product-thumbs/1642/GC-S1642-07.jpg",
+    "thumbScene": "assets/product-thumbs/1642/GC-S1642-07.jpg",
+    "fallback": "assets/products/1642/GC-S1642-07.jpg",
+    "thumbFallback": "assets/product-thumbs/1642/GC-S1642-07.jpg",
+    "generated": "assets/products/1642/GC-S1642-01.jpg"
+  },
+  "1645": {
+    "images": [
+      "assets/products/1645/GC-S1645-01.jpg",
+      "assets/products/1645/GC-S1645-02.jpg",
+      "assets/products/1645/GC-S1645-03.jpg",
+      "assets/products/1645/GC-S1645-04.jpg",
+      "assets/products/1645/GC-S1645-05.jpg",
+      "assets/products/1645/GC-S1645-06.jpg",
+      "assets/products/1645/GC-S1645-07.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1645/GC-S1645-01.jpg",
+      "assets/product-thumbs/1645/GC-S1645-02.jpg",
+      "assets/product-thumbs/1645/GC-S1645-03.jpg",
+      "assets/product-thumbs/1645/GC-S1645-04.jpg",
+      "assets/product-thumbs/1645/GC-S1645-05.jpg",
+      "assets/product-thumbs/1645/GC-S1645-06.jpg",
+      "assets/product-thumbs/1645/GC-S1645-07.jpg"
+    ],
+    "front": "assets/products/1645/GC-S1645-01.jpg",
+    "angle": "assets/products/1645/GC-S1645-02.jpg",
+    "side": "assets/products/1645/GC-S1645-03.jpg",
+    "back": "assets/products/1645/GC-S1645-04.jpg",
+    "scene": "assets/products/1645/GC-S1645-06.jpg",
+    "thumbFront": "assets/product-thumbs/1645/GC-S1645-01.jpg",
+    "thumb": "assets/product-thumbs/1645/GC-S1645-06.jpg",
+    "thumbScene": "assets/product-thumbs/1645/GC-S1645-06.jpg",
+    "fallback": "assets/products/1645/GC-S1645-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1645/GC-S1645-06.jpg",
+    "generated": "assets/products/1645/GC-S1645-01.jpg"
+  },
+  "1646": {
+    "images": [
+      "assets/products/1646/GC-S1646-01.jpg",
+      "assets/products/1646/GC-S1646-02.jpg",
+      "assets/products/1646/GC-S1646-03.jpg",
+      "assets/products/1646/GC-S1646-04.jpg",
+      "assets/products/1646/GC-S1646-05.jpg",
+      "assets/products/1646/GC-S1646-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1646/GC-S1646-01.jpg",
+      "assets/product-thumbs/1646/GC-S1646-02.jpg",
+      "assets/product-thumbs/1646/GC-S1646-03.jpg",
+      "assets/product-thumbs/1646/GC-S1646-04.jpg",
+      "assets/product-thumbs/1646/GC-S1646-05.jpg",
+      "assets/product-thumbs/1646/GC-S1646-06.jpg"
+    ],
+    "front": "assets/products/1646/GC-S1646-01.jpg",
+    "angle": "assets/products/1646/GC-S1646-02.jpg",
+    "side": "assets/products/1646/GC-S1646-03.jpg",
+    "back": "assets/products/1646/GC-S1646-03.jpg",
+    "scene": "assets/products/1646/GC-S1646-05.jpg",
+    "thumbFront": "assets/product-thumbs/1646/GC-S1646-01.jpg",
+    "thumb": "assets/product-thumbs/1646/GC-S1646-05.jpg",
+    "thumbScene": "assets/product-thumbs/1646/GC-S1646-05.jpg",
+    "fallback": "assets/products/1646/GC-S1646-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1646/GC-S1646-05.jpg",
+    "generated": "assets/products/1646/GC-S1646-01.jpg"
+  },
+  "1647": {
+    "images": [
+      "assets/products/1647/GC-S1647-01.jpg",
+      "assets/products/1647/GC-S1647-02.jpg",
+      "assets/products/1647/GC-S1647-03.jpg",
+      "assets/products/1647/GC-S1647-04.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1647/GC-S1647-01.jpg",
+      "assets/product-thumbs/1647/GC-S1647-02.jpg",
+      "assets/product-thumbs/1647/GC-S1647-03.jpg",
+      "assets/product-thumbs/1647/GC-S1647-04.jpg"
+    ],
+    "front": "assets/products/1647/GC-S1647-01.jpg",
+    "angle": "assets/products/1647/GC-S1647-02.jpg",
+    "side": "assets/products/1647/GC-S1647-03.jpg",
+    "back": "assets/products/1647/GC-S1647-04.jpg",
+    "scene": "assets/products/1647/GC-S1647-04.jpg",
+    "thumbFront": "assets/product-thumbs/1647/GC-S1647-01.jpg",
+    "thumb": "assets/product-thumbs/1647/GC-S1647-04.jpg",
+    "thumbScene": "assets/product-thumbs/1647/GC-S1647-04.jpg",
+    "fallback": "assets/products/1647/GC-S1647-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1647/GC-S1647-04.jpg",
+    "generated": "assets/products/1647/GC-S1647-01.jpg"
+  },
+  "1648": {
+    "images": [
+      "assets/products/1648/GC-S1648-01.jpg",
+      "assets/products/1648/GC-S1648-02.jpg",
+      "assets/products/1648/GC-S1648-03.jpg",
+      "assets/products/1648/GC-S1648-04.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1648/GC-S1648-01.jpg",
+      "assets/product-thumbs/1648/GC-S1648-02.jpg",
+      "assets/product-thumbs/1648/GC-S1648-03.jpg",
+      "assets/product-thumbs/1648/GC-S1648-04.jpg"
+    ],
+    "front": "assets/products/1648/GC-S1648-01.jpg",
+    "angle": "assets/products/1648/GC-S1648-02.jpg",
+    "side": "assets/products/1648/GC-S1648-03.jpg",
+    "back": "assets/products/1648/GC-S1648-04.jpg",
+    "scene": "assets/products/1648/GC-S1648-03.jpg",
+    "thumbFront": "assets/product-thumbs/1648/GC-S1648-01.jpg",
+    "thumb": "assets/product-thumbs/1648/GC-S1648-03.jpg",
+    "thumbScene": "assets/product-thumbs/1648/GC-S1648-03.jpg",
+    "fallback": "assets/products/1648/GC-S1648-03.jpg",
+    "thumbFallback": "assets/product-thumbs/1648/GC-S1648-03.jpg",
+    "generated": "assets/products/1648/GC-S1648-01.jpg"
+  },
+  "1650": {
+    "images": [
+      "assets/products/1650/GC-S1650-01.jpg",
+      "assets/products/1650/GC-S1650-02.jpg",
+      "assets/products/1650/GC-S1650-03.jpg",
+      "assets/products/1650/GC-S1650-04.jpg",
+      "assets/products/1650/GC-S1650-05.jpg",
+      "assets/products/1650/GC-S1650-06.jpg",
+      "assets/products/1650/GC-S1650-07.jpg",
+      "assets/products/1650/GC-S1650-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1650/GC-S1650-01.jpg",
+      "assets/product-thumbs/1650/GC-S1650-02.jpg",
+      "assets/product-thumbs/1650/GC-S1650-03.jpg",
+      "assets/product-thumbs/1650/GC-S1650-04.jpg",
+      "assets/product-thumbs/1650/GC-S1650-05.jpg",
+      "assets/product-thumbs/1650/GC-S1650-06.jpg",
+      "assets/product-thumbs/1650/GC-S1650-07.jpg",
+      "assets/product-thumbs/1650/GC-S1650-08.jpg"
+    ],
+    "front": "assets/products/1650/GC-S1650-01.jpg",
+    "angle": "assets/products/1650/GC-S1650-02.jpg",
+    "side": "assets/products/1650/GC-S1650-03.jpg",
+    "back": "assets/products/1650/GC-S1650-04.jpg",
+    "scene": "assets/products/1650/GC-S1650-05.jpg",
+    "thumbFront": "assets/product-thumbs/1650/GC-S1650-01.jpg",
+    "thumb": "assets/product-thumbs/1650/GC-S1650-05.jpg",
+    "thumbScene": "assets/product-thumbs/1650/GC-S1650-05.jpg",
+    "fallback": "assets/products/1650/GC-S1650-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1650/GC-S1650-05.jpg",
+    "generated": "assets/products/1650/GC-S1650-01.jpg"
+  },
+  "1651": {
+    "images": [
+      "assets/products/1651/GC-S1651-01.jpg",
+      "assets/products/1651/GC-S1651-02.jpg",
+      "assets/products/1651/GC-S1651-03.jpg",
+      "assets/products/1651/GC-S1651-04.jpg",
+      "assets/products/1651/GC-S1651-05.jpg",
+      "assets/products/1651/GC-S1651-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1651/GC-S1651-01.jpg",
+      "assets/product-thumbs/1651/GC-S1651-02.jpg",
+      "assets/product-thumbs/1651/GC-S1651-03.jpg",
+      "assets/product-thumbs/1651/GC-S1651-04.jpg",
+      "assets/product-thumbs/1651/GC-S1651-05.jpg",
+      "assets/product-thumbs/1651/GC-S1651-06.jpg"
+    ],
+    "front": "assets/products/1651/GC-S1651-01.jpg",
+    "angle": "assets/products/1651/GC-S1651-02.jpg",
+    "side": "assets/products/1651/GC-S1651-03.jpg",
+    "back": "assets/products/1651/GC-S1651-04.jpg",
+    "scene": "assets/products/1651/GC-S1651-05.jpg",
+    "thumbFront": "assets/product-thumbs/1651/GC-S1651-01.jpg",
+    "thumb": "assets/product-thumbs/1651/GC-S1651-05.jpg",
+    "thumbScene": "assets/product-thumbs/1651/GC-S1651-05.jpg",
+    "fallback": "assets/products/1651/GC-S1651-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1651/GC-S1651-05.jpg",
+    "generated": "assets/products/1651/GC-S1651-01.jpg"
+  },
+  "1658": {
+    "images": [
+      "assets/products/1658/GC-S1658-01.jpg",
+      "assets/products/1658/GC-S1658-02.jpg",
+      "assets/products/1658/GC-S1658-03.jpg",
+      "assets/products/1658/GC-S1658-04.jpg",
+      "assets/products/1658/GC-S1658-05.jpg",
+      "assets/products/1658/GC-S1658-06.jpg",
+      "assets/products/1658/GC-S1658-07.jpg",
+      "assets/products/1658/GC-S1658-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1658/GC-S1658-01.jpg",
+      "assets/product-thumbs/1658/GC-S1658-02.jpg",
+      "assets/product-thumbs/1658/GC-S1658-03.jpg",
+      "assets/product-thumbs/1658/GC-S1658-04.jpg",
+      "assets/product-thumbs/1658/GC-S1658-05.jpg",
+      "assets/product-thumbs/1658/GC-S1658-06.jpg",
+      "assets/product-thumbs/1658/GC-S1658-07.jpg",
+      "assets/product-thumbs/1658/GC-S1658-08.jpg"
+    ],
+    "front": "assets/products/1658/GC-S1658-01.jpg",
+    "angle": "assets/products/1658/GC-S1658-02.jpg",
+    "side": "assets/products/1658/GC-S1658-03.jpg",
+    "back": "assets/products/1658/GC-S1658-04.jpg",
+    "scene": "assets/products/1658/GC-S1658-07.jpg",
+    "thumbFront": "assets/product-thumbs/1658/GC-S1658-01.jpg",
+    "thumb": "assets/product-thumbs/1658/GC-S1658-07.jpg",
+    "thumbScene": "assets/product-thumbs/1658/GC-S1658-07.jpg",
+    "fallback": "assets/products/1658/GC-S1658-07.jpg",
+    "thumbFallback": "assets/product-thumbs/1658/GC-S1658-07.jpg",
+    "generated": "assets/products/1658/GC-S1658-01.jpg"
+  },
+  "1659": {
+    "images": [
+      "assets/products/1659/GC-S1659-01.jpg",
+      "assets/products/1659/GC-S1659-02.jpg",
+      "assets/products/1659/GC-S1659-03.jpg",
+      "assets/products/1659/GC-S1659-04.jpg",
+      "assets/products/1659/GC-S1659-05.jpg",
+      "assets/products/1659/GC-S1659-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1659/GC-S1659-01.jpg",
+      "assets/product-thumbs/1659/GC-S1659-02.jpg",
+      "assets/product-thumbs/1659/GC-S1659-03.jpg",
+      "assets/product-thumbs/1659/GC-S1659-04.jpg",
+      "assets/product-thumbs/1659/GC-S1659-05.jpg",
+      "assets/product-thumbs/1659/GC-S1659-06.jpg"
+    ],
+    "front": "assets/products/1659/GC-S1659-01.jpg",
+    "angle": "assets/products/1659/GC-S1659-02.jpg",
+    "side": "assets/products/1659/GC-S1659-03.jpg",
+    "back": "assets/products/1659/GC-S1659-04.jpg",
+    "scene": "assets/products/1659/GC-S1659-04.jpg",
+    "thumbFront": "assets/product-thumbs/1659/GC-S1659-01.jpg",
+    "thumb": "assets/product-thumbs/1659/GC-S1659-04.jpg",
+    "thumbScene": "assets/product-thumbs/1659/GC-S1659-04.jpg",
+    "fallback": "assets/products/1659/GC-S1659-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1659/GC-S1659-04.jpg",
+    "generated": "assets/products/1659/GC-S1659-01.jpg"
+  },
+  "1660": {
+    "images": [
+      "assets/products/1660/GC-S1660-01.jpg",
+      "assets/products/1660/GC-S1660-02.jpg",
+      "assets/products/1660/GC-S1660-03.jpg",
+      "assets/products/1660/GC-S1660-04.jpg",
+      "assets/products/1660/GC-S1660-05.jpg",
+      "assets/products/1660/GC-S1660-06.jpg",
+      "assets/products/1660/GC-S1660-07.jpg",
+      "assets/products/1660/GC-S1660-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1660/GC-S1660-01.jpg",
+      "assets/product-thumbs/1660/GC-S1660-02.jpg",
+      "assets/product-thumbs/1660/GC-S1660-03.jpg",
+      "assets/product-thumbs/1660/GC-S1660-04.jpg",
+      "assets/product-thumbs/1660/GC-S1660-05.jpg",
+      "assets/product-thumbs/1660/GC-S1660-06.jpg",
+      "assets/product-thumbs/1660/GC-S1660-07.jpg",
+      "assets/product-thumbs/1660/GC-S1660-08.jpg"
+    ],
+    "front": "assets/products/1660/GC-S1660-01.jpg",
+    "angle": "assets/products/1660/GC-S1660-02.jpg",
+    "side": "assets/products/1660/GC-S1660-03.jpg",
+    "back": "assets/products/1660/GC-S1660-04.jpg",
+    "scene": "assets/products/1660/GC-S1660-08.jpg",
+    "thumbFront": "assets/product-thumbs/1660/GC-S1660-01.jpg",
+    "thumb": "assets/product-thumbs/1660/GC-S1660-08.jpg",
+    "thumbScene": "assets/product-thumbs/1660/GC-S1660-08.jpg",
+    "fallback": "assets/products/1660/GC-S1660-08.jpg",
+    "thumbFallback": "assets/product-thumbs/1660/GC-S1660-08.jpg",
+    "generated": "assets/products/1660/GC-S1660-01.jpg"
+  },
+  "1663": {
+    "images": [
+      "assets/products/1663/GC-S1663-01.jpg",
+      "assets/products/1663/GC-S1663-02.jpg",
+      "assets/products/1663/GC-S1663-03.jpg",
+      "assets/products/1663/GC-S1663-04.jpg",
+      "assets/products/1663/GC-S1663-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1663/GC-S1663-01.jpg",
+      "assets/product-thumbs/1663/GC-S1663-02.jpg",
+      "assets/product-thumbs/1663/GC-S1663-03.jpg",
+      "assets/product-thumbs/1663/GC-S1663-04.jpg",
+      "assets/product-thumbs/1663/GC-S1663-05.jpg"
+    ],
+    "front": "assets/products/1663/GC-S1663-01.jpg",
+    "angle": "assets/products/1663/GC-S1663-02.jpg",
+    "side": "assets/products/1663/GC-S1663-03.jpg",
+    "back": "assets/products/1663/GC-S1663-04.jpg",
+    "scene": "assets/products/1663/GC-S1663-04.jpg",
+    "thumbFront": "assets/product-thumbs/1663/GC-S1663-01.jpg",
+    "thumb": "assets/product-thumbs/1663/GC-S1663-04.jpg",
+    "thumbScene": "assets/product-thumbs/1663/GC-S1663-04.jpg",
+    "fallback": "assets/products/1663/GC-S1663-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1663/GC-S1663-04.jpg",
+    "generated": "assets/products/1663/GC-S1663-01.jpg"
+  },
+  "1665": {
+    "images": [
+      "assets/products/1665/GC-S1665-01.jpg",
+      "assets/products/1665/GC-S1665-02.jpg",
+      "assets/products/1665/GC-S1665-03.jpg",
+      "assets/products/1665/GC-S1665-04.jpg",
+      "assets/products/1665/GC-S1665-05.jpg",
+      "assets/products/1665/GC-S1665-06.jpg",
+      "assets/products/1665/GC-S1665-07.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1665/GC-S1665-01.jpg",
+      "assets/product-thumbs/1665/GC-S1665-02.jpg",
+      "assets/product-thumbs/1665/GC-S1665-03.jpg",
+      "assets/product-thumbs/1665/GC-S1665-04.jpg",
+      "assets/product-thumbs/1665/GC-S1665-05.jpg",
+      "assets/product-thumbs/1665/GC-S1665-06.jpg",
+      "assets/product-thumbs/1665/GC-S1665-07.jpg"
+    ],
+    "front": "assets/products/1665/GC-S1665-01.jpg",
+    "angle": "assets/products/1665/GC-S1665-02.jpg",
+    "side": "assets/products/1665/GC-S1665-03.jpg",
+    "back": "assets/products/1665/GC-S1665-04.jpg",
+    "scene": "assets/products/1665/GC-S1665-05.jpg",
+    "thumbFront": "assets/product-thumbs/1665/GC-S1665-01.jpg",
+    "thumb": "assets/product-thumbs/1665/GC-S1665-05.jpg",
+    "thumbScene": "assets/product-thumbs/1665/GC-S1665-05.jpg",
+    "fallback": "assets/products/1665/GC-S1665-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1665/GC-S1665-05.jpg",
+    "generated": "assets/products/1665/GC-S1665-01.jpg"
+  },
+  "1667": {
+    "images": [
+      "assets/products/1667/GC-S1667-01.jpg",
+      "assets/products/1667/GC-S1667-02.jpg",
+      "assets/products/1667/GC-S1667-03.jpg",
+      "assets/products/1667/GC-S1667-04.jpg",
+      "assets/products/1667/GC-S1667-05.jpg",
+      "assets/products/1667/GC-S1667-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1667/GC-S1667-01.jpg",
+      "assets/product-thumbs/1667/GC-S1667-02.jpg",
+      "assets/product-thumbs/1667/GC-S1667-03.jpg",
+      "assets/product-thumbs/1667/GC-S1667-04.jpg",
+      "assets/product-thumbs/1667/GC-S1667-05.jpg",
+      "assets/product-thumbs/1667/GC-S1667-06.jpg"
+    ],
+    "front": "assets/products/1667/GC-S1667-01.jpg",
+    "angle": "assets/products/1667/GC-S1667-02.jpg",
+    "side": "assets/products/1667/GC-S1667-03.jpg",
+    "back": "assets/products/1667/GC-S1667-04.jpg",
+    "scene": "assets/products/1667/GC-S1667-04.jpg",
+    "thumbFront": "assets/product-thumbs/1667/GC-S1667-01.jpg",
+    "thumb": "assets/product-thumbs/1667/GC-S1667-04.jpg",
+    "thumbScene": "assets/product-thumbs/1667/GC-S1667-04.jpg",
+    "fallback": "assets/products/1667/GC-S1667-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1667/GC-S1667-04.jpg",
+    "generated": "assets/products/1667/GC-S1667-01.jpg"
+  },
+  "1668": {
+    "images": [
+      "assets/products/1668/GC-S1668-01.jpg",
+      "assets/products/1668/GC-S1668-02.jpg",
+      "assets/products/1668/GC-S1668-03.jpg",
+      "assets/products/1668/GC-S1668-04.jpg",
+      "assets/products/1668/GC-S1668-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1668/GC-S1668-01.jpg",
+      "assets/product-thumbs/1668/GC-S1668-02.jpg",
+      "assets/product-thumbs/1668/GC-S1668-03.jpg",
+      "assets/product-thumbs/1668/GC-S1668-04.jpg",
+      "assets/product-thumbs/1668/GC-S1668-05.jpg"
+    ],
+    "front": "assets/products/1668/GC-S1668-01.jpg",
+    "angle": "assets/products/1668/GC-S1668-02.jpg",
+    "side": "assets/products/1668/GC-S1668-03.jpg",
+    "back": "assets/products/1668/GC-S1668-04.jpg",
+    "scene": "assets/products/1668/GC-S1668-04.jpg",
+    "thumbFront": "assets/product-thumbs/1668/GC-S1668-01.jpg",
+    "thumb": "assets/product-thumbs/1668/GC-S1668-04.jpg",
+    "thumbScene": "assets/product-thumbs/1668/GC-S1668-04.jpg",
+    "fallback": "assets/products/1668/GC-S1668-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1668/GC-S1668-04.jpg",
+    "generated": "assets/products/1668/GC-S1668-01.jpg"
+  },
+  "1669": {
+    "images": [
+      "assets/products/1669/GC-S1669-01.jpg",
+      "assets/products/1669/GC-S1669-02.jpg",
+      "assets/products/1669/GC-S1669-03.jpg",
+      "assets/products/1669/GC-S1669-04.jpg",
+      "assets/products/1669/GC-S1669-05.jpg",
+      "assets/products/1669/GC-S1669-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1669/GC-S1669-01.jpg",
+      "assets/product-thumbs/1669/GC-S1669-02.jpg",
+      "assets/product-thumbs/1669/GC-S1669-03.jpg",
+      "assets/product-thumbs/1669/GC-S1669-04.jpg",
+      "assets/product-thumbs/1669/GC-S1669-05.jpg",
+      "assets/product-thumbs/1669/GC-S1669-06.jpg"
+    ],
+    "front": "assets/products/1669/GC-S1669-01.jpg",
+    "angle": "assets/products/1669/GC-S1669-02.jpg",
+    "side": "assets/products/1669/GC-S1669-03.jpg",
+    "back": "assets/products/1669/GC-S1669-04.jpg",
+    "scene": "assets/products/1669/GC-S1669-04.jpg",
+    "thumbFront": "assets/product-thumbs/1669/GC-S1669-01.jpg",
+    "thumb": "assets/product-thumbs/1669/GC-S1669-04.jpg",
+    "thumbScene": "assets/product-thumbs/1669/GC-S1669-04.jpg",
+    "fallback": "assets/products/1669/GC-S1669-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1669/GC-S1669-04.jpg",
+    "generated": "assets/products/1669/GC-S1669-01.jpg"
+  },
+  "1670": {
+    "images": [
+      "assets/products/1670/GC-S1670-01.jpg",
+      "assets/products/1670/GC-S1670-02.jpg",
+      "assets/products/1670/GC-S1670-03.jpg",
+      "assets/products/1670/GC-S1670-04.jpg",
+      "assets/products/1670/GC-S1670-05.jpg",
+      "assets/products/1670/GC-S1670-06.jpg",
+      "assets/products/1670/GC-S1670-07.jpg",
+      "assets/products/1670/GC-S1670-08.jpg",
+      "assets/products/1670/GC-S1670-09.jpg",
+      "assets/products/1670/GC-S1670-10.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1670/GC-S1670-01.jpg",
+      "assets/product-thumbs/1670/GC-S1670-02.jpg",
+      "assets/product-thumbs/1670/GC-S1670-03.jpg",
+      "assets/product-thumbs/1670/GC-S1670-04.jpg",
+      "assets/product-thumbs/1670/GC-S1670-05.jpg",
+      "assets/product-thumbs/1670/GC-S1670-06.jpg",
+      "assets/product-thumbs/1670/GC-S1670-07.jpg",
+      "assets/product-thumbs/1670/GC-S1670-08.jpg",
+      "assets/product-thumbs/1670/GC-S1670-09.jpg",
+      "assets/product-thumbs/1670/GC-S1670-10.jpg"
+    ],
+    "front": "assets/products/1670/GC-S1670-01.jpg",
+    "angle": "assets/products/1670/GC-S1670-02.jpg",
+    "side": "assets/products/1670/GC-S1670-03.jpg",
+    "back": "assets/products/1670/GC-S1670-04.jpg",
+    "scene": "assets/products/1670/GC-S1670-09.jpg",
+    "thumbFront": "assets/product-thumbs/1670/GC-S1670-01.jpg",
+    "thumb": "assets/product-thumbs/1670/GC-S1670-09.jpg",
+    "thumbScene": "assets/product-thumbs/1670/GC-S1670-09.jpg",
+    "fallback": "assets/products/1670/GC-S1670-09.jpg",
+    "thumbFallback": "assets/product-thumbs/1670/GC-S1670-09.jpg",
+    "generated": "assets/products/1670/GC-S1670-01.jpg"
+  },
+  "1671": {
+    "images": [
+      "assets/products/1671/GC-S1671-01.jpg",
+      "assets/products/1671/GC-S1671-02.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1671/GC-S1671-01.jpg",
+      "assets/product-thumbs/1671/GC-S1671-02.jpg"
+    ],
+    "front": "assets/products/1671/GC-S1671-01.jpg",
+    "angle": "assets/products/1671/GC-S1671-02.jpg",
+    "side": "assets/products/1671/GC-S1671-02.jpg",
+    "back": "assets/products/1671/GC-S1671-02.jpg",
+    "scene": "assets/products/1671/GC-S1671-02.jpg",
+    "thumbFront": "assets/product-thumbs/1671/GC-S1671-01.jpg",
+    "thumb": "assets/product-thumbs/1671/GC-S1671-02.jpg",
+    "thumbScene": "assets/product-thumbs/1671/GC-S1671-02.jpg",
+    "fallback": "assets/products/1671/GC-S1671-02.jpg",
+    "thumbFallback": "assets/product-thumbs/1671/GC-S1671-02.jpg",
+    "generated": "assets/products/1671/GC-S1671-01.jpg"
+  },
+  "1672": {
+    "images": [
+      "assets/products/1672/GC-S1672-01.jpg",
+      "assets/products/1672/GC-S1672-02.jpg",
+      "assets/products/1672/GC-S1672-03.jpg",
+      "assets/products/1672/GC-S1672-04.jpg",
+      "assets/products/1672/GC-S1672-05.jpg",
+      "assets/products/1672/GC-S1672-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1672/GC-S1672-01.jpg",
+      "assets/product-thumbs/1672/GC-S1672-02.jpg",
+      "assets/product-thumbs/1672/GC-S1672-03.jpg",
+      "assets/product-thumbs/1672/GC-S1672-04.jpg",
+      "assets/product-thumbs/1672/GC-S1672-05.jpg",
+      "assets/product-thumbs/1672/GC-S1672-06.jpg"
+    ],
+    "front": "assets/products/1672/GC-S1672-01.jpg",
+    "angle": "assets/products/1672/GC-S1672-02.jpg",
+    "side": "assets/products/1672/GC-S1672-03.jpg",
+    "back": "assets/products/1672/GC-S1672-04.jpg",
+    "scene": "assets/products/1672/GC-S1672-06.jpg",
+    "thumbFront": "assets/product-thumbs/1672/GC-S1672-01.jpg",
+    "thumb": "assets/product-thumbs/1672/GC-S1672-06.jpg",
+    "thumbScene": "assets/product-thumbs/1672/GC-S1672-06.jpg",
+    "fallback": "assets/products/1672/GC-S1672-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1672/GC-S1672-06.jpg",
+    "generated": "assets/products/1672/GC-S1672-01.jpg"
+  },
+  "1676": {
+    "images": [
+      "assets/products/1676/GC-S1676-01.jpg",
+      "assets/products/1676/GC-S1676-02.jpg",
+      "assets/products/1676/GC-S1676-03.jpg",
+      "assets/products/1676/GC-S1676-04.jpg",
+      "assets/products/1676/GC-S1676-05.jpg",
+      "assets/products/1676/GC-S1676-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1676/GC-S1676-01.jpg",
+      "assets/product-thumbs/1676/GC-S1676-02.jpg",
+      "assets/product-thumbs/1676/GC-S1676-03.jpg",
+      "assets/product-thumbs/1676/GC-S1676-04.jpg",
+      "assets/product-thumbs/1676/GC-S1676-05.jpg",
+      "assets/product-thumbs/1676/GC-S1676-06.jpg"
+    ],
+    "front": "assets/products/1676/GC-S1676-01.jpg",
+    "angle": "assets/products/1676/GC-S1676-02.jpg",
+    "side": "assets/products/1676/GC-S1676-03.jpg",
+    "back": "assets/products/1676/GC-S1676-04.jpg",
+    "scene": "assets/products/1676/GC-S1676-06.jpg",
+    "thumbFront": "assets/product-thumbs/1676/GC-S1676-01.jpg",
+    "thumb": "assets/product-thumbs/1676/GC-S1676-06.jpg",
+    "thumbScene": "assets/product-thumbs/1676/GC-S1676-06.jpg",
+    "fallback": "assets/products/1676/GC-S1676-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1676/GC-S1676-06.jpg",
+    "generated": "assets/products/1676/GC-S1676-01.jpg"
+  },
+  "1677": {
+    "images": [
+      "assets/products/1677/GC-S1677-01.jpg",
+      "assets/products/1677/GC-S1677-02.jpg",
+      "assets/products/1677/GC-S1677-03.jpg",
+      "assets/products/1677/GC-S1677-04.jpg",
+      "assets/products/1677/GC-S1677-05.jpg",
+      "assets/products/1677/GC-S1677-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1677/GC-S1677-01.jpg",
+      "assets/product-thumbs/1677/GC-S1677-02.jpg",
+      "assets/product-thumbs/1677/GC-S1677-03.jpg",
+      "assets/product-thumbs/1677/GC-S1677-04.jpg",
+      "assets/product-thumbs/1677/GC-S1677-05.jpg",
+      "assets/product-thumbs/1677/GC-S1677-06.jpg"
+    ],
+    "front": "assets/products/1677/GC-S1677-01.jpg",
+    "angle": "assets/products/1677/GC-S1677-02.jpg",
+    "side": "assets/products/1677/GC-S1677-03.jpg",
+    "back": "assets/products/1677/GC-S1677-04.jpg",
+    "scene": "assets/products/1677/GC-S1677-04.jpg",
+    "thumbFront": "assets/product-thumbs/1677/GC-S1677-01.jpg",
+    "thumb": "assets/product-thumbs/1677/GC-S1677-04.jpg",
+    "thumbScene": "assets/product-thumbs/1677/GC-S1677-04.jpg",
+    "fallback": "assets/products/1677/GC-S1677-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1677/GC-S1677-04.jpg",
+    "generated": "assets/products/1677/GC-S1677-01.jpg"
+  },
+  "1680": {
+    "images": [
+      "assets/products/1680/GC-S1680-01.jpg",
+      "assets/products/1680/GC-S1680-02.jpg",
+      "assets/products/1680/GC-S1680-03.jpg",
+      "assets/products/1680/GC-S1680-04.jpg",
+      "assets/products/1680/GC-S1680-05.jpg",
+      "assets/products/1680/GC-S1680-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1680/GC-S1680-01.jpg",
+      "assets/product-thumbs/1680/GC-S1680-02.jpg",
+      "assets/product-thumbs/1680/GC-S1680-03.jpg",
+      "assets/product-thumbs/1680/GC-S1680-04.jpg",
+      "assets/product-thumbs/1680/GC-S1680-05.jpg",
+      "assets/product-thumbs/1680/GC-S1680-06.jpg"
+    ],
+    "front": "assets/products/1680/GC-S1680-01.jpg",
+    "angle": "assets/products/1680/GC-S1680-02.jpg",
+    "side": "assets/products/1680/GC-S1680-03.jpg",
+    "back": "assets/products/1680/GC-S1680-04.jpg",
+    "scene": "assets/products/1680/GC-S1680-06.jpg",
+    "thumbFront": "assets/product-thumbs/1680/GC-S1680-01.jpg",
+    "thumb": "assets/product-thumbs/1680/GC-S1680-06.jpg",
+    "thumbScene": "assets/product-thumbs/1680/GC-S1680-06.jpg",
+    "fallback": "assets/products/1680/GC-S1680-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1680/GC-S1680-06.jpg",
+    "generated": "assets/products/1680/GC-S1680-01.jpg"
+  },
+  "1681": {
+    "images": [
+      "assets/products/1681/GC-S1681-01.jpg",
+      "assets/products/1681/GC-S1681-02.jpg",
+      "assets/products/1681/GC-S1681-03.jpg",
+      "assets/products/1681/GC-S1681-04.jpg",
+      "assets/products/1681/GC-S1681-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1681/GC-S1681-01.jpg",
+      "assets/product-thumbs/1681/GC-S1681-02.jpg",
+      "assets/product-thumbs/1681/GC-S1681-03.jpg",
+      "assets/product-thumbs/1681/GC-S1681-04.jpg",
+      "assets/product-thumbs/1681/GC-S1681-05.jpg"
+    ],
+    "front": "assets/products/1681/GC-S1681-01.jpg",
+    "angle": "assets/products/1681/GC-S1681-02.jpg",
+    "side": "assets/products/1681/GC-S1681-03.jpg",
+    "back": "assets/products/1681/GC-S1681-04.jpg",
+    "scene": "assets/products/1681/GC-S1681-05.jpg",
+    "thumbFront": "assets/product-thumbs/1681/GC-S1681-01.jpg",
+    "thumb": "assets/product-thumbs/1681/GC-S1681-05.jpg",
+    "thumbScene": "assets/product-thumbs/1681/GC-S1681-05.jpg",
+    "fallback": "assets/products/1681/GC-S1681-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1681/GC-S1681-05.jpg",
+    "generated": "assets/products/1681/GC-S1681-01.jpg"
+  },
+  "1682": {
+    "images": [
+      "assets/products/1682/GC-S1682-01.jpg",
+      "assets/products/1682/GC-S1682-02.jpg",
+      "assets/products/1682/GC-S1682-03.jpg",
+      "assets/products/1682/GC-S1682-04.jpg",
+      "assets/products/1682/GC-S1682-05.jpg",
+      "assets/products/1682/GC-S1682-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1682/GC-S1682-01.jpg",
+      "assets/product-thumbs/1682/GC-S1682-02.jpg",
+      "assets/product-thumbs/1682/GC-S1682-03.jpg",
+      "assets/product-thumbs/1682/GC-S1682-04.jpg",
+      "assets/product-thumbs/1682/GC-S1682-05.jpg",
+      "assets/product-thumbs/1682/GC-S1682-06.jpg"
+    ],
+    "front": "assets/products/1682/GC-S1682-01.jpg",
+    "angle": "assets/products/1682/GC-S1682-02.jpg",
+    "side": "assets/products/1682/GC-S1682-03.jpg",
+    "back": "assets/products/1682/GC-S1682-03.jpg",
+    "scene": "assets/products/1682/GC-S1682-05.jpg",
+    "thumbFront": "assets/product-thumbs/1682/GC-S1682-01.jpg",
+    "thumb": "assets/product-thumbs/1682/GC-S1682-05.jpg",
+    "thumbScene": "assets/product-thumbs/1682/GC-S1682-05.jpg",
+    "fallback": "assets/products/1682/GC-S1682-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1682/GC-S1682-05.jpg",
+    "generated": "assets/products/1682/GC-S1682-01.jpg"
+  },
+  "1683": {
+    "images": [
+      "assets/products/1683/GC-S1683-01.jpg",
+      "assets/products/1683/GC-S1683-02.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1683/GC-S1683-01.jpg",
+      "assets/product-thumbs/1683/GC-S1683-02.jpg"
+    ],
+    "front": "assets/products/1683/GC-S1683-01.jpg",
+    "angle": "assets/products/1683/GC-S1683-02.jpg",
+    "side": "assets/products/1683/GC-S1683-02.jpg",
+    "back": "assets/products/1683/GC-S1683-02.jpg",
+    "scene": "assets/products/1683/GC-S1683-02.jpg",
+    "thumbFront": "assets/product-thumbs/1683/GC-S1683-01.jpg",
+    "thumb": "assets/product-thumbs/1683/GC-S1683-02.jpg",
+    "thumbScene": "assets/product-thumbs/1683/GC-S1683-02.jpg",
+    "fallback": "assets/products/1683/GC-S1683-02.jpg",
+    "thumbFallback": "assets/product-thumbs/1683/GC-S1683-02.jpg",
+    "generated": "assets/products/1683/GC-S1683-01.jpg"
+  },
+  "1686": {
+    "images": [
+      "assets/products/1686/GC-S1686-01.jpg",
+      "assets/products/1686/GC-S1686-02.jpg",
+      "assets/products/1686/GC-S1686-03.jpg",
+      "assets/products/1686/GC-S1686-04.jpg",
+      "assets/products/1686/GC-S1686-05.jpg",
+      "assets/products/1686/GC-S1686-06.jpg",
+      "assets/products/1686/GC-S1686-07.jpg",
+      "assets/products/1686/GC-S1686-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1686/GC-S1686-01.jpg",
+      "assets/product-thumbs/1686/GC-S1686-02.jpg",
+      "assets/product-thumbs/1686/GC-S1686-03.jpg",
+      "assets/product-thumbs/1686/GC-S1686-04.jpg",
+      "assets/product-thumbs/1686/GC-S1686-05.jpg",
+      "assets/product-thumbs/1686/GC-S1686-06.jpg",
+      "assets/product-thumbs/1686/GC-S1686-07.jpg",
+      "assets/product-thumbs/1686/GC-S1686-08.jpg"
+    ],
+    "front": "assets/products/1686/GC-S1686-01.jpg",
+    "angle": "assets/products/1686/GC-S1686-02.jpg",
+    "side": "assets/products/1686/GC-S1686-03.jpg",
+    "back": "assets/products/1686/GC-S1686-04.jpg",
+    "scene": "assets/products/1686/GC-S1686-04.jpg",
+    "thumbFront": "assets/product-thumbs/1686/GC-S1686-01.jpg",
+    "thumb": "assets/product-thumbs/1686/GC-S1686-04.jpg",
+    "thumbScene": "assets/product-thumbs/1686/GC-S1686-04.jpg",
+    "fallback": "assets/products/1686/GC-S1686-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1686/GC-S1686-04.jpg",
+    "generated": "assets/products/1686/GC-S1686-01.jpg"
+  },
+  "1687": {
+    "images": [
+      "assets/products/1687/GC-S1687-01.jpg",
+      "assets/products/1687/GC-S1687-02.jpg",
+      "assets/products/1687/GC-S1687-03.jpg",
+      "assets/products/1687/GC-S1687-04.jpg",
+      "assets/products/1687/GC-S1687-05.jpg",
+      "assets/products/1687/GC-S1687-06.jpg",
+      "assets/products/1687/GC-S1687-07.jpg",
+      "assets/products/1687/GC-S1687-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1687/GC-S1687-01.jpg",
+      "assets/product-thumbs/1687/GC-S1687-02.jpg",
+      "assets/product-thumbs/1687/GC-S1687-03.jpg",
+      "assets/product-thumbs/1687/GC-S1687-04.jpg",
+      "assets/product-thumbs/1687/GC-S1687-05.jpg",
+      "assets/product-thumbs/1687/GC-S1687-06.jpg",
+      "assets/product-thumbs/1687/GC-S1687-07.jpg",
+      "assets/product-thumbs/1687/GC-S1687-08.jpg"
+    ],
+    "front": "assets/products/1687/GC-S1687-01.jpg",
+    "angle": "assets/products/1687/GC-S1687-02.jpg",
+    "side": "assets/products/1687/GC-S1687-03.jpg",
+    "back": "assets/products/1687/GC-S1687-04.jpg",
+    "scene": "assets/products/1687/GC-S1687-06.jpg",
+    "thumbFront": "assets/product-thumbs/1687/GC-S1687-01.jpg",
+    "thumb": "assets/product-thumbs/1687/GC-S1687-06.jpg",
+    "thumbScene": "assets/product-thumbs/1687/GC-S1687-06.jpg",
+    "fallback": "assets/products/1687/GC-S1687-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1687/GC-S1687-06.jpg",
+    "generated": "assets/products/1687/GC-S1687-01.jpg"
+  },
+  "1688": {
+    "images": [
+      "assets/products/1688/GC-S1688-01.jpg",
+      "assets/products/1688/GC-S1688-02.jpg",
+      "assets/products/1688/GC-S1688-03.jpg",
+      "assets/products/1688/GC-S1688-04.jpg",
+      "assets/products/1688/GC-S1688-05.jpg",
+      "assets/products/1688/GC-S1688-06.jpg",
+      "assets/products/1688/GC-S1688-07.jpg",
+      "assets/products/1688/GC-S1688-08.jpg",
+      "assets/products/1688/GC-S1688-09.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1688/GC-S1688-01.jpg",
+      "assets/product-thumbs/1688/GC-S1688-02.jpg",
+      "assets/product-thumbs/1688/GC-S1688-03.jpg",
+      "assets/product-thumbs/1688/GC-S1688-04.jpg",
+      "assets/product-thumbs/1688/GC-S1688-05.jpg",
+      "assets/product-thumbs/1688/GC-S1688-06.jpg",
+      "assets/product-thumbs/1688/GC-S1688-07.jpg",
+      "assets/product-thumbs/1688/GC-S1688-08.jpg",
+      "assets/product-thumbs/1688/GC-S1688-09.jpg"
+    ],
+    "front": "assets/products/1688/GC-S1688-01.jpg",
+    "angle": "assets/products/1688/GC-S1688-02.jpg",
+    "side": "assets/products/1688/GC-S1688-03.jpg",
+    "back": "assets/products/1688/GC-S1688-04.jpg",
+    "scene": "assets/products/1688/GC-S1688-08.jpg",
+    "thumbFront": "assets/product-thumbs/1688/GC-S1688-01.jpg",
+    "thumb": "assets/product-thumbs/1688/GC-S1688-08.jpg",
+    "thumbScene": "assets/product-thumbs/1688/GC-S1688-08.jpg",
+    "fallback": "assets/products/1688/GC-S1688-08.jpg",
+    "thumbFallback": "assets/product-thumbs/1688/GC-S1688-08.jpg",
+    "generated": "assets/products/1688/GC-S1688-01.jpg"
+  },
+  "1689": {
+    "images": [
+      "assets/products/1689/GC-S1689-01.jpg",
+      "assets/products/1689/GC-S1689-02.jpg",
+      "assets/products/1689/GC-S1689-03.jpg",
+      "assets/products/1689/GC-S1689-04.jpg",
+      "assets/products/1689/GC-S1689-05.jpg",
+      "assets/products/1689/GC-S1689-06.jpg",
+      "assets/products/1689/GC-S1689-07.jpg",
+      "assets/products/1689/GC-S1689-08.jpg",
+      "assets/products/1689/GC-S1689-09.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1689/GC-S1689-01.jpg",
+      "assets/product-thumbs/1689/GC-S1689-02.jpg",
+      "assets/product-thumbs/1689/GC-S1689-03.jpg",
+      "assets/product-thumbs/1689/GC-S1689-04.jpg",
+      "assets/product-thumbs/1689/GC-S1689-05.jpg",
+      "assets/product-thumbs/1689/GC-S1689-06.jpg",
+      "assets/product-thumbs/1689/GC-S1689-07.jpg",
+      "assets/product-thumbs/1689/GC-S1689-08.jpg",
+      "assets/product-thumbs/1689/GC-S1689-09.jpg"
+    ],
+    "front": "assets/products/1689/GC-S1689-01.jpg",
+    "angle": "assets/products/1689/GC-S1689-02.jpg",
+    "side": "assets/products/1689/GC-S1689-03.jpg",
+    "back": "assets/products/1689/GC-S1689-04.jpg",
+    "scene": "assets/products/1689/GC-S1689-09.jpg",
+    "thumbFront": "assets/product-thumbs/1689/GC-S1689-01.jpg",
+    "thumb": "assets/product-thumbs/1689/GC-S1689-09.jpg",
+    "thumbScene": "assets/product-thumbs/1689/GC-S1689-09.jpg",
+    "fallback": "assets/products/1689/GC-S1689-09.jpg",
+    "thumbFallback": "assets/product-thumbs/1689/GC-S1689-09.jpg",
+    "generated": "assets/products/1689/GC-S1689-01.jpg"
+  },
+  "1691": {
+    "images": [
+      "assets/products/1691/GC-S1691-01.jpg",
+      "assets/products/1691/GC-S1691-02.jpg",
+      "assets/products/1691/GC-S1691-03.jpg",
+      "assets/products/1691/GC-S1691-04.jpg",
+      "assets/products/1691/GC-S1691-05.jpg",
+      "assets/products/1691/GC-S1691-06.jpg",
+      "assets/products/1691/GC-S1691-07.jpg",
+      "assets/products/1691/GC-S1691-08.jpg",
+      "assets/products/1691/GC-S1691-09.jpg",
+      "assets/products/1691/GC-S1691-10.jpg",
+      "assets/products/1691/GC-S1691-11.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1691/GC-S1691-01.jpg",
+      "assets/product-thumbs/1691/GC-S1691-02.jpg",
+      "assets/product-thumbs/1691/GC-S1691-03.jpg",
+      "assets/product-thumbs/1691/GC-S1691-04.jpg",
+      "assets/product-thumbs/1691/GC-S1691-05.jpg",
+      "assets/product-thumbs/1691/GC-S1691-06.jpg",
+      "assets/product-thumbs/1691/GC-S1691-07.jpg",
+      "assets/product-thumbs/1691/GC-S1691-08.jpg",
+      "assets/product-thumbs/1691/GC-S1691-09.jpg",
+      "assets/product-thumbs/1691/GC-S1691-10.jpg",
+      "assets/product-thumbs/1691/GC-S1691-11.jpg"
+    ],
+    "front": "assets/products/1691/GC-S1691-01.jpg",
+    "angle": "assets/products/1691/GC-S1691-02.jpg",
+    "side": "assets/products/1691/GC-S1691-03.jpg",
+    "back": "assets/products/1691/GC-S1691-04.jpg",
+    "scene": "assets/products/1691/GC-S1691-08.jpg",
+    "thumbFront": "assets/product-thumbs/1691/GC-S1691-01.jpg",
+    "thumb": "assets/product-thumbs/1691/GC-S1691-08.jpg",
+    "thumbScene": "assets/product-thumbs/1691/GC-S1691-08.jpg",
+    "fallback": "assets/products/1691/GC-S1691-08.jpg",
+    "thumbFallback": "assets/product-thumbs/1691/GC-S1691-08.jpg",
+    "generated": "assets/products/1691/GC-S1691-01.jpg"
+  },
+  "1692": {
+    "images": [
+      "assets/products/1692/GC-S1692-01.jpg",
+      "assets/products/1692/GC-S1692-02.jpg",
+      "assets/products/1692/GC-S1692-03.jpg",
+      "assets/products/1692/GC-S1692-04.jpg",
+      "assets/products/1692/GC-S1692-05.jpg",
+      "assets/products/1692/GC-S1692-06.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1692/GC-S1692-01.jpg",
+      "assets/product-thumbs/1692/GC-S1692-02.jpg",
+      "assets/product-thumbs/1692/GC-S1692-03.jpg",
+      "assets/product-thumbs/1692/GC-S1692-04.jpg",
+      "assets/product-thumbs/1692/GC-S1692-05.jpg",
+      "assets/product-thumbs/1692/GC-S1692-06.jpg"
+    ],
+    "front": "assets/products/1692/GC-S1692-01.jpg",
+    "angle": "assets/products/1692/GC-S1692-02.jpg",
+    "side": "assets/products/1692/GC-S1692-03.jpg",
+    "back": "assets/products/1692/GC-S1692-04.jpg",
+    "scene": "assets/products/1692/GC-S1692-05.jpg",
+    "thumbFront": "assets/product-thumbs/1692/GC-S1692-01.jpg",
+    "thumb": "assets/product-thumbs/1692/GC-S1692-05.jpg",
+    "thumbScene": "assets/product-thumbs/1692/GC-S1692-05.jpg",
+    "fallback": "assets/products/1692/GC-S1692-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1692/GC-S1692-05.jpg",
+    "generated": "assets/products/1692/GC-S1692-01.jpg"
+  },
+  "1693": {
+    "images": [
+      "assets/products/1693/GC-S1693-01.jpg",
+      "assets/products/1693/GC-S1693-02.jpg",
+      "assets/products/1693/GC-S1693-03.jpg",
+      "assets/products/1693/GC-S1693-04.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1693/GC-S1693-01.jpg",
+      "assets/product-thumbs/1693/GC-S1693-02.jpg",
+      "assets/product-thumbs/1693/GC-S1693-03.jpg",
+      "assets/product-thumbs/1693/GC-S1693-04.jpg"
+    ],
+    "front": "assets/products/1693/GC-S1693-01.jpg",
+    "angle": "assets/products/1693/GC-S1693-02.jpg",
+    "side": "assets/products/1693/GC-S1693-03.jpg",
+    "back": "assets/products/1693/GC-S1693-04.jpg",
+    "scene": "assets/products/1693/GC-S1693-04.jpg",
+    "thumbFront": "assets/product-thumbs/1693/GC-S1693-01.jpg",
+    "thumb": "assets/product-thumbs/1693/GC-S1693-04.jpg",
+    "thumbScene": "assets/product-thumbs/1693/GC-S1693-04.jpg",
+    "fallback": "assets/products/1693/GC-S1693-04.jpg",
+    "thumbFallback": "assets/product-thumbs/1693/GC-S1693-04.jpg",
+    "generated": "assets/products/1693/GC-S1693-01.jpg"
+  },
+  "1695": {
+    "images": [
+      "assets/products/1695/GC-S1695-01.jpg",
+      "assets/products/1695/GC-S1695-02.jpg",
+      "assets/products/1695/GC-S1695-03.jpg",
+      "assets/products/1695/GC-S1695-04.jpg",
+      "assets/products/1695/GC-S1695-05.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1695/GC-S1695-01.jpg",
+      "assets/product-thumbs/1695/GC-S1695-02.jpg",
+      "assets/product-thumbs/1695/GC-S1695-03.jpg",
+      "assets/product-thumbs/1695/GC-S1695-04.jpg",
+      "assets/product-thumbs/1695/GC-S1695-05.jpg"
+    ],
+    "front": "assets/products/1695/GC-S1695-01.jpg",
+    "angle": "assets/products/1695/GC-S1695-02.jpg",
+    "side": "assets/products/1695/GC-S1695-03.jpg",
+    "back": "assets/products/1695/GC-S1695-04.jpg",
+    "scene": "assets/products/1695/GC-S1695-05.jpg",
+    "thumbFront": "assets/product-thumbs/1695/GC-S1695-01.jpg",
+    "thumb": "assets/product-thumbs/1695/GC-S1695-05.jpg",
+    "thumbScene": "assets/product-thumbs/1695/GC-S1695-05.jpg",
+    "fallback": "assets/products/1695/GC-S1695-05.jpg",
+    "thumbFallback": "assets/product-thumbs/1695/GC-S1695-05.jpg",
+    "generated": "assets/products/1695/GC-S1695-01.jpg"
+  },
+  "1696": {
+    "images": [
+      "assets/products/1696/GC-S1696-01.jpg",
+      "assets/products/1696/GC-S1696-02.jpg",
+      "assets/products/1696/GC-S1696-03.jpg",
+      "assets/products/1696/GC-S1696-04.jpg",
+      "assets/products/1696/GC-S1696-05.jpg",
+      "assets/products/1696/GC-S1696-06.jpg",
+      "assets/products/1696/GC-S1696-07.jpg",
+      "assets/products/1696/GC-S1696-08.jpg",
+      "assets/products/1696/GC-S1696-09.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1696/GC-S1696-01.jpg",
+      "assets/product-thumbs/1696/GC-S1696-02.jpg",
+      "assets/product-thumbs/1696/GC-S1696-03.jpg",
+      "assets/product-thumbs/1696/GC-S1696-04.jpg",
+      "assets/product-thumbs/1696/GC-S1696-05.jpg",
+      "assets/product-thumbs/1696/GC-S1696-06.jpg",
+      "assets/product-thumbs/1696/GC-S1696-07.jpg",
+      "assets/product-thumbs/1696/GC-S1696-08.jpg",
+      "assets/product-thumbs/1696/GC-S1696-09.jpg"
+    ],
+    "front": "assets/products/1696/GC-S1696-01.jpg",
+    "angle": "assets/products/1696/GC-S1696-02.jpg",
+    "side": "assets/products/1696/GC-S1696-03.jpg",
+    "back": "assets/products/1696/GC-S1696-04.jpg",
+    "scene": "assets/products/1696/GC-S1696-03.jpg",
+    "thumbFront": "assets/product-thumbs/1696/GC-S1696-01.jpg",
+    "thumb": "assets/product-thumbs/1696/GC-S1696-03.jpg",
+    "thumbScene": "assets/product-thumbs/1696/GC-S1696-03.jpg",
+    "fallback": "assets/products/1696/GC-S1696-03.jpg",
+    "thumbFallback": "assets/product-thumbs/1696/GC-S1696-03.jpg",
+    "generated": "assets/products/1696/GC-S1696-01.jpg"
+  },
+  "1698": {
+    "images": [
+      "assets/products/1698/GC-S1698-01.jpg",
+      "assets/products/1698/GC-S1698-02.jpg",
+      "assets/products/1698/GC-S1698-03.jpg",
+      "assets/products/1698/GC-S1698-04.jpg",
+      "assets/products/1698/GC-S1698-05.jpg",
+      "assets/products/1698/GC-S1698-06.jpg",
+      "assets/products/1698/GC-S1698-07.jpg",
+      "assets/products/1698/GC-S1698-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1698/GC-S1698-01.jpg",
+      "assets/product-thumbs/1698/GC-S1698-02.jpg",
+      "assets/product-thumbs/1698/GC-S1698-03.jpg",
+      "assets/product-thumbs/1698/GC-S1698-04.jpg",
+      "assets/product-thumbs/1698/GC-S1698-05.jpg",
+      "assets/product-thumbs/1698/GC-S1698-06.jpg",
+      "assets/product-thumbs/1698/GC-S1698-07.jpg",
+      "assets/product-thumbs/1698/GC-S1698-08.jpg"
+    ],
+    "front": "assets/products/1698/GC-S1698-01.jpg",
+    "angle": "assets/products/1698/GC-S1698-02.jpg",
+    "side": "assets/products/1698/GC-S1698-03.jpg",
+    "back": "assets/products/1698/GC-S1698-04.jpg",
+    "scene": "assets/products/1698/GC-S1698-06.jpg",
+    "thumbFront": "assets/product-thumbs/1698/GC-S1698-01.jpg",
+    "thumb": "assets/product-thumbs/1698/GC-S1698-06.jpg",
+    "thumbScene": "assets/product-thumbs/1698/GC-S1698-06.jpg",
+    "fallback": "assets/products/1698/GC-S1698-06.jpg",
+    "thumbFallback": "assets/product-thumbs/1698/GC-S1698-06.jpg",
+    "generated": "assets/products/1698/GC-S1698-01.jpg"
+  },
+  "1699": {
+    "images": [
+      "assets/products/1699/GC-S1699-01.jpg",
+      "assets/products/1699/GC-S1699-02.jpg",
+      "assets/products/1699/GC-S1699-03.jpg",
+      "assets/products/1699/GC-S1699-04.jpg",
+      "assets/products/1699/GC-S1699-05.jpg",
+      "assets/products/1699/GC-S1699-06.jpg",
+      "assets/products/1699/GC-S1699-07.jpg",
+      "assets/products/1699/GC-S1699-08.jpg"
+    ],
+    "thumbs": [
+      "assets/product-thumbs/1699/GC-S1699-01.jpg",
+      "assets/product-thumbs/1699/GC-S1699-02.jpg",
+      "assets/product-thumbs/1699/GC-S1699-03.jpg",
+      "assets/product-thumbs/1699/GC-S1699-04.jpg",
+      "assets/product-thumbs/1699/GC-S1699-05.jpg",
+      "assets/product-thumbs/1699/GC-S1699-06.jpg",
+      "assets/product-thumbs/1699/GC-S1699-07.jpg",
+      "assets/product-thumbs/1699/GC-S1699-08.jpg"
+    ],
+    "front": "assets/products/1699/GC-S1699-01.jpg",
+    "angle": "assets/products/1699/GC-S1699-02.jpg",
+    "side": "assets/products/1699/GC-S1699-03.jpg",
+    "back": "assets/products/1699/GC-S1699-04.jpg",
+    "scene": "assets/products/1699/GC-S1699-08.jpg",
+    "thumbFront": "assets/product-thumbs/1699/GC-S1699-01.jpg",
+    "thumb": "assets/product-thumbs/1699/GC-S1699-08.jpg",
+    "thumbScene": "assets/product-thumbs/1699/GC-S1699-08.jpg",
+    "fallback": "assets/products/1699/GC-S1699-08.jpg",
+    "thumbFallback": "assets/product-thumbs/1699/GC-S1699-08.jpg",
+    "generated": "assets/products/1699/GC-S1699-01.jpg"
   },
   "1701": {
     "images": [
