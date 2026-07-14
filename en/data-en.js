@@ -1,6 +1,2338 @@
 ﻿// English product copy generated for the GCSOFA English site.
 // Source images are shared with the Chinese catalog; only text fields are localized here.
 window.GCSOFA_PRODUCT_COPY_MAP_EN = {
+  "1220": {
+    "name": "GC-S1220",
+    "code": "GC-S1220",
+    "sku": "GC-S1220",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1220 is a modern minimalist three-seat straight sofa upholstered in olive green textured woven fabric. Slim arms, divided back cushions, and fine metal legs create a light, structured profile. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "modern minimalist",
+      "textured woven fabric",
+      "olive green"
+    ],
+    "specs": {
+      "Model": "GC-S1220",
+      "Type": "Three-seat straight sofa",
+      "Style": "modern minimalist",
+      "Color": "olive green",
+      "Upholstery": "textured woven fabric",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Slim arms, divided back cushions, and fine metal legs create a light, structured profile, giving the model a clear and coordinated identity from multiple angles.",
+      "The olive green textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1226": {
+    "name": "GC-S1226",
+    "code": "GC-S1226",
+    "sku": "GC-S1226",
+    "category": "Two-seat straight sofa",
+    "summary": "GC-S1226 is a soft contemporary two-seat straight sofa upholstered in warm ivory soft woven fabric. Rounded arms and full seat cushions soften the outline for a calm, inviting living room. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat straight sofa",
+      "soft contemporary",
+      "soft woven fabric",
+      "warm ivory"
+    ],
+    "specs": {
+      "Model": "GC-S1226",
+      "Type": "Two-seat straight sofa",
+      "Style": "soft contemporary",
+      "Color": "warm ivory",
+      "Upholstery": "soft woven fabric",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Rounded arms and full seat cushions soften the outline for a calm, inviting living room, giving the model a clear and coordinated identity from multiple angles.",
+      "The warm ivory soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1229": {
+    "name": "GC-S1229",
+    "code": "GC-S1229",
+    "sku": "GC-S1229",
+    "category": "High-back lounge chair",
+    "summary": "GC-S1229 is a comfort casual high-back lounge chair upholstered in cream white leather-look upholstery. Layered back padding, a deep seat, and exposed metal legs balance comfort with visual lightness. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the living-room corner, bedroom lounge, and reading or conversation space.",
+    "tags": [
+      "High-back lounge chair",
+      "comfort casual",
+      "leather-look upholstery",
+      "cream white"
+    ],
+    "specs": {
+      "Model": "GC-S1229",
+      "Type": "High-back lounge chair",
+      "Style": "comfort casual",
+      "Color": "cream white",
+      "Upholstery": "leather-look upholstery",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Layered back padding, a deep seat, and exposed metal legs balance comfort with visual lightness, giving the model a clear and coordinated identity from multiple angles.",
+      "The cream white leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "living-room corner",
+      "bedroom lounge",
+      "reading or conversation space"
+    ],
+    "audience": [
+      "single residents",
+      "young households",
+      "people seeking a personal relaxation seat"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1230": {
+    "name": "GC-S1230",
+    "code": "GC-S1230",
+    "sku": "GC-S1230",
+    "category": "Three-seat high-back sofa",
+    "summary": "GC-S1230 is a refined contemporary three-seat high-back sofa upholstered in dark espresso leather-look upholstery. A high back, segmented padding, and broad seating create supportive comfort with a composed look. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat high-back sofa",
+      "refined contemporary",
+      "leather-look upholstery",
+      "dark espresso"
+    ],
+    "specs": {
+      "Model": "GC-S1230",
+      "Type": "Three-seat high-back sofa",
+      "Style": "refined contemporary",
+      "Color": "dark espresso",
+      "Upholstery": "leather-look upholstery",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A high back, segmented padding, and broad seating create supportive comfort with a composed look, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark espresso leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1232": {
+    "name": "GC-S1232",
+    "code": "GC-S1232",
+    "sku": "GC-S1232",
+    "category": "Reclining sofa collection",
+    "summary": "GC-S1232 is a classic comfort reclining sofa collection upholstered in dark brown leather-look upholstery. Segmented high-back cushioning and reclining functions support sitting, lounging, and extended relaxation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, media lounge, and personal relaxation area.",
+    "tags": [
+      "Reclining sofa collection",
+      "classic comfort",
+      "leather-look upholstery",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1232",
+      "Type": "Reclining sofa collection",
+      "Style": "classic comfort",
+      "Color": "dark brown",
+      "Upholstery": "leather-look upholstery",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Segmented high-back cushioning and reclining functions support sitting, lounging, and extended relaxation, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "media lounge",
+      "personal relaxation area"
+    ],
+    "audience": [
+      "people who value supportive seating",
+      "dedicated loungers",
+      "family leisure users"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1233": {
+    "name": "GC-S1233",
+    "code": "GC-S1233",
+    "sku": "GC-S1233",
+    "category": "Three-plus-two sofa set",
+    "summary": "GC-S1233 is a clean contemporary three-plus-two sofa set upholstered in black leather-look upholstery. Square arms, tailored backs, and a defined base give the room a clean, orderly character. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-plus-two sofa set",
+      "clean contemporary",
+      "leather-look upholstery",
+      "black"
+    ],
+    "specs": {
+      "Model": "GC-S1233",
+      "Type": "Three-plus-two sofa set",
+      "Style": "clean contemporary",
+      "Color": "black",
+      "Upholstery": "leather-look upholstery",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Square arms, tailored backs, and a defined base give the room a clean, orderly character, giving the model a clear and coordinated identity from multiple angles.",
+      "The black leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1236": {
+    "name": "GC-S1236",
+    "code": "GC-S1236",
+    "sku": "GC-S1236",
+    "category": "Two-seat straight sofa",
+    "summary": "GC-S1236 is a warm classic two-seat straight sofa upholstered in coffee brown soft woven fabric. Gently flared arms and full cushions create an approachable, relaxed sofa for everyday living. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat straight sofa",
+      "warm classic",
+      "soft woven fabric",
+      "coffee brown"
+    ],
+    "specs": {
+      "Model": "GC-S1236",
+      "Type": "Two-seat straight sofa",
+      "Style": "warm classic",
+      "Color": "coffee brown",
+      "Upholstery": "soft woven fabric",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Gently flared arms and full cushions create an approachable, relaxed sofa for everyday living, giving the model a clear and coordinated identity from multiple angles.",
+      "The coffee brown soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1239": {
+    "name": "GC-S1239",
+    "code": "GC-S1239",
+    "sku": "GC-S1239",
+    "category": "Two-seat straight sofa",
+    "summary": "GC-S1239 is a Nordic contemporary two-seat straight sofa upholstered in charcoal grey textured woven fabric. Narrow arms, separate back cushions, and raised legs keep the profile light and the room visually open. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat straight sofa",
+      "Nordic contemporary",
+      "textured woven fabric",
+      "charcoal grey"
+    ],
+    "specs": {
+      "Model": "GC-S1239",
+      "Type": "Two-seat straight sofa",
+      "Style": "Nordic contemporary",
+      "Color": "charcoal grey",
+      "Upholstery": "textured woven fabric",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Narrow arms, separate back cushions, and raised legs keep the profile light and the room visually open, giving the model a clear and coordinated identity from multiple angles.",
+      "The charcoal grey textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1240": {
+    "name": "GC-S1240",
+    "code": "GC-S1240",
+    "sku": "GC-S1240",
+    "category": "Three-one-one sofa set",
+    "summary": "GC-S1240 is a classic reception three-one-one sofa set upholstered in dark brown leather-look upholstery. A three-seat sofa with two matching chairs forms a complete conversation set with supportive stitched backs. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-one-one sofa set",
+      "classic reception",
+      "leather-look upholstery",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1240",
+      "Type": "Three-one-one sofa set",
+      "Style": "classic reception",
+      "Color": "dark brown",
+      "Upholstery": "leather-look upholstery",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A three-seat sofa with two matching chairs forms a complete conversation set with supportive stitched backs, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1242": {
+    "name": "GC-S1242",
+    "code": "GC-S1242",
+    "sku": "GC-S1242",
+    "category": "Armless chaise sofa",
+    "summary": "GC-S1242 is a soft Nordic armless chaise sofa upholstered in light grey soft woven fabric. An open seat, loose cushions, and raised timber legs encourage relaxed lounging without visual heaviness. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and reading and relaxation area.",
+    "tags": [
+      "Armless chaise sofa",
+      "soft Nordic",
+      "soft woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1242",
+      "Type": "Armless chaise sofa",
+      "Style": "soft Nordic",
+      "Color": "light grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "An open seat, loose cushions, and raised timber legs encourage relaxed lounging without visual heaviness, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "reading and relaxation area"
+    ],
+    "audience": [
+      "young households",
+      "people who enjoy relaxed lounging",
+      "people seeking an easy-going interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1247": {
+    "name": "GC-S1247",
+    "code": "GC-S1247",
+    "sku": "GC-S1247",
+    "category": "Three-one-one sofa set",
+    "summary": "GC-S1247 is a refined classic three-one-one sofa set upholstered in dark espresso leather-look upholstery. Broad seating, soft arms, and matching chairs create a coordinated family conversation setting. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-one-one sofa set",
+      "refined classic",
+      "leather-look upholstery",
+      "dark espresso"
+    ],
+    "specs": {
+      "Model": "GC-S1247",
+      "Type": "Three-one-one sofa set",
+      "Style": "refined classic",
+      "Color": "dark espresso",
+      "Upholstery": "leather-look upholstery",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Broad seating, soft arms, and matching chairs create a coordinated family conversation setting, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark espresso leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1248": {
+    "name": "GC-S1248",
+    "code": "GC-S1248",
+    "sku": "GC-S1248",
+    "category": "Corner modular sofa",
+    "summary": "GC-S1248 is a low-profile contemporary corner modular sofa upholstered in light grey soft woven fabric. A low back, channelled seat, and open corner layout create an easy, lounge-oriented setting. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, open-plan lounge, and shared relaxation area.",
+    "tags": [
+      "Corner modular sofa",
+      "low-profile contemporary",
+      "soft woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1248",
+      "Type": "Corner modular sofa",
+      "Style": "low-profile contemporary",
+      "Color": "light grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A low back, channelled seat, and open corner layout create an easy, lounge-oriented setting, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "open-plan lounge",
+      "shared relaxation area"
+    ],
+    "audience": [
+      "larger households",
+      "people who enjoy stretched-out lounging",
+      "families who value social seating"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1249": {
+    "name": "GC-S1249",
+    "code": "GC-S1249",
+    "sku": "GC-S1249",
+    "category": "Two-seat reclining sofa",
+    "summary": "GC-S1249 is a plush comfort two-seat reclining sofa upholstered in dark brown leather-look upholstery. Twin high backs, segmented padding, and broad arms provide enveloping support for extended relaxation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, media lounge, and personal relaxation area.",
+    "tags": [
+      "Two-seat reclining sofa",
+      "plush comfort",
+      "leather-look upholstery",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1249",
+      "Type": "Two-seat reclining sofa",
+      "Style": "plush comfort",
+      "Color": "dark brown",
+      "Upholstery": "leather-look upholstery",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Twin high backs, segmented padding, and broad arms provide enveloping support for extended relaxation, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "media lounge",
+      "personal relaxation area"
+    ],
+    "audience": [
+      "people who value supportive seating",
+      "dedicated loungers",
+      "family leisure users"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1259": {
+    "name": "GC-S1259",
+    "code": "GC-S1259",
+    "sku": "GC-S1259",
+    "category": "High-back lounge chair",
+    "summary": "GC-S1259 is a modern retro high-back lounge chair upholstered in dark brown soft woven fabric. A subtle wing back, rounded arms, and tapered legs create a poised yet light accent-chair profile. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the living-room corner, bedroom lounge, and reading or conversation space.",
+    "tags": [
+      "High-back lounge chair",
+      "modern retro",
+      "soft woven fabric",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1259",
+      "Type": "High-back lounge chair",
+      "Style": "modern retro",
+      "Color": "dark brown",
+      "Upholstery": "soft woven fabric",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A subtle wing back, rounded arms, and tapered legs create a poised yet light accent-chair profile, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "living-room corner",
+      "bedroom lounge",
+      "reading or conversation space"
+    ],
+    "audience": [
+      "single residents",
+      "young households",
+      "people seeking a personal relaxation seat"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1261": {
+    "name": "GC-S1261",
+    "code": "GC-S1261",
+    "sku": "GC-S1261",
+    "category": "Corner sectional sofa",
+    "summary": "GC-S1261 is a modern casual corner sectional sofa upholstered in charcoal grey durable woven fabric. A broad chaise and multi-seat layout create an expansive, sociable arrangement for everyday family living. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, open-plan lounge, and shared relaxation area.",
+    "tags": [
+      "Corner sectional sofa",
+      "modern casual",
+      "durable woven fabric",
+      "charcoal grey"
+    ],
+    "specs": {
+      "Model": "GC-S1261",
+      "Type": "Corner sectional sofa",
+      "Style": "modern casual",
+      "Color": "charcoal grey",
+      "Upholstery": "durable woven fabric",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A broad chaise and multi-seat layout create an expansive, sociable arrangement for everyday family living, giving the model a clear and coordinated identity from multiple angles.",
+      "The charcoal grey durable woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "open-plan lounge",
+      "shared relaxation area"
+    ],
+    "audience": [
+      "larger households",
+      "people who enjoy stretched-out lounging",
+      "families who value social seating"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1262": {
+    "name": "GC-S1262",
+    "code": "GC-S1262",
+    "sku": "GC-S1262",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1262 is a urban minimalist three-seat straight sofa upholstered in black leather-look upholstery. A low back, square arms, and fine metal legs form a crisp silhouette with restrained modern character. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "urban minimalist",
+      "leather-look upholstery",
+      "black"
+    ],
+    "specs": {
+      "Model": "GC-S1262",
+      "Type": "Three-seat straight sofa",
+      "Style": "urban minimalist",
+      "Color": "black",
+      "Upholstery": "leather-look upholstery",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A low back, square arms, and fine metal legs form a crisp silhouette with restrained modern character, giving the model a clear and coordinated identity from multiple angles.",
+      "The black leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1263": {
+    "name": "GC-S1263",
+    "code": "GC-S1263",
+    "sku": "GC-S1263",
+    "category": "Large corner sectional",
+    "summary": "GC-S1263 is a modern casual large corner sectional upholstered in brown and beige soft woven fabric. An open chaise, generous cushions, and two-tone palette add depth while supporting flexible lounging. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, open-plan lounge, and shared relaxation area.",
+    "tags": [
+      "Large corner sectional",
+      "modern casual",
+      "soft woven fabric",
+      "brown and beige"
+    ],
+    "specs": {
+      "Model": "GC-S1263",
+      "Type": "Large corner sectional",
+      "Style": "modern casual",
+      "Color": "brown and beige",
+      "Upholstery": "soft woven fabric",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "An open chaise, generous cushions, and two-tone palette add depth while supporting flexible lounging, giving the model a clear and coordinated identity from multiple angles.",
+      "The brown and beige soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "open-plan lounge",
+      "shared relaxation area"
+    ],
+    "audience": [
+      "larger households",
+      "people who enjoy stretched-out lounging",
+      "families who value social seating"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1266": {
+    "name": "GC-S1266",
+    "code": "GC-S1266",
+    "sku": "GC-S1266",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1266 is a practical contemporary three-seat straight sofa upholstered in navy blue durable woven fabric. Broad arms, divided seating, and a straight back create a stable, easy-living profile. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "practical contemporary",
+      "durable woven fabric",
+      "navy blue"
+    ],
+    "specs": {
+      "Model": "GC-S1266",
+      "Type": "Three-seat straight sofa",
+      "Style": "practical contemporary",
+      "Color": "navy blue",
+      "Upholstery": "durable woven fabric",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Broad arms, divided seating, and a straight back create a stable, easy-living profile, giving the model a clear and coordinated identity from multiple angles.",
+      "The navy blue durable woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1269": {
+    "name": "GC-S1269",
+    "code": "GC-S1269",
+    "sku": "GC-S1269",
+    "category": "High-back sofa collection",
+    "summary": "GC-S1269 is a warm classic high-back sofa collection upholstered in coffee brown textured woven fabric. Three-section high backs, soft head support, and gently flared arms emphasize comfort across the coordinated set. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "High-back sofa collection",
+      "warm classic",
+      "textured woven fabric",
+      "coffee brown"
+    ],
+    "specs": {
+      "Model": "GC-S1269",
+      "Type": "High-back sofa collection",
+      "Style": "warm classic",
+      "Color": "coffee brown",
+      "Upholstery": "textured woven fabric",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Three-section high backs, soft head support, and gently flared arms emphasize comfort across the coordinated set, giving the model a clear and coordinated identity from multiple angles.",
+      "The coffee brown textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1270": {
+    "name": "GC-S1270",
+    "code": "GC-S1270",
+    "sku": "GC-S1270",
+    "category": "Two-seat reclining sofa",
+    "summary": "GC-S1270 is a classic comfort two-seat reclining sofa upholstered in cream white leather-look upholstery. A high back, padded arms, and reclining function support both upright sitting and deeper relaxation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, media lounge, and personal relaxation area.",
+    "tags": [
+      "Two-seat reclining sofa",
+      "classic comfort",
+      "leather-look upholstery",
+      "cream white"
+    ],
+    "specs": {
+      "Model": "GC-S1270",
+      "Type": "Two-seat reclining sofa",
+      "Style": "classic comfort",
+      "Color": "cream white",
+      "Upholstery": "leather-look upholstery",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A high back, padded arms, and reclining function support both upright sitting and deeper relaxation, giving the model a clear and coordinated identity from multiple angles.",
+      "The cream white leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "media lounge",
+      "personal relaxation area"
+    ],
+    "audience": [
+      "people who value supportive seating",
+      "dedicated loungers",
+      "family leisure users"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1271": {
+    "name": "GC-S1271",
+    "code": "GC-S1271",
+    "sku": "GC-S1271",
+    "category": "Upholstered dining chair",
+    "summary": "GC-S1271 is a modern minimalist upholstered dining chair upholstered in olive grey textured woven fabric. A slim upholstered back and dark timber legs create a clean chair that works alone or in a coordinated set. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family dining room, open kitchen-dining area, and desk or dressing area.",
+    "tags": [
+      "Upholstered dining chair",
+      "modern minimalist",
+      "textured woven fabric",
+      "olive grey"
+    ],
+    "specs": {
+      "Model": "GC-S1271",
+      "Type": "Upholstered dining chair",
+      "Style": "modern minimalist",
+      "Color": "olive grey",
+      "Upholstery": "textured woven fabric",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A slim upholstered back and dark timber legs create a clean chair that works alone or in a coordinated set, giving the model a clear and coordinated identity from multiple angles.",
+      "The olive grey textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family dining room",
+      "open kitchen-dining area",
+      "desk or dressing area"
+    ],
+    "audience": [
+      "small households",
+      "people who value coordinated interiors",
+      "people needing a light occasional chair"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1272": {
+    "name": "GC-S1272",
+    "code": "GC-S1272",
+    "sku": "GC-S1272",
+    "category": "Reclining sofa collection",
+    "summary": "GC-S1272 is a warm casual reclining sofa collection upholstered in caramel brown leather-look upholstery. Layered high backs, embracing arms, and extending footrests deliver generous family comfort. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, media lounge, and personal relaxation area.",
+    "tags": [
+      "Reclining sofa collection",
+      "warm casual",
+      "leather-look upholstery",
+      "caramel brown"
+    ],
+    "specs": {
+      "Model": "GC-S1272",
+      "Type": "Reclining sofa collection",
+      "Style": "warm casual",
+      "Color": "caramel brown",
+      "Upholstery": "leather-look upholstery",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Layered high backs, embracing arms, and extending footrests deliver generous family comfort, giving the model a clear and coordinated identity from multiple angles.",
+      "The caramel brown leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "media lounge",
+      "personal relaxation area"
+    ],
+    "audience": [
+      "people who value supportive seating",
+      "dedicated loungers",
+      "family leisure users"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1273": {
+    "name": "GC-S1273",
+    "code": "GC-S1273",
+    "sku": "GC-S1273",
+    "category": "Three-two-one sofa set",
+    "summary": "GC-S1273 is a soft classic three-two-one sofa set upholstered in dusty rose soft woven fabric. Layered cushions and a complete matching set create a gentle, welcoming conversation space. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-two-one sofa set",
+      "soft classic",
+      "soft woven fabric",
+      "dusty rose"
+    ],
+    "specs": {
+      "Model": "GC-S1273",
+      "Type": "Three-two-one sofa set",
+      "Style": "soft classic",
+      "Color": "dusty rose",
+      "Upholstery": "soft woven fabric",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Layered cushions and a complete matching set create a gentle, welcoming conversation space, giving the model a clear and coordinated identity from multiple angles.",
+      "The dusty rose soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1275": {
+    "name": "GC-S1275",
+    "code": "GC-S1275",
+    "sku": "GC-S1275",
+    "category": "Curved accent chair",
+    "summary": "GC-S1275 is a expressive contemporary curved accent chair upholstered in white with striped inset mixed textile upholstery. A curved shell wraps a striped interior while metal legs create a distinctive, lightweight focal piece. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the living-room corner, bedroom lounge, and reading or conversation space.",
+    "tags": [
+      "Curved accent chair",
+      "expressive contemporary",
+      "mixed textile upholstery",
+      "white with striped inset"
+    ],
+    "specs": {
+      "Model": "GC-S1275",
+      "Type": "Curved accent chair",
+      "Style": "expressive contemporary",
+      "Color": "white with striped inset",
+      "Upholstery": "mixed textile upholstery",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A curved shell wraps a striped interior while metal legs create a distinctive, lightweight focal piece, giving the model a clear and coordinated identity from multiple angles.",
+      "The white with striped inset mixed textile upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "living-room corner",
+      "bedroom lounge",
+      "reading or conversation space"
+    ],
+    "audience": [
+      "single residents",
+      "young households",
+      "people seeking a personal relaxation seat"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1276": {
+    "name": "GC-S1276",
+    "code": "GC-S1276",
+    "sku": "GC-S1276",
+    "category": "Low-profile corner sofa",
+    "summary": "GC-S1276 is a modern minimalist low-profile corner sofa upholstered in black and rust brown leather-look upholstery. A low back, open corner, and two-tone sections create a clean architectural silhouette. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, open-plan lounge, and shared relaxation area.",
+    "tags": [
+      "Low-profile corner sofa",
+      "modern minimalist",
+      "leather-look upholstery",
+      "black and rust brown"
+    ],
+    "specs": {
+      "Model": "GC-S1276",
+      "Type": "Low-profile corner sofa",
+      "Style": "modern minimalist",
+      "Color": "black and rust brown",
+      "Upholstery": "leather-look upholstery",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A low back, open corner, and two-tone sections create a clean architectural silhouette, giving the model a clear and coordinated identity from multiple angles.",
+      "The black and rust brown leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "open-plan lounge",
+      "shared relaxation area"
+    ],
+    "audience": [
+      "larger households",
+      "people who enjoy stretched-out lounging",
+      "families who value social seating"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1277": {
+    "name": "GC-S1277",
+    "code": "GC-S1277",
+    "sku": "GC-S1277",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1277 is a natural casual three-seat straight sofa upholstered in brown with multicolour cushions soft woven fabric. Timber side frames and multicolour cushions add warmth while keeping the seating relaxed and practical. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "natural casual",
+      "soft woven fabric",
+      "brown with multicolour cushions"
+    ],
+    "specs": {
+      "Model": "GC-S1277",
+      "Type": "Three-seat straight sofa",
+      "Style": "natural casual",
+      "Color": "brown with multicolour cushions",
+      "Upholstery": "soft woven fabric",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Timber side frames and multicolour cushions add warmth while keeping the seating relaxed and practical, giving the model a clear and coordinated identity from multiple angles.",
+      "The brown with multicolour cushions soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1286": {
+    "name": "GC-S1286",
+    "code": "GC-S1286",
+    "sku": "GC-S1286",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1286 is a light contemporary three-seat straight sofa upholstered in dark brown soft woven fabric. Flared arms, loose back cushions, and tapered legs give the sofa an agile, relaxed character. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "light contemporary",
+      "soft woven fabric",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1286",
+      "Type": "Three-seat straight sofa",
+      "Style": "light contemporary",
+      "Color": "dark brown",
+      "Upholstery": "soft woven fabric",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Flared arms, loose back cushions, and tapered legs give the sofa an agile, relaxed character, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1287": {
+    "name": "GC-S1287",
+    "code": "GC-S1287",
+    "sku": "GC-S1287",
+    "category": "Two-seat straight sofa",
+    "summary": "GC-S1287 is a natural eclectic two-seat straight sofa upholstered in grey or brown soft woven fabric. Soft arms, timber feet, and contrasting cushions add layered colour to warm residential interiors. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat straight sofa",
+      "natural eclectic",
+      "soft woven fabric",
+      "grey or brown"
+    ],
+    "specs": {
+      "Model": "GC-S1287",
+      "Type": "Two-seat straight sofa",
+      "Style": "natural eclectic",
+      "Color": "grey or brown",
+      "Upholstery": "soft woven fabric",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Soft arms, timber feet, and contrasting cushions add layered colour to warm residential interiors, giving the model a clear and coordinated identity from multiple angles.",
+      "The grey or brown soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1288": {
+    "name": "GC-S1288",
+    "code": "GC-S1288",
+    "sku": "GC-S1288",
+    "category": "Two-seat straight sofa",
+    "summary": "GC-S1288 is a warm classic two-seat straight sofa upholstered in brown soft woven fabric. Rounded arms, full seat cushions, and a high back create an approachable, comfort-led profile. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat straight sofa",
+      "warm classic",
+      "soft woven fabric",
+      "brown"
+    ],
+    "specs": {
+      "Model": "GC-S1288",
+      "Type": "Two-seat straight sofa",
+      "Style": "warm classic",
+      "Color": "brown",
+      "Upholstery": "soft woven fabric",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Rounded arms, full seat cushions, and a high back create an approachable, comfort-led profile, giving the model a clear and coordinated identity from multiple angles.",
+      "The brown soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1289": {
+    "name": "GC-S1289",
+    "code": "GC-S1289",
+    "sku": "GC-S1289",
+    "category": "Chaise sectional sofa",
+    "summary": "GC-S1289 is a modern comfort chaise sectional sofa upholstered in light grey soft woven fabric. Adjustable headrests, a broad chaise, and divided seating combine support with relaxed lounging. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, open-plan lounge, and shared relaxation area.",
+    "tags": [
+      "Chaise sectional sofa",
+      "modern comfort",
+      "soft woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1289",
+      "Type": "Chaise sectional sofa",
+      "Style": "modern comfort",
+      "Color": "light grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Adjustable headrests, a broad chaise, and divided seating combine support with relaxed lounging, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "open-plan lounge",
+      "shared relaxation area"
+    ],
+    "audience": [
+      "larger households",
+      "people who enjoy stretched-out lounging",
+      "families who value social seating"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1293": {
+    "name": "GC-S1293",
+    "code": "GC-S1293",
+    "sku": "GC-S1293",
+    "category": "Two-seat straight sofa",
+    "summary": "GC-S1293 is a clean contemporary two-seat straight sofa upholstered in light grey textured woven fabric. Square arms, twin back cushions, and raised legs create a clean, versatile foundation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat straight sofa",
+      "clean contemporary",
+      "textured woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1293",
+      "Type": "Two-seat straight sofa",
+      "Style": "clean contemporary",
+      "Color": "light grey",
+      "Upholstery": "textured woven fabric",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Square arms, twin back cushions, and raised legs create a clean, versatile foundation, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1295": {
+    "name": "GC-S1295",
+    "code": "GC-S1295",
+    "sku": "GC-S1295",
+    "category": "Storage sofa collection",
+    "summary": "GC-S1295 is a practical contemporary storage sofa collection upholstered in multiple colour options soft woven fabric. Coordinated sofas and chairs combine with concealed storage to unite seating and everyday organisation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Storage sofa collection",
+      "practical contemporary",
+      "soft woven fabric",
+      "multiple colour options"
+    ],
+    "specs": {
+      "Model": "GC-S1295",
+      "Type": "Storage sofa collection",
+      "Style": "practical contemporary",
+      "Color": "multiple colour options",
+      "Upholstery": "soft woven fabric",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Coordinated sofas and chairs combine with concealed storage to unite seating and everyday organisation, giving the model a clear and coordinated identity from multiple angles.",
+      "The multiple colour options soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1296": {
+    "name": "GC-S1296",
+    "code": "GC-S1296",
+    "sku": "GC-S1296",
+    "category": "Storage chaise sofa",
+    "summary": "GC-S1296 is a practical contemporary storage chaise sofa upholstered in dark brown soft woven fabric. A lift-up chaise reveals generous storage while loose cushions keep everyday lounging comfortable. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Storage chaise sofa",
+      "practical contemporary",
+      "soft woven fabric",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1296",
+      "Type": "Storage chaise sofa",
+      "Style": "practical contemporary",
+      "Color": "dark brown",
+      "Upholstery": "soft woven fabric",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A lift-up chaise reveals generous storage while loose cushions keep everyday lounging comfortable, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1297": {
+    "name": "GC-S1297",
+    "code": "GC-S1297",
+    "sku": "GC-S1297",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1297 is a mid-century modern three-seat straight sofa upholstered in deep blue soft woven fabric. A long seat, flared arms, and raised timber legs introduce a light mid-century character. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "mid-century modern",
+      "soft woven fabric",
+      "deep blue"
+    ],
+    "specs": {
+      "Model": "GC-S1297",
+      "Type": "Three-seat straight sofa",
+      "Style": "mid-century modern",
+      "Color": "deep blue",
+      "Upholstery": "soft woven fabric",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A long seat, flared arms, and raised timber legs introduce a light mid-century character, giving the model a clear and coordinated identity from multiple angles.",
+      "The deep blue soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1299": {
+    "name": "GC-S1299",
+    "code": "GC-S1299",
+    "sku": "GC-S1299",
+    "category": "Three-two-one sofa set",
+    "summary": "GC-S1299 is a soft contemporary three-two-one sofa set upholstered in light grey textured woven fabric. The complete set uses square arms and loose cushions to create a coordinated family conversation area. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-two-one sofa set",
+      "soft contemporary",
+      "textured woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1299",
+      "Type": "Three-two-one sofa set",
+      "Style": "soft contemporary",
+      "Color": "light grey",
+      "Upholstery": "textured woven fabric",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "The complete set uses square arms and loose cushions to create a coordinated family conversation area, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1300": {
+    "name": "GC-S1300",
+    "code": "GC-S1300",
+    "sku": "GC-S1300",
+    "category": "Three-plus-two sofa set",
+    "summary": "GC-S1300 is a modern casual three-plus-two sofa set upholstered in black soft woven fabric. Gently flared arms and layered cushions soften the dark tone while supporting conversation and relaxation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-plus-two sofa set",
+      "modern casual",
+      "soft woven fabric",
+      "black"
+    ],
+    "specs": {
+      "Model": "GC-S1300",
+      "Type": "Three-plus-two sofa set",
+      "Style": "modern casual",
+      "Color": "black",
+      "Upholstery": "soft woven fabric",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Gently flared arms and layered cushions soften the dark tone while supporting conversation and relaxation, giving the model a clear and coordinated identity from multiple angles.",
+      "The black soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1302": {
+    "name": "GC-S1302",
+    "code": "GC-S1302",
+    "sku": "GC-S1302",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1302 is a Nordic contemporary three-seat straight sofa upholstered in charcoal grey soft woven fabric. Loose cushions, narrow arms, and timber legs create an easy yet well-composed living-room look. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "Nordic contemporary",
+      "soft woven fabric",
+      "charcoal grey"
+    ],
+    "specs": {
+      "Model": "GC-S1302",
+      "Type": "Three-seat straight sofa",
+      "Style": "Nordic contemporary",
+      "Color": "charcoal grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Loose cushions, narrow arms, and timber legs create an easy yet well-composed living-room look, giving the model a clear and coordinated identity from multiple angles.",
+      "The charcoal grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1303": {
+    "name": "GC-S1303",
+    "code": "GC-S1303",
+    "sku": "GC-S1303",
+    "category": "Two-seat high-back sofa",
+    "summary": "GC-S1303 is a refined contemporary two-seat high-back sofa upholstered in dark espresso leather-look upholstery. Segmented high-back padding, broad seats, and stable arms support an upright, comfortable posture. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat high-back sofa",
+      "refined contemporary",
+      "leather-look upholstery",
+      "dark espresso"
+    ],
+    "specs": {
+      "Model": "GC-S1303",
+      "Type": "Two-seat high-back sofa",
+      "Style": "refined contemporary",
+      "Color": "dark espresso",
+      "Upholstery": "leather-look upholstery",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Segmented high-back padding, broad seats, and stable arms support an upright, comfortable posture, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark espresso leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1341": {
+    "name": "GC-S1341",
+    "code": "GC-S1341",
+    "sku": "GC-S1341",
+    "category": "Chaise sectional sofa",
+    "summary": "GC-S1341 is a practical contemporary chaise sectional sofa upholstered in light grey soft woven fabric. A flexible chaise and concealed function system support seating, lounging, storage, and changing daily needs. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Chaise sectional sofa",
+      "practical contemporary",
+      "soft woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1341",
+      "Type": "Chaise sectional sofa",
+      "Style": "practical contemporary",
+      "Color": "light grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "9 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A flexible chaise and concealed function system support seating, lounging, storage, and changing daily needs, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1342": {
+    "name": "GC-S1342",
+    "code": "GC-S1342",
+    "sku": "GC-S1342",
+    "category": "Two-seat storage sofa",
+    "summary": "GC-S1342 is a practical contemporary two-seat storage sofa upholstered in dark grey soft woven fabric. Lift-up storage is integrated into a clean profile while soft back and seat cushions preserve comfort. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Two-seat storage sofa",
+      "practical contemporary",
+      "soft woven fabric",
+      "dark grey"
+    ],
+    "specs": {
+      "Model": "GC-S1342",
+      "Type": "Two-seat storage sofa",
+      "Style": "practical contemporary",
+      "Color": "dark grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "8 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Lift-up storage is integrated into a clean profile while soft back and seat cushions preserve comfort, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1347": {
+    "name": "GC-S1347",
+    "code": "GC-S1347",
+    "sku": "GC-S1347",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1347 is a light contemporary three-seat straight sofa upholstered in light grey textured woven fabric. Slim arms, tailored backs, and raised metal legs create clean proportions for bright interiors. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "light contemporary",
+      "textured woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1347",
+      "Type": "Three-seat straight sofa",
+      "Style": "light contemporary",
+      "Color": "light grey",
+      "Upholstery": "textured woven fabric",
+      "Images": "7 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Slim arms, tailored backs, and raised metal legs create clean proportions for bright interiors, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey textured woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1348": {
+    "name": "GC-S1348",
+    "code": "GC-S1348",
+    "sku": "GC-S1348",
+    "category": "Two-seat curved sofa",
+    "summary": "GC-S1348 is a modern retro two-seat curved sofa upholstered in grey soft woven fabric. A rounded back, subtle buttoning, and tapered timber legs reinforce its soft retro character. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat curved sofa",
+      "modern retro",
+      "soft woven fabric",
+      "grey"
+    ],
+    "specs": {
+      "Model": "GC-S1348",
+      "Type": "Two-seat curved sofa",
+      "Style": "modern retro",
+      "Color": "grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A rounded back, subtle buttoning, and tapered timber legs reinforce its soft retro character, giving the model a clear and coordinated identity from multiple angles.",
+      "The grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1349": {
+    "name": "GC-S1349",
+    "code": "GC-S1349",
+    "sku": "GC-S1349",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1349 is a natural minimalist three-seat straight sofa upholstered in olive green soft woven fabric. A broad linear seat and exposed timber base create a grounded, natural presence. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "natural minimalist",
+      "soft woven fabric",
+      "olive green"
+    ],
+    "specs": {
+      "Model": "GC-S1349",
+      "Type": "Three-seat straight sofa",
+      "Style": "natural minimalist",
+      "Color": "olive green",
+      "Upholstery": "soft woven fabric",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A broad linear seat and exposed timber base create a grounded, natural presence, giving the model a clear and coordinated identity from multiple angles.",
+      "The olive green soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1350": {
+    "name": "GC-S1350",
+    "code": "GC-S1350",
+    "sku": "GC-S1350",
+    "category": "Multifunction sofa collection",
+    "summary": "GC-S1350 is a classic practical multifunction sofa collection upholstered in dark brown leather-look upholstery. Sofa-bed and reclining functions combine with a matching chair while channel stitching keeps the set tailored. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Multifunction sofa collection",
+      "classic practical",
+      "leather-look upholstery",
+      "dark brown"
+    ],
+    "specs": {
+      "Model": "GC-S1350",
+      "Type": "Multifunction sofa collection",
+      "Style": "classic practical",
+      "Color": "dark brown",
+      "Upholstery": "leather-look upholstery",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Sofa-bed and reclining functions combine with a matching chair while channel stitching keeps the set tailored, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark brown leather-look upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1351": {
+    "name": "GC-S1351",
+    "code": "GC-S1351",
+    "sku": "GC-S1351",
+    "category": "Three-plus-one sofa set",
+    "summary": "GC-S1351 is a warm contemporary three-plus-one sofa set upholstered in ivory and brown two-tone woven upholstery. Contrasting upholstery and timber arms add warmth to a coordinated sofa-and-chair conversation set. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, formal sitting room, and open-plan lounge.",
+    "tags": [
+      "Three-plus-one sofa set",
+      "warm contemporary",
+      "two-tone woven upholstery",
+      "ivory and brown"
+    ],
+    "specs": {
+      "Model": "GC-S1351",
+      "Type": "Three-plus-one sofa set",
+      "Style": "warm contemporary",
+      "Color": "ivory and brown",
+      "Upholstery": "two-tone woven upholstery",
+      "Images": "4 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Contrasting upholstery and timber arms add warmth to a coordinated sofa-and-chair conversation set, giving the model a clear and coordinated identity from multiple angles.",
+      "The ivory and brown two-tone woven upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "formal sitting room",
+      "open-plan lounge"
+    ],
+    "audience": [
+      "larger households",
+      "frequent hosts",
+      "people seeking a coordinated interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1352": {
+    "name": "GC-S1352",
+    "code": "GC-S1352",
+    "sku": "GC-S1352",
+    "category": "Two-seat frame sofa",
+    "summary": "GC-S1352 is a light contemporary two-seat frame sofa upholstered in multiple colour options leather-look or woven upholstery. A fine metal frame, floating seat, and simple cushions create an open, precise modern silhouette. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat frame sofa",
+      "light contemporary",
+      "leather-look or woven upholstery",
+      "multiple colour options"
+    ],
+    "specs": {
+      "Model": "GC-S1352",
+      "Type": "Two-seat frame sofa",
+      "Style": "light contemporary",
+      "Color": "multiple colour options",
+      "Upholstery": "leather-look or woven upholstery",
+      "Images": "12 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A fine metal frame, floating seat, and simple cushions create an open, precise modern silhouette, giving the model a clear and coordinated identity from multiple angles.",
+      "The multiple colour options leather-look or woven upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1355": {
+    "name": "GC-S1355",
+    "code": "GC-S1355",
+    "sku": "GC-S1355",
+    "category": "Storage sofa collection",
+    "summary": "GC-S1355 is a practical contemporary storage sofa collection upholstered in dark grey soft woven fabric. A straight sofa, matching chair, and concealed storage combine a clean look with practical organisation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Storage sofa collection",
+      "practical contemporary",
+      "soft woven fabric",
+      "dark grey"
+    ],
+    "specs": {
+      "Model": "GC-S1355",
+      "Type": "Storage sofa collection",
+      "Style": "practical contemporary",
+      "Color": "dark grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A straight sofa, matching chair, and concealed storage combine a clean look with practical organisation, giving the model a clear and coordinated identity from multiple angles.",
+      "The dark grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1357": {
+    "name": "GC-S1357",
+    "code": "GC-S1357",
+    "sku": "GC-S1357",
+    "category": "Two-seat retro sofa",
+    "summary": "GC-S1357 is a fresh retro two-seat retro sofa upholstered in aqua blue soft woven fabric. Rounded arms, raised timber legs, and a fresh colour create a cheerful focal point. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Two-seat retro sofa",
+      "fresh retro",
+      "soft woven fabric",
+      "aqua blue"
+    ],
+    "specs": {
+      "Model": "GC-S1357",
+      "Type": "Two-seat retro sofa",
+      "Style": "fresh retro",
+      "Color": "aqua blue",
+      "Upholstery": "soft woven fabric",
+      "Images": "1 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Rounded arms, raised timber legs, and a fresh colour create a cheerful focal point, giving the model a clear and coordinated identity from multiple angles.",
+      "The aqua blue soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1359": {
+    "name": "GC-S1359",
+    "code": "GC-S1359",
+    "sku": "GC-S1359",
+    "category": "Single-seat recliner",
+    "summary": "GC-S1359 is a modern casual single-seat recliner upholstered in grey and rust brown mixed upholstery. An extending footrest, padded back, and embracing arms make the transition from sitting to lounging effortless. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, media lounge, and personal relaxation area.",
+    "tags": [
+      "Single-seat recliner",
+      "modern casual",
+      "mixed upholstery",
+      "grey and rust brown"
+    ],
+    "specs": {
+      "Model": "GC-S1359",
+      "Type": "Single-seat recliner",
+      "Style": "modern casual",
+      "Color": "grey and rust brown",
+      "Upholstery": "mixed upholstery",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "An extending footrest, padded back, and embracing arms make the transition from sitting to lounging effortless, giving the model a clear and coordinated identity from multiple angles.",
+      "The grey and rust brown mixed upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "media lounge",
+      "personal relaxation area"
+    ],
+    "audience": [
+      "people who value supportive seating",
+      "dedicated loungers",
+      "family leisure users"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1360": {
+    "name": "GC-S1360",
+    "code": "GC-S1360",
+    "sku": "GC-S1360",
+    "category": "Three-seat straight sofa",
+    "summary": "GC-S1360 is a mid-century modern three-seat straight sofa upholstered in grey or coral soft woven fabric. Rounded arms, divided seating, and tapered timber legs balance friendliness with light proportions. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and everyday conversation area.",
+    "tags": [
+      "Three-seat straight sofa",
+      "mid-century modern",
+      "soft woven fabric",
+      "grey or coral"
+    ],
+    "specs": {
+      "Model": "GC-S1360",
+      "Type": "Three-seat straight sofa",
+      "Style": "mid-century modern",
+      "Color": "grey or coral",
+      "Upholstery": "soft woven fabric",
+      "Images": "10 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Rounded arms, divided seating, and tapered timber legs balance friendliness with light proportions, giving the model a clear and coordinated identity from multiple angles.",
+      "The grey or coral soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "everyday conversation area"
+    ],
+    "audience": [
+      "young households",
+      "everyday hosts",
+      "people who value comfort and easy styling"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1522": {
+    "name": "GC-S1522",
+    "code": "GC-S1522",
+    "sku": "GC-S1522",
+    "category": "Two-seat sofa with ottoman",
+    "summary": "GC-S1522 is a fresh Nordic two-seat sofa with ottoman upholstered in mist blue soft woven fabric. A matching ottoman, rounded back, and raised timber legs give the loveseat a fresh, relaxed character. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and reading and relaxation area.",
+    "tags": [
+      "Two-seat sofa with ottoman",
+      "fresh Nordic",
+      "soft woven fabric",
+      "mist blue"
+    ],
+    "specs": {
+      "Model": "GC-S1522",
+      "Type": "Two-seat sofa with ottoman",
+      "Style": "fresh Nordic",
+      "Color": "mist blue",
+      "Upholstery": "soft woven fabric",
+      "Images": "6 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A matching ottoman, rounded back, and raised timber legs give the loveseat a fresh, relaxed character, giving the model a clear and coordinated identity from multiple angles.",
+      "The mist blue soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "reading and relaxation area"
+    ],
+    "audience": [
+      "young households",
+      "people who enjoy relaxed lounging",
+      "people seeking an easy-going interior"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1525": {
+    "name": "GC-S1525",
+    "code": "GC-S1525",
+    "sku": "GC-S1525",
+    "category": "Armless lounge bench",
+    "summary": "GC-S1525 is a modern retro armless lounge bench upholstered in brown and ivory two-tone woven upholstery. A long back, open seat, and fine metal legs form a light, versatile lounge bench. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the living-room lounge, bedroom or dressing room, and entrance sitting area.",
+    "tags": [
+      "Armless lounge bench",
+      "modern retro",
+      "two-tone woven upholstery",
+      "brown and ivory"
+    ],
+    "specs": {
+      "Model": "GC-S1525",
+      "Type": "Armless lounge bench",
+      "Style": "modern retro",
+      "Color": "brown and ivory",
+      "Upholstery": "two-tone woven upholstery",
+      "Images": "2 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "A long back, open seat, and fine metal legs form a light, versatile lounge bench, giving the model a clear and coordinated identity from multiple angles.",
+      "The brown and ivory two-tone woven upholstery presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "living-room lounge",
+      "bedroom or dressing room",
+      "entrance sitting area"
+    ],
+    "audience": [
+      "single residents",
+      "young households",
+      "people who prefer flexible furniture"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
+  "1596": {
+    "name": "GC-S1596",
+    "code": "GC-S1596",
+    "sku": "GC-S1596",
+    "category": "Three-seat storage sofa",
+    "summary": "GC-S1596 is a warm practical three-seat storage sofa upholstered in light grey soft woven fabric. Rolled arms, loose cushions, and lift-up storage combine a welcoming look with everyday organisation. Its balanced relationship between the seat, back, and arms supports relaxed everyday comfort while remaining easy to coordinate with timber furniture, soft lighting, and varied interior palettes. It is well suited to the family living room, apartment lounge, and guest-ready multipurpose room.",
+    "tags": [
+      "Three-seat storage sofa",
+      "warm practical",
+      "soft woven fabric",
+      "light grey"
+    ],
+    "specs": {
+      "Model": "GC-S1596",
+      "Type": "Three-seat storage sofa",
+      "Style": "warm practical",
+      "Color": "light grey",
+      "Upholstery": "soft woven fabric",
+      "Images": "5 product images prepared"
+    },
+    "views": [
+      "View 1",
+      "View 2",
+      "View 3",
+      "View 4"
+    ],
+    "highlights": [
+      "Rolled arms, loose cushions, and lift-up storage combine a welcoming look with everyday organisation, giving the model a clear and coordinated identity from multiple angles.",
+      "The light grey soft woven fabric presentation feels warm, tactile, and easy to coordinate in everyday interiors.",
+      "The seat, back, and arm relationship balances relaxed comfort with a tidy visual structure.",
+      "Lifestyle and multi-angle images show the complete outline, construction details, and room presence."
+    ],
+    "homes": [
+      "family living room",
+      "apartment lounge",
+      "guest-ready multipurpose room"
+    ],
+    "audience": [
+      "space-conscious households",
+      "families needing flexible storage",
+      "people with occasional guest needs"
+    ],
+    "suggestedPrice": "Quotation by configuration"
+  },
   "1600": {
     "name": "GC-S1600",
     "code": "GC-S1600",

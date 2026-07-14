@@ -218,13 +218,16 @@ function getExtraIntroImages(product) {
   const mappedImages = getProductGalleryImages(product).map((image, index) => ({
     image,
     title: product.name,
-    description: getGalleryImageDescription(image, index),
+    description: getGalleryImageDescription(product, image, index),
   })).filter((item) => !savedImageSet.has(item.image));
   return [...savedImages, ...mappedImages];
 }
 
-function getGalleryImageDescription(image, index) {
-  return `${OTHER_ANGLE_DISPLAY_IMAGES.has(image) ? "其他角度展示图" : "场景图"} ${index + 5}`;
+function getGalleryImageDescription(product, image, index) {
+  const key = getProductImageKey(product);
+  const mappedOtherAngles = window.GCSOFA_PRODUCT_IMAGE_MAP?.[key]?.otherAngles || [];
+  const isOtherAngle = mappedOtherAngles.includes(image) || OTHER_ANGLE_DISPLAY_IMAGES.has(image);
+  return `${isOtherAngle ? "其他角度展示图" : "场景图"} ${index + 5}`;
 }
 
 function renderProductImageTag(product, source, role, alt) {

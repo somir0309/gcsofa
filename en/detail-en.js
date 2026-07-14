@@ -77,13 +77,13 @@ function renderEnglishDetail() {
         <h2>Product Images</h2>
       </div>
       <div class="intro-grid">
-        ${gallery.map((image, index) => `
+        ${gallery.map((item, index) => `
           <article class="intro-card intro-photo">
             <div class="intro-image-frame">
-              <img src="${escapeAttr(prefixAsset(image))}" alt="${escapeAttr(`${model} image ${index + 1}`)}" />
+              <img src="${escapeAttr(prefixAsset(item.image))}" alt="${escapeAttr(`${model} image ${index + 1}`)}" />
             </div>
             <div class="intro-card-copy">
-              <p class="eyebrow">${index < 4 ? `View ${index + 1}` : `Scene ${index - 3}`}</p>
+              <p class="eyebrow">${escapeHtml(item.label)}</p>
               <h3>${escapeHtml(model)}</h3>
             </div>
           </article>
@@ -101,8 +101,24 @@ function findEnglishProduct(id) {
 }
 
 function getGalleryImages(product, entry) {
-  const images = entry.images?.length ? entry.images : [entry.front, entry.angle, entry.side, entry.back, entry.scene].filter(Boolean);
-  return [...new Set(images.filter(Boolean))];
+  const views = [entry.front, entry.angle, entry.side, entry.back]
+    .filter(Boolean)
+    .map((image, index) => ({ image, label: `View ${index + 1}` }));
+  const reserved = new Set(views.map((item) => item.image));
+  const otherAngles = new Set(entry.otherAngles || []);
+  let sceneIndex = 0;
+  let otherIndex = 0;
+  const extras = (entry.images || [entry.scene])
+    .filter((image, index, images) => image && !reserved.has(image) && images.indexOf(image) === index)
+    .map((image) => {
+      if (otherAngles.has(image)) {
+        otherIndex += 1;
+        return { image, label: `Other Angle ${otherIndex}` };
+      }
+      sceneIndex += 1;
+      return { image, label: `Lifestyle Scene ${sceneIndex}` };
+    });
+  return [...views, ...extras];
 }
 
 function buildEnglishSummary(product) {
