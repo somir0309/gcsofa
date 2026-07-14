@@ -1,7 +1,7 @@
 window.GCSOFA_TOP_SOFAS = {
-  "capturedAt": "2026-06-25",
-  "updateFrequency": "每天 09:00 重新抓取；抓取失败时保留上一版并标记状态",
-  "sourceMode": "全球热销关键词监控：不展示图片，聚焦关键词趋势、评论反馈、痛点和选品动作",
+  "capturedAt": "2026-07-14",
+  "updateFrequency": "每天 09:00 重新抓取；本次已按 2026-07-14 平台热销、榜单和推荐信号刷新",
+  "sourceMode": "全球热销关键词监控：Amazon Best Sellers、Wayfair 热卖/高评分与 TikTok 传播型沙发信号；重点关注沙发床/储物贵妃、无骨云朵沙发、小户型快装、可清洁面料、躺椅功能和户外套装。",
   "products": [
     {
       "platform": "亚马逊",
@@ -139,8 +139,9 @@ window.GCSOFA_TOP_SOFAS = {
         "客房备用需求客户"
       ],
       "specSuggestion": "建议重点做1.8-2.0米宽、三档靠背、可拆洗布套，床态长度要标清。",
-      "selectionAdvice": "优先开发结构稳定、包装小、安装步骤少的款式；详情页必须把坐态和床态尺寸讲清楚。",
+      "selectionAdvice": "2026-07-14 刷新：Amazon New Releases 与 Wayfair TikTok sleeper sectional 信号都指向抽拉床、小户型和一物两用，继续重点跟进。 优先开发结构稳定、包装小、安装步骤少的款式；详情页必须把坐态和床态尺寸讲清楚。",
       "reviewCaptureFocus": [
+        "本次刷新新增：核对 2026-07 平台页面中的近期评论，优先提取安装、坐感、尺寸、面料清洁和配送破损反馈。",
         "优先抓取五星评论中的舒适度、安装、尺寸和面料评价。",
         "重点抓取一星/二星评论中的塌陷、色差、气味、破损和售后问题。",
         "把重复出现的差评关键词反推到结构、面料、包装和详情页说明。"
@@ -1007,8 +1008,9 @@ window.GCSOFA_TOP_SOFAS = {
         "客房备用需求客户"
       ],
       "specSuggestion": "建议重点做1.8-2.0米宽、三档靠背、可拆洗布套，床态长度要标清。",
-      "selectionAdvice": "优先开发结构稳定、包装小、安装步骤少的款式；详情页必须把坐态和床态尺寸讲清楚。",
+      "selectionAdvice": "2026-07-14 刷新：Wayfair 页面和 TikTok-worthy sleeper sectional 指南强化“储物贵妃+快速变床+小空间”的内容传播价值。 优先开发结构稳定、包装小、安装步骤少的款式；详情页必须把坐态和床态尺寸讲清楚。",
       "reviewCaptureFocus": [
+        "本次刷新新增：核对 2026-07 平台页面中的近期评论，优先提取安装、坐感、尺寸、面料清洁和配送破损反馈。",
         "优先抓取五星评论中的舒适度、安装、尺寸和面料评价。",
         "重点抓取一星/二星评论中的塌陷、色差、气味、破损和售后问题。",
         "把重复出现的差评关键词反推到结构、面料、包装和详情页说明。"
@@ -1222,8 +1224,9 @@ window.GCSOFA_TOP_SOFAS = {
         "追求颜值的中高预算客户"
       ],
       "specSuggestion": "建议坐深做到60-68cm，坐垫用高回弹海绵加羽绒棉，浅色款加可拆洗或防污说明。",
-      "selectionAdvice": "适合做视觉爆款，关键是把柔软外观和支撑结构同时做好，避免只软不耐坐。",
+      "selectionAdvice": "2026-07-14 刷新：Wayfair 热卖款继续强调 performance microfiber、easy clean、宠物/儿童家庭使用场景。 适合做视觉爆款，关键是把柔软外观和支撑结构同时做好，避免只软不耐坐。",
       "reviewCaptureFocus": [
+        "本次刷新新增：核对 2026-07 平台页面中的近期评论，优先提取安装、坐感、尺寸、面料清洁和配送破损反馈。",
         "优先抓取五星评论中的舒适度、安装、尺寸和面料评价。",
         "重点抓取一星/二星评论中的塌陷、色差、气味、破损和售后问题。",
         "把重复出现的差评关键词反推到结构、面料、包装和详情页说明。"
@@ -1507,8 +1510,9 @@ window.GCSOFA_TOP_SOFAS = {
         "追求颜值的中高预算客户"
       ],
       "specSuggestion": "建议坐深做到60-68cm，坐垫用高回弹海绵加羽绒棉，浅色款加可拆洗或防污说明。",
-      "selectionAdvice": "适合做视觉爆款，关键是把柔软外观和支撑结构同时做好，避免只软不耐坐。",
+      "selectionAdvice": "2026-07-14 刷新：无骨/boneless cloud couch 与软包大坐深继续有热度，核心风险是塌陷、支撑和回弹寿命。 适合做视觉爆款，关键是把柔软外观和支撑结构同时做好，避免只软不耐坐。",
       "reviewCaptureFocus": [
+        "本次刷新新增：核对 2026-07 平台页面中的近期评论，优先提取安装、坐感、尺寸、面料清洁和配送破损反馈。",
         "优先抓取五星评论中的舒适度、安装、尺寸和面料评价。",
         "重点抓取一星/二星评论中的塌陷、色差、气味、破损和售后问题。",
         "把重复出现的差评关键词反推到结构、面料、包装和详情页说明。"
@@ -1878,8 +1882,9 @@ window.GCSOFA_TOP_SOFAS = {
         "低预算首购客户"
       ],
       "specSuggestion": "建议做1.2-1.8米宽、盒装拆装结构，页面重点标注承重和安装时间。",
-      "selectionAdvice": "适合做引流款，但要避免过度压低成本导致差评集中在坐感和寿命。",
+      "selectionAdvice": "2026-07-14 刷新：小户型快装、低价、盒装配送仍适合做引流款，但需要控制坐感和结构稳定性差评。 适合做引流款，但要避免过度压低成本导致差评集中在坐感和寿命。",
       "reviewCaptureFocus": [
+        "本次刷新新增：核对 2026-07 平台页面中的近期评论，优先提取安装、坐感、尺寸、面料清洁和配送破损反馈。",
         "优先抓取五星评论中的舒适度、安装、尺寸和面料评价。",
         "重点抓取一星/二星评论中的塌陷、色差、气味、破损和售后问题。",
         "把重复出现的差评关键词反推到结构、面料、包装和详情页说明。"
@@ -2194,5 +2199,65 @@ window.GCSOFA_TOP_SOFAS = {
     "reviewRule": "围绕热销关键词抓取并整理好评重点、差评风险和重复出现的客户痛点。",
     "outputRule": "每款输出关键词、趋势判断、痛点、描述词、面料推荐、规格建议、机会分和风险分。",
     "selectionRule": "优先选择高机会、低售后风险、面料和结构能落地的款式；短视频爆款先小批量测试。"
+  },
+  "marketRefresh": {
+    "refreshedAt": "2026-07-14",
+    "previousCapturedAt": "2026-06-25",
+    "sourceSignals": [
+      {
+        "platform": "Amazon",
+        "source": "Amazon Best Sellers: Sofas & Couches / Living Room Furniture Sets / New Releases",
+        "url": "https://www.amazon.com/Best-Sellers-Sofas-Couches/zgbs/home-garden/3733551",
+        "signals": [
+          "Best Sellers Top 100",
+          "New Releases sleeper sofa bed",
+          "boneless cloud couch",
+          "living-room sets with sectional and storage"
+        ]
+      },
+      {
+        "platform": "Wayfair",
+        "source": "Wayfair Sofas & Couches listing and editorial guides",
+        "url": "https://www.wayfair.com/furniture/sb0/sofas-c413892.html",
+        "signals": [
+          "manual reclining sofa",
+          "faux leather recliner",
+          "Chesterfield/rolled arm",
+          "Serta convertible sleeper with high review volume",
+          "performance microfiber",
+          "small apartment fit"
+        ]
+      },
+      {
+        "platform": "TikTok Shop / social commerce proxy",
+        "source": "Wayfair TikTok-worthy sleeper sectionals guide and social trend pages",
+        "url": "https://www.wayfair.com/sca/ideas-and-advice/guides/7-tiktok-worthy-sleeper-sectionals-that-deserve-a-spotlight-of-their-own-T9296",
+        "signals": [
+          "Caruso-style sleeper sectional",
+          "storage chaise",
+          "pull-out bed",
+          "small-space sleeper sofa",
+          "easy conversion video demo"
+        ]
+      },
+      {
+        "platform": "Trend media",
+        "source": "July 2026 home/furniture shopping reports",
+        "url": "https://www.realsimple.com/sleeper-chair-sleeper-sofas-wayfair-july-2026-12014925",
+        "signals": [
+          "small-space sleeper chairs and sofas",
+          "boneless design",
+          "USB/storage U-shaped sectional",
+          "discount-driven summer home refresh"
+        ]
+      }
+    ],
+    "keyMoves": [
+      "优先开发储物贵妃+抽拉床的组合沙发，适合 Amazon、Wayfair 和 TikTok 内容渠道共同验证。",
+      "保留无骨云朵/corduroy/软包大坐深方向，但必须加强回弹、支撑和不塌陷卖点。",
+      "小户型快装款要突出盒装、工具少、安装时间短、可进门尺寸和退货风险控制。",
+      "可清洁、可拆洗、宠物友好面料仍是家庭场景的高频痛点词，适合做详情页视频验证。",
+      "躺椅和户外套装有季节/功能性机会，但电机、五金、耐候和售后风险要单独控。"
+    ]
   }
 };
