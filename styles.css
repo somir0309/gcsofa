@@ -3692,6 +3692,19 @@ a {
   text-decoration: underline;
 }
 
+.footer .police-filing {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer .police-filing img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
 .dialog {
   width: min(94vw, 520px);
   padding: 0;
