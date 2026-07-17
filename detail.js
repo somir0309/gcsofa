@@ -69,7 +69,7 @@ function renderDetail() {
     return;
   }
 
-  document.title = `${product.name} - GCSOFA 产品详情`;
+  updateShareMetadata(product);
   const canEdit = canEditInternalData(user);
   const canEditPrice = userCan("priceEdit", user);
   const introContent = renderIntroImages(product, permissions);
@@ -135,6 +135,24 @@ function renderDetail() {
 
   bindInternalActions(product, permissions, canEdit, canEditPrice);
   bindExchangeRates(permissions);
+}
+
+function updateShareMetadata(product) {
+  const title = `${product.name}｜欣冠城 GCSOFA 沙发产品`;
+  const description = String(product.summary || "查看沙发场景效果、多角度图片与详细产品资料。").trim();
+  const imagePath = getProductImageAsset(product, "scene") || "assets/gcsofa-share-cover.jpg";
+  const imageUrl = new URL(imagePath, location.href).href;
+
+  document.title = title;
+  document.querySelector("#shareDescription")?.setAttribute("content", description);
+  document.querySelector("#shareOgTitle")?.setAttribute("content", title);
+  document.querySelector("#shareOgDescription")?.setAttribute("content", description);
+  document.querySelector("#shareOgImage")?.setAttribute("content", imageUrl);
+  document.querySelector("#shareOgImageSecure")?.setAttribute("content", imageUrl);
+  document.querySelector("#shareItemName")?.setAttribute("content", title);
+  document.querySelector("#shareItemDescription")?.setAttribute("content", description);
+  document.querySelector("#shareItemImage")?.setAttribute("content", imageUrl);
+  document.querySelector("#shareImageSource")?.setAttribute("href", imageUrl);
 }
 
 function renderIntroImages(product, permissions) {
