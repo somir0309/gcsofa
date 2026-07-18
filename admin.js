@@ -10,6 +10,7 @@ const accountSearchInput = document.querySelector("#accountSearchInput");
 const accountRoleInput = document.querySelector("#accountRoleInput");
 const permissionChecklist = document.querySelector("#permissionChecklist");
 const rolePermissionList = document.querySelector("#rolePermissionList");
+const accountFormMessage = document.querySelector("#accountFormMessage");
 const productFormMessage = document.querySelector("#productFormMessage");
 const staffList = document.querySelector("#adminStaffList");
 const staffForm = document.querySelector("#staffForm");
@@ -47,7 +48,12 @@ let currentProductCostSheet = null;
 let activeAdminSection = "products";
 form.noValidate = true;
 let auth = setupAuth({ onChange: renderAdmin });
-whenSiteDataReady(() => auth.updateAccountView());
+whenSiteDataReady(() => {
+  auth.updateAccountView();
+  if (getCloudDataLoadError()) {
+    setAccountFormMessage("权限同步服务暂不可用，当前修改只能保存在本机。", true);
+  }
+});
 
 function renderAdmin() {
   if (!isAdminUser()) {
@@ -313,11 +319,14 @@ function loadAccount(username) {
   const accounts = getAccounts();
   const account = accounts[username] || createBlankAccount();
   selectedAccount = username || "";
+  setAccountFormMessage("");
   document.querySelector("#accountUsernameInput").value = selectedAccount;
   document.querySelector("#accountUsernameInput").disabled = Boolean(accounts[selectedAccount]);
   document.querySelector("#accountNameInput").value = account.name;
   document.querySelector("#accountPasswordInput").value = account.password;
   accountRoleInput.value = account.role;
+  accountRoleInput.disabled = selectedAccount === "ming";
+  document.querySelector("#deleteAccountBtn").disabled = selectedAccount === "ming";
   renderPermissionChecklist({ username: selectedAccount, ...account });
   renderAccountList();
 }
@@ -330,12 +339,15 @@ function createBlankAccount() {
   };
 }
 
-function renderPermissionChecklist(account) {
-  const permissions = account.username ? getPermissionsForUser(account) : getDefaultPermissionsForRole(account.role);
+function renderPermissionChecklist(account, useRoleDefaults = false) {
+  const permissions = useRoleDefaults || !account.username
+    ? getDefaultPermissionsForRole(account.role)
+    : getPermissionsForUser(account);
+  const locked = account.username === "ming";
   permissionChecklist.innerHTML = PERMISSION_MODULES.map(
     (module) => `
       <label class="permission-item">
-        <input type="checkbox" value="${module.id}" ${permissions[module.id] ? "checked" : ""} />
+        <input type="checkbox" value="${module.id}" ${permissions[module.id] ? "checked" : ""} ${locked ? "disabled" : ""} />
         <span>${module.label}</span>
       </label>
     `
@@ -348,18 +360,34 @@ function readPermissionChecklist() {
     nextPermissions[module.id] = Boolean(input?.checked);
     return nextPermissions;
   }, {});
-  if (permissions.productionEdit) {
+
+  const hasDepartmentPermission = PERMISSION_MODULES.some(
+    (module) => module.id.startsWith("productionDept") && permissions[module.id]
+  );
+  if (permissions.productionEdit || hasDepartmentPermission) {
     permissions.production = true;
   }
   if (permissions.priceEdit) {
-    permissions.internal = true;
     permissions.price = true;
   }
-  if (permissions.costUpload || permissions.costDownload) {
+  if (permissions.price || permissions.costUpload || permissions.costDownload) {
     permissions.internal = true;
   }
   delete permissions.cost;
   return permissions;
+}
+
+function applyPermissionChecklist(permissions) {
+  PERMISSION_MODULES.forEach((module) => {
+    const input = permissionChecklist.querySelector(`input[value="${module.id}"]`);
+    if (input) input.checked = Boolean(permissions[module.id]);
+  });
+}
+
+function setAccountFormMessage(text, isError = false) {
+  if (!accountFormMessage) return;
+  accountFormMessage.textContent = text;
+  accountFormMessage.classList.toggle("success-message", Boolean(text) && !isError);
 }
 
 function setAdminSection(section) {
@@ -680,10 +708,11 @@ accountList.addEventListener("click", (event) => {
   loadAccount(row.dataset.username);
 });
 
-accountForm.addEventListener("submit", (event) => {
+accountForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   const username = document.querySelector("#accountUsernameInput").value.trim();
   if (!username) return;
+  const submitButton = accountForm.querySelector('button[type="submit"]');
 
   const account = {
     name: document.querySelector("#accountNameInput").value.trim() || username,
@@ -691,27 +720,41 @@ accountForm.addEventListener("submit", (event) => {
     role: username === "ming" ? "admin" : accountRoleInput.value,
   };
 
-  upsertAccount(username, account);
-  saveUserPermissions(
-    username,
-    username === "ming" ? getDefaultPermissionsForRole("admin") : readPermissionChecklist()
-  );
-  selectedAccount = username;
-  renderAccountList();
-  loadAccount(username);
+  submitButton.disabled = true;
+  setAccountFormMessage("正在保存帐号与权限...");
+  try {
+    await Promise.all([
+      upsertAccount(username, account),
+      saveUserPermissions(
+        username,
+        username === "ming" ? getDefaultPermissionsForRole("admin") : readPermissionChecklist()
+      ),
+    ]);
+    selectedAccount = username;
+    renderAccountList();
+    loadAccount(username);
+    setAccountFormMessage("帐号与权限已保存，并同步到线上。可退出后使用该帐号验证。", false);
+  } catch (error) {
+    setAccountFormMessage("线上同步失败：当前浏览器已临时保存，请勿在其他设备使用，稍后重试。", true);
+  } finally {
+    submitButton.disabled = false;
+  }
 });
 
 accountRoleInput.addEventListener("change", () => {
-  const username = document.querySelector("#accountUsernameInput").value.trim();
   renderPermissionChecklist({
-    username,
+    username: "",
     name: document.querySelector("#accountNameInput").value.trim(),
     password: document.querySelector("#accountPasswordInput").value,
     role: accountRoleInput.value,
-  });
+  }, true);
 });
 
-document.querySelector("#deleteAccountBtn").addEventListener("click", () => {
+permissionChecklist.addEventListener("change", () => {
+  applyPermissionChecklist(readPermissionChecklist());
+});
+
+document.querySelector("#deleteAccountBtn").addEventListener("click", async () => {
   const username = document.querySelector("#accountUsernameInput").value.trim();
   if (!username || username === "ming") {
     alert("网站管理员帐号不能删除。");
@@ -719,10 +762,15 @@ document.querySelector("#deleteAccountBtn").addEventListener("click", () => {
   }
 
   if (confirm(`确定删除帐号 ${username} 吗？`)) {
-    deleteAccount(username);
-    selectedAccount = "ming";
-    renderAccountList();
-    loadAccount(selectedAccount);
+    try {
+      await deleteAccount(username);
+      selectedAccount = "ming";
+      renderAccountList();
+      loadAccount(selectedAccount);
+      setAccountFormMessage("帐号已删除，并同步到线上。", false);
+    } catch (error) {
+      setAccountFormMessage("线上同步失败：本机已删除，但其他设备可能仍显示该帐号，请稍后重试。", true);
+    }
   }
 });
 

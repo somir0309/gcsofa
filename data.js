@@ -426,7 +426,7 @@ async function loadCloudSiteData() {
         localStorage.setItem(storeKey, JSON.stringify(value));
       }
     });
-    seedMissingCloudData(payload.data || {}, localSnapshot);
+    window.GCSOFA_CLOUD_DATA = payload.data || {};
     cloudDataLoaded = true;
     return payload.data || {};
   } catch (error) {
@@ -38056,7 +38056,7 @@ function getSavedAccounts() {
 }
 
 function saveAccounts(accounts) {
-  saveCloudStore(ACCOUNT_STORE_KEY, accounts);
+  return saveCloudStore(ACCOUNT_STORE_KEY, accounts);
 }
 
 function upsertAccount(username, account) {
@@ -38066,7 +38066,7 @@ function upsertAccount(username, account) {
     name: account.name || username,
     role: account.role || "registered",
   };
-  saveAccounts(accounts);
+  return saveAccounts(accounts);
 }
 
 function deleteAccount(username) {
@@ -38076,11 +38076,12 @@ function deleteAccount(username) {
   } else {
     delete accounts[username];
   }
-  saveAccounts(accounts);
+  const accountSave = saveAccounts(accounts);
 
   const permissions = getPermissionMap();
   delete permissions[username];
-  savePermissionMap(permissions);
+  const permissionSave = savePermissionMap(permissions);
+  return Promise.all([accountSave, permissionSave]);
 }
 
 function getRoleLabel(role) {
@@ -38107,7 +38108,7 @@ function getPermissionMap() {
 }
 
 function savePermissionMap(permissions) {
-  saveCloudStore(PERMISSION_STORE_KEY, permissions);
+  return saveCloudStore(PERMISSION_STORE_KEY, permissions);
 }
 
 function getPermissionsForUser(user) {
@@ -38131,7 +38132,7 @@ function getPermissionsForUser(user) {
 function saveUserPermissions(username, permissions) {
   const map = getPermissionMap();
   map[username] = permissions;
-  savePermissionMap(map);
+  return savePermissionMap(map);
 }
 
 function userCan(moduleId, user = getCurrentUser()) {
